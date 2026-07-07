@@ -1,4 +1,5 @@
-import * as report from "multiple-cucumber-html-reporter";
+import report from "multiple-cucumber-html-reporter";
+
 report.generate({
   jsonDir: "./reports",
   reportPath: "./reports/html-report",
@@ -8,7 +9,7 @@ report.generate({
 
   displayDuration: true,
   displayReportTime: true,
-  openReportInBrowser: true,
+  openReportInBrowser: false, // Set to false for Jenkins
   hideMetadata: false,
 
   customData: {
@@ -27,20 +28,20 @@ report.generate({
         value: "Playwright + Cucumber + TypeScript"
       },
       {
-        label: "Design Pattern",
+        label: "Framework Pattern",
         value: "Page Object Model (POM)"
       },
       {
         label: "Environment",
-        value: process.env.ENV || "QA"
+        value: process.env.ENV ?? "QA"
       },
       {
         label: "Browser",
-        value: process.env.BROWSER || "Chromium"
+        value: process.env.BROWSER ?? "Chromium"
       },
       {
         label: "Operating System",
-        value: "Windows 11"
+        value: process.platform
       },
       {
         label: "Executed By",
@@ -55,13 +56,13 @@ report.generate({
 
   metadata: {
     browser: {
-      name: process.env.BROWSER || "Chromium",
+      name: process.env.BROWSER ?? "Chromium",
       version: "Latest"
     },
-    device: "Local Machine",
+    device: "Jenkins / Local Machine",
     platform: {
-      name: "Windows",
-      version: "11"
+      name: process.platform,
+      version: process.version
     }
   }
 });
