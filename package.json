@@ -12,7 +12,7 @@
     "test:subathra": "cross-env ENV=qa cucumber-js --tags \"@Subathra\"",
     "test:jerishwin": "cross-env ENV=qa cucumber-js --tags \"@Jerishwin\"",
     "test:rerun": "cross-env ENV=qa cucumber-js -p rerun",
-    "report": "node src/test/helper/report.ts",
+    "report": "ts-node src/test/helper/report.ts",
     "allure:generate": "allure generate allure-results --clean -o allure-report",
     "allure:open": "allure open allure-report"
   },
