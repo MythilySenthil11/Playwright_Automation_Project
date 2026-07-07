@@ -240,11 +240,6 @@ QA Automation Engineer
 
 GitHub: https://github.com/MythilySenthil11/Playwright_Automation_Project
 
----
-
-# 📄 License
-
-This project is licensed under the MIT License.
 
 ---
 
