@@ -2,6 +2,7 @@ import { Before,After,BeforeAll,AfterAll} from '@cucumber/cucumber'
 import{chromium,Browser} from '@playwright/test'
 import{CustomWorld}from '../world/CustomWorld'
 import {logger}from '../utilities/logger'
+import { BasePage } from '../pages/BasePage'
 
 let browser : Browser
 
@@ -15,6 +16,7 @@ Before(async function(this:CustomWorld,scenario){
     this.browser=browser
     this.browserContext=await browser.newContext()
     this.page = await this.browserContext.newPage()
+    this.bp = new BasePage(this.page)
     
 })
 
