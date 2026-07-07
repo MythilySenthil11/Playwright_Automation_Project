@@ -13,7 +13,6 @@ module.exports = {
 
     format: [
       "progress",
-      "summary",
       "json:reports/cucumber-report.json",
       "html:reports/cucumber-report.html",
       "rerun:@rerun.txt",
