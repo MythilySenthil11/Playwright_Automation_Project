@@ -1,8 +1,49 @@
 
 # Playwright
+# ==========================
+# Dependencies
+# ==========================
 node_modules/
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
-/playwright/.auth/
+
+# =========================
+
+# ==========================
+# Playwright
+# ==========================
+test-results/
+playwright-report/
+blob-report/
+
+# ==========================
+# Cucumber Reports
+# ==========================
+reports/
+
+# ==========================
+# Allure
+# ==========================
+allure-results/
+allure-report/
+
+# ==========================
+# Rerun
+# ==========================
+@rerun.txt
+rerun.txt
+
+# ==========================
+# Logs
+# ==========================
+*.log
+
+# ==========================
+# IDE
+# ==========================
+.vscode/
+.idea/
+
+# ==========================
+# OS
+# ==========================
+.DS_Store
+Thumbs.db

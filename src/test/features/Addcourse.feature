@@ -2,9 +2,11 @@
 Feature: Mythily_07/07/2026_Add_Course_Tests
 
     Background:
-        Given User navigates to the application
-        And User logs in with valid credentials
-        And User clicks on the Course Structure
+        Given the user is on the login page
+        When the user enters valid credentials
+        And the user clicks on the login button
+        Then the user should be redirected to the dashboard page
+        When User clicks on the Course Structure
         And User clicks on the Add Course tab
 
     Scenario: Add a course with valid details

@@ -1,14 +1,20 @@
-import { Before,After,BeforeAll,AfterAll} from '@cucumber/cucumber'
+import { Before,After,BeforeAll,AfterAll,setDefaultTimeout} from '@cucumber/cucumber'
 import{chromium,Browser} from '@playwright/test'
 import{CustomWorld}from '../world/CustomWorld'
 import {logger}from '../utilities/logger'
+import { getEnv } from '../utilities/envReader'
 import { BasePage } from '../pages/BasePage'
+import { loginpage } from '../pages/loginpage'
+import { admindashboardpage } from '../pages/admindashboardpage'
+import { AddcoursePage } from '../pages/AddcoursePage'
+import { SideBarPage } from '../pages/SideBarPage'
 
 let browser : Browser
-
+setDefaultTimeout(60 * 1000);
 BeforeAll(async()=>{
     logger.info("Launching Browser")
     browser = await chromium.launch({headless:false})
+
 })
 
 Before(async function(this:CustomWorld,scenario){
@@ -16,8 +22,11 @@ Before(async function(this:CustomWorld,scenario){
     this.browser=browser
     this.browserContext=await browser.newContext()
     this.page = await this.browserContext.newPage()
-    this.bp = new BasePage(this.page)
-    
+    this.bp = new BasePage(this.page);
+    this.lp = new loginpage(this.page);
+    this.adp= new admindashboardpage(this.page);
+    this.sP = new SideBarPage(this.page);
+    this.addPage = new AddcoursePage(this.page);
 })
 
 After(async function(this:CustomWorld,scenario){

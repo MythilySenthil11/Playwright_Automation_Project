@@ -2,7 +2,9 @@ import { AddcoursePage } from './../pages/AddcoursePage';
 import { logger } from './../utilities/logger';
 import {Browser,Page,BrowserContext} from 'playwright'
 import {setWorldConstructor, World} from '@cucumber/cucumber'
-import { BasePage } from './../pages/BasePage';
+import { loginpage } from '../pages/loginpage';
+import { BasePage } from '../pages/BasePage';
+import { admindashboardpage } from '../pages/admindashboardpage';
 import { SideBarPage } from '../pages/SideBarPage';
 
 export class CustomWorld extends World{
@@ -12,8 +14,10 @@ export class CustomWorld extends World{
     addPage!:AddcoursePage;
     sP!:SideBarPage;
     logger=logger;
-
     bp!:BasePage;
+    lp!:loginpage;
+    adp!:admindashboardpage;
+    public initialCount!: number;
 }
 
 setWorldConstructor(CustomWorld);
