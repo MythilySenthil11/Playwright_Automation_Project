@@ -22,7 +22,7 @@ The framework follows the **Page Object Model (POM)** architecture and is design
 
 ### 🌐 Application Under Test
 
-> https://automationexercise.com/
+> https://lms-smartcliff.vercel.app
 
 ---
 
