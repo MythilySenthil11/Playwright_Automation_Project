@@ -54,4 +54,27 @@ export class BasePage{
             throw error;
         }
     }
+    async SelectOption(locator: Locator, value: string){
+    try {
+        logger.info(`Selecting option: ${value}`);
+        await locator.selectOption({ label: value });
+        logger.info(`Option "${value}" selected successfully`);
+    }
+    catch (error) {
+        logger.error(`Failed to select option "${value}": ${error}`);
+        throw error;
+    }
+
+}
+async GetAllText(locator: Locator): Promise<string[]> {
+    try {
+        logger.info("Getting text from all matching elements");
+        const texts = await locator.allInnerTexts();
+        return texts;
+    }
+    catch (error) {
+        logger.error(`Failed to get text from elements: ${error}`);
+        throw error;
+    }
+}
 }

@@ -6,6 +6,7 @@ import { getEnv } from '../utilities/envReader'
 import { BasePage } from '../pages/BasePage'
 import { loginpage } from '../pages/loginpage'
 import { admindashboardpage } from '../pages/admindashboardpage'
+import { CourseManagementPage } from '../pages/CourseManagementPage'
 
 let browser : Browser
 setDefaultTimeout(60 * 1000);
@@ -23,6 +24,7 @@ Before(async function(this:CustomWorld,scenario){
     this.bp = new BasePage(this.page);
     this.lp = new loginpage(this.page);
     this.adp= new admindashboardpage(this.page);
+    this.cmp= new CourseManagementPage(this.page);
 })
 
 After(async function(this:CustomWorld,scenario){

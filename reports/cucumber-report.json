@@ -1,72 +1,111 @@
 [
   {
-    "description": " Description: This feature file is used to test the login functionality of the application.",
+    "description": "",
     "elements": [
       {
         "description": "",
-        "id": "krishnaprasath_07/07/2026_login_functionality;verify-that-the-user-is-able-to-login-with-valid-credentials",
+        "id": "tamilkumar-07-07-2026-course-filter-functionality;verify-filtering-courses-by-category",
         "keyword": "Scenario",
-        "line": 9,
-        "name": "Verify that the user is able to login with valid credentials",
+        "line": 10,
+        "name": "Verify filtering courses by category",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1062350800
+              "duration": 329591500
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
+            "line": 4,
             "name": "the user is on the login page",
             "match": {
               "location": "src\\test\\steps\\loginSteps.ts:6"
             },
             "result": {
               "status": "passed",
-              "duration": 2765557200
+              "duration": 498819300
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 10,
+            "line": 5,
             "name": "the user enters valid credentials",
             "match": {
               "location": "src\\test\\steps\\loginSteps.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 7412567399
+              "duration": 443611500
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 11,
+            "line": 6,
             "name": "the user clicks on the login button",
             "match": {
               "location": "src\\test\\steps\\loginSteps.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 377671500
+              "duration": 1028591499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I navigate to the Course Management page",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8733374600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click the Filter button",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 894312099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I select Automation Project from the Category dropdown",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2564217699
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 12,
-            "name": "the user should be redirected to the dashboard page",
+            "name": "only courses belonging to the selected category should be displayed",
             "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:17"
+              "location": "src\\test\\steps\\filter.steps.ts:25"
             },
             "result": {
               "status": "passed",
-              "duration": 27317553399
+              "duration": 83243500
             }
           },
           {
@@ -74,41 +113,41 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 158818899
+              "duration": 94688600
             }
           }
         ],
         "tags": [
           {
-            "name": "@krishna",
+            "name": "@Tamil",
             "line": 1
           },
           {
-            "name": "@login",
+            "name": "@Filter",
             "line": 1
           },
           {
-            "name": "@validlogin",
-            "line": 8
+            "name": "@Tamil",
+            "line": 9
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "krishnaprasath_07/07/2026_login_functionality",
+    "id": "tamilkumar-07-07-2026-course-filter-functionality",
     "line": 2,
     "keyword": "Feature",
-    "name": "Krishnaprasath_07/07/2026_login_functionality",
+    "name": "TamilKumar 07-07-2026 Course Filter Functionality",
     "tags": [
       {
-        "name": "@krishna",
+        "name": "@Tamil",
         "line": 1
       },
       {
-        "name": "@login",
+        "name": "@Filter",
         "line": 1
       }
     ],
-    "uri": "src\\test\\features\\login.feature"
+    "uri": "src\\test\\features\\filter.feature"
   }
 ]
