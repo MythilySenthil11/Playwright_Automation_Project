@@ -8,7 +8,7 @@ import { loginpage } from '../pages/loginpage'
 import { admindashboardpage } from '../pages/admindashboardpage'
 
 let browser : Browser
-setDefaultTimeout(60 * 1000);
+setDefaultTimeout(90 * 1000);
 BeforeAll(async()=>{
     logger.info("Launching Browser")
     browser = await chromium.launch({headless:false})

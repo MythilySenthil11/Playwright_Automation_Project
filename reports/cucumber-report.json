@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1062350800
+              "duration": 1147809599
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2765557200
+              "duration": 1490859999
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7412567399
+              "duration": 595042299
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 377671500
+              "duration": 1034631600
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 27317553399
+              "duration": 13398515599
             }
           },
           {
@@ -74,7 +74,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 158818899
+              "duration": 129988999
             }
           }
         ],
@@ -90,6 +90,190 @@
           {
             "name": "@validlogin",
             "line": 8
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "krishnaprasath_07/07/2026_login_functionality;verify-that-the-user-is-not-able-to-login-with-invalid-credentials",
+        "keyword": "Scenario Outline",
+        "line": 22,
+        "name": "Verify that the user is not able to login with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 356962799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1120031399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "the user enters \"testing@gmail.com\" and \"invalidpass1\"",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1032041799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "the user clicks on the login button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 121608200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "an \"Password is incorrect\" should be displayed",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14261407100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 61331600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@krishna",
+            "line": 1
+          },
+          {
+            "name": "@login",
+            "line": 1
+          },
+          {
+            "name": "@invalidlogin",
+            "line": 14
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "krishnaprasath_07/07/2026_login_functionality;verify-that-the-user-is-not-able-to-login-with-invalid-credentials",
+        "keyword": "Scenario Outline",
+        "line": 23,
+        "name": "Verify that the user is not able to login with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 391574900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 695313599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "the user enters \"invalid2@gmail.com\" and \"invalidpass2\"",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 487901099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "the user clicks on the login button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 443762300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "an \"Email is invalid\" should be displayed",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5531071600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 129232199
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@krishna",
+            "line": 1
+          },
+          {
+            "name": "@login",
+            "line": 1
+          },
+          {
+            "name": "@invalidlogin",
+            "line": 14
           }
         ],
         "type": "scenario"
