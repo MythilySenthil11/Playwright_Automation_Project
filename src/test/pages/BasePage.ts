@@ -1,5 +1,6 @@
 import {Locator,Page} from '@playwright/test'
 import { logger } from '../utilities/logger';
+import {getEnv} from '../utilities/envReader'
 
 export class BasePage{
 
@@ -40,4 +41,14 @@ export class BasePage{
         }
     }
 
+    async Navigate():Promise<void>{
+        try{
+            logger.info('Application Launching');
+            await this.page.goto(getEnv());
+        }
+        catch(error) {
+            logger.error(`Failed to Launch: ${error}`);
+            throw error;
+        }
+    }
 }
