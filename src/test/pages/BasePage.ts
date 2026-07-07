@@ -41,13 +41,16 @@ export class BasePage{
         }
     }
 
-    async Navigate():Promise<void>{
+    async Navigate(){
         try{
-            logger.info('Application Launching');
-            await this.page.goto(getEnv());
+            const url = getEnv();
+            logger.info(`Application Launching: ${url}`);
+            await this.page.goto(url, {
+                waitUntil: 'domcontentloaded'
+            });
         }
         catch(error) {
-            logger.error(`Failed to Launch: ${error}`);
+            logger.error(`Failed to launch application: ${error}`);
             throw error;
         }
     }
