@@ -10,7 +10,7 @@ export class CustomWorld extends World{
 
     logger=logger;
 
-    basePage!:BasePage;
+    bp!:BasePage;
 }
 
 setWorldConstructor(CustomWorld);

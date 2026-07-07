@@ -16,7 +16,7 @@ Before(async function(this:CustomWorld,scenario){
     this.browser=browser
     this.browserContext=await browser.newContext()
     this.page = await this.browserContext.newPage()
-    this.basePage = new BasePage(this.page)
+    this.bp = new BasePage(this.page)
     
 })
 
