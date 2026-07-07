@@ -1,0 +1,45 @@
+import { Before,After,BeforeAll,AfterAll,setDefaultTimeout} from '@cucumber/cucumber'
+import{chromium,Browser} from '@playwright/test'
+import{CustomWorld}from '../world/CustomWorld'
+import {logger}from '../utilities/logger'
+import { getEnv } from '../utilities/envReader'
+import { BasePage } from '../pages/BasePage'
+import { loginpage } from '../pages/loginpage'
+import { admindashboardpage } from '../pages/admindashboardpage'
+
+let browser : Browser
+setDefaultTimeout(60 * 1000);
+BeforeAll(async()=>{
+    logger.info("Launching Browser")
+    browser = await chromium.launch({headless:false})
+
+})
+
+Before(async function(this:CustomWorld,scenario){
+    logger.info(`Starting scenario: ${scenario.pickle.name}`)
+    this.browser=browser
+    this.browserContext=await browser.newContext()
+    this.page = await this.browserContext.newPage()
+    this.bp = new BasePage(this.page);
+    this.lp = new loginpage(this.page);
+    this.adp= new admindashboardpage(this.page);
+})
+
+After(async function(this:CustomWorld,scenario){
+    if(scenario.result?.status==="FAILED"){
+        const path =`reports/screenshots/${Date.now()}.png`
+        await this.page.screenshot({path})
+        logger.error(`Scenario Failed: ${scenario.pickle.name}`)
+        
+    }else{
+        logger.info(`Scenario Passed: ${scenario.pickle.name}`)
+    }
+
+    await this.page.close()
+    await this.browserContext.close()
+})
+
+AfterAll(async()=>{
+    logger.info("Closing broser")
+    await browser.close()
+})
