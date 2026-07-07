@@ -1,7 +1,6 @@
 import {Locator,Page} from '@playwright/test'
 import { logger } from '../utilities/logger';
-import { get } from 'node:http';
-import { getEnv } from '../utilities/envReader';
+import {getEnv} from '../utilities/envReader'
 
 export class BasePage{
 
