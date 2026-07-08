@@ -3,13 +3,15 @@ Feature: Subathra_07-07-2026_Course_Category_Functionality
 
 Background: 
         Given the user launches the application
-        And the user login to the application
-        And the user is in Dynamic Field Management page
+        When the user enters valid credentials
+        And the user clicks on the login button
+        And the user is on Dynamic Field Management page
+        And the user clicks on the Course category button
 
 Scenario: Add category by entering all the fields
         When the user clicks the Add Category button 
-        And the user enters the details on all the fields
+        And the user enters the category details
         |Category name|Course names|Category description|
         |Devops       |Frontend    |Html,CSS            |
         And the user clicks Create category button
-        Then the user should be able to see the successfully created message
+        Then the user should see a successful creation message

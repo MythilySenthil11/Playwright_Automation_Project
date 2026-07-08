@@ -6,6 +6,8 @@ import { getEnv } from '../utilities/envReader'
 import { BasePage } from '../pages/BasePage'
 import { loginpage } from '../pages/loginpage'
 import { admindashboardpage } from '../pages/admindashboardpage'
+import { CourseCategoryPage } from '../pages/CourseCategoryPage'
+import { dynamicFieldManagementPage } from '../pages/dynamicFieldManagementPage'
 
 let browser : Browser
 setDefaultTimeout(60 * 1000);
@@ -22,7 +24,9 @@ Before(async function(this:CustomWorld,scenario){
     this.page = await this.browserContext.newPage()
     this.bp = new BasePage(this.page);
     this.lp = new loginpage(this.page);
-    this.adp= new admindashboardpage(this.page);
+    this.adp = new admindashboardpage(this.page);
+    this.dfp = new dynamicFieldManagementPage(this.page);
+    this.courseCategoryPage=new CourseCategoryPage(this.page);
 })
 
 After(async function(this:CustomWorld,scenario){
@@ -39,7 +43,8 @@ After(async function(this:CustomWorld,scenario){
     await this.browserContext.close()
 })
 
+
 AfterAll(async()=>{
-    logger.info("Closing broser")
+    logger.info("Closing browser")
     await browser.close()
 })

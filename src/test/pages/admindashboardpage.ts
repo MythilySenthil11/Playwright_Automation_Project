@@ -5,11 +5,14 @@ export class admindashboardpage extends BasePage{
     readonly page:Page
     readonly profileavatar:Locator
     readonly dashboardtext:Locator
+    readonly dynamicFieldManagaement:Locator
+
     constructor(page:Page){
         super(page)
         this.page=page
         this.profileavatar=this.page.locator("//span[@data-slot='avatar']/ancestor::button")
         this.dashboardtext=this.page.locator("//div[@class='flex flex-col']/p[text()='testing@gmail.com']")
+        this.dynamicFieldManagaement = this.page.locator("//div[@class='pt-6']/child::div/child::div[3]");
     }
     async profileclick(){
         await this.Click(this.profileavatar)
@@ -17,5 +20,9 @@ export class admindashboardpage extends BasePage{
     }
      getuseremail(){
         return this.dashboardtext
+    }
+
+    async dynamicFieldManagementClick(){
+        await this.Click(this.dynamicFieldManagaement);
     }
 }
