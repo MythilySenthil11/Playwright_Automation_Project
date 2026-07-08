@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 440625500
+              "duration": 492117400
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 329703499
+              "duration": 546863100
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 410485000
+              "duration": 543799900
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 103813200
+              "duration": 560421499
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7649197399
+              "duration": 9989651900
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 348577300
+              "duration": 634921999
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1005690899
+              "duration": 743146200
             }
           },
           {
@@ -124,7 +124,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 66544599
+              "duration": 238454700
             }
           },
           {
@@ -137,7 +137,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 425964400
+              "duration": 1307947199
             }
           },
           {
@@ -150,7 +150,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3312220499
+              "duration": 1728275300
             }
           },
           {
@@ -158,7 +158,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 68607500
+              "duration": 89354999
             }
           }
         ],
@@ -182,7 +182,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 263568699
+              "duration": 333269500
             }
           },
           {
@@ -195,7 +195,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 364730400
+              "duration": 558375999
             }
           },
           {
@@ -208,7 +208,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 345343600
+              "duration": 692937200
             }
           },
           {
@@ -221,7 +221,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 488280200
+              "duration": 1058773200
             }
           },
           {
@@ -233,9 +233,8 @@
               "location": "src\\test\\steps\\courseCategoryStep.ts:12"
             },
             "result": {
-              "status": "failed",
-              "duration": 30025540199,
-              "error_message": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'pt-6\\']/child::div/child::div[3]')\u001b[22m\n\n    at admindashboardpage.Click (D:\\LMS_Playwright_Cucumber\\Playwright_Automation_Project\\src\\test\\pages\\BasePage.ts:12:27)\n    at admindashboardpage.dynamicFieldManagementClick (D:\\LMS_Playwright_Cucumber\\Playwright_Automation_Project\\src\\test\\pages\\admindashboardpage.ts:28:20)\n    at World.<anonymous> (D:\\LMS_Playwright_Cucumber\\Playwright_Automation_Project\\src\\test\\steps\\courseCategoryStep.ts:14:20)"
+              "status": "passed",
+              "duration": 13810749799
             }
           },
           {
@@ -247,8 +246,8 @@
               "location": "src\\test\\steps\\courseCategoryStep.ts:18"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1084447900
             }
           },
           {
@@ -260,8 +259,8 @@
               "location": "src\\test\\steps\\courseCategoryStep.ts:54"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 69740900
             }
           },
           {
@@ -273,8 +272,8 @@
               "location": "src\\test\\steps\\courseCategoryStep.ts:61"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 3278207899
             }
           },
           {
@@ -283,11 +282,11 @@
             "line": 22,
             "name": "the user updates the details of the category",
             "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:67"
+              "location": "src\\test\\steps\\courseCategoryStep.ts:71"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 441735300
             }
           },
           {
@@ -296,11 +295,11 @@
             "line": 23,
             "name": "the user clicks the update category button",
             "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:73"
+              "location": "src\\test\\steps\\courseCategoryStep.ts:77"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 125890100
             }
           },
           {
@@ -309,11 +308,11 @@
             "line": 24,
             "name": "the user should see a successful updation message",
             "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:79"
+              "location": "src\\test\\steps\\courseCategoryStep.ts:83"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 3246291800
             }
           },
           {
@@ -321,7 +320,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 239955000
+              "duration": 112895199
             }
           }
         ],
@@ -345,7 +344,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 187408499
+              "duration": 322970700
             }
           },
           {
@@ -358,7 +357,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 405701699
+              "duration": 559037500
             }
           },
           {
@@ -371,7 +370,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 290387299
+              "duration": 666506299
             }
           },
           {
@@ -384,7 +383,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 943490099
+              "duration": 1071336800
             }
           },
           {
@@ -397,7 +396,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10325071299
+              "duration": 9583924200
             }
           },
           {
@@ -410,7 +409,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 372259000
+              "duration": 1010239000
             }
           },
           {
@@ -419,11 +418,11 @@
             "line": 27,
             "name": "the user enters the updated category name in the search tab",
             "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:85"
+              "location": "src\\test\\steps\\courseCategoryStep.ts:89"
             },
             "result": {
               "status": "passed",
-              "duration": 16451700
+              "duration": 81040300
             }
           },
           {
@@ -431,9 +430,12 @@
             "keyword": "And ",
             "line": 28,
             "name": "the user clicks the dropdown button",
+            "match": {
+              "location": "src\\test\\steps\\courseCategoryStep.ts:67"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 5350192199
             }
           },
           {
@@ -442,11 +444,11 @@
             "line": 29,
             "name": "the user clicks the delete option",
             "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:91"
+              "location": "src\\test\\steps\\courseCategoryStep.ts:95"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 386363899
             }
           },
           {
@@ -455,11 +457,11 @@
             "line": 30,
             "name": "the user clicks the delete button in the confirmation pop up",
             "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:97"
+              "location": "src\\test\\steps\\courseCategoryStep.ts:101"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 434703500
             }
           },
           {
@@ -468,11 +470,11 @@
             "line": 31,
             "name": "the user searches the deleted category",
             "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:103"
+              "location": "src\\test\\steps\\courseCategoryStep.ts:107"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 86666700
             }
           },
           {
@@ -481,11 +483,11 @@
             "line": 32,
             "name": "the user should see a not found message",
             "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:109"
+              "location": "src\\test\\steps\\courseCategoryStep.ts:113"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 4936086600
             }
           },
           {
@@ -493,7 +495,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 37257899
+              "duration": 111039400
             }
           }
         ],

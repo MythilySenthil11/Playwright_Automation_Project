@@ -64,6 +64,10 @@ When("the user clicks the dropdown button and clicks the edit option", async fun
         await this.courseCategoryPage.ClickEditOption();
 });
 
+When('the user clicks the dropdown button', async function (this: CustomWorld) {
+    await this.courseCategoryPage.ClickDropDown();
+});
+
 When("the user updates the details of the category", async function (this: CustomWorld) {
 
     await this.courseCategoryPage.UpdateCategoryDetails(Update_details.category_name, Update_details.course_name, Update_details.category_description);
