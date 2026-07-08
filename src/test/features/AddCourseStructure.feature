@@ -14,4 +14,9 @@ Feature: TamilKumar 08-07-2026 Add course structure
         And the user clicks the Create & Save button
         Then the user should see the message Operation completed successfully
 
-
+    Scenario: Create a course structure with invalid data
+        When the user clicks the Add Course Structure button on the Course Management page
+        And the user clicks the Module button on the Course Structure page
+        And the user fills all the invalid basic information
+        And the user clicks the Create & Save button
+        Then the user should see the validation message Title is required for module

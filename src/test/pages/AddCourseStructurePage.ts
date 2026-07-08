@@ -8,6 +8,7 @@ export class AddCourseStructurePage extends BasePage{
     readonly description:Locator
     readonly saveButton:Locator
     readonly operationCompleted:Locator
+    readonly titleRequired:Locator
     constructor(page:Page){
         super(page)
         this.page=page
@@ -16,6 +17,7 @@ export class AddCourseStructurePage extends BasePage{
         this.description=page.locator("//textarea[@placeholder='Brief description ...']")
         this.saveButton=page.locator("//button[@type='submit']")
         this.operationCompleted=page.locator("//span[normalize-space()='Operation completed successfully!']")
+        this.titleRequired=page.getByText("Title is required for module");
     }
     async clickModuleButton(){
         await this.Click(this.moduleButton)
@@ -28,5 +30,8 @@ export class AddCourseStructurePage extends BasePage{
     }
     async clicksaveButton(){
         await this.Click(this.saveButton)
+    }
+    async getTitleRequired(){
+        return await this.GetText(this.titleRequired)
     }
 }

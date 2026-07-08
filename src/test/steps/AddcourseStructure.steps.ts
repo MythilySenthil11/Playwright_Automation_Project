@@ -31,3 +31,14 @@ Then("the user should see the message Operation completed successfully",
     const data = courseData[0];
     await expect(this.acsp.operationCompleted).toContainText(data?.SuccessMessage!,{ timeout: 10000 });  }
 );
+When('the user fills all the invalid basic information', async function (this:CustomWorld) {
+  // Write code here that turns the phrase above into concrete actions
+  await this.acsp.setTitle("")
+});
+
+Then("the user should see the validation message Title is required for module",async function (this: CustomWorld) {
+    const data = courseData[0];
+    const actualMessage = await this.acsp.getTitleRequired();
+    expect(actualMessage).toBe(data?.TitleRequiredMessage!);
+  }
+);
