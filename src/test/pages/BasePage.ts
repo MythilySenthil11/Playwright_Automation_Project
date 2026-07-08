@@ -66,7 +66,7 @@ export class BasePage{
     }
 
 }
-async GetAllText(locator: Locator): Promise<string[]> {
+async GetAllText(locator: Locator) {
     try {
         logger.info("Getting text from all matching elements");
         const texts = await locator.allInnerTexts();
