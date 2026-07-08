@@ -7,15 +7,14 @@ import {setWorldConstructor, World} from '@cucumber/cucumber'
 import { loginpage } from '../pages/loginpage';
 import { BasePage } from '../pages/BasePage';
 import { admindashboardpage } from '../pages/admindashboardpage';
-import { SideBarPage } from '../pages/SideBarPage';
 import { CourseManagementPage } from '../pages/CourseManagementPage';
+import { SearchPage } from '../pages/SearchPage';
 
 export class CustomWorld extends World{
     browser!:Browser;
     browserContext!:BrowserContext;
     page!:Page;
     addPage!:AddcoursePage;
-    sP!:SideBarPage;
     logger=logger;
     bp!:BasePage;
     lp!:loginpage;
@@ -24,6 +23,7 @@ export class CustomWorld extends World{
     dfp!:dynamicFieldManagementPage
     courseCategoryPage!:CourseCategoryPage;
     cmp!:CourseManagementPage;
+    searchPage!:SearchPage;
 }
 
 setWorldConstructor(CustomWorld);

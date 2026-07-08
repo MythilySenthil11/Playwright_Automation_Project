@@ -3,7 +3,7 @@ import { BasePage } from "./BasePage";
 
 export class CourseManagementPage extends BasePage{
     readonly page:Page;
-    readonly filterButton:Locator;
+    readonly filterButton:Locator;      
     readonly categoryDropdown:Locator;
     readonly totalAutomationCourse:Locator;
     readonly courseList:Locator;
