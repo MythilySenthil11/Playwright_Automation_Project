@@ -10,12 +10,9 @@ export const getEnv = (): string => {
         path: envPath,
         override: true
     });
-
     const baseUrl = process.env.BASE_URL?.trim();
-
     if (!baseUrl) {
         throw new Error(`BASE_URL is not defined. Checked: ${envPath}`);
     }
-
     return baseUrl;
 };
