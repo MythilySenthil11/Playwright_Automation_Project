@@ -77,15 +77,21 @@ export class CourseManagementPage extends BasePage{
     }
 
     async fillFirstPage(){
-        await this.SelectOption(this.courseClientDropDown,"PSG Tech")
-        await this.SelectOption(this.serviceTypeDropDown,"Business to institution")
-        await this.SelectOption(this.serviceModelDropDown,"HTD")
-        await this.SelectOption(this.courseCategoryDropDown,"Software Development")
-        await this.SelectOption(this.courseNameDropDown,"Frontend")
+        await this.Click(this.courseClientDropDown)
+        await this.page.getByText('PSG Tech', { exact: true }).click();
+        await this.Click(this.serviceTypeDropDown)
+        await this.page.getByText('Business to institution', { exact: true }).click();
+        await this.Click(this.serviceModelDropDown)
+        await this.page.getByText('HTD', { exact: true }).click();
+        await this.Click(this.courseCategoryDropDown)
+        await this.page.getByText('Software Development', { exact: true }).click();
+        await this.Click(this.courseNameDropDown)
+        await this.page.getByText('Frontend', { exact: true }).click();
     }
 
     async fillSecondPage(){
-        await this.SelectOption(this.courseLevelDropDown,"Beginner")
+        await this.Click(this.courseLevelDropDown)
+        await this.page.getByText('Expert', { exact: true }).click();
     }
 
     
