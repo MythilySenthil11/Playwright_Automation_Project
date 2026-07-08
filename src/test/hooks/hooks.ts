@@ -9,6 +9,7 @@ import { AddcoursePage } from '../pages/AddcoursePage'
 import { CourseCategoryPage } from '../pages/CourseCategoryPage'
 import { dynamicFieldManagementPage } from '../pages/dynamicFieldManagementPage'
 import { CourseManagementPage } from '../pages/CourseManagementPage'
+import { pedagogy_dynamic_page } from '../pages/pedagogy_dynamic_page'
 import { SearchPage } from '../pages/SearchPage'
 import { AddCourseStructurePage } from '../pages/AddCourseStructurePage'
 
@@ -30,6 +31,10 @@ Before(async function(this:CustomWorld,scenario){
     this.adp = new admindashboardpage(this.page);
     this.dfp = new dynamicFieldManagementPage(this.page);
     this.courseCategoryPage=new CourseCategoryPage(this.page);
+    this.sP = new SideBarPage(this.page);
+    this.addPage = new AddcoursePage(this.page);
+    this.cmp= new CourseManagementPage(this.page);
+    this.pdp = new pedagogy_dynamic_page(this.page);
     this.adp= new admindashboardpage(this.page);
     this.addPage = new AddcoursePage(this.page);
     this.cmp= new CourseManagementPage(this.page);

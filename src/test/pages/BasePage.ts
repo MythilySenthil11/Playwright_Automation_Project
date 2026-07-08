@@ -159,5 +159,25 @@ export class BasePage {
             throw error;
         }
     }
-    
+}
+    async ClickUntilDisabled(nextButtonLocator: Locator): Promise<void> {
+        try {
+            logger.info('Starting pagination click loop...');
+            let pageCount = 1;
+            while (true) {
+                const isDisabled = await nextButtonLocator.getAttribute('disabled');
+                if (isDisabled !== null) {
+                    logger.info(`Next button is disabled. Stopped navigating. Total pages processed: ${pageCount}`);
+                    break;
+                }
+                logger.info(`Clicking next button to move past page ${pageCount}`);
+                await this.Click(nextButtonLocator);
+                pageCount++;
+            }
+        } 
+        catch (error) {
+            logger.error(`Error while clicking button until disabled: ${error}`);
+            throw error;
+        }
+    }
 }
