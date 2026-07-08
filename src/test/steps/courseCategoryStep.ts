@@ -30,12 +30,12 @@ When('the user clicks the Add Category button', async function (this: CustomWorl
 
 When('the user enters the category details', async function (this: CustomWorld, dataTable: DataTable) {
 
-    let data = dataTable.rowsHash();
+    let data = dataTable.hashes()[0];
 
     await this.courseCategoryPage.EnterCategoryDetails(
-        data.Category_name!,
-        data.Course_names!,
-        data.Category_description!
+        data!.Category_name!,
+        data!.Course_names!,
+        data!.Category_description!
     );
 
 });

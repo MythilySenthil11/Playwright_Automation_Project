@@ -1,1 +1,1 @@
-src\test\features\CourseCategory.feature:11:19
+src\test\features\CourseCategory.feature:11
