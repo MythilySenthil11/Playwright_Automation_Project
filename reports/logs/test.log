@@ -2205,3 +2205,72 @@ Call log:
 [2026-07-08T14:47:55.538Z]INFO-Element clicked successfully
 [2026-07-08T14:47:58.050Z]INFO-Scenario Passed: Create a course structure with valid data
 [2026-07-08T14:47:58.254Z]INFO-Closing browser
+[2026-07-08T17:29:58.303Z]INFO-Launching Browser
+[2026-07-08T17:29:58.996Z]INFO-Starting scenario: Editing a course
+[2026-07-08T17:29:59.396Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-08T17:30:00.983Z]INFO-Typing message
+[2026-07-08T17:30:02.502Z]INFO-Message typed on the locator successfully
+[2026-07-08T17:30:02.503Z]INFO-Typing message
+[2026-07-08T17:30:02.565Z]INFO-Message typed on the locator successfully
+[2026-07-08T17:30:02.569Z]INFO-Clicking element
+[2026-07-08T17:30:02.676Z]INFO-Element clicked successfully
+[2026-07-08T17:30:02.680Z]INFO-Navigating to Course Management page
+[2026-07-08T17:30:33.319Z]ERROR-Scenario Failed: Editing a course
+[2026-07-08T17:30:33.669Z]INFO-Starting scenario: Sorting
+[2026-07-08T17:30:34.031Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-08T17:30:34.696Z]INFO-Typing message
+[2026-07-08T17:30:35.753Z]INFO-Message typed on the locator successfully
+[2026-07-08T17:30:35.755Z]INFO-Typing message
+[2026-07-08T17:30:35.791Z]INFO-Message typed on the locator successfully
+[2026-07-08T17:30:35.793Z]INFO-Clicking element
+[2026-07-08T17:30:36.695Z]INFO-Element clicked successfully
+[2026-07-08T17:30:36.696Z]INFO-Navigating to Course Management page
+[2026-07-08T17:31:06.032Z]INFO-Clicking element
+[2026-07-08T17:31:06.248Z]INFO-Element clicked successfully
+[2026-07-08T17:31:06.248Z]INFO-Successfully navigated to Course Management page
+[2026-07-08T17:31:06.268Z]INFO-Scenario Passed: Sorting
+[2026-07-08T17:31:06.369Z]INFO-Starting scenario: 
+[2026-07-08T17:31:06.681Z]INFO-Scenario Passed: 
+[2026-07-08T17:31:06.753Z]INFO-Closing browser
+[2026-07-08T18:05:27.532Z]INFO-Launching Browser
+[2026-07-08T18:05:28.084Z]INFO-Starting scenario: Editing a course
+[2026-07-08T18:05:28.373Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-08T18:05:29.284Z]INFO-Typing message
+[2026-07-08T18:05:29.586Z]INFO-Message typed on the locator successfully
+[2026-07-08T18:05:29.586Z]INFO-Typing message
+[2026-07-08T18:05:29.610Z]INFO-Message typed on the locator successfully
+[2026-07-08T18:05:29.613Z]INFO-Clicking element
+[2026-07-08T18:05:30.580Z]INFO-Element clicked successfully
+[2026-07-08T18:05:30.582Z]INFO-Navigating to Course Management page
+[2026-07-08T18:05:50.473Z]INFO-Clicking element
+[2026-07-08T18:05:50.607Z]INFO-Element clicked successfully
+[2026-07-08T18:05:50.608Z]INFO-Successfully navigated to Course Management page
+[2026-07-08T18:05:50.610Z]INFO-Clicking element
+[2026-07-08T18:05:58.209Z]INFO-Element clicked successfully
+[2026-07-08T18:05:58.209Z]INFO-Kebab Menu is Clicked
+[2026-07-08T18:05:58.213Z]INFO-Clicking element
+[2026-07-08T18:05:58.525Z]INFO-Element clicked successfully
+[2026-07-08T18:05:58.526Z]INFO-Edit Course Button is Clicked
+[2026-07-08T18:05:58.529Z]INFO-Filling The First Page
+[2026-07-08T18:05:58.530Z]INFO-Clicking element
+[2026-07-08T18:06:28.536Z]ERROR-Failed to click element: TimeoutError: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('//div[@id=\'radix-«r6»\']/child::div/child::*[2]/child::*/child::*/child::*[1]/child::*[1]/button')[22m
+
+[2026-07-08T18:06:28.693Z]ERROR-Scenario Failed: Editing a course
+[2026-07-08T18:06:28.755Z]INFO-Starting scenario: Sorting
+[2026-07-08T18:06:28.996Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-08T18:06:29.749Z]INFO-Typing message
+[2026-07-08T18:06:30.669Z]INFO-Message typed on the locator successfully
+[2026-07-08T18:06:30.670Z]INFO-Typing message
+[2026-07-08T18:06:30.699Z]INFO-Message typed on the locator successfully
+[2026-07-08T18:06:30.699Z]INFO-Clicking element
+[2026-07-08T18:06:30.782Z]INFO-Element clicked successfully
+[2026-07-08T18:06:30.783Z]INFO-Navigating to Course Management page
+[2026-07-08T18:06:52.228Z]INFO-Clicking element
+[2026-07-08T18:06:52.415Z]INFO-Element clicked successfully
+[2026-07-08T18:06:52.418Z]INFO-Successfully navigated to Course Management page
+[2026-07-08T18:06:52.456Z]INFO-Scenario Passed: Sorting
+[2026-07-08T18:06:52.571Z]INFO-Starting scenario: 
+[2026-07-08T18:06:52.829Z]INFO-Scenario Passed: 
+[2026-07-08T18:06:52.917Z]INFO-Closing browser

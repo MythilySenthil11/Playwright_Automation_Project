@@ -31,7 +31,6 @@ Before(async function(this:CustomWorld,scenario){
     this.adp = new admindashboardpage(this.page);
     this.dfp = new dynamicFieldManagementPage(this.page);
     this.courseCategoryPage=new CourseCategoryPage(this.page);
-    this.sP = new SideBarPage(this.page);
     this.addPage = new AddcoursePage(this.page);
     this.cmp= new CourseManagementPage(this.page);
     this.pdp = new pedagogy_dynamic_page(this.page);
