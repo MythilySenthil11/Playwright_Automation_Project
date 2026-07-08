@@ -1,3 +1,5 @@
+import { dynamicFieldManagementPage } from './../pages/dynamicFieldManagementPage';
+import { CourseCategoryPage } from './../pages/CourseCategoryPage';
 import { logger } from './../utilities/logger';
 import {Browser,Page,BrowserContext} from 'playwright'
 import {setWorldConstructor, World} from '@cucumber/cucumber'
@@ -14,6 +16,8 @@ export class CustomWorld extends World{
     bp!:BasePage;
     lp!:loginpage;
     adp!:admindashboardpage;
+    dfp!:dynamicFieldManagementPage
+    courseCategoryPage!:CourseCategoryPage;
     cmp!:CourseManagementPage;
 }
 

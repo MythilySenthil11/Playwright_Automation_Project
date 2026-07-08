@@ -20,3 +20,20 @@ await expect(this.adp.getuseremail()).toHaveText(validdata.email, {
     timeout: TIMEOUTS.MEDIUM
 });
 });
+When(
+  "the user enters {string} and {string}",
+  async function (this: CustomWorld, username: string, password: string) {
+    await this.lp.enteremail(username);
+    await this.lp.enterPassword(password);
+  }
+);
+
+Then("an {string} should be displayed", async function (this: CustomWorld, errorMessage: string) {
+   const locator = this.lp.getErrorMessagefun();
+
+
+await expect(locator).toHaveText(errorMessage,{
+    timeout: TIMEOUTS.LONG
+});
+
+});
