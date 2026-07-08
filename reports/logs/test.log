@@ -3007,3 +3007,60 @@ Call log:
 [2026-07-08T18:06:52.571Z]INFO-Starting scenario: 
 [2026-07-08T18:06:52.829Z]INFO-Scenario Passed: 
 [2026-07-08T18:06:52.917Z]INFO-Closing browser
+[2026-07-08T18:26:44.931Z]INFO-Launching Browser
+[2026-07-08T18:26:45.768Z]INFO-Starting scenario: Editing a course
+[2026-07-08T18:26:46.143Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-08T18:26:49.551Z]INFO-Typing message
+[2026-07-08T18:26:54.268Z]INFO-Message typed on the locator successfully
+[2026-07-08T18:26:54.283Z]INFO-Typing message
+[2026-07-08T18:26:54.459Z]INFO-Message typed on the locator successfully
+[2026-07-08T18:26:54.469Z]INFO-Clicking element
+[2026-07-08T18:26:54.760Z]INFO-Element clicked successfully
+[2026-07-08T18:26:54.851Z]INFO-Navigating to Course Management page
+[2026-07-08T18:27:27.875Z]ERROR-Scenario Failed: Editing a course
+[2026-07-08T18:27:30.551Z]INFO-Starting scenario: Sorting
+[2026-07-08T18:27:32.739Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-08T18:27:34.545Z]INFO-Typing message
+[2026-07-08T18:27:39.063Z]INFO-Message typed on the locator successfully
+[2026-07-08T18:27:39.064Z]INFO-Typing message
+[2026-07-08T18:27:39.466Z]INFO-Message typed on the locator successfully
+[2026-07-08T18:27:39.467Z]INFO-Clicking element
+[2026-07-08T18:27:40.023Z]INFO-Element clicked successfully
+[2026-07-08T18:27:40.024Z]INFO-Navigating to Course Management page
+[2026-07-08T18:28:05.466Z]INFO-Clicking element
+[2026-07-08T18:28:05.647Z]INFO-Element clicked successfully
+[2026-07-08T18:28:05.647Z]INFO-Successfully navigated to Course Management page
+[2026-07-08T18:28:05.694Z]INFO-Clicking element
+[2026-07-08T18:28:07.702Z]INFO-Element clicked successfully
+[2026-07-08T18:28:07.824Z]INFO-Scenario Passed: Sorting
+[2026-07-08T18:28:07.976Z]INFO-Starting scenario: Sorting
+[2026-07-08T18:28:08.331Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-08T18:28:08.880Z]INFO-Typing message
+[2026-07-08T18:28:09.331Z]INFO-Message typed on the locator successfully
+[2026-07-08T18:28:09.331Z]INFO-Typing message
+[2026-07-08T18:28:09.399Z]INFO-Message typed on the locator successfully
+[2026-07-08T18:28:09.400Z]INFO-Clicking element
+[2026-07-08T18:28:10.353Z]INFO-Element clicked successfully
+[2026-07-08T18:28:10.355Z]INFO-Navigating to Course Management page
+[2026-07-08T18:28:35.948Z]INFO-Clicking element
+[2026-07-08T18:28:36.316Z]INFO-Element clicked successfully
+[2026-07-08T18:28:36.316Z]INFO-Successfully navigated to Course Management page
+[2026-07-08T18:28:36.319Z]INFO-Clicking element
+[2026-07-08T18:28:37.750Z]INFO-Element clicked successfully
+[2026-07-08T18:28:37.831Z]INFO-Scenario Passed: Sorting
+[2026-07-08T18:28:37.919Z]INFO-Starting scenario: Sorting
+[2026-07-08T18:28:38.206Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-08T18:28:39.433Z]INFO-Typing message
+[2026-07-08T18:28:40.357Z]INFO-Message typed on the locator successfully
+[2026-07-08T18:28:40.357Z]INFO-Typing message
+[2026-07-08T18:28:40.425Z]INFO-Message typed on the locator successfully
+[2026-07-08T18:28:40.425Z]INFO-Clicking element
+[2026-07-08T18:28:41.350Z]INFO-Element clicked successfully
+[2026-07-08T18:28:41.351Z]INFO-Navigating to Course Management page
+[2026-07-08T18:28:52.182Z]INFO-Clicking element
+[2026-07-08T18:29:02.470Z]INFO-Element clicked successfully
+[2026-07-08T18:29:02.473Z]INFO-Successfully navigated to Course Management page
+[2026-07-08T18:29:02.474Z]INFO-Clicking element
+[2026-07-08T18:29:06.371Z]INFO-Element clicked successfully
+[2026-07-08T18:29:06.427Z]INFO-Scenario Passed: Sorting
+[2026-07-08T18:29:06.520Z]INFO-Closing browser

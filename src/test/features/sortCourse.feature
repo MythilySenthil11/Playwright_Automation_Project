@@ -12,7 +12,7 @@ Feature: Sorting Courses
         And the user clicks the "<Name>" tab in the table
         Then the table Should be sorted according to "<Name>"
 
-        Example: 
+        Examples: 
             |Name       |
             |Date       |
             |Client     |
