@@ -54,6 +54,29 @@ export class BasePage{
             throw error;
         }
     }
+
+    async Check(locator:Locator):Promise<void>{
+        try{
+            await locator.click();
+            logger.info('Select the check box');
+        }
+        catch(error){
+            logger.error('Failed to select the check box');
+            throw error;
+        }
+    }
+
+    async First(locator:Locator):Promise<void>{
+        try{
+            locator.first();
+            logger.info('Select the select option');
+        }
+        catch(error){
+            logger.error('Failed to select the option');
+            throw error;
+        }
+    }
+
     async SelectOption(locator: Locator, value: string){
     try {
         logger.info(`Selecting option: ${value}`);
