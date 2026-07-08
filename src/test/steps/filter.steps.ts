@@ -45,7 +45,11 @@ When('I select {string} from the level dropdown', async function (this:CustomWor
   await this.cmp.selectLevel(string)
 });
 
-Then('only {string} courses should be displayed', async function (this:CustomWorld,string) {
-  // Write code here that turns the phrase above into concrete actions
-  console.log(await this.cmp.getLevelList())
+Then('only {string} courses should be displayed', async function (this: CustomWorld,expectedLevel: string) {
+  const levels = await this.cmp.getLevelList();
+  expect(levels.length).toBeGreaterThan(0);
+  for (const level of levels) {
+    expect(level.trim()).toBe(expectedLevel);
+  }
+  logger.info(`All displayed courses belong to '${expectedLevel}' level`);
 });
