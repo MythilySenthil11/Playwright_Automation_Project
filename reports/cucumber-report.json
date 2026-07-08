@@ -1,0 +1,187 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "subathra_07-07-2026_course_category_functionality;add-category-by-entering-all-the-fields",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Add category by entering all the fields",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 416100099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user launches the application",
+            "match": {
+              "location": "src\\test\\steps\\courseCategoryStep.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3410004200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "the user enters valid credentials",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 413360000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user clicks on the login button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 998311700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the user is on Dynamic Field Management page",
+            "match": {
+              "location": "src\\test\\steps\\courseCategoryStep.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29396709200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the user clicks on the Course category button",
+            "match": {
+              "location": "src\\test\\steps\\courseCategoryStep.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 917682199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "the user clicks the Add Category button",
+            "match": {
+              "location": "src\\test\\steps\\courseCategoryStep.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1165738499
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Category_name",
+                      "Course_names",
+                      "Category_description"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Devops",
+                      "Frontend",
+                      "Html,CSS"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the user enters the category details",
+            "match": {
+              "location": "src\\test\\steps\\courseCategoryStep.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53918299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the user clicks Create category button",
+            "match": {
+              "location": "src\\test\\steps\\courseCategoryStep.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 216749400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "the user should see a successful creation message",
+            "match": {
+              "location": "src\\test\\steps\\courseCategoryStep.ts:49"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5031108499,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//h2[@data-slot=\\'dialog-title\\']')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"to.be.visible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//h2[@data-slot=\\'dialog-title\\']')\u001b[22m\n\n    at captureRawStack (D:\\LMS_Playwright_Cucumber\\Playwright_Automation_Project\\node_modules\\playwright-core\\lib\\coreBundle.js:3172:17)\n    at callMatcherAsStep (D:\\LMS_Playwright_Cucumber\\Playwright_Automation_Project\\node_modules\\playwright\\lib\\matchers\\expect.js:12877:57)\n    at Object.toBeVisible (D:\\LMS_Playwright_Cucumber\\Playwright_Automation_Project\\node_modules\\playwright\\lib\\matchers\\expect.js:12867:23)\n    at World.<anonymous> (D:\\LMS_Playwright_Cucumber\\Playwright_Automation_Project\\src\\test\\steps\\courseCategoryStep.ts:51:58)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 280814099
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Subathra",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "subathra_07-07-2026_course_category_functionality",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Subathra_07-07-2026_Course_Category_Functionality",
+    "tags": [
+      {
+        "name": "@Subathra",
+        "line": 1
+      }
+    ],
+    "uri": "src\\test\\features\\CourseCategory.feature"
+  }
+]

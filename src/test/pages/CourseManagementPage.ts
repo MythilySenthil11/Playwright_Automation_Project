@@ -3,10 +3,12 @@ import { BasePage } from "./BasePage";
 
 export class CourseManagementPage extends BasePage{
     readonly page:Page;
-    readonly filterButton:Locator;
+    readonly filterButton:Locator;      
     readonly categoryDropdown:Locator;
     readonly totalAutomationCourse:Locator;
     readonly courseList:Locator;
+    readonly levelDropdown:Locator;
+    readonly levelList:Locator;
     constructor(page:Page){
         super(page);
         this.page=page;
@@ -14,6 +16,8 @@ export class CourseManagementPage extends BasePage{
         this.categoryDropdown=this.page.locator("//option[text()='All Categories']/parent::select")
         this.totalAutomationCourse=this.page.locator("//span[@class='text-sm text-gray-600 dark:text-gray-400 font-medium']")
         this.courseList=this.page.locator("//div/span[@class='text-xs font-medium text-gray-700 dark:text-gray-300 font-sans']")
+        this.levelDropdown=this.page.locator("//option[text()='All Levels']/parent::select")
+        this.levelList=this.page.locator("//td/span/div/span/following-sibling::span")
     }
     async clickFilterButton(){
         await this.Click(this.filterButton)
@@ -26,6 +30,12 @@ export class CourseManagementPage extends BasePage{
     }
     async getCourseList(){
         return await this.GetAllText(this.courseList)
+    }
+    async selectLevel(level:string){
+        await this.SelectOption(this.levelDropdown,level)
+    }
+    async getLevelList(){
+        return await this.GetAllText(this.levelList)
     }
 
     
