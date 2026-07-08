@@ -66,16 +66,16 @@ export class BasePage{
         }
     }
 
-    async First(locator:Locator):Promise<void>{
-        try{
-            locator.first();
-            logger.info('Select the select option');
+    async First(locator: Locator): Promise<Locator> {
+        try {
+            logger.info("Getting first matching element");
+            return locator.first();
         }
-        catch(error){
-            logger.error('Failed to select the option');
+        catch (error) {
+            logger.error(`Failed to get first element: ${error}`);
             throw error;
         }
-    }
+   }  
 
     async SelectOption(locator: Locator, value: string){
     try {
@@ -89,17 +89,43 @@ export class BasePage{
     }
 
 }
-async GetAllText(locator: Locator): Promise<string[]> {
-    try {
-        logger.info("Getting text from all matching elements");
-        const texts = await locator.allInnerTexts();
-        return texts;
+    async GetAllText(locator: Locator): Promise<string[]> {
+        try {
+            logger.info("Getting text from all matching elements");
+            const texts = await locator.allInnerTexts();
+            return texts;
+        }
+        catch (error) {
+            logger.error(`Failed to get text from elements: ${error}`);
+            throw error;
+        } 
     }
-    catch (error) {
-        logger.error(`Failed to get text from elements: ${error}`);
-        throw error;
+
+    async SelectCustomDropdown(dropdown: Locator, option: string) {
+        await dropdown.click();
+        await this.page.getByRole('option', { name: option, exact: false }).click({ timeout: 5000 });
+   }
+
+   async WaitForNonEmptyText(locator: Locator, timeoutMs: number): Promise<void> {
+        const deadline = Date.now() + timeoutMs;
+        while (Date.now() < deadline) {
+           const text = await locator.innerText();
+           if (text.trim() !== '') return;
+            await this.page.waitForTimeout(500);
+        }
+   }
+
+    async WaitForVisible(locator: Locator, timeoutMs: number): Promise<void> {
+        try {
+            logger.info('Waiting for element to be visible');
+            await locator.waitFor({ state: "visible", timeout: timeoutMs });
+            logger.info('Element is visible');
+        }
+        catch (error) {
+            logger.error(`Element did not become visible: ${error}`);
+            throw error;
+        }
     }
-}
 
     async Clear(locator:Locator):Promise<void>{
         try{

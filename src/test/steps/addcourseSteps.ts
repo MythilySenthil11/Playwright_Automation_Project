@@ -12,7 +12,7 @@ interface AddCourse {
     level:string;   
 }
 When('User clicks on the Course Structure',  async function (this: CustomWorld) {
-  await this.sP.clickCourseManage();
+  await this.adp.clickcoursemanagementlink();
 });
 
 When('User clicks on the Add Course tab', async function (this: CustomWorld) {
@@ -53,7 +53,7 @@ When('User verifies the skill selection',  async function (this: CustomWorld) {
 });
 
 When('User clicks the Preview & Create button',  async function (this: CustomWorld) {
-  const initialCount = await this.addPage.GetCourseCount();
+  this.initialCount = await this.addPage.GetCourseCount();
   await this.addPage.ClickCreateBtn();
 });
 
