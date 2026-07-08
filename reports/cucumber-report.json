@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 404290100
+              "duration": 310342300
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 930967899
+              "duration": 498096499
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 518581899
+              "duration": 478113000
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 643058000
+              "duration": 628818100
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8801495000
+              "duration": 21531007300
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 708630000
+              "duration": 593795500
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 770674199
+              "duration": 1061137099
             }
           },
           {
@@ -124,7 +124,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 222072000
+              "duration": 115921399
             }
           },
           {
@@ -137,7 +137,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 373499500
+              "duration": 281121500
             }
           },
           {
@@ -150,8 +150,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 5040787700,
-              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//h2[@data-slot=\\'dialog-title\\']')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"to.be.visible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//h2[@data-slot=\\'dialog-title\\']')\u001b[22m\n\n    at captureRawStack (D:\\LMS_Playwright_Cucumber\\Playwright_Automation_Project\\node_modules\\playwright-core\\lib\\coreBundle.js:3172:17)\n    at callMatcherAsStep (D:\\LMS_Playwright_Cucumber\\Playwright_Automation_Project\\node_modules\\playwright\\lib\\matchers\\expect.js:12877:57)\n    at Object.toBeVisible (D:\\LMS_Playwright_Cucumber\\Playwright_Automation_Project\\node_modules\\playwright\\lib\\matchers\\expect.js:12867:23)\n    at World.<anonymous> (D:\\LMS_Playwright_Cucumber\\Playwright_Automation_Project\\src\\test\\steps\\courseCategoryStep.ts:50:59)"
+              "duration": 5024901499,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//h2[@data-slot=\\'dialog-title\\']')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"to.be.visible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//h2[@data-slot=\\'dialog-title\\']')\u001b[22m\n\n    at captureRawStack (E:\\Playwright_Automation_Project\\node_modules\\playwright-core\\lib\\coreBundle.js:3172:17)\n    at callMatcherAsStep (E:\\Playwright_Automation_Project\\node_modules\\playwright\\lib\\matchers\\expect.js:12877:57)\n    at Object.toBeVisible (E:\\Playwright_Automation_Project\\node_modules\\playwright\\lib\\matchers\\expect.js:12867:23)\n    at World.<anonymous> (E:\\Playwright_Automation_Project\\src\\test\\steps\\courseCategoryStep.ts:50:59)"
             }
           },
           {
@@ -159,7 +159,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 805992200
+              "duration": 435005899
             }
           }
         ],
@@ -183,5 +183,846 @@
       }
     ],
     "uri": "src\\test\\features\\CourseCategory.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "tamilkumar-07-07-2026-course-filter-functionality;verify-filtering-courses-by-category",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Verify filtering courses by category",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 346902699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 677634900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user enters valid credentials",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 436531399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "the user clicks on the login button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 994935999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I navigate to the Course Management page",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25672335800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click the Filter button",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1239386800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I select Automation Project from the Category dropdown",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5554716899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "only courses belonging to the selected category should be displayed",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73547200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 52860000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Tamil",
+            "line": 1
+          },
+          {
+            "name": "@Filter",
+            "line": 1
+          },
+          {
+            "name": "@Tamil",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tamilkumar-07-07-2026-course-filter-functionality;verify-filtering-courses-by-level",
+        "keyword": "Scenario Outline",
+        "line": 20,
+        "name": "Verify filtering courses by level",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 318893300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1223850099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user enters valid credentials",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 458158199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "the user clicks on the login button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 964793799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I navigate to the Course Management page",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24929806699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click the Filter button",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 995861399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I select \"Beginner\" from the level dropdown",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4440556899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "only \"Beginner\" courses should be displayed",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58594800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 52699600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Tamil",
+            "line": 1
+          },
+          {
+            "name": "@Filter",
+            "line": 1
+          },
+          {
+            "name": "@Tamil",
+            "line": 13
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tamilkumar-07-07-2026-course-filter-functionality;verify-filtering-courses-by-level",
+        "keyword": "Scenario Outline",
+        "line": 21,
+        "name": "Verify filtering courses by level",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 206419599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 475128400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user enters valid credentials",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 386479999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "the user clicks on the login button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 987109700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I navigate to the Course Management page",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15427604000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click the Filter button",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 929377799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I select \"Intermediate\" from the level dropdown",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8036610099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "only \"Intermediate\" courses should be displayed",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62114600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 59470700
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Tamil",
+            "line": 1
+          },
+          {
+            "name": "@Filter",
+            "line": 1
+          },
+          {
+            "name": "@Tamil",
+            "line": 13
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tamilkumar-07-07-2026-course-filter-functionality;verify-filtering-courses-by-level",
+        "keyword": "Scenario Outline",
+        "line": 22,
+        "name": "Verify filtering courses by level",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 207969599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 607087399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user enters valid credentials",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 443587499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "the user clicks on the login button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 969753900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I navigate to the Course Management page",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20177325700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click the Filter button",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1173346500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I select \"Expert\" from the level dropdown",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7116038099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "only \"Expert\" courses should be displayed",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47555400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 56390199
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Tamil",
+            "line": 1
+          },
+          {
+            "name": "@Filter",
+            "line": 1
+          },
+          {
+            "name": "@Tamil",
+            "line": 13
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "tamilkumar-07-07-2026-course-filter-functionality",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "TamilKumar 07-07-2026 Course Filter Functionality",
+    "tags": [
+      {
+        "name": "@Tamil",
+        "line": 1
+      },
+      {
+        "name": "@Filter",
+        "line": 1
+      }
+    ],
+    "uri": "src\\test\\features\\filter.feature"
+  },
+  {
+    "description": " Description: This feature file is used to test the login functionality of the application.",
+    "elements": [
+      {
+        "description": "",
+        "id": "krishnaprasath_07/07/2026_login_functionality;verify-that-the-user-is-able-to-login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Verify that the user is able to login with valid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 219491500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 594616399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "the user enters valid credentials",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 476026099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the user clicks on the login button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 949891800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the user should be redirected to the dashboard page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:17"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 37890406599,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//div[@class=\\'flex flex-col\\']/p[text()=\\'testing@gmail.com\\']')\nExpected: \u001b[32m\"testing2@gmail.com\"\u001b[39m\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"to.have.text\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@class=\\'flex flex-col\\']/p[text()=\\'testing@gmail.com\\']')\u001b[22m\n\n    at captureRawStack (E:\\Playwright_Automation_Project\\node_modules\\playwright-core\\lib\\coreBundle.js:3172:17)\n    at callMatcherAsStep (E:\\Playwright_Automation_Project\\node_modules\\playwright\\lib\\matchers\\expect.js:12877:57)\n    at Object.toHaveText (E:\\Playwright_Automation_Project\\node_modules\\playwright\\lib\\matchers\\expect.js:12867:23)\n    at World.<anonymous> (E:\\Playwright_Automation_Project\\src\\test\\steps\\loginSteps.ts:19:39)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 252330400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@krishna",
+            "line": 1
+          },
+          {
+            "name": "@login",
+            "line": 1
+          },
+          {
+            "name": "@validlogin",
+            "line": 8
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "krishnaprasath_07/07/2026_login_functionality;verify-that-the-user-is-not-able-to-login-with-invalid-credentials",
+        "keyword": "Scenario Outline",
+        "line": 22,
+        "name": "Verify that the user is not able to login with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 208938800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1058705499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "the user enters \"testing@gmail.com\" and \"invalidpass1\"",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 493744100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "the user clicks on the login button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 934311699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "an \"Password is incorrect\" should be displayed",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17452179700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 61700199
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@krishna",
+            "line": 1
+          },
+          {
+            "name": "@login",
+            "line": 1
+          },
+          {
+            "name": "@invalidlogin",
+            "line": 14
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "krishnaprasath_07/07/2026_login_functionality;verify-that-the-user-is-not-able-to-login-with-invalid-credentials",
+        "keyword": "Scenario Outline",
+        "line": 23,
+        "name": "Verify that the user is not able to login with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 235855400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1056831900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "the user enters \"invalid2@gmail.com\" and \"invalidpass2\"",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 959729800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "the user clicks on the login button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 162300099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "an \"Email is invalid\" should be displayed",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8609624400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 52727899
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@krishna",
+            "line": 1
+          },
+          {
+            "name": "@login",
+            "line": 1
+          },
+          {
+            "name": "@invalidlogin",
+            "line": 14
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "krishnaprasath_07/07/2026_login_functionality",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Krishnaprasath_07/07/2026_login_functionality",
+    "tags": [
+      {
+        "name": "@krishna",
+        "line": 1
+      },
+      {
+        "name": "@login",
+        "line": 1
+      }
+    ],
+    "uri": "src\\test\\features\\login.feature"
   }
 ]
