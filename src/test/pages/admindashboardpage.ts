@@ -29,6 +29,7 @@ export class admindashboardpage extends BasePage{
     }
     
     async clickcoursemanagementlink(){
+        await this.page.waitForLoadState('networkidle');
         await this.Click(this.coursemanagementlink)
     }
 }

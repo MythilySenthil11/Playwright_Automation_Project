@@ -26,11 +26,11 @@ export class AddcoursePage extends BasePage{
     constructor(page:Page){
         super(page);
         this.addbtn = page.getByRole('button', {name:'Add Course'});
-        this.client = page.getByRole('button', {name:'Select client'});
-        this.type = page.getByRole('button', {name:'Select service type'});
-        this.model = page.getByRole('button', {name:'Select service model'});
-        this.category = page.getByRole('button', {name:'Select category'});
-        this.name = page.getByRole('button', {name:'Select category first'});
+        this.client = page.locator("//label[contains(normalize-space(),'Course Client')]/following::button[1]");
+        this.type = page.locator("//label[contains(normalize-space(),'Service Type')]/following::button[1]");
+        this.model = page.locator("//label[contains(normalize-space(),'Service Model')]/following::button[1]");
+        this.category = page.locator("//label[contains(normalize-space(),'Course Category')]/following::button[1]");
+        this.name = page.locator("//label[contains(normalize-space(),'Course Name')]/following::button[1]");
         this.nxtBtn = page.getByRole('button', {name:'Next'});
         this.level = page.getByRole('button', {name:'Select Level'});
         this.module = page.locator("#module-checkbox");
@@ -51,11 +51,11 @@ export class AddcoursePage extends BasePage{
         await this.Click(this.addbtn);
     }
     async FillCourseDetails(client:string, type:string, model:string, category:string, name:string){
-        await this.SelectOption(this.client, client);
-        await this.SelectOption(this.type, type);
-        await this.SelectOption(this.model, model);
-        await this.SelectOption(this.category, category);
-        await this.SelectOption(this.name, name);
+        await this.SelectCustomDropdown(this.client, client);
+        await this.SelectCustomDropdown(this.type, type);
+        await this.SelectCustomDropdown(this.model, model);
+        await this.SelectCustomDropdown(this.category, category);
+        await this.SelectCustomDropdown(this.name, name);
     }
     async clickNxtBtn(){
         await this.Click(this.nxtBtn);

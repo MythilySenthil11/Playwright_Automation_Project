@@ -6,10 +6,10 @@ import { BasePage } from '../pages/BasePage'
 import { loginpage } from '../pages/loginpage'
 import { admindashboardpage } from '../pages/admindashboardpage'
 import { AddcoursePage } from '../pages/AddcoursePage'
-import { SideBarPage } from '../pages/SideBarPage'
 import { CourseCategoryPage } from '../pages/CourseCategoryPage'
 import { dynamicFieldManagementPage } from '../pages/dynamicFieldManagementPage'
 import { CourseManagementPage } from '../pages/CourseManagementPage'
+import { SearchPage } from '../pages/SearchPage'
 
 let browser : Browser
 setDefaultTimeout(90 * 1000);
@@ -30,9 +30,9 @@ Before(async function(this:CustomWorld,scenario){
     this.dfp = new dynamicFieldManagementPage(this.page);
     this.courseCategoryPage=new CourseCategoryPage(this.page);
     this.adp= new admindashboardpage(this.page);
-    this.sP = new SideBarPage(this.page);
     this.addPage = new AddcoursePage(this.page);
     this.cmp= new CourseManagementPage(this.page);
+    this.searchPage= new SearchPage(this.page);
 })
 
 After(async function(this:CustomWorld,scenario){
