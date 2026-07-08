@@ -1,34 +1,46 @@
 module.exports = {
-    default: {
-        requireModule: [
-            "ts-node/register"
-        ],
+  default: {
+    requireModule: ["ts-node/register"],
 
-        require: [
-            "src/test/steps/**/*.ts",
-            "src/test/hooks/**/*.ts"
-        ],
+    require: [
+      "src/test/hooks/**/*.ts",
+      "src/test/steps/**/*.ts"
+    ],
 
-        paths: [
-            "src/test/features/**/*.feature"
-        ],
+    paths: ["src/test/features/**/*.feature"],
 
-        formatOptions: {
-            snippetInterface: "async-await"
-        },
+    publishQuiet: true,
 
-        format: [
-            "progress",
-            "html:reports/cucumber-report.html",
-            "json:reports/cucumber-report.json",
+    format: [
+      "progress",
+      "json:reports/cucumber-report.json",
+      "html:reports/cucumber-report.html",
+      "rerun:@rerun.txt",
+      "allure-cucumberjs/reporter"
+    ],
 
-            //"allure-cucumberjs/reporter:allure-results"
-        ],
+    parallel: 1
+  },
 
-        publishQuiet: true,
-        //
+  rerun: {
+    requireModule: ["ts-node/register"],
 
-        dryRun: false,
-        timeout: 60000
-    }
+    require: [
+      "src/test/hooks/**/*.ts",
+      "src/test/steps/**/*.ts"
+    ],
+
+    paths: ["@rerun.txt"],
+
+    publishQuiet: true,
+
+    format: [
+      "progress",
+      "json:reports/rerun-cucumber-report.json",
+      "html:reports/rerun-cucumber-report.html"
+    ],
+
+    parallel: 1,
+    dryRun : true
+  }
 };

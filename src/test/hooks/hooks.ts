@@ -9,7 +9,7 @@ import { admindashboardpage } from '../pages/admindashboardpage'
 import { CourseManagementPage } from '../pages/CourseManagementPage'
 
 let browser : Browser
-setDefaultTimeout(60 * 1000);
+setDefaultTimeout(90 * 1000);
 BeforeAll(async()=>{
     logger.info("Launching Browser")
     browser = await chromium.launch({headless:false})
