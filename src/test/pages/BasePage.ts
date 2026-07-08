@@ -147,4 +147,17 @@ export class BasePage {
             throw error;
         }
     }
+
+    async Clear(locator:Locator):Promise<void>{
+        try{
+            logger.info('Typing message');
+            await locator.fill('');
+            logger.info('Message cleared on the locator successfully');
+        }
+        catch(error) {
+            logger.error(`Failed to Clear: ${error}`);
+            throw error;
+        }
+    }
+    
 }

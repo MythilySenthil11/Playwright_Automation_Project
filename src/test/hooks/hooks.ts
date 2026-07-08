@@ -37,7 +37,7 @@ Before(async function(this:CustomWorld,scenario){
 
 After(async function(this:CustomWorld,scenario){
     if(scenario.result?.status==="FAILED"){
-        const path =`reports/screenshots/${Date.now()}.png`
+        const path =`reports/screenshots/${scenario.pickle.name}_${Date.now()}.png`
         await this.page.screenshot({path})
         logger.error(`Scenario Failed: ${scenario.pickle.name}`)
         
