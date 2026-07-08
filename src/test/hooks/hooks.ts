@@ -10,6 +10,7 @@ import { SideBarPage } from '../pages/SideBarPage'
 import { CourseCategoryPage } from '../pages/CourseCategoryPage'
 import { dynamicFieldManagementPage } from '../pages/dynamicFieldManagementPage'
 import { CourseManagementPage } from '../pages/CourseManagementPage'
+import { pedagogy_dynamic_page } from '../pages/pedagogy_dynamic_page'
 
 let browser : Browser
 setDefaultTimeout(90 * 1000);
@@ -29,15 +30,15 @@ Before(async function(this:CustomWorld,scenario){
     this.adp = new admindashboardpage(this.page);
     this.dfp = new dynamicFieldManagementPage(this.page);
     this.courseCategoryPage=new CourseCategoryPage(this.page);
-    this.adp= new admindashboardpage(this.page);
     this.sP = new SideBarPage(this.page);
     this.addPage = new AddcoursePage(this.page);
     this.cmp= new CourseManagementPage(this.page);
+    this.pdp = new pedagogy_dynamic_page(this.page);
 })
 
 After(async function(this:CustomWorld,scenario){
     if(scenario.result?.status==="FAILED"){
-        const path =`reports/screenshots/${Date.now()}.png`
+        const path =`reports/screenshots/${scenario.pickle.name}_${Date.now()}.png`
         await this.page.screenshot({path})
         logger.error(`Scenario Failed: ${scenario.pickle.name}`)
         

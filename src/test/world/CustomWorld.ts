@@ -9,6 +9,7 @@ import { BasePage } from '../pages/BasePage';
 import { admindashboardpage } from '../pages/admindashboardpage';
 import { SideBarPage } from '../pages/SideBarPage';
 import { CourseManagementPage } from '../pages/CourseManagementPage';
+import { pedagogy_dynamic_page } from '../pages/pedagogy_dynamic_page';
 
 export class CustomWorld extends World{
     browser!:Browser;
@@ -24,6 +25,7 @@ export class CustomWorld extends World{
     dfp!:dynamicFieldManagementPage
     courseCategoryPage!:CourseCategoryPage;
     cmp!:CourseManagementPage;
+    pdp!:pedagogy_dynamic_page;
 }
 
 setWorldConstructor(CustomWorld);
