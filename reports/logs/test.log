@@ -490,3 +490,53 @@ Call log:
 [2026-07-08T02:00:14.885Z]INFO-Element clicked successfully
 [2026-07-08T02:00:20.611Z]ERROR-Scenario Failed: Add category by entering all the fields
 [2026-07-08T02:00:20.767Z]INFO-Closing browser
+[2026-07-08T03:06:02.611Z]INFO-Launching Browser
+[2026-07-08T03:06:05.808Z]INFO-Starting scenario: Add category by entering all the fields
+[2026-07-08T03:06:07.039Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-08T03:06:08.548Z]INFO-Typing message
+[2026-07-08T03:06:09.732Z]INFO-Message typed on the locator successfully
+[2026-07-08T03:06:09.733Z]INFO-Typing message
+[2026-07-08T03:06:09.822Z]INFO-Message typed on the locator successfully
+[2026-07-08T03:06:09.827Z]INFO-Clicking element
+[2026-07-08T03:06:10.064Z]INFO-Element clicked successfully
+[2026-07-08T03:06:10.078Z]INFO-Clicking element
+[2026-07-08T03:06:19.364Z]INFO-Element clicked successfully
+[2026-07-08T03:06:19.371Z]INFO-Clicking element
+[2026-07-08T03:06:21.189Z]INFO-Element clicked successfully
+[2026-07-08T03:06:21.194Z]INFO-Clicking element
+[2026-07-08T03:06:21.901Z]INFO-Element clicked successfully
+[2026-07-08T03:06:21.914Z]INFO-Typing message
+[2026-07-08T03:06:21.990Z]INFO-Message typed on the locator successfully
+[2026-07-08T03:06:21.990Z]INFO-Typing message
+[2026-07-08T03:06:22.057Z]INFO-Message typed on the locator successfully
+[2026-07-08T03:06:22.058Z]INFO-Typing message
+[2026-07-08T03:06:22.099Z]INFO-Message typed on the locator successfully
+[2026-07-08T03:06:22.101Z]INFO-Clicking element
+[2026-07-08T03:06:22.766Z]INFO-Element clicked successfully
+[2026-07-08T03:06:28.738Z]ERROR-Scenario Failed: Add category by entering all the fields
+[2026-07-08T03:06:28.881Z]INFO-Closing browser
+[2026-07-08T04:26:12.782Z]INFO-Launching Browser
+[2026-07-08T04:26:16.455Z]INFO-Starting scenario: Add category by entering all the fields
+[2026-07-08T04:26:16.949Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-08T04:26:18.340Z]INFO-Typing message
+[2026-07-08T04:26:18.958Z]INFO-Message typed on the locator successfully
+[2026-07-08T04:26:18.959Z]INFO-Typing message
+[2026-07-08T04:26:19.002Z]INFO-Message typed on the locator successfully
+[2026-07-08T04:26:19.007Z]INFO-Clicking element
+[2026-07-08T04:26:19.457Z]INFO-Element clicked successfully
+[2026-07-08T04:26:19.464Z]INFO-Clicking element
+[2026-07-08T04:26:41.557Z]INFO-Element clicked successfully
+[2026-07-08T04:26:41.564Z]INFO-Clicking element
+[2026-07-08T04:26:42.350Z]INFO-Element clicked successfully
+[2026-07-08T04:26:42.357Z]INFO-Clicking element
+[2026-07-08T04:26:43.041Z]INFO-Element clicked successfully
+[2026-07-08T04:26:43.053Z]INFO-Typing message
+[2026-07-08T04:26:43.138Z]INFO-Message typed on the locator successfully
+[2026-07-08T04:26:43.139Z]INFO-Typing message
+[2026-07-08T04:26:43.197Z]INFO-Message typed on the locator successfully
+[2026-07-08T04:26:43.198Z]INFO-Typing message
+[2026-07-08T04:26:43.230Z]INFO-Message typed on the locator successfully
+[2026-07-08T04:26:43.235Z]INFO-Clicking element
+[2026-07-08T04:26:43.653Z]INFO-Element clicked successfully
+[2026-07-08T04:26:49.507Z]ERROR-Scenario Failed: Add category by entering all the fields
+[2026-07-08T04:26:49.667Z]INFO-Closing browser

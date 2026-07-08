@@ -11,7 +11,14 @@ Background:
 Scenario: Add category by entering all the fields
         When the user clicks the Add Category button 
         And the user enters the category details
-        |Category name|Course names|Category description|
+        |Category_name|Course_names|Category_description|
         |Devops       |Frontend    |Html,CSS            |
         And the user clicks Create category button
         Then the user should see a successful creation message
+
+Scenario: Edit category details with the help of search functionality
+        When the user enters the category name in the search tab 
+        And the user clicks the dropdown button and clicks the edit option
+        And the user updates the details of the category
+        Then the user should see a successful updation message
+
