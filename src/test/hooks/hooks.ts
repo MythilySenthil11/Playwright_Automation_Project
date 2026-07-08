@@ -10,6 +10,7 @@ import { CourseCategoryPage } from '../pages/CourseCategoryPage'
 import { dynamicFieldManagementPage } from '../pages/dynamicFieldManagementPage'
 import { CourseManagementPage } from '../pages/CourseManagementPage'
 import { SearchPage } from '../pages/SearchPage'
+import { Pagination } from '../pages/PaginationPage'
 
 let browser : Browser
 setDefaultTimeout(90 * 1000);
@@ -33,6 +34,7 @@ Before(async function(this:CustomWorld,scenario){
     this.addPage = new AddcoursePage(this.page);
     this.cmp= new CourseManagementPage(this.page);
     this.searchPage= new SearchPage(this.page);
+    this.Pp=new Pagination(this.page);
 })
 
 After(async function(this:CustomWorld,scenario){
