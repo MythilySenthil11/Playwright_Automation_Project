@@ -1,2 +1,0 @@
-src\test\features\CourseCategory.feature:11
-src\test\features\filter.feature:10

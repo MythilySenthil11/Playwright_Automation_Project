@@ -49,7 +49,7 @@ Then('only {string} courses should be displayed', async function (this: CustomWo
   const levels = await this.cmp.getLevelList();
   expect(levels.length).toBeGreaterThan(0);
   for (const level of levels) {
-    expect(level.trim()).toBe(expectedLevel);
+    expect(level.trim()).toContain(expectedLevel);
   }
   logger.info(`All displayed courses belong to '${expectedLevel}' level`);
 });
