@@ -8,8 +8,10 @@ import { loginpage } from '../pages/loginpage';
 import { BasePage } from '../pages/BasePage';
 import { admindashboardpage } from '../pages/admindashboardpage';
 import { CourseManagementPage } from '../pages/CourseManagementPage';
+import { pedagogy_dynamic_page } from '../pages/pedagogy_dynamic_page';
 import { SearchPage } from '../pages/SearchPage';
 import { Pagination } from '../pages/PaginationPage';
+import { AddCourseStructurePage } from '../pages/AddCourseStructurePage';
 
 export class CustomWorld extends World{
     browser!:Browser;
@@ -24,8 +26,10 @@ export class CustomWorld extends World{
     dfp!:dynamicFieldManagementPage
     courseCategoryPage!:CourseCategoryPage;
     cmp!:CourseManagementPage;
+    pdp!:pedagogy_dynamic_page;
     searchPage!:SearchPage;
     Pp!:Pagination;
+    acsp!:AddCourseStructurePage
 }
 
 setWorldConstructor(CustomWorld);

@@ -37,7 +37,7 @@
   "include": [
     "src/**/*.ts",
     "src/types/**/*.d.ts"
-  ],
+, "src/test/helper/report.mts"  ],
 
   "exclude": [
     "node_modules",
