@@ -1,0 +1,171 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "tamilkumar-08-07-2026-add-course-structure;create-a-course-structure-with-valid-data",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Create a course structure with valid data",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 273516299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2316347100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user enters valid credentials",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 420364600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "the user clicks on the login button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 598638300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I navigate to the Course Management page",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16076885899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "the user clicks the Add Course Structure button on the Course Management page",
+            "match": {
+              "location": "src\\test\\steps\\AddcourseStructure.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5117811200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the user clicks the Module button on the Course Structure page",
+            "match": {
+              "location": "src\\test\\steps\\AddcourseStructure.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1336673599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the user fills all the basic information",
+            "match": {
+              "location": "src\\test\\steps\\AddcourseStructure.steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 131993699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the user clicks the Create & Save button",
+            "match": {
+              "location": "src\\test\\steps\\AddcourseStructure.steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 286608200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "the user should see the message Operation completed successfully",
+            "match": {
+              "location": "src\\test\\steps\\AddcourseStructure.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2509955099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 185598500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@course",
+            "line": 1
+          },
+          {
+            "name": "@Tamil",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "tamilkumar-08-07-2026-add-course-structure",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "TamilKumar 08-07-2026 Add course structure",
+    "tags": [
+      {
+        "name": "@course",
+        "line": 1
+      }
+    ],
+    "uri": "src\\test\\features\\AddCourseStructure.feature"
+  }
+]
