@@ -9,6 +9,7 @@ import { BasePage } from '../pages/BasePage';
 import { admindashboardpage } from '../pages/admindashboardpage';
 import { CourseManagementPage } from '../pages/CourseManagementPage';
 import { SearchPage } from '../pages/SearchPage';
+import { AddCourseStructurePage } from '../pages/AddCourseStructurePage';
 
 export class CustomWorld extends World{
     browser!:Browser;
@@ -24,6 +25,7 @@ export class CustomWorld extends World{
     courseCategoryPage!:CourseCategoryPage;
     cmp!:CourseManagementPage;
     searchPage!:SearchPage;
+    acsp!:AddCourseStructurePage
 }
 
 setWorldConstructor(CustomWorld);
