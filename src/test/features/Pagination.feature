@@ -1,4 +1,4 @@
-@Mythily_pagination
+@Mythily
 Feature: Mythily_08/07/2026_Pagination_Tests
 
     Background:
