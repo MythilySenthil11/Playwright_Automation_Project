@@ -10,3 +10,14 @@ Feature: Krishnaprasath_07/07/2026_login_functionality
     When the user enters valid credentials
     And the user clicks on the login button
     Then the user should be redirected to the dashboard page
+ 
+@invalidlogin
+Scenario Outline: Verify that the user is not able to login with invalid credentials
+  When the user enters "<username>" and "<password>"
+  And the user clicks on the login button
+  Then an "<error message>" should be displayed
+
+Examples:
+  | username           | password     | error message         |
+  | testing@gmail.com  | invalidpass1 | Password is incorrect |
+  | invalid2@gmail.com | invalidpass2 | Email is invalid      |

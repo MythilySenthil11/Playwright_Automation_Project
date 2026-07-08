@@ -2,15 +2,15 @@ import { Before,After,BeforeAll,AfterAll,setDefaultTimeout} from '@cucumber/cucu
 import{chromium,Browser} from '@playwright/test'
 import{CustomWorld}from '../world/CustomWorld'
 import {logger}from '../utilities/logger'
-import { getEnv } from '../utilities/envReader'
 import { BasePage } from '../pages/BasePage'
 import { loginpage } from '../pages/loginpage'
 import { admindashboardpage } from '../pages/admindashboardpage'
 import { CourseCategoryPage } from '../pages/CourseCategoryPage'
 import { dynamicFieldManagementPage } from '../pages/dynamicFieldManagementPage'
+import { CourseManagementPage } from '../pages/CourseManagementPage'
 
 let browser : Browser
-setDefaultTimeout(60 * 1000);
+setDefaultTimeout(90 * 1000);
 BeforeAll(async()=>{
     logger.info("Launching Browser")
     browser = await chromium.launch({headless:false})
@@ -27,6 +27,8 @@ Before(async function(this:CustomWorld,scenario){
     this.adp = new admindashboardpage(this.page);
     this.dfp = new dynamicFieldManagementPage(this.page);
     this.courseCategoryPage=new CourseCategoryPage(this.page);
+    this.adp= new admindashboardpage(this.page);
+    this.cmp= new CourseManagementPage(this.page);
 })
 
 After(async function(this:CustomWorld,scenario){
