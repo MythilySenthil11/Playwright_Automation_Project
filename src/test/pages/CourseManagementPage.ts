@@ -9,6 +9,7 @@ export class CourseManagementPage extends BasePage{
     readonly courseList:Locator;
     readonly levelDropdown:Locator;
     readonly levelList:Locator;
+    readonly addCourseStructureButton:Locator
     constructor(page:Page){
         super(page);
         this.page=page;
@@ -18,6 +19,7 @@ export class CourseManagementPage extends BasePage{
         this.courseList=this.page.locator("//div/span[@class='text-xs font-medium text-gray-700 dark:text-gray-300 font-sans']")
         this.levelDropdown=this.page.locator("//option[text()='All Levels']/parent::select")
         this.levelList=this.page.locator("//td/span/div/span/following-sibling::span")
+        this.addCourseStructureButton=page.locator("(//span[text()='Add Course Structure'])[2]")
     }
     async clickFilterButton(){
         await this.Click(this.filterButton)
@@ -37,6 +39,8 @@ export class CourseManagementPage extends BasePage{
     async getLevelList(){
         return await this.GetAllText(this.levelList)
     }
-
+    async clickAddcourseStrcutureButton(){
+        await this.Click(this.addCourseStructureButton)
+    }
     
 }
