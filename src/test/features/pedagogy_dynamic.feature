@@ -18,5 +18,10 @@ Description: This feature file is used to verify the Pedagogy Dynamic Field Mana
     And the user clicks on the Create Element button
     Then the user should be able to see the created element in the list of pedagogy elements
 
+ Scenario: verify the User can edit element in Existing Pedagogy activites
+       And the user clicks on the Pedagogy view elements button
+       And the user Clicks on the edit button
+       And the user edits the content of element name
+       And the user clicks on the Update Element button
+       And the user should be able to see the updated element 
 
-    

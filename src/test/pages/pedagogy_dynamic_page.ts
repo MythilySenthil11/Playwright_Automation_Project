@@ -9,6 +9,8 @@ export class pedagogy_dynamic_page extends BasePage{
     readonly createElementButton:Locator
     readonly nextpagebutton:Locator
     readonly listelements:Locator
+    readonly editbutton :Locator
+    readonly updatebutton : Locator
 
     constructor(page:Page){
         super(page);
@@ -19,6 +21,9 @@ export class pedagogy_dynamic_page extends BasePage{
     this.createElementButton = this.page.locator("//div[@class='flex justify-end space-x-3 pt-4']//button[text()='Create Element']");
         this.nextpagebutton = this.page.locator("//span[contains(@class, 'text-gray-600')]/following-sibling::button");
         this.listelements = this.page.locator("//div[@class='font-medium text-gray-900']");
+        this.editbutton=this.page.locator("//tbody[@class='bg-white divide-y divide-gray-200']/descendant::button[@title='Edit Element'][1]")
+        this.updatebutton=this.page.locator("//div[@class='flex justify-end space-x-3 pt-4']//button[text()='Update Element']")
+
     }
 
     async clickPedagogyViewElements(){
@@ -30,6 +35,10 @@ export class pedagogy_dynamic_page extends BasePage{
      }
      async enterElementName(elementName:string){
         await this.Fill(this.elementNameInput,elementName);
+     }
+     async editElementName(elementname:string){
+        await this.Fill(this.elementNameInput,"")
+        await this.Fill(this.elementNameInput,elementname)
      }
      async clickCreateElementButton(){
         await this.Click(this.createElementButton);
@@ -43,5 +52,13 @@ async clickNextPageButton() {
         const elementNamesList = await this.GetAllText(this.listelements);
         return elementNamesList;
 
+    }
+
+    async clickEditButton(){
+        await this.Click(this.editbutton)
+    }
+
+    async clickUpdateElementButton(){
+        await this.Click(this.updatebutton)
     }
 }
