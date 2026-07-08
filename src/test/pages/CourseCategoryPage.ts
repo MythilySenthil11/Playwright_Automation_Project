@@ -8,8 +8,11 @@ export class CourseCategoryPage extends BasePage{
     readonly categoryName:Locator;
     readonly courseNames:Locator;
     readonly categoryDescription:Locator;
-    readonly createCategoryButton:Locator;
+    readonly CategoryButton:Locator;
     readonly successMessage;
+    readonly searchTab;
+    readonly dropdown;
+    readonly editOption;
 
     constructor(page:Page){
         super(page);
@@ -18,8 +21,11 @@ export class CourseCategoryPage extends BasePage{
         this.categoryName = this.page.locator("//input[@placeholder='Enter category name']");
         this.courseNames = this.page.locator("//input[@placeholder='Type course name and press Enter...']");
         this.categoryDescription = this.page.locator("//textarea[@placeholder='Enter category description']");
-        this.createCategoryButton = this.page.locator("//div[@class='flex justify-end gap-2 pt-2']/child::button[2]");
+        this.CategoryButton = this.page.locator("//div[@class='flex justify-end gap-2 pt-2']/child::button[2]");
         this.successMessage = this.page.locator("//h2[@data-slot='dialog-title']");
+        this.searchTab=this.page.locator("//div[@class='relative flex-grow w-full sm:w-auto']/child::input");
+        this.dropdown=this.page.locator("//tbody[@data-slot='table-body']/descendant::button");
+        this.editOption=this.page.locator("//div[@role='menuitem'][1]");
     }
 
     async ClickAddCategory(){
@@ -32,8 +38,29 @@ export class CourseCategoryPage extends BasePage{
         await this.Fill(this.categoryDescription,category_Description);
     }
 
+    async UpdateCategoryDetails(category_Name:string,course_Name:string,category_Description:string){
+        await this.Clear(this.categoryName);
+        await this.Fill(this.categoryName,category_Name);
+        await this.Clear(this.courseNames);
+        await this.Fill(this.courseNames,course_Name);
+        await this.Clear(this.categoryDescription);
+        await this.Fill(this.categoryDescription,category_Description);
+    }
+
     async ClickCartegoryButton(){
-        await this.Click(this.createCategoryButton);
+        await this.Click(this.CategoryButton);
+    }
+
+    async SearchCategory(searchItem:string){
+        await this.Fill(this.searchTab,searchItem);
+    }
+
+    async ClickDropDown(){
+        await this.Click(this.dropdown);
+    }
+
+    async ClickEditOption(){
+        await this.Click(this.editOption);
     }
 
 }

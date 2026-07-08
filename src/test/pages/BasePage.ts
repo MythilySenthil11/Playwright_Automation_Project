@@ -54,6 +54,29 @@ export class BasePage{
             throw error;
         }
     }
+
+    async Check(locator:Locator):Promise<void>{
+        try{
+            await locator.click();
+            logger.info('Select the check box');
+        }
+        catch(error){
+            logger.error('Failed to select the check box');
+            throw error;
+        }
+    }
+
+    async First(locator:Locator):Promise<void>{
+        try{
+            locator.first();
+            logger.info('Select the select option');
+        }
+        catch(error){
+            logger.error('Failed to select the option');
+            throw error;
+        }
+    }
+
     async SelectOption(locator: Locator, value: string){
     try {
         logger.info(`Selecting option: ${value}`);
@@ -77,4 +100,17 @@ async GetAllText(locator: Locator): Promise<string[]> {
         throw error;
     }
 }
+
+    async Clear(locator:Locator):Promise<void>{
+        try{
+            logger.info('Typing message');
+            await locator.fill('');
+            logger.info('Message cleared on the locator successfully');
+        }
+        catch(error) {
+            logger.error(`Failed to Clear: ${error}`);
+            throw error;
+        }
+    }
+    
 }

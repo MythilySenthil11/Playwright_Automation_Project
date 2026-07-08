@@ -1,4 +1,4 @@
-@Subathra
+@Subathra 
 Feature: Subathra_07-07-2026_Course_Category_Functionality
 
 Background: 
@@ -20,5 +20,6 @@ Scenario: Edit category details with the help of search functionality
         When the user enters the category name in the search tab 
         And the user clicks the dropdown button and clicks the edit option
         And the user updates the details of the category
+        And the user clicks the update category button
         Then the user should see a successful updation message
 

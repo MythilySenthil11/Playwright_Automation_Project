@@ -5,6 +5,8 @@ import {logger}from '../utilities/logger'
 import { BasePage } from '../pages/BasePage'
 import { loginpage } from '../pages/loginpage'
 import { admindashboardpage } from '../pages/admindashboardpage'
+import { AddcoursePage } from '../pages/AddcoursePage'
+import { SideBarPage } from '../pages/SideBarPage'
 import { CourseCategoryPage } from '../pages/CourseCategoryPage'
 import { dynamicFieldManagementPage } from '../pages/dynamicFieldManagementPage'
 import { CourseManagementPage } from '../pages/CourseManagementPage'
@@ -28,6 +30,8 @@ Before(async function(this:CustomWorld,scenario){
     this.dfp = new dynamicFieldManagementPage(this.page);
     this.courseCategoryPage=new CourseCategoryPage(this.page);
     this.adp= new admindashboardpage(this.page);
+    this.sP = new SideBarPage(this.page);
+    this.addPage = new AddcoursePage(this.page);
     this.cmp= new CourseManagementPage(this.page);
 })
 

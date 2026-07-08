@@ -1,0 +1,10 @@
+{
+    "ExistCategory" : {
+        "category_name":"devops"
+    },
+    "Update_details":{
+        "category_name":"Developer",
+        "course_name":"Backend",
+        "category_description":"MongoDB,SQL"
+    }
+}

@@ -9,7 +9,7 @@
     "test:tamil": "cross-env ENV=qa cucumber-js --tags \"@Tamil\"",
     "test:mythily": "cross-env ENV=qa cucumber-js --tags \"@Mythily\"",
     "test:krishna": "cross-env ENV=qa cucumber-js --tags \"@Krishna\"",
-    "test:subathra": "cross-env ENV=qa cucumber-js --tags \"@Subathra\"",
+    "test:Subathra": "cross-env ENV=qa cucumber-js --tags \"@Subathra\"",
     "test:jerishwin": "cross-env ENV=qa cucumber-js --tags \"@Jerishwin\"",
     "test:rerun": "cross-env ENV=qa cucumber-js -p rerun",
     "report": "ts-node src/test/helper/report.ts",
