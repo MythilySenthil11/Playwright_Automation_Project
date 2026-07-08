@@ -2939,3 +2939,84 @@ Call log:
 [2026-07-08T14:47:58.050Z]INFO-Scenario Passed: Create a course structure with valid data
 [2026-07-08T14:47:58.254Z]INFO-Closing browser
 >>>>>>> 8934a8f1263969dab772687c4681f4ae491cd594
+[2026-07-08T16:48:23.087Z]INFO-Launching Browser
+[2026-07-08T16:48:27.477Z]INFO-Starting scenario: Add category by entering all the fields
+[2026-07-08T16:48:28.033Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-08T16:48:29.776Z]INFO-Typing message
+[2026-07-08T16:48:30.226Z]INFO-Message typed on the locator successfully
+[2026-07-08T16:48:30.227Z]INFO-Typing message
+[2026-07-08T16:48:30.268Z]INFO-Message typed on the locator successfully
+[2026-07-08T16:48:30.273Z]INFO-Clicking element
+[2026-07-08T16:48:31.050Z]INFO-Element clicked successfully
+[2026-07-08T16:48:31.062Z]INFO-Clicking element
+[2026-07-08T16:48:45.761Z]INFO-Element clicked successfully
+[2026-07-08T16:48:45.773Z]INFO-Clicking element
+[2026-07-08T16:48:46.820Z]INFO-Element clicked successfully
+[2026-07-08T16:48:46.828Z]INFO-Clicking element
+[2026-07-08T16:48:47.569Z]INFO-Element clicked successfully
+[2026-07-08T16:48:47.574Z]INFO-Typing message
+[2026-07-08T16:48:47.610Z]INFO-Message typed on the locator successfully
+[2026-07-08T16:48:47.611Z]INFO-Typing message
+[2026-07-08T16:48:47.638Z]INFO-Message typed on the locator successfully
+[2026-07-08T16:48:47.638Z]INFO-Typing message
+[2026-07-08T16:48:47.663Z]INFO-Message typed on the locator successfully
+[2026-07-08T16:48:47.669Z]INFO-Clicking element
+[2026-07-08T16:48:48.907Z]INFO-Element clicked successfully
+[2026-07-08T16:48:51.433Z]INFO-Scenario Passed: Add category by entering all the fields
+[2026-07-08T16:48:51.564Z]INFO-Starting scenario: Edit category details with the help of search functionality
+[2026-07-08T16:48:51.875Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-08T16:48:52.347Z]INFO-Typing message
+[2026-07-08T16:48:52.898Z]INFO-Message typed on the locator successfully
+[2026-07-08T16:48:52.898Z]INFO-Typing message
+[2026-07-08T16:48:52.931Z]INFO-Message typed on the locator successfully
+[2026-07-08T16:48:52.932Z]INFO-Clicking element
+[2026-07-08T16:48:53.916Z]INFO-Element clicked successfully
+[2026-07-08T16:48:53.918Z]INFO-Clicking element
+[2026-07-08T16:49:12.189Z]INFO-Element clicked successfully
+[2026-07-08T16:49:12.190Z]INFO-Clicking element
+[2026-07-08T16:49:13.191Z]INFO-Element clicked successfully
+[2026-07-08T16:49:13.196Z]INFO-Typing message
+[2026-07-08T16:49:13.236Z]INFO-Message typed on the locator successfully
+[2026-07-08T16:49:13.243Z]INFO-Clicking element
+[2026-07-08T16:49:21.644Z]INFO-Element clicked successfully
+[2026-07-08T16:49:21.645Z]INFO-Clicking element
+[2026-07-08T16:49:21.961Z]INFO-Element clicked successfully
+[2026-07-08T16:49:21.970Z]INFO-Typing message
+[2026-07-08T16:49:22.091Z]INFO-Message cleared on the locator successfully
+[2026-07-08T16:49:22.091Z]INFO-Typing message
+[2026-07-08T16:49:22.200Z]INFO-Message typed on the locator successfully
+[2026-07-08T16:49:22.201Z]INFO-Typing message
+[2026-07-08T16:49:22.238Z]INFO-Message cleared on the locator successfully
+[2026-07-08T16:49:22.238Z]INFO-Typing message
+[2026-07-08T16:49:22.277Z]INFO-Message typed on the locator successfully
+[2026-07-08T16:49:22.278Z]INFO-Typing message
+[2026-07-08T16:49:22.328Z]INFO-Message cleared on the locator successfully
+[2026-07-08T16:49:22.328Z]INFO-Typing message
+[2026-07-08T16:49:22.362Z]INFO-Message typed on the locator successfully
+[2026-07-08T16:49:22.369Z]INFO-Clicking element
+[2026-07-08T16:49:22.474Z]INFO-Element clicked successfully
+[2026-07-08T16:49:28.611Z]ERROR-Scenario Failed: Edit category details with the help of search functionality
+[2026-07-08T16:49:28.727Z]INFO-Starting scenario: Delete the category with the help of search functionality
+[2026-07-08T16:49:29.009Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-08T16:49:31.734Z]INFO-Typing message
+[2026-07-08T16:49:32.833Z]INFO-Message typed on the locator successfully
+[2026-07-08T16:49:32.833Z]INFO-Typing message
+[2026-07-08T16:49:32.894Z]INFO-Message typed on the locator successfully
+[2026-07-08T16:49:32.897Z]INFO-Clicking element
+[2026-07-08T16:49:33.116Z]INFO-Element clicked successfully
+[2026-07-08T16:49:33.117Z]INFO-Clicking element
+[2026-07-08T16:49:46.222Z]INFO-Element clicked successfully
+[2026-07-08T16:49:46.223Z]INFO-Clicking element
+[2026-07-08T16:49:47.399Z]INFO-Element clicked successfully
+[2026-07-08T16:49:47.403Z]INFO-Typing message
+[2026-07-08T16:49:47.441Z]INFO-Message typed on the locator successfully
+[2026-07-08T16:49:47.444Z]INFO-Clicking element
+[2026-07-08T16:49:58.543Z]INFO-Element clicked successfully
+[2026-07-08T16:49:58.547Z]INFO-Clicking element
+[2026-07-08T16:49:58.836Z]INFO-Element clicked successfully
+[2026-07-08T16:49:58.841Z]INFO-Clicking element
+[2026-07-08T16:49:59.240Z]INFO-Element clicked successfully
+[2026-07-08T16:49:59.246Z]INFO-Typing message
+[2026-07-08T16:49:59.310Z]INFO-Message typed on the locator successfully
+[2026-07-08T16:50:04.748Z]ERROR-Scenario Failed: Delete the category with the help of search functionality
+[2026-07-08T16:50:04.819Z]INFO-Closing browser
