@@ -159,7 +159,7 @@ export class BasePage {
             throw error;
         }
     }
-}
+
     async ClickUntilDisabled(nextButtonLocator: Locator): Promise<void> {
         try {
             logger.info('Starting pagination click loop...');
