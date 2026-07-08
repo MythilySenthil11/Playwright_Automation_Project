@@ -2,12 +2,13 @@ import { Before,After,BeforeAll,AfterAll,setDefaultTimeout} from '@cucumber/cucu
 import{chromium,Browser} from '@playwright/test'
 import{CustomWorld}from '../world/CustomWorld'
 import {logger}from '../utilities/logger'
-import { getEnv } from '../utilities/envReader'
 import { BasePage } from '../pages/BasePage'
 import { loginpage } from '../pages/loginpage'
 import { admindashboardpage } from '../pages/admindashboardpage'
 import { AddcoursePage } from '../pages/AddcoursePage'
 import { SideBarPage } from '../pages/SideBarPage'
+import { CourseCategoryPage } from '../pages/CourseCategoryPage'
+import { dynamicFieldManagementPage } from '../pages/dynamicFieldManagementPage'
 import { CourseManagementPage } from '../pages/CourseManagementPage'
 
 let browser : Browser
@@ -25,6 +26,9 @@ Before(async function(this:CustomWorld,scenario){
     this.page = await this.browserContext.newPage()
     this.bp = new BasePage(this.page);
     this.lp = new loginpage(this.page);
+    this.adp = new admindashboardpage(this.page);
+    this.dfp = new dynamicFieldManagementPage(this.page);
+    this.courseCategoryPage=new CourseCategoryPage(this.page);
     this.adp= new admindashboardpage(this.page);
     this.sP = new SideBarPage(this.page);
     this.addPage = new AddcoursePage(this.page);
@@ -45,7 +49,8 @@ After(async function(this:CustomWorld,scenario){
     await this.browserContext.close()
 })
 
+
 AfterAll(async()=>{
-    logger.info("Closing broser")
+    logger.info("Closing browser")
     await browser.close()
 })
