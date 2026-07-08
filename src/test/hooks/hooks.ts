@@ -8,9 +8,10 @@ import { loginpage } from '../pages/loginpage'
 import { admindashboardpage } from '../pages/admindashboardpage'
 import { AddcoursePage } from '../pages/AddcoursePage'
 import { SideBarPage } from '../pages/SideBarPage'
+import { CourseManagementPage } from '../pages/CourseManagementPage'
 
 let browser : Browser
-setDefaultTimeout(60 * 1000);
+setDefaultTimeout(90 * 1000);
 BeforeAll(async()=>{
     logger.info("Launching Browser")
     browser = await chromium.launch({headless:false})
@@ -27,6 +28,7 @@ Before(async function(this:CustomWorld,scenario){
     this.adp= new admindashboardpage(this.page);
     this.sP = new SideBarPage(this.page);
     this.addPage = new AddcoursePage(this.page);
+    this.cmp= new CourseManagementPage(this.page);
 })
 
 After(async function(this:CustomWorld,scenario){

@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 426324700
+              "duration": 631130400
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 444093900
+              "duration": 504639199
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 457556899
+              "duration": 526353800
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 591658799
+              "duration": 624943200
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11978165199
+              "duration": 12055157500
             }
           },
           {
@@ -79,8 +79,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 31049425699,
-              "error_message": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[title=\"Course Management\"]')\u001b[22m\n\u001b[2m    - locator resolved to <div title=\"Course Management\" class=\"flex items-center px-4 py-0.5 hover:bg-gray-100 cursor-pointer group transition-colors relative justify-center\">…</div>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <html lang=\"en\">…</html> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <html lang=\"en\">…</html> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    54 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <html lang=\"en\">…</html> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at SideBarPage.Click (D:\\Playwright-Project\\src\\test\\pages\\BasePage.ts:12:27)\n    at SideBarPage.clickCourseManage (D:\\Playwright-Project\\src\\test\\pages\\SideBarPage.ts:19:16)\n    at async World.<anonymous> (D:\\Playwright-Project\\src\\test\\steps\\addcourseSteps.ts:15:3)"
+              "duration": 30034425799,
+              "error_message": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('xpath=(//button[@data-slot=\\'button\\'])[6]')\u001b[22m\n\u001b[2m    - locator resolved to <button data-slot=\"button\" class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium cursor-pointer disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:text-…>…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <html lang=\"en\">…</html> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <html lang=\"en\">…</html> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    53 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <html lang=\"en\">…</html> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at SideBarPage.Click (D:\\Playwright-Project\\src\\test\\pages\\BasePage.ts:12:27)\n    at SideBarPage.clickCourseManage (D:\\Playwright-Project\\src\\test\\pages\\SideBarPage.ts:21:20)\n    at World.<anonymous> (D:\\Playwright-Project\\src\\test\\steps\\addcourseSteps.ts:15:17)"
             }
           },
           {
@@ -243,7 +243,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 431692399
+              "duration": 558425999
             }
           }
         ],
@@ -269,6 +269,258 @@
     "uri": "src\\test\\features\\Addcourse.feature"
   },
   {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "mythily_08/07/2026_search_course_tests;search-course-using-the-search-box",
+        "keyword": "Scenario Outline",
+        "line": 17,
+        "name": "Search course using the search box",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 335762900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 324238199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "the user enters valid credentials",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 470030900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user clicks on the login button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 964988600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the user should be redirected to the dashboard page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10138374600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "User clicks on the Course Structure",
+            "match": {
+              "location": "src\\test\\steps\\addcourseSteps.ts:14"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30026923299,
+              "error_message": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('xpath=(//button[@data-slot=\\'button\\'])[6]')\u001b[22m\n\u001b[2m    - locator resolved to <button data-slot=\"button\" class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium cursor-pointer disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:text-…>…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <html lang=\"en\">…</html> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <html lang=\"en\">…</html> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    54 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <html lang=\"en\">…</html> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at SideBarPage.Click (D:\\Playwright-Project\\src\\test\\pages\\BasePage.ts:12:27)\n    at SideBarPage.clickCourseManage (D:\\Playwright-Project\\src\\test\\pages\\SideBarPage.ts:21:20)\n    at World.<anonymous> (D:\\Playwright-Project\\src\\test\\steps\\addcourseSteps.ts:15:17)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "User enters \"jamocha\" in the search box",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "User should see \"Course Found\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 257771999
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Mythily",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "mythily_08/07/2026_search_course_tests;search-course-using-the-search-box",
+        "keyword": "Scenario Outline",
+        "line": 18,
+        "name": "Search course using the search box",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 446139100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 359319099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "the user enters valid credentials",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 521216000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user clicks on the login button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 938985800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the user should be redirected to the dashboard page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11148254199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "User clicks on the Course Structure",
+            "match": {
+              "location": "src\\test\\steps\\addcourseSteps.ts:14"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30025517599,
+              "error_message": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('xpath=(//button[@data-slot=\\'button\\'])[6]')\u001b[22m\n\u001b[2m    - locator resolved to <button data-slot=\"button\" class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium cursor-pointer disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:text-…>…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <html lang=\"en\">…</html> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <html lang=\"en\">…</html> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    54 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <html lang=\"en\">…</html> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at SideBarPage.Click (D:\\Playwright-Project\\src\\test\\pages\\BasePage.ts:12:27)\n    at SideBarPage.clickCourseManage (D:\\Playwright-Project\\src\\test\\pages\\SideBarPage.ts:21:20)\n    at World.<anonymous> (D:\\Playwright-Project\\src\\test\\steps\\addcourseSteps.ts:15:17)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "User enters \"ABC\" in the search box",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "User should see \"No users found\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 255297900
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Mythily",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "mythily_08/07/2026_search_course_tests",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Mythily_08/07/2026_Search_Course_Tests",
+    "tags": [
+      {
+        "name": "@Mythily",
+        "line": 1
+      }
+    ],
+    "uri": "src\\test\\features\\Search.feature"
+  },
+  {
     "description": " Description: This feature file is used to test the login functionality of the application.",
     "elements": [
       {
@@ -283,7 +535,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 324888900
+              "duration": 451095700
             }
           },
           {
@@ -296,7 +548,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 665684000
+              "duration": 352344699
             }
           },
           {
@@ -309,7 +561,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 510807799
+              "duration": 506489899
             }
           },
           {
@@ -322,7 +574,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 947407700
+              "duration": 969991399
             }
           },
           {
@@ -334,9 +586,8 @@
               "location": "src\\test\\steps\\loginSteps.ts:17"
             },
             "result": {
-              "status": "failed",
-              "duration": 30008483399,
-              "error_message": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[@data-slot=\\'avatar\\']/ancestor::button')\u001b[22m\n\u001b[2m    - waiting for\" https://lms-smartcliff.vercel.app/lms/pages/admindashboard\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://lms-smartcliff.vercel.app/lms/pages/admindashboard\"\u001b[22m\n\n    at admindashboardpage.Click (D:\\Playwright-Project\\src\\test\\pages\\BasePage.ts:12:27)\n    at admindashboardpage.profileclick (D:\\Playwright-Project\\src\\test\\pages\\admindashboardpage.ts:15:20)\n    at World.<anonymous> (D:\\Playwright-Project\\src\\test\\steps\\loginSteps.ts:18:20)"
+              "status": "passed",
+              "duration": 10829050199
             }
           },
           {
@@ -344,7 +595,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 168598899
+              "duration": 187445799
             }
           }
         ],

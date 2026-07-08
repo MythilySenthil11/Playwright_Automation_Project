@@ -51,11 +51,11 @@ export class AddcoursePage extends BasePage{
         await this.Click(this.addbtn);
     }
     async FillCourseDetails(client:string, type:string, model:string, category:string, name:string){
-        await this.selectDropdown(this.client, client);
-        await this.selectDropdown(this.type, type);
-        await this.selectDropdown(this.model, model);
-        await this.selectDropdown(this.category, category);
-        await this.selectDropdown(this.name, name);
+        await this.SelectOption(this.client, client);
+        await this.SelectOption(this.type, type);
+        await this.SelectOption(this.model, model);
+        await this.SelectOption(this.category, category);
+        await this.SelectOption(this.name, name);
     }
     async clickNxtBtn(){
         await this.Click(this.nxtBtn);

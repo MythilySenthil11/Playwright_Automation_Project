@@ -6,6 +6,7 @@ import { loginpage } from '../pages/loginpage';
 import { BasePage } from '../pages/BasePage';
 import { admindashboardpage } from '../pages/admindashboardpage';
 import { SideBarPage } from '../pages/SideBarPage';
+import { CourseManagementPage } from '../pages/CourseManagementPage';
 
 export class CustomWorld extends World{
     browser!:Browser;
@@ -18,6 +19,7 @@ export class CustomWorld extends World{
     lp!:loginpage;
     adp!:admindashboardpage;
     public initialCount!: number;
+    cmp!:CourseManagementPage;
 }
 
 setWorldConstructor(CustomWorld);

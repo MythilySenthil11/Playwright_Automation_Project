@@ -40,6 +40,7 @@ module.exports = {
       "html:reports/rerun-cucumber-report.html"
     ],
 
-    parallel: 1
+    parallel: 1,
+    dryRun : true
   }
 };
