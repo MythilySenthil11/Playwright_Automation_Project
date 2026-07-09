@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 532244299
+              "duration": 587634500
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1762221400
+              "duration": 1078934099
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 496018599
+              "duration": 1182040600
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 783635200
+              "duration": 181344300
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14708511100
+              "duration": 12277166199
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1057185100
+              "duration": 641472800
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 748135300
+              "duration": 1834414600
             }
           },
           {
@@ -124,7 +124,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 93556900
+              "duration": 141177600
             }
           },
           {
@@ -137,7 +137,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1242486899
+              "duration": 779616699
             }
           },
           {
@@ -150,7 +150,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2522918299
+              "duration": 3324991900
             }
           },
           {
@@ -158,7 +158,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 119058700
+              "duration": 91973099
             }
           }
         ],
@@ -182,7 +182,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 306786299
+              "duration": 300533199
             }
           },
           {
@@ -195,7 +195,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 474253400
+              "duration": 478380799
             }
           },
           {
@@ -208,7 +208,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 585308099
+              "duration": 795710200
             }
           },
           {
@@ -221,7 +221,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 985531800
+              "duration": 1020250699
             }
           },
           {
@@ -234,7 +234,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 18272820200
+              "duration": 7853554799
             }
           },
           {
@@ -247,7 +247,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1001284300
+              "duration": 1133336799
             }
           },
           {
@@ -260,7 +260,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 44826399
+              "duration": 93652400
             }
           },
           {
@@ -273,7 +273,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8727099100
+              "duration": 5866389400
             }
           },
           {
@@ -286,7 +286,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 398348700
+              "duration": 305907300
             }
           },
           {
@@ -299,7 +299,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 111136100
+              "duration": 82150399
             }
           },
           {
@@ -311,9 +311,8 @@
               "location": "src\\test\\steps\\courseCategoryStep.ts:83"
             },
             "result": {
-              "status": "failed",
-              "duration": 5053039799,
-              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//h2[@data-slot=\\'dialog-title\\']')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"to.be.visible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//h2[@data-slot=\\'dialog-title\\']')\u001b[22m\n\n    at captureRawStack (D:\\LMS_Playwright_Cucumber\\Playwright_Automation_Project\\node_modules\\playwright-core\\lib\\coreBundle.js:3172:17)\n    at callMatcherAsStep (D:\\LMS_Playwright_Cucumber\\Playwright_Automation_Project\\node_modules\\playwright\\lib\\matchers\\expect.js:12877:57)\n    at Object.toBeVisible (D:\\LMS_Playwright_Cucumber\\Playwright_Automation_Project\\node_modules\\playwright\\lib\\matchers\\expect.js:12867:23)\n    at World.<anonymous> (D:\\LMS_Playwright_Cucumber\\Playwright_Automation_Project\\src\\test\\steps\\courseCategoryStep.ts:85:58)"
+              "status": "passed",
+              "duration": 3160197800
             }
           },
           {
@@ -321,7 +320,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1182449600
+              "duration": 82241099
             }
           }
         ],
@@ -345,7 +344,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 278513599
+              "duration": 287016199
             }
           },
           {
@@ -358,7 +357,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2727358699
+              "duration": 434961900
             }
           },
           {
@@ -371,7 +370,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1162055599
+              "duration": 624111799
             }
           },
           {
@@ -384,7 +383,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 219956399
+              "duration": 996423499
             }
           },
           {
@@ -397,7 +396,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13105798500
+              "duration": 10901811399
             }
           },
           {
@@ -410,7 +409,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1177291499
+              "duration": 692929900
             }
           },
           {
@@ -423,7 +422,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 40995000
+              "duration": 46397599
             }
           },
           {
@@ -436,7 +435,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11102532899
+              "duration": 3779994599
             }
           },
           {
@@ -449,7 +448,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 292319099
+              "duration": 389019700
             }
           },
           {
@@ -462,7 +461,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 403811600
+              "duration": 429638200
             }
           },
           {
@@ -475,7 +474,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 70596999
+              "duration": 79702499
             }
           },
           {
@@ -487,9 +486,8 @@
               "location": "src\\test\\steps\\courseCategoryStep.ts:113"
             },
             "result": {
-              "status": "failed",
-              "duration": 5018652399,
-              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//p[text()=\\'No users found\\']')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"to.be.visible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//p[text()=\\'No users found\\']')\u001b[22m\n\n    at captureRawStack (D:\\LMS_Playwright_Cucumber\\Playwright_Automation_Project\\node_modules\\playwright-core\\lib\\coreBundle.js:3172:17)\n    at callMatcherAsStep (D:\\LMS_Playwright_Cucumber\\Playwright_Automation_Project\\node_modules\\playwright\\lib\\matchers\\expect.js:12877:57)\n    at Object.toBeVisible (D:\\LMS_Playwright_Cucumber\\Playwright_Automation_Project\\node_modules\\playwright\\lib\\matchers\\expect.js:12867:23)\n    at World.<anonymous> (D:\\LMS_Playwright_Cucumber\\Playwright_Automation_Project\\src\\test\\steps\\courseCategoryStep.ts:115:58)"
+              "status": "passed",
+              "duration": 4273412900
             }
           },
           {
@@ -497,7 +495,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 479703999
+              "duration": 138858699
             }
           }
         ],
