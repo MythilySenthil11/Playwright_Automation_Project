@@ -3,8 +3,7 @@ import { CustomWorld } from '../world/CustomWorld';
 
 
 When('the user enter course name on the search tab', async function (this:CustomWorld) {
-
-  
+ 
 });
 
 When('the user clicks the print button', async function () {
