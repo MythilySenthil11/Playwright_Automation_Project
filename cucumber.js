@@ -21,9 +21,7 @@ module.exports = {
     "allure-cucumberjs/reporter",
     "json:reports/cucumber-report.json",
     "html:reports/cucumber-report.html",
-    "message:reports/messages.ndjson",
-    "rerun:rerun/@rerun.txt",
-    "progress"
+    "rerun:rerun/@rerun.txt"
     ],
         parallel: 1
     },
@@ -42,11 +40,9 @@ module.exports = {
         publishQuiet: true,
         dryRun: false,
         format: [
-    "progress",
     "allure-cucumberjs/reporter",
     "json:reports/cucumber-report.json",
     "html:reports/cucumber-report.html",
-    "message:reports/messages.ndjson",
     "rerun:rerun/@rerun.txt"
     ],
         parallel: 1

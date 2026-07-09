@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "mythily_08/07/2026_recent_activities;verify-the-recent-activities-list",
+        "id": "jerishwin-07/07/2026-editing-pre-existing--course;editing-a-course",
         "keyword": "Scenario",
         "line": 11,
-        "name": "Verify the recent activities list",
+        "name": "Editing a course",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 315136800
+              "duration": 496081299
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1341170799
+              "duration": 1057885199
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 404849700
+              "duration": 604821500
             }
           },
           {
@@ -53,43 +53,30 @@
             },
             "result": {
               "status": "passed",
-              "duration": 578166999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "the user should be redirected to the Admin Dashboard page",
-            "match": {
-              "location": "src\\test\\steps\\RecentActivitySteps.ts:5"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 22591199
+              "duration": 990657999
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 12,
-            "name": "the user opens the Dynamic Field Settings page",
+            "line": 8,
+            "name": "I navigate to the Course Management page",
             "match": {
-              "location": "src\\test\\steps\\RecentActivitySteps.ts:9"
+              "location": "src\\test\\steps\\filter.steps.ts:7"
             },
             "result": {
               "status": "failed",
-              "duration": 30017113100,
-              "error_message": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'pt-6\\']/child::div/child::div[3]')\u001b[22m\n\n    at admindashboardpage.Click (D:\\Playwright-Project\\src\\test\\pages\\BasePage.ts:12:27)\n    at admindashboardpage.dynamicFieldManagementClick (D:\\Playwright-Project\\src\\test\\pages\\admindashboardpage.ts:39:20)\n    at World.<anonymous> (D:\\Playwright-Project\\src\\test\\steps\\RecentActivitySteps.ts:10:20)"
+              "duration": 30026133700,
+              "error_message": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@title=\\'Course Management\\']') to be visible\u001b[22m\n\n    at admindashboardpage.clickcoursemanagementlink (E:\\Playwright BDD Project\\Playwright_Automation_Project\\src\\test\\pages\\admindashboardpage.ts:43:41)\n    at World.<anonymous> (E:\\Playwright BDD Project\\Playwright_Automation_Project\\src\\test\\steps\\filter.steps.ts:9:18)"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 13,
-            "name": "the user clicks the left arrow button",
+            "line": 12,
+            "name": "the user clicks the kebab button of a course",
             "match": {
-              "location": "src\\test\\steps\\RecentActivitySteps.ts:13"
+              "location": "src\\test\\steps\\editCourse.step.ts:5"
             },
             "result": {
               "status": "skipped",
@@ -98,11 +85,24 @@
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "the Recent Activities section should be displayed",
+            "keyword": "And ",
+            "line": 13,
+            "name": "chooses the edit course option",
             "match": {
-              "location": "src\\test\\steps\\RecentActivitySteps.ts:17"
+              "location": "src\\test\\steps\\editCourse.step.ts:10"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the user fills the first page of edit course structure form and clicks next button",
+            "match": {
+              "location": "src\\test\\steps\\editCourse.step.ts:15"
             },
             "result": {
               "status": "skipped",
@@ -113,9 +113,35 @@
             "arguments": [],
             "keyword": "And ",
             "line": 15,
-            "name": "the previously visited pages should be listed",
+            "name": "fills the second page of edit course structure form and clicks preview & update button",
             "match": {
-              "location": "src\\test\\steps\\RecentActivitySteps.ts:21"
+              "location": "src\\test\\steps\\editCourse.step.ts:22"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the user clicks the save course layout button in the course layout preview",
+            "match": {
+              "location": "src\\test\\steps\\editCourse.step.ts:29"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "the course updated message should be visible",
+            "match": {
+              "location": "src\\test\\steps\\editCourse.step.ts:34"
             },
             "result": {
               "status": "skipped",
@@ -127,33 +153,563 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 195414299
+              "duration": 699230799
             }
           }
         ],
         "tags": [
           {
-            "name": "@Mythily",
+            "name": "@Jerishwin",
             "line": 1
           },
           {
-            "name": "@RecentActivities",
+            "name": "@Jerishwin",
             "line": 10
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "mythily_08/07/2026_recent_activities",
+    "id": "jerishwin-07/07/2026-editing-pre-existing--course",
     "line": 2,
     "keyword": "Feature",
-    "name": "Mythily_08/07/2026_Recent_Activities",
+    "name": "Jerishwin 07/07/2026 Editing pre-existing  course",
     "tags": [
       {
-        "name": "@Mythily",
+        "name": "@Jerishwin",
         "line": 1
       }
     ],
-    "uri": "src\\test\\features\\RecentActivity.feature"
+    "uri": "src\\test\\features\\editCourse.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "jerishwin-09/07/2026-service-model;adding-service",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Adding Service",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 211488600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 643168900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "the user enters valid credentials",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 649659699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user clicks on the login button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 902690599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the user is on Dynamic Field Management page",
+            "match": {
+              "location": "src\\test\\steps\\courseCategoryStep.ts:13"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30007732300,
+              "error_message": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'pt-6\\']/child::div/child::div[3]')\u001b[22m\n\n    at admindashboardpage.Click (E:\\Playwright BDD Project\\Playwright_Automation_Project\\src\\test\\pages\\BasePage.ts:12:27)\n    at admindashboardpage.dynamicFieldManagementClick (E:\\Playwright BDD Project\\Playwright_Automation_Project\\src\\test\\pages\\admindashboardpage.ts:39:20)\n    at World.<anonymous> (E:\\Playwright BDD Project\\Playwright_Automation_Project\\src\\test\\steps\\courseCategoryStep.ts:15:20)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the user clicks the service model button",
+            "match": {
+              "location": "src\\test\\steps\\serviceModel.step.ts:8"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the user clicks on the add service button",
+            "match": {
+              "location": "src\\test\\steps\\serviceModel.step.ts:12"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the user enter the service Name and description",
+            "match": {
+              "location": "src\\test\\steps\\serviceModel.step.ts:16"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "clicks the create service button",
+            "match": {
+              "location": "src\\test\\steps\\serviceModel.step.ts:20"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "the user searches and viewes the service",
+            "match": {
+              "location": "src\\test\\steps\\serviceModel.step.ts:24"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 453756999
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Jerishwin",
+            "line": 1
+          },
+          {
+            "name": "@Jerishwin",
+            "line": 11
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "jerishwin-09/07/2026-service-model",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Jerishwin 09/07/2026 service Model",
+    "tags": [
+      {
+        "name": "@Jerishwin",
+        "line": 1
+      }
+    ],
+    "uri": "src\\test\\features\\serviceModel.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "jerishwin-08/07/2026-sorting-courses;sorting",
+        "keyword": "Scenario Outline",
+        "line": 17,
+        "name": "Sorting",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 212384099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 702782700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "the user enters valid credentials",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 527104699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user clicks on the login button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 908284999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I navigate to the Course Management page",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23832511100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the user clicks the \"Date\" tab in the table",
+            "match": {
+              "location": "src\\test\\steps\\sortCourse.step.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1452793599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the table Should be sorted according to \"Date\"",
+            "match": {
+              "location": "src\\test\\steps\\sortCourse.step.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 88735400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 46669500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Jerishwin",
+            "line": 1
+          },
+          {
+            "name": "@Jerishwin",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "jerishwin-08/07/2026-sorting-courses;sorting",
+        "keyword": "Scenario Outline",
+        "line": 18,
+        "name": "Sorting",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 207039900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 703158199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "the user enters valid credentials",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1507754499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user clicks on the login button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 125500200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I navigate to the Course Management page",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:7"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30011192799,
+              "error_message": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@title=\\'Course Management\\']') to be visible\u001b[22m\n\n    at admindashboardpage.clickcoursemanagementlink (E:\\Playwright BDD Project\\Playwright_Automation_Project\\src\\test\\pages\\admindashboardpage.ts:43:41)\n    at World.<anonymous> (E:\\Playwright BDD Project\\Playwright_Automation_Project\\src\\test\\steps\\filter.steps.ts:9:18)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the user clicks the \"Client\" tab in the table",
+            "match": {
+              "location": "src\\test\\steps\\sortCourse.step.ts:6"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the table Should be sorted according to \"Client\"",
+            "match": {
+              "location": "src\\test\\steps\\sortCourse.step.ts:16"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 216922499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Jerishwin",
+            "line": 1
+          },
+          {
+            "name": "@Jerishwin",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "jerishwin-08/07/2026-sorting-courses;sorting",
+        "keyword": "Scenario Outline",
+        "line": 19,
+        "name": "Sorting",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 174709700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 633934000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "the user enters valid credentials",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 524171300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user clicks on the login button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 896515600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I navigate to the Course Management page",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:7"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30011342799,
+              "error_message": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@title=\\'Course Management\\']') to be visible\u001b[22m\n\n    at admindashboardpage.clickcoursemanagementlink (E:\\Playwright BDD Project\\Playwright_Automation_Project\\src\\test\\pages\\admindashboardpage.ts:43:41)\n    at World.<anonymous> (E:\\Playwright BDD Project\\Playwright_Automation_Project\\src\\test\\steps\\filter.steps.ts:9:18)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the user clicks the \"Course Name\" tab in the table",
+            "match": {
+              "location": "src\\test\\steps\\sortCourse.step.ts:6"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the table Should be sorted according to \"Course Name\"",
+            "match": {
+              "location": "src\\test\\steps\\sortCourse.step.ts:16"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 150727799
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Jerishwin",
+            "line": 1
+          },
+          {
+            "name": "@Jerishwin",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "jerishwin-08/07/2026-sorting-courses",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Jerishwin 08/07/2026 Sorting Courses",
+    "tags": [
+      {
+        "name": "@Jerishwin",
+        "line": 1
+      }
+    ],
+    "uri": "src\\test\\features\\sortCourse.feature"
   }
 ]
