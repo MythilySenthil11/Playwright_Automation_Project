@@ -1,4 +1,4 @@
-
+@Tamil
 Feature: TamilKumar 07-07-2026 Course Filter Functionality
     Background:
         Given the user is on the login page
