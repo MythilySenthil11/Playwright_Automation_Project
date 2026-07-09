@@ -7,6 +7,7 @@ export class AddcoursePage extends BasePage{
     readonly type:Locator;
     readonly model:Locator;
     readonly category:Locator;
+    readonly nameDropdown:Locator;
     readonly name:Locator;
     readonly nxtBtn:Locator;
     readonly level:Locator;
@@ -21,18 +22,20 @@ export class AddcoursePage extends BasePage{
     readonly core:Locator;
     readonly frontend:Locator;
     readonly database:Locator;
-    readonly coursecount:Locator;
     readonly createBtn:Locator;
+    readonly savecourse:Locator;
+    readonly notif:Locator;
     constructor(page:Page){
         super(page);
         this.addbtn = page.getByRole('button', {name:'Add Course'});
         this.client = page.locator("//label[contains(normalize-space(),'Course Client')]/following::button[1]");
-        this.type = page.locator("//label[contains(normalize-space(),'Service Type')]/following::button[1]");
-        this.model = page.locator("//label[contains(normalize-space(),'Service Model')]/following::button[1]");
-        this.category = page.locator("//label[contains(normalize-space(),'Course Category')]/following::button[1]");
-        this.name = page.locator("//label[contains(normalize-space(),'Course Name')]/following::button[1]");
+        this.type = page.getByText("Select service type");
+        this.model = page.getByText("Select service model");
+        this.category = page.getByRole('combobox').nth(3);
+        this.nameDropdown = page.locator("//label[contains(.,'Course Name')]/following::button[1]");
+        this.name = page.getByPlaceholder("Enter custom course name");
         this.nxtBtn = page.getByRole('button', {name:'Next'});
-        this.level = page.getByRole('button', {name:'Select Level'});
+        this.level = page.getByText("Select Level");
         this.module = page.locator("#module-checkbox");
         this.sub = page.locator("#submodule-checkbox");
         this.topic = page.locator("#topic-checkbox");
@@ -45,7 +48,8 @@ export class AddcoursePage extends BasePage{
         this.frontend =page.locator("(//input[@type='checkbox'])[11]");
         this.database =page.locator("(//input[@type='checkbox'])[17]");
         this.createBtn =page.getByRole('button', {name:'Preview & Create'});
-        this.coursecount = page.locator("//table/tbody[1]");
+        this.savecourse = page.getByText("Preview & Create");
+        this.notif = page.getByText("Course created successfully");
     }
     async clickAddBtn(){
         await this.Click(this.addbtn);
@@ -55,13 +59,14 @@ export class AddcoursePage extends BasePage{
         await this.SelectCustomDropdown(this.type, type);
         await this.SelectCustomDropdown(this.model, model);
         await this.SelectCustomDropdown(this.category, category);
-        await this.SelectCustomDropdown(this.name, name);
+        await this.SelectCustomDropdown(this.nameDropdown, "Custom Name");
+        await this.Fill(this.name, name);
     }
     async clickNxtBtn(){
         await this.Click(this.nxtBtn);
     }
     async FillLevel(level:string){
-        await this.Fill(this.level,level);
+        await this.SelectCustomDropdown(this.level,level);
     }
     async SelectHierarchy(){
         await this.Check(this.module);
@@ -84,8 +89,9 @@ export class AddcoursePage extends BasePage{
     }
     async ClickCreateBtn(){
         await this.Click(this.createBtn);
+        await this.Click(this.savecourse);
     }
-    async GetCourseCount(){
-        return await this.coursecount.count();
+    async VerifyCourseCreated() {
+       await this.WaitForVisible(this.notif, 10000);
     }
 }

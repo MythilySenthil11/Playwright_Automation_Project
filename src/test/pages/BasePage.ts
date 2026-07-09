@@ -11,8 +11,7 @@ export class BasePage {
             logger.info('Clicking element');
             await locator.click();
             logger.info('Element clicked successfully');
-        }
-        catch (error) {
+        } catch (error) {
             logger.error(`Failed to click element: ${error}`);
             throw error;
         }
@@ -23,8 +22,7 @@ export class BasePage {
             logger.info('Typing message');
             await locator.fill(message);
             logger.info('Message typed on the locator successfully');
-        }
-        catch (error) {
+        } catch (error) {
             logger.error(`Failed to fill: ${error}`);
             throw error;
         }
@@ -34,8 +32,7 @@ export class BasePage {
         try {
             logger.info('Getting text');
             return await locator.innerText();
-        }
-        catch (error) {
+        } catch (error) {
             logger.error(`Failed to get text: ${error}`);
             throw error;
         }
@@ -48,8 +45,7 @@ export class BasePage {
             await this.page.goto(url, {
                 waitUntil: 'domcontentloaded'
             });
-        }
-        catch (error) {
+        } catch (error) {
             logger.error(`Failed to launch application: ${error}`);
             throw error;
         }
@@ -58,9 +54,8 @@ export class BasePage {
     async Check(locator: Locator): Promise<void> {
         try {
             await locator.click();
-            logger.info('Select the check box');
-        }
-        catch (error) {
+            logger.info('Selected the check box');
+        } catch (error) {
             logger.error(`Failed to select the check box: ${error}`);
             throw error;
         }
@@ -70,8 +65,7 @@ export class BasePage {
         try {
             logger.info('Getting first matching element');
             return locator.first();
-        }
-        catch (error) {
+        } catch (error) {
             logger.error(`Failed to get first element: ${error}`);
             throw error;
         }
@@ -82,8 +76,7 @@ export class BasePage {
             logger.info(`Selecting option: ${value}`);
             await locator.selectOption({ label: value });
             logger.info(`Option "${value}" selected successfully`);
-        }
-        catch (error) {
+        } catch (error) {
             logger.error(`Failed to select option "${value}": ${error}`);
             throw error;
         }
@@ -92,10 +85,8 @@ export class BasePage {
     async GetAllText(locator: Locator): Promise<string[]> {
         try {
             logger.info('Getting text from all matching elements');
-            const texts = await locator.allInnerTexts();
-            return texts;
-        }
-        catch (error) {
+            return await locator.allInnerTexts();
+        } catch (error) {
             logger.error(`Failed to get text from elements: ${error}`);
             throw error;
         }
@@ -109,8 +100,7 @@ export class BasePage {
                 .getByRole('option', { name: option, exact: false })
                 .click({ timeout: 5000 });
             logger.info(`Option "${option}" selected successfully`);
-        }
-        catch (error) {
+        } catch (error) {
             logger.error(`Failed to select custom dropdown option "${option}": ${error}`);
             throw error;
         }
@@ -141,43 +131,68 @@ export class BasePage {
                 timeout: timeoutMs
             });
             logger.info('Element is visible');
-        }
-        catch (error) {
+        } catch (error) {
             logger.error(`Element did not become visible: ${error}`);
             throw error;
         }
     }
 
-    async Clear(locator:Locator):Promise<void>{
-        try{
-            logger.info('Typing message');
+    async Clear(locator: Locator): Promise<void> {
+        try {
+            logger.info('Clearing text');
             await locator.fill('');
             logger.info('Message cleared on the locator successfully');
-        }
-        catch(error) {
-            logger.error(`Failed to Clear: ${error}`);
+        } catch (error) {
+            logger.error(`Failed to clear: ${error}`);
             throw error;
         }
-        
     }
+
     async ClickUntilDisabled(nextButtonLocator: Locator): Promise<void> {
         try {
             logger.info('Starting pagination click loop...');
             let pageCount = 1;
+
             while (true) {
                 const isDisabled = await nextButtonLocator.getAttribute('disabled');
+
                 if (isDisabled !== null) {
-                    logger.info(`Next button is disabled. Stopped navigating. Total pages processed: ${pageCount}`);
+                    logger.info(
+                        `Next button is disabled. Stopped navigating. Total pages processed: ${pageCount}`
+                    );
                     break;
                 }
+
                 logger.info(`Clicking next button to move past page ${pageCount}`);
                 await this.Click(nextButtonLocator);
                 pageCount++;
             }
-        } 
-        catch (error) {
+        } catch (error) {
             logger.error(`Error while clicking button until disabled: ${error}`);
             throw error;
         }
+    }
+
+    async UploadFile(locator: Locator, filePath: string): Promise<void> {
+    try {
+        logger.info(`Uploading file: ${filePath}`);
+        await locator.setInputFiles(filePath);
+        logger.info('File uploaded successfully');
+    }
+    catch (error) {
+        logger.error(`Failed to upload file: ${error}`);
+        throw error;
+    }
 }
+    async Enter(): Promise<void> {
+        try {
+            logger.info('Pressing Enter key');
+            await this.page.keyboard.press('Enter');
+            logger.info('Enter key pressed successfully');
+        } catch (error) {
+            logger.error(`Failed to press Enter: ${error}`);
+            throw error;
+        }
+    }
+
 }
