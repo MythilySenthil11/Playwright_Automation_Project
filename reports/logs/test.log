@@ -4079,3 +4079,196 @@ Call log:
 [2026-07-09T08:57:56.667Z]INFO-Element clicked successfully
 [2026-07-09T08:58:26.955Z]ERROR-Scenario Failed: Search course using the search box
 [2026-07-09T08:58:27.012Z]INFO-Closing browser
+[2026-07-09T14:17:50.537Z]INFO-Launching Browser
+[2026-07-09T14:17:53.204Z]INFO-Starting scenario: Verify that the user is able to login with valid credentials
+[2026-07-09T14:17:53.845Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T14:17:55.700Z]INFO-Typing message
+[2026-07-09T14:17:56.821Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:17:56.822Z]INFO-Typing message
+[2026-07-09T14:17:56.865Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:17:56.869Z]INFO-Clicking element
+[2026-07-09T14:17:56.963Z]INFO-Element clicked successfully
+[2026-07-09T14:17:56.966Z]INFO-Clicking element
+[2026-07-09T14:18:17.631Z]INFO-Element clicked successfully
+[2026-07-09T14:18:17.667Z]INFO-Scenario Passed: Verify that the user is able to login with valid credentials
+[2026-07-09T14:18:17.722Z]INFO-Starting scenario: Verify that the user is not able to login with invalid credentials
+[2026-07-09T14:18:17.880Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T14:18:18.828Z]INFO-Typing message
+[2026-07-09T14:18:19.768Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:18:19.769Z]INFO-Typing message
+[2026-07-09T14:18:19.817Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:18:19.818Z]INFO-Clicking element
+[2026-07-09T14:18:20.072Z]INFO-Element clicked successfully
+[2026-07-09T14:18:42.093Z]INFO-Scenario Passed: Verify that the user is not able to login with invalid credentials
+[2026-07-09T14:18:42.123Z]INFO-Starting scenario: Verify that the user is not able to login with invalid credentials
+[2026-07-09T14:18:42.317Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T14:18:47.467Z]INFO-Typing message
+[2026-07-09T14:18:48.928Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:18:48.928Z]INFO-Typing message
+[2026-07-09T14:18:48.961Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:18:48.962Z]INFO-Clicking element
+[2026-07-09T14:18:49.319Z]INFO-Element clicked successfully
+[2026-07-09T14:18:55.842Z]INFO-Scenario Passed: Verify that the user is not able to login with invalid credentials
+[2026-07-09T14:18:55.858Z]INFO-Starting scenario: Verify the Signout functionality
+[2026-07-09T14:18:56.009Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T14:18:57.124Z]INFO-Typing message
+[2026-07-09T14:18:58.034Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:18:58.034Z]INFO-Typing message
+[2026-07-09T14:18:58.070Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:18:58.071Z]INFO-Clicking element
+[2026-07-09T14:18:58.467Z]INFO-Element clicked successfully
+[2026-07-09T14:18:58.473Z]INFO-Clicking element
+[2026-07-09T14:19:14.946Z]INFO-Element clicked successfully
+[2026-07-09T14:19:14.949Z]INFO-Clicking element
+[2026-07-09T14:19:15.279Z]INFO-Element clicked successfully
+[2026-07-09T14:19:18.873Z]INFO-Scenario Passed: Verify the Signout functionality
+[2026-07-09T14:19:18.899Z]INFO-Starting scenario: Verify the User can Add a New Element in Existing Pedagogy Activities
+[2026-07-09T14:19:19.097Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T14:19:20.450Z]INFO-Typing message
+[2026-07-09T14:19:23.426Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:19:23.426Z]INFO-Typing message
+[2026-07-09T14:19:23.463Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:19:23.464Z]INFO-Clicking element
+[2026-07-09T14:19:23.716Z]INFO-Element clicked successfully
+[2026-07-09T14:19:23.719Z]INFO-Clicking element
+[2026-07-09T14:19:34.705Z]INFO-Element clicked successfully
+[2026-07-09T14:19:34.709Z]INFO-Clicking element
+[2026-07-09T14:19:34.718Z]INFO-Clicking element
+[2026-07-09T14:19:43.410Z]INFO-Element clicked successfully
+[2026-07-09T14:19:45.647Z]INFO-Element clicked successfully
+[2026-07-09T14:19:45.650Z]INFO-Clicking element
+[2026-07-09T14:19:46.264Z]INFO-Element clicked successfully
+[2026-07-09T14:19:46.266Z]INFO-Typing message
+[2026-07-09T14:19:46.294Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:19:46.296Z]INFO-Clicking element
+[2026-07-09T14:19:46.958Z]INFO-Element clicked successfully
+[2026-07-09T14:20:01.022Z]INFO-Starting pagination click loop...
+[2026-07-09T14:20:01.037Z]INFO-Clicking next button to move past page 1
+[2026-07-09T14:20:01.038Z]INFO-Clicking element
+[2026-07-09T14:20:01.140Z]INFO-Element clicked successfully
+[2026-07-09T14:20:01.151Z]INFO-Clicking next button to move past page 2
+[2026-07-09T14:20:01.151Z]INFO-Clicking element
+[2026-07-09T14:20:01.411Z]INFO-Element clicked successfully
+[2026-07-09T14:20:01.417Z]INFO-Clicking next button to move past page 3
+[2026-07-09T14:20:01.417Z]INFO-Clicking element
+[2026-07-09T14:20:01.630Z]INFO-Element clicked successfully
+[2026-07-09T14:20:01.637Z]INFO-Next button is disabled. Stopped navigating. Total pages processed: 4
+[2026-07-09T14:20:06.652Z]INFO-Getting text from all matching elements
+[2026-07-09T14:20:06.706Z]INFO-Scenario Passed: Verify the User can Add a New Element in Existing Pedagogy Activities
+[2026-07-09T14:20:06.809Z]INFO-Starting scenario: verify the User can edit element in Existing Pedagogy activites
+[2026-07-09T14:20:06.967Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T14:20:08.408Z]INFO-Typing message
+[2026-07-09T14:20:09.885Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:20:09.886Z]INFO-Typing message
+[2026-07-09T14:20:09.910Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:20:09.911Z]INFO-Clicking element
+[2026-07-09T14:20:10.142Z]INFO-Element clicked successfully
+[2026-07-09T14:20:10.143Z]INFO-Clicking element
+[2026-07-09T14:20:39.607Z]INFO-Element clicked successfully
+[2026-07-09T14:20:39.608Z]INFO-Clicking element
+[2026-07-09T14:20:39.610Z]INFO-Clicking element
+[2026-07-09T14:20:40.527Z]INFO-Element clicked successfully
+[2026-07-09T14:20:42.466Z]INFO-Element clicked successfully
+[2026-07-09T14:20:42.469Z]INFO-Starting pagination click loop...
+[2026-07-09T14:20:42.483Z]INFO-Clicking next button to move past page 1
+[2026-07-09T14:20:42.483Z]INFO-Clicking element
+[2026-07-09T14:20:42.929Z]INFO-Element clicked successfully
+[2026-07-09T14:20:42.935Z]INFO-Clicking next button to move past page 2
+[2026-07-09T14:20:42.935Z]INFO-Clicking element
+[2026-07-09T14:20:43.165Z]INFO-Element clicked successfully
+[2026-07-09T14:20:43.172Z]INFO-Clicking next button to move past page 3
+[2026-07-09T14:20:43.172Z]INFO-Clicking element
+[2026-07-09T14:20:43.353Z]INFO-Element clicked successfully
+[2026-07-09T14:20:43.359Z]INFO-Next button is disabled. Stopped navigating. Total pages processed: 4
+[2026-07-09T14:20:48.362Z]INFO-Getting text from all matching elements
+[2026-07-09T14:20:48.407Z]INFO-Clicking element
+[2026-07-09T14:20:48.511Z]INFO-Element clicked successfully
+[2026-07-09T14:20:48.514Z]INFO-Typing message
+[2026-07-09T14:20:48.569Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:20:48.569Z]INFO-Typing message
+[2026-07-09T14:20:48.596Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:20:48.599Z]INFO-Clicking element
+[2026-07-09T14:20:49.144Z]INFO-Element clicked successfully
+[2026-07-09T14:20:54.434Z]INFO-Starting pagination click loop...
+[2026-07-09T14:20:54.443Z]INFO-Next button is disabled. Stopped navigating. Total pages processed: 1
+[2026-07-09T14:20:54.444Z]INFO-Getting text from all matching elements
+[2026-07-09T14:20:54.452Z]INFO-Scenario Passed: verify the User can edit element in Existing Pedagogy activites
+[2026-07-09T14:20:54.482Z]INFO-Starting scenario: verify the User can delete element in Existing Pedagogy activites
+[2026-07-09T14:20:54.653Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T14:20:55.936Z]INFO-Typing message
+[2026-07-09T14:20:56.875Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:20:56.875Z]INFO-Typing message
+[2026-07-09T14:20:56.919Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:20:56.920Z]INFO-Clicking element
+[2026-07-09T14:20:57.046Z]INFO-Element clicked successfully
+[2026-07-09T14:20:57.047Z]INFO-Clicking element
+[2026-07-09T14:21:15.610Z]INFO-Element clicked successfully
+[2026-07-09T14:21:15.610Z]INFO-Clicking element
+[2026-07-09T14:21:15.612Z]INFO-Clicking element
+[2026-07-09T14:21:16.519Z]INFO-Element clicked successfully
+[2026-07-09T14:21:18.682Z]INFO-Element clicked successfully
+[2026-07-09T14:21:18.686Z]INFO-Starting pagination click loop...
+[2026-07-09T14:21:18.695Z]INFO-Clicking next button to move past page 1
+[2026-07-09T14:21:18.695Z]INFO-Clicking element
+[2026-07-09T14:21:19.319Z]INFO-Element clicked successfully
+[2026-07-09T14:21:19.326Z]INFO-Clicking next button to move past page 2
+[2026-07-09T14:21:19.326Z]INFO-Clicking element
+[2026-07-09T14:21:19.475Z]INFO-Element clicked successfully
+[2026-07-09T14:21:19.480Z]INFO-Clicking next button to move past page 3
+[2026-07-09T14:21:19.480Z]INFO-Clicking element
+[2026-07-09T14:21:19.668Z]INFO-Element clicked successfully
+[2026-07-09T14:21:19.672Z]INFO-Next button is disabled. Stopped navigating. Total pages processed: 4
+[2026-07-09T14:21:24.675Z]INFO-Getting text from all matching elements
+[2026-07-09T14:21:24.808Z]INFO-Clicking element
+[2026-07-09T14:21:25.666Z]INFO-Element clicked successfully
+[2026-07-09T14:21:25.670Z]INFO-Getting text from all matching elements
+[2026-07-09T14:21:25.684Z]INFO-Scenario Passed: verify the User can delete element in Existing Pedagogy activites
+[2026-07-09T14:21:25.714Z]INFO-Starting scenario: verify the User can Search The Pedagogy Activities
+[2026-07-09T14:21:25.927Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T14:21:27.250Z]INFO-Typing message
+[2026-07-09T14:21:28.174Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:21:28.174Z]INFO-Typing message
+[2026-07-09T14:21:28.206Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:21:28.206Z]INFO-Clicking element
+[2026-07-09T14:21:28.687Z]INFO-Element clicked successfully
+[2026-07-09T14:21:28.688Z]INFO-Clicking element
+[2026-07-09T14:21:58.711Z]ERROR-Failed to click element: TimeoutError: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('//div[@class=\'pt-6\']/child::div/child::div[3]')[22m
+
+[2026-07-09T14:21:58.887Z]ERROR-Scenario Failed: verify the User can Search The Pedagogy Activities
+[2026-07-09T14:21:58.913Z]INFO-Starting scenario: verify the User can Search The Pedagogy Activities
+[2026-07-09T14:21:59.088Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T14:22:00.174Z]INFO-Typing message
+[2026-07-09T14:22:00.694Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:22:00.694Z]INFO-Typing message
+[2026-07-09T14:22:00.718Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:22:00.718Z]INFO-Clicking element
+[2026-07-09T14:22:01.806Z]INFO-Element clicked successfully
+[2026-07-09T14:22:01.807Z]INFO-Clicking element
+[2026-07-09T14:22:21.272Z]INFO-Element clicked successfully
+[2026-07-09T14:22:21.273Z]INFO-Clicking element
+[2026-07-09T14:22:21.279Z]INFO-Typing message
+[2026-07-09T14:22:22.240Z]INFO-Element clicked successfully
+[2026-07-09T14:22:27.305Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:22:27.308Z]INFO-Getting text
+[2026-07-09T14:22:27.322Z]INFO-Scenario Passed: verify the User can Search The Pedagogy Activities
+[2026-07-09T14:22:27.341Z]INFO-Starting scenario: verify the User can Search The Pedagogy Activities
+[2026-07-09T14:22:27.535Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T14:22:28.573Z]INFO-Typing message
+[2026-07-09T14:22:29.503Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:22:29.503Z]INFO-Typing message
+[2026-07-09T14:22:29.533Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:22:29.534Z]INFO-Clicking element
+[2026-07-09T14:22:29.686Z]INFO-Element clicked successfully
+[2026-07-09T14:22:29.686Z]INFO-Clicking element
+[2026-07-09T14:22:49.347Z]INFO-Element clicked successfully
+[2026-07-09T14:22:49.348Z]INFO-Clicking element
+[2026-07-09T14:22:49.350Z]INFO-Typing message
+[2026-07-09T14:22:50.301Z]INFO-Element clicked successfully
+[2026-07-09T14:22:53.311Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:22:53.313Z]INFO-Getting text
+[2026-07-09T14:22:53.323Z]INFO-Scenario Passed: verify the User can Search The Pedagogy Activities
+[2026-07-09T14:22:53.358Z]INFO-Closing browser
+[2026-07-09T14:24:17.974Z]INFO-Launching Browser
+[2026-07-09T14:27:48.443Z]INFO-Launching Browser
