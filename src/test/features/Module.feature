@@ -1,4 +1,4 @@
-
+@Tamil
 Feature: TamilKumar 08-07-2026 Add course structure
     Background:
         Given the user is on the login page
