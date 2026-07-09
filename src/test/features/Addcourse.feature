@@ -21,10 +21,3 @@ Feature: Mythily_07/07/2026_Add_Course_Tests
         And User verifies the skill selection
         And User clicks the Preview & Create button
         Then User verifies the course is added successfully
-<<<<<<< HEAD
-    
-    Scenario: Delete a course
-        When User clicks on the delete 
-       
-=======
->>>>>>> main
