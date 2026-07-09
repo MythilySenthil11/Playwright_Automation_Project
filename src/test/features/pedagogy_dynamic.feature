@@ -31,5 +31,14 @@ Description: This feature file is used to verify the Pedagogy Dynamic Field Mana
        And the user clicks on the Pedagogy view elements button
        And the user Clicks on the delete button
        And the user clicks on the delete confirmation button
-       Then the user should be able to see the deleted element is not present in the list of pedagogy elements     
+       Then the user should be able to see the deleted element is not present in the list of pedagogy elements   
+  @searchpeda
+  Scenario Outline: verify the User can Search The Pedagogy Activities   
+       And the user enters the "<data type>" in pedagogy activities search bar
+       Then the user should be able to see the corresponding activity
 
+    Examples:
+            |data type|
+            |I DO     |
+            |We DO    |
+            |You DO   |

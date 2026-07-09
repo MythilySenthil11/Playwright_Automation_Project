@@ -2,7 +2,11 @@ import { Given, When, Then } from '@cucumber/cucumber';
 import { CustomWorld } from '../world/CustomWorld';
 import {  TIMEOUTS } from '../constants/timeouts';
 import {data} from '../test-data/pedagogyData.json'
-import { expect } from '@playwright/test';
+import { expect } from '@playwright/test'; 
+import { CsvReader } from '../utilities/csvReader';
+import {PedagogySearchData} from "../types/pedagogySearch.types"
+
+const SearchData = CsvReader.read<PedagogySearchData>("PedogogySearchData.csv")
 When('the user clicks on the Pedagogy button', async function (this: CustomWorld) {
     this.dfp.ClickPedagogy();
 });
@@ -111,5 +115,30 @@ Then(
         ).not.toContain(data.editdata);
 
         console.log(`Success: Element '${data.editdata}' was deleted successfully`);
+    }
+);
+let expectedResult = "";
+
+When("the user enters the {string} in pedagogy activities search bar", async function (this: CustomWorld, dataType: string) {
+
+        const row = SearchData.find(
+            x => x.datatype.trim().toLowerCase() === dataType.trim().toLowerCase()
+        );
+
+        if (!row) {
+            throw new Error(`No matching test data found for datatype: ${dataType}`);
+        }
+
+        expectedResult = row.result;
+
+        await this.pdp.searchPedagogyActivity(row.data);
+    }
+);
+
+Then( "the user should be able to see the corresponding activity", async function (this: CustomWorld) {
+
+        const actualResult = await this.pdp.getSearchResult();
+
+        expect(actualResult.trim()).toBe(expectedResult.trim());
     }
 );

@@ -12,6 +12,6 @@ Feature: Mythily_08/07/2026_Search_Course_Tests
         Then User should see "<ExpectedResult>"
 
         Examples:
-            | SearchText | ExpectedResult |
-            | jamocha    | jamocha        |
-            | ABC123     | No users found |
+            |   SearchText    | ExpectedResult |
+            | defect_avengers | defect_avengers|
+            |     ABC123      | No users found |
