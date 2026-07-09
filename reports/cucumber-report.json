@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "mythily_08/07/2026_search_course_tests;search-course-using-the-search-box",
-        "keyword": "Scenario Outline",
-        "line": 16,
-        "name": "Search course using the search box",
+        "id": "mythily_08/07/2026_recent_activities;verify-the-recent-activities-list",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Verify the recent activities list",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 346413099
+              "duration": 315136800
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 388524700
+              "duration": 1341170799
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 466394700
+              "duration": 404849700
             }
           },
           {
@@ -53,141 +53,43 @@
             },
             "result": {
               "status": "passed",
-              "duration": 580821100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "User clicks on the Course Structure",
-            "match": {
-              "location": "src\\test\\steps\\addcourseSteps.ts:14"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 30023402200,
-              "error_message": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@title=\\'Course Management\\']') to be visible\u001b[22m\n\n    at admindashboardpage.clickcoursemanagementlink (D:\\Playwright-Project\\src\\test\\pages\\admindashboardpage.ts:33:41)\n    at World.<anonymous> (D:\\Playwright-Project\\src\\test\\steps\\addcourseSteps.ts:15:18)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 11,
-            "name": "User enters \"defect_avengers\" in the search box",
-            "match": {
-              "location": "src\\test\\steps\\searchSteps.ts:5"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
+              "duration": 578166999
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 12,
-            "name": "User should see \"defect_avengers\"",
+            "line": 8,
+            "name": "the user should be redirected to the Admin Dashboard page",
             "match": {
-              "location": "src\\test\\steps\\searchSteps.ts:9"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 486851099
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Mythily",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "mythily_08/07/2026_search_course_tests;search-course-using-the-search-box",
-        "keyword": "Scenario Outline",
-        "line": 17,
-        "name": "Search course using the search box",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 250975200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "the user is on the login page",
-            "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:6"
+              "location": "src\\test\\steps\\RecentActivitySteps.ts:5"
             },
             "result": {
               "status": "passed",
-              "duration": 520748500
+              "duration": 22591199
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
-            "name": "the user enters valid credentials",
+            "line": 12,
+            "name": "the user opens the Dynamic Field Settings page",
             "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:10"
+              "location": "src\\test\\steps\\RecentActivitySteps.ts:9"
             },
             "result": {
-              "status": "passed",
-              "duration": 470037000
+              "status": "failed",
+              "duration": 30017113100,
+              "error_message": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'pt-6\\']/child::div/child::div[3]')\u001b[22m\n\n    at admindashboardpage.Click (D:\\Playwright-Project\\src\\test\\pages\\BasePage.ts:12:27)\n    at admindashboardpage.dynamicFieldManagementClick (D:\\Playwright-Project\\src\\test\\pages\\admindashboardpage.ts:39:20)\n    at World.<anonymous> (D:\\Playwright-Project\\src\\test\\steps\\RecentActivitySteps.ts:10:20)"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 7,
-            "name": "the user clicks on the login button",
+            "line": 13,
+            "name": "the user clicks the left arrow button",
             "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 956591899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "User clicks on the Course Structure",
-            "match": {
-              "location": "src\\test\\steps\\addcourseSteps.ts:14"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 30010182999,
-              "error_message": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@title=\\'Course Management\\']') to be visible\u001b[22m\n\n    at admindashboardpage.clickcoursemanagementlink (D:\\Playwright-Project\\src\\test\\pages\\admindashboardpage.ts:33:41)\n    at World.<anonymous> (D:\\Playwright-Project\\src\\test\\steps\\addcourseSteps.ts:15:18)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 11,
-            "name": "User enters \"ABC123\" in the search box",
-            "match": {
-              "location": "src\\test\\steps\\searchSteps.ts:5"
+              "location": "src\\test\\steps\\RecentActivitySteps.ts:13"
             },
             "result": {
               "status": "skipped",
@@ -197,10 +99,23 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 12,
-            "name": "User should see \"No users found\"",
+            "line": 14,
+            "name": "the Recent Activities section should be displayed",
             "match": {
-              "location": "src\\test\\steps\\searchSteps.ts:9"
+              "location": "src\\test\\steps\\RecentActivitySteps.ts:17"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the previously visited pages should be listed",
+            "match": {
+              "location": "src\\test\\steps\\RecentActivitySteps.ts:21"
             },
             "result": {
               "status": "skipped",
@@ -212,7 +127,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 324751399
+              "duration": 195414299
             }
           }
         ],
@@ -220,21 +135,25 @@
           {
             "name": "@Mythily",
             "line": 1
+          },
+          {
+            "name": "@RecentActivities",
+            "line": 10
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "mythily_08/07/2026_search_course_tests",
+    "id": "mythily_08/07/2026_recent_activities",
     "line": 2,
     "keyword": "Feature",
-    "name": "Mythily_08/07/2026_Search_Course_Tests",
+    "name": "Mythily_08/07/2026_Recent_Activities",
     "tags": [
       {
         "name": "@Mythily",
         "line": 1
       }
     ],
-    "uri": "src\\test\\features\\Search.feature"
+    "uri": "src\\test\\features\\RecentActivity.feature"
   }
 ]

@@ -4079,3 +4079,38 @@ Call log:
 [2026-07-09T08:57:56.667Z]INFO-Element clicked successfully
 [2026-07-09T08:58:26.955Z]ERROR-Scenario Failed: Search course using the search box
 [2026-07-09T08:58:27.012Z]INFO-Closing browser
+[2026-07-09T11:09:13.568Z]INFO-Launching Browser
+[2026-07-09T11:09:16.623Z]INFO-Starting scenario: Verify the recent activities list
+[2026-07-09T11:09:17.185Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T11:09:20.387Z]INFO-Typing message
+[2026-07-09T11:09:20.739Z]INFO-Message typed on the locator successfully
+[2026-07-09T11:09:20.740Z]INFO-Typing message
+[2026-07-09T11:09:20.768Z]INFO-Message typed on the locator successfully
+[2026-07-09T11:09:20.774Z]INFO-Clicking element
+[2026-07-09T11:09:21.298Z]INFO-Element clicked successfully
+[2026-07-09T11:09:21.303Z]INFO-Getting text
+[2026-07-09T11:09:21.316Z]INFO-Clicking element
+[2026-07-09T11:09:38.244Z]INFO-Element clicked successfully
+[2026-07-09T11:09:38.246Z]INFO-Clicking element
+[2026-07-09T11:09:38.346Z]INFO-Element clicked successfully
+[2026-07-09T11:09:38.350Z]INFO-Getting text
+[2026-07-09T11:09:38.379Z]INFO-Getting text
+[2026-07-09T11:09:38.421Z]INFO-Scenario Passed: Verify the recent activities list
+[2026-07-09T11:09:38.453Z]INFO-Closing browser
+[2026-07-09T11:10:27.045Z]INFO-Launching Browser
+[2026-07-09T11:10:28.105Z]INFO-Starting scenario: Verify the recent activities list
+[2026-07-09T11:10:28.440Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T11:10:29.765Z]INFO-Typing message
+[2026-07-09T11:10:30.128Z]INFO-Message typed on the locator successfully
+[2026-07-09T11:10:30.129Z]INFO-Typing message
+[2026-07-09T11:10:30.166Z]INFO-Message typed on the locator successfully
+[2026-07-09T11:10:30.170Z]INFO-Clicking element
+[2026-07-09T11:10:30.745Z]INFO-Element clicked successfully
+[2026-07-09T11:10:30.755Z]INFO-Getting text
+[2026-07-09T11:10:30.772Z]INFO-Clicking element
+[2026-07-09T11:11:00.786Z]ERROR-Failed to click element: TimeoutError: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('//div[@class=\'pt-6\']/child::div/child::div[3]')[22m
+
+[2026-07-09T11:11:00.891Z]ERROR-Scenario Failed: Verify the recent activities list
+[2026-07-09T11:11:00.988Z]INFO-Closing browser
