@@ -50,7 +50,7 @@ export class CourseManagementPage extends BasePage{
         this.courseList=this.page.locator("//div/span[@class='text-xs font-medium text-gray-700 dark:text-gray-300 font-sans']")
         this.levelDropdown=this.page.locator("//option[text()='All Levels']/parent::select")
         this.levelList=this.page.locator("//td/span/div/span/following-sibling::span")
-        this.addCourseStructureButton=page.locator("(//span[text()='Add Course Structure'])[2]")
+        this.addCourseStructureButton=page.locator("(//span[text()='Add Course Structure'])[1]")
         //search
         this.searchbar = page.locator("//input[@data-slot='input']");
         this.table = page.locator("//tbody/tr[1]/td[3]");

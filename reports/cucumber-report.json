@@ -33,7 +33,7 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
+            "line": 5,
             "name": "the user enters valid credentials",
             "match": {
               "location": "src\\test\\steps\\loginSteps.ts:10"
@@ -46,7 +46,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 7,
+            "line": 6,
             "name": "the user clicks on the login button",
             "match": {
               "location": "src\\test\\steps\\loginSteps.ts:14"
@@ -137,8 +137,90 @@
               "location": "src\\test\\steps\\courseCategoryStep.ts:42"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 3511116200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "the user clicks the Add Course Structure button on the Course Management page",
+            "match": {
+              "location": "src\\test\\steps\\AddModule.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4802583899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "the user clicks the Similar Course button",
+            "match": {
+              "location": "src\\test\\steps\\AddModule.ts:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2334429299
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "category",
+                      "Software Development"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "search_keyword",
+                      "defect_avengers"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 27,
+            "name": "the user selects the course category and the user searches for the course to duplicate",
+            "match": {
+              "location": "src\\test\\steps\\AddModule.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9319166300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "the user selects all modules and clicks the Duplicate Structure button",
+            "match": {
+              "location": "src\\test\\steps\\AddModule.ts:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2818349899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "the user accepts the duplicate confirmation alert",
+            "match": {
+              "location": "src\\test\\steps\\AddModule.ts:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1900070699
             }
           },
           {
