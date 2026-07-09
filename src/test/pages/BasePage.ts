@@ -158,8 +158,8 @@ export class BasePage {
             logger.error(`Failed to Clear: ${error}`);
             throw error;
         }
+        
     }
-
     async ClickUntilDisabled(nextButtonLocator: Locator): Promise<void> {
         try {
             logger.info('Starting pagination click loop...');
@@ -178,7 +178,7 @@ export class BasePage {
         catch (error) {
             logger.error(`Error while clicking button until disabled: ${error}`);
             throw error;
-        }
+        
     }
     async Enter(){
     try {
@@ -190,5 +190,6 @@ export class BasePage {
         logger.error(`Failed to press Enter: ${error}`);
         throw error;
     }
+
 }
 }
