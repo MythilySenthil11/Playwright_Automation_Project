@@ -12,6 +12,7 @@ import { pedagogy_dynamic_page } from '../pages/pedagogy_dynamic_page';
 import { SearchPage } from '../pages/SearchPage';
 import { Pagination } from '../pages/PaginationPage';
 import { AddCourseStructurePage } from '../pages/AddCourseStructurePage';
+import { serviceModelPage } from '../pages/serviceModelPage';
 
 export class CustomWorld extends World{
     browser!:Browser;
@@ -30,6 +31,7 @@ export class CustomWorld extends World{
     searchPage!:SearchPage;
     Pp!:Pagination;
     acsp!:AddCourseStructurePage
+    smp!: serviceModelPage
 }
 
 setWorldConstructor(CustomWorld);

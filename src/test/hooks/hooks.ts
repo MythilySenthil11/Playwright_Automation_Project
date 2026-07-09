@@ -13,6 +13,7 @@ import { pedagogy_dynamic_page } from '../pages/pedagogy_dynamic_page'
 import { SearchPage } from '../pages/SearchPage'
 import { Pagination } from '../pages/PaginationPage'
 import { AddCourseStructurePage } from '../pages/AddCourseStructurePage'
+import { serviceModelPage } from '../pages/serviceModelPage'
 
 let browser : Browser
 setDefaultTimeout(90 * 1000);
@@ -41,6 +42,7 @@ Before(async function(this:CustomWorld,scenario){
     this.searchPage= new SearchPage(this.page);
     this.Pp=new Pagination(this.page);
     this.acsp=new AddCourseStructurePage(this.page);
+    this.smp = new serviceModelPage(this.page)
 })
 
 After(async function(this:CustomWorld,scenario){
