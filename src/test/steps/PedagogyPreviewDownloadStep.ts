@@ -1,15 +1,21 @@
-import { CourseStructureData } from './../types/courseStructure.types';
+import { CourseData } from './../types/courseData.types';
 import {When,Then} from '@cucumber/cucumber';
 import { CustomWorld } from '../world/CustomWorld';
 import { CsvReader } from '../utilities/csvReader';
 import {expect} from '@playwright/test'
 
-const courseName = CsvReader.read<CourseStructureData>("moduleData.csv");
+const courseName = CsvReader.read<CourseData>("CourseData.csv");
 
 When('the user enter course name on the search tab', async function (this:CustomWorld) {
 
-    await this.cmp.EnterSearch(courseName[0]!.Title);
+    await this.cmp.EnterSearch(courseName[0]!.coursename);
     
+});
+
+When('the user clicks the Add Course Structure button',async function(this:CustomWorld){
+
+    await this.cmp.ClickAddCourseStructure();
+
 });
 
 When('the user clicks the print button', async function (this:CustomWorld) {
@@ -26,6 +32,6 @@ When('the user chooses the excel in export options', async function (this:Custom
 
 Then('the user able to see the downloaded excel file', async function (this:CustomWorld) {
 
-    await this.acsp.isDownloaded();
+    expect(await this.acsp.isDownloaded()).toBeTruthy();
   
 });

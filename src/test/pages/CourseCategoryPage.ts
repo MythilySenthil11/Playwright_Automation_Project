@@ -29,7 +29,7 @@ export class CourseCategoryPage extends BasePage{
         this.CategoryButton = this.page.locator("//div[@class='flex justify-end gap-2 pt-2']/child::button[2]");
         this.successMessage = this.page.locator("//h2[@data-slot='dialog-title']");
         this.searchTab=this.page.locator("//div[@class='relative flex-grow w-full sm:w-auto']/child::input");
-        this.dropdown=this.page.locator("//tbody[@data-slot='table-body']/descendant::button");
+        this.dropdown = this.page.locator("//tbody[@data-slot='table-body']/descendant::button").first();
         this.editOption=this.page.locator("//div[@role='menuitem'][1]");
         this.deleteOption=this.page.locator("//div[@role='menuitem'][2]");
         this.confirmDelete=this.page.locator("//div[@class='mt-6 grid grid-cols-2 gap-3']/child::button[2]");
@@ -62,7 +62,6 @@ export class CourseCategoryPage extends BasePage{
 
     async SearchCategory(searchItem:string){
         await this.Fill(this.searchTab,searchItem);
-        await this.WaitForVisible(this.dropdown,1000);
     }
 
     async ClickDropDown(){

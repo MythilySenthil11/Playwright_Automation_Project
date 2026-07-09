@@ -90,7 +90,7 @@ export class AddCourseStructurePage extends BasePage{
     async isDownloaded(){
         const downloadPromise = this.page.waitForEvent('download');
         await this.ClickExcelOption();
-        const download = downloadPromise;
-        expect(download).toBeTruthy();
+        const download = await downloadPromise;
+        return download;
     }
 }
