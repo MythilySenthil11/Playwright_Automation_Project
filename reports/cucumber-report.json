@@ -1,0 +1,159 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "mythily_08/07/2026_recent_activities;verify-the-recent-activities-list",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Verify the recent activities list",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 315136800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1341170799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "the user enters valid credentials",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 404849700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user clicks on the login button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 578166999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the user should be redirected to the Admin Dashboard page",
+            "match": {
+              "location": "src\\test\\steps\\RecentActivitySteps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22591199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "the user opens the Dynamic Field Settings page",
+            "match": {
+              "location": "src\\test\\steps\\RecentActivitySteps.ts:9"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30017113100,
+              "error_message": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'pt-6\\']/child::div/child::div[3]')\u001b[22m\n\n    at admindashboardpage.Click (D:\\Playwright-Project\\src\\test\\pages\\BasePage.ts:12:27)\n    at admindashboardpage.dynamicFieldManagementClick (D:\\Playwright-Project\\src\\test\\pages\\admindashboardpage.ts:39:20)\n    at World.<anonymous> (D:\\Playwright-Project\\src\\test\\steps\\RecentActivitySteps.ts:10:20)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the user clicks the left arrow button",
+            "match": {
+              "location": "src\\test\\steps\\RecentActivitySteps.ts:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "the Recent Activities section should be displayed",
+            "match": {
+              "location": "src\\test\\steps\\RecentActivitySteps.ts:17"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the previously visited pages should be listed",
+            "match": {
+              "location": "src\\test\\steps\\RecentActivitySteps.ts:21"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 195414299
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Mythily",
+            "line": 1
+          },
+          {
+            "name": "@RecentActivities",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "mythily_08/07/2026_recent_activities",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Mythily_08/07/2026_Recent_Activities",
+    "tags": [
+      {
+        "name": "@Mythily",
+        "line": 1
+      }
+    ],
+    "uri": "src\\test\\features\\RecentActivity.feature"
+  }
+]
