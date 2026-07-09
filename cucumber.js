@@ -6,7 +6,7 @@ module.exports = {
             "src/test/steps/**/*.ts",
             "src/test/hooks/**/*.ts"
         ],
-
+        order:"defined",
         paths: [
             "src/test/features/**/*.feature"
         ],

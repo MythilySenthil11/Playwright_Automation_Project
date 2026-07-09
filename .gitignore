@@ -25,3 +25,6 @@ rerun.txt
 # OS
 .DS_Store
 Thumbs.db
+
+reports/
+*.log
