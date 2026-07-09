@@ -43,16 +43,16 @@ export class CourseManagementPage extends BasePage{
 
         this.kebabButton = this.page.locator("//tbody/tr[1]/td[7]/span/div/div/child::*")
         this.editCourseButton = this.page.locator("//tbody/tr[1]/td[7]/span/div/div/div/child::button[2]")
-        this.courseClientDropDown = this.page.locator("//div[@id='radix-«r6»']/child::div/child::*[2]/child::*/child::*/child::*[1]/child::*[1]/button")
-        this.serviceTypeDropDown = this.page.locator("//div[@id='radix-«r6»']/child::div/child::*[2]/child::*/child::*/child::*[1]/child::*[2]/button")
-        this.serviceModelDropDown = this.page.locator("//div[@id='radix-«r6»']/child::div/child::*[2]/child::*/child::*/child::*[1]/child::*[3]/button")
-        this.courseCategoryDropDown = this.page.locator("//div[@id='radix-«r6»']/child::div/child::*[2]/child::*/child::*/child::*[2]/child::*[1]/button")
-        this.courseNameDropDown = this.page.locator("//div[@id='radix-«r6»']/child::div/child::*[2]/child::*/child::*/child::*[2]/child::*[2]/button")
-        this.courseLevelDropDown = this.page.locator("//div[@id='radix-«r6»']/child::div/child::*[2]/child::*/child::*/child::*[1]/child::*[1]/child::*[2]")
-        this.nextButton = this.page.locator("//div[@id='radix-«r6»']/child::div/child::*[3]/child::*/child::*[2]")
-        this.saveLayoutButton = this.page.locator("//div[@id='radix-«rc»']/child::*[2]/child::*[2]/child::*[2]/child::*[2]")
-        this.tostMsg = this.page.locator("//section[@class='Toastify']")
-        this.previewButton =this.page.locator("//button[text()='Preview & Update']")
+        this.courseClientDropDown = this.page.getByRole('combobox').nth(0)
+        this.serviceTypeDropDown = this.page.getByRole('combobox').nth(1)
+        this.serviceModelDropDown = this.page.getByRole('combobox').nth(2)
+        this.courseCategoryDropDown = this.page.getByRole('combobox').nth(3)
+        this.courseNameDropDown = this.page.getByRole('combobox').nth(4)
+        this.courseLevelDropDown = this.page.getByRole('combobox').nth(0)
+        this.nextButton = this.page.getByRole('button', { name: 'Next' })
+        this.saveLayoutButton = this.page.getByRole('button', { name: 'Save Course Layout' })
+        this.tostMsg = this.page.getByText("Course updated successfully!")
+        this.previewButton =this.page.getByRole('button', { name: 'Preview & Update' })
         this.dateSort = this.page.locator("//th[1]/span")
         this.clientSort = this.page.locator("//th[2]/span")
         this.courseSort = this.page.locator("//th[3]/span")
@@ -85,6 +85,7 @@ export class CourseManagementPage extends BasePage{
 
     //actions for editCourse Feature
     async clickKebabButton(){
+        this.clickDateSort()
         await this.Click(this.kebabButton)
     }
 
@@ -104,21 +105,15 @@ export class CourseManagementPage extends BasePage{
     }
 
     async fillFirstPage(){
-        await this.Click(this.courseClientDropDown)
-        await this.page.getByText('PSG Tech', { exact: true }).click();
-        await this.Click(this.serviceTypeDropDown)
-        await this.page.getByText('Business to institution', { exact: true }).click();
-        await this.Click(this.serviceModelDropDown)
-        await this.page.getByText('HTD', { exact: true }).click();
-        await this.Click(this.courseCategoryDropDown)
-        await this.page.getByText('Software Development', { exact: true }).click();
-        await this.Click(this.courseNameDropDown)
-        await this.page.getByText('Frontend', { exact: true }).click();
+        await this.SelectCustomDropdown(this.courseClientDropDown, 'jamocha');
+        await this.SelectCustomDropdown(this.serviceTypeDropDown, 'Business to institution');
+        await this.SelectCustomDropdown(this.serviceModelDropDown, 'HTD');
+        await this.SelectCustomDropdown(this.courseCategoryDropDown, 'Software Development');
+        await this.SelectCustomDropdown(this.courseNameDropDown, 'Frontend');
     }
 
     async fillSecondPage(){
-        await this.Click(this.courseLevelDropDown)
-        await this.page.getByText('Expert', { exact: true }).click();
+        await this.SelectCustomDropdown(this.courseLevelDropDown,'Beginner')
     }
 
     // sort course actions
