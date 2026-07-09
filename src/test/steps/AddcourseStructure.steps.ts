@@ -6,7 +6,7 @@ import { CourseStructureData } from "../types/courseStructure.types";
 const courseData = CsvReader.read<CourseStructureData>("moduleData.csv");
 When('search the course name', async function (this:CustomWorld) {
   // Write code here that turns the phrase above into concrete actions
-  // await this.searchPage.EnterSearch("Defect")
+  await this.cmp.EnterSearch("Defect")
 });
 When('the user clicks the Add Course Structure button on the Course Management page', async function (this:CustomWorld) {
   // Write code here that turns the phrase above into concrete actions

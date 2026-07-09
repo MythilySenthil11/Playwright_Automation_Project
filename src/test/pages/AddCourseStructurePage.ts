@@ -1,5 +1,6 @@
 import { Locator, Page } from "@playwright/test";
 import { BasePage } from "./BasePage";
+import {expect} from '@playwright/test';
 
 export class AddCourseStructurePage extends BasePage{
     readonly page:Page
@@ -84,5 +85,12 @@ export class AddCourseStructurePage extends BasePage{
 
     async ClickExcelOption(){
         await this.Click(this.excelOption);
+    }
+
+    async isDownloaded(){
+        const downloadPromise = this.page.waitForEvent('download');
+        await this.ClickExcelOption();
+        const download = downloadPromise;
+        expect(download).toBeTruthy();
     }
 }

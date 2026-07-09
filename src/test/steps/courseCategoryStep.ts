@@ -51,6 +51,12 @@ Then('the user should see a successful creation message', async function (this: 
 
 });
 
+When('the user enters the category details for edit from JSON file',async function(this:CustomWorld){
+
+    await this.courseCategoryPage.EnterCategoryDetails(Create_details_Edit.category_name, Create_details_Edit.course_name, Create_details_Edit.category_description);
+
+});
+
 
 When("the user enters the category name in the search tab", async function (this: CustomWorld) {
 
@@ -107,19 +113,13 @@ When('the user clicks the delete button in the confirmation pop up', async funct
 
 When('the user searches the deleted category', async function (this: CustomWorld) {
 
-    await this.courseCategoryPage.SearchCategory(Update_details.category_name);
+    await this.courseCategoryPage.SearchCategory(Create_details_Delete.category_name);
 
 });
 
 Then('the user should see a not found message', async function (this: CustomWorld) {
 
     await expect(this.courseCategoryPage.noUsersMessage).toBeVisible({timeout: TIMEOUTS.LONG});
-
-});
-
-When('the user enters the category details for edit from JSON file',async function(this:CustomWorld){
-
-    await this.courseCategoryPage.EnterCategoryDetails(Create_details_Edit.category_name, Create_details_Edit.course_name, Create_details_Edit.category_description);
 
 });
 

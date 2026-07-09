@@ -2,6 +2,7 @@ import { CourseStructureData } from './../types/courseStructure.types';
 import {When,Then} from '@cucumber/cucumber';
 import { CustomWorld } from '../world/CustomWorld';
 import { CsvReader } from '../utilities/csvReader';
+import {expect} from '@playwright/test'
 
 const courseName = CsvReader.read<CourseStructureData>("moduleData.csv");
 
@@ -23,6 +24,8 @@ When('the user chooses the excel in export options', async function (this:Custom
   
 });
 
-Then('the user able to see the downloaded excel file', async function () {
+Then('the user able to see the downloaded excel file', async function (this:CustomWorld) {
+
+    await this.acsp.isDownloaded();
   
 });
