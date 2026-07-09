@@ -2,6 +2,7 @@ import { Given, When, Then } from '@cucumber/cucumber';
 import { CustomWorld } from '../world/CustomWorld';
 import {  TIMEOUTS } from '../constants/timeouts';
 import {data} from '../test-data/pedagogyData.json'
+import { expect } from '@playwright/test';
 When('the user clicks on the Pedagogy button', async function (this: CustomWorld) {
     this.dfp.ClickPedagogy();
 });
@@ -74,3 +75,18 @@ Then('the user should be able to see the updated element', async function (this:
         throw new Error(`Scenario Failed: Updated element text '${expectedUpdatedName}' was missing from the registry view.`);
     }
 });
+let deletedElement=""
+When("the user Clicks on the delete button", async function (this: CustomWorld) {
+     deletedElement = await this.pdp.getDeletedElementFromPage();
+    await this.pdp.clickDeletesvgButton();
+});
+
+When("the user clicks on the delete confirmation button", async function (this: CustomWorld) {
+    await this.pdp.clickDeleteConfirmationButton();
+});
+
+Then( "the user should be able to see the deleted element is not present in the list of pedagogy elements",async function (this: CustomWorld) {
+    const afterdelete = await this.pdp.getDeletedElementFromPage();
+    await expect(deletedElement).not.toEqual(afterdelete)
+}
+);

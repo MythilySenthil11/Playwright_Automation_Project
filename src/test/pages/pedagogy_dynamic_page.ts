@@ -11,6 +11,9 @@ export class pedagogy_dynamic_page extends BasePage{
     readonly listelements:Locator
     readonly editbutton :Locator
     readonly updatebutton : Locator
+    readonly deletesvgbutton:Locator
+    readonly deleteconfirmationbutton:Locator
+    readonly deletedelement:Locator
 
     constructor(page:Page){
         super(page);
@@ -23,6 +26,9 @@ export class pedagogy_dynamic_page extends BasePage{
         this.listelements = this.page.locator("//div[@class='font-medium text-gray-900']");
         this.editbutton=this.page.locator("//tbody[@class='bg-white divide-y divide-gray-200']/descendant::button[@title='Edit Element'][1]")
         this.updatebutton=this.page.locator("//div[@class='flex justify-end space-x-3 pt-4']//button[text()='Update Element']")
+        this.deletesvgbutton = this.page.locator("//tbody[@class='bg-white divide-y divide-gray-200']/descendant::button[@title='Delete Element'][1]")
+        this.deleteconfirmationbutton=this.page.locator("//button[text()='Delete']")
+        this.deletedelement=this.page.locator("//tbody[@class='bg-white divide-y divide-gray-200']/descendant::div[1]")
 
     }
 
@@ -61,4 +67,14 @@ async clickNextPageButton() {
     async clickUpdateElementButton(){
         await this.Click(this.updatebutton)
     }
-}
+
+    async clickDeletesvgButton(){
+        await this.Click(this.deletesvgbutton)
+    }
+    async clickDeleteConfirmationButton(){
+        await this.Click(this.deleteconfirmationbutton) 
+    }
+    async getDeletedElementFromPage() {
+        return await this.GetText(this.deletedelement);
+    }
+    }
