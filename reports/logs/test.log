@@ -762,3 +762,191 @@ Call log:
 [2026-07-09T13:48:06.461Z]INFO-Element clicked successfully
 [2026-07-09T13:48:10.159Z]INFO-Scenario Passed: Add a similar course structure with valid inputs
 [2026-07-09T13:48:12.850Z]INFO-Closing browser
+[2026-07-09T14:36:39.030Z]INFO-Launching Browser
+[2026-07-09T14:36:40.109Z]INFO-Starting scenario: Verify filtering courses by category
+[2026-07-09T14:36:40.509Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T14:36:40.903Z]INFO-Typing message
+[2026-07-09T14:36:41.383Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:36:41.384Z]INFO-Typing message
+[2026-07-09T14:36:41.405Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:36:41.408Z]INFO-Clicking element
+[2026-07-09T14:36:42.242Z]INFO-Element clicked successfully
+[2026-07-09T14:36:42.245Z]INFO-Navigating to Course Management page
+[2026-07-09T14:36:50.779Z]INFO-Clicking element
+[2026-07-09T14:36:50.900Z]INFO-Element clicked successfully
+[2026-07-09T14:36:50.900Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T14:36:50.903Z]INFO-Clicking Filter button
+[2026-07-09T14:36:50.903Z]INFO-Clicking element
+[2026-07-09T14:36:51.852Z]INFO-Element clicked successfully
+[2026-07-09T14:36:51.852Z]INFO-Filter panel opened successfully
+[2026-07-09T14:36:51.855Z]INFO-Selecting category: Automation Project
+[2026-07-09T14:36:51.855Z]INFO-Selecting option: Automation Project
+[2026-07-09T14:37:00.427Z]INFO-Option "Automation Project" selected successfully
+[2026-07-09T14:37:00.427Z]INFO-Category 'Automation Project' selected successfully
+[2026-07-09T14:37:00.429Z]INFO-Validating filtered course list
+[2026-07-09T14:37:00.430Z]INFO-Getting text from all matching elements
+[2026-07-09T14:37:00.471Z]INFO-Getting text
+[2026-07-09T14:37:00.479Z]INFO-Displayed Course Count: 2
+[2026-07-09T14:37:00.479Z]INFO-Total Count from UI: 2 courses
+[2026-07-09T14:37:00.491Z]INFO-Verifying displayed category: Automation Project
+[2026-07-09T14:37:00.492Z]INFO-Verifying displayed category: Automation Project
+[2026-07-09T14:37:00.493Z]INFO-All displayed courses belong to the selected category
+[2026-07-09T14:37:00.494Z]INFO-Scenario Passed: Verify filtering courses by category
+[2026-07-09T14:37:00.583Z]INFO-Starting scenario: Verify filtering courses by level
+[2026-07-09T14:37:00.828Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T14:37:01.260Z]INFO-Typing message
+[2026-07-09T14:37:01.662Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:37:01.662Z]INFO-Typing message
+[2026-07-09T14:37:01.693Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:37:01.695Z]INFO-Clicking element
+[2026-07-09T14:37:02.631Z]INFO-Element clicked successfully
+[2026-07-09T14:37:02.632Z]INFO-Navigating to Course Management page
+[2026-07-09T14:37:21.071Z]INFO-Clicking element
+[2026-07-09T14:37:21.142Z]INFO-Element clicked successfully
+[2026-07-09T14:37:21.143Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T14:37:21.144Z]INFO-Clicking Filter button
+[2026-07-09T14:37:21.144Z]INFO-Clicking element
+[2026-07-09T14:37:22.082Z]INFO-Element clicked successfully
+[2026-07-09T14:37:22.082Z]INFO-Filter panel opened successfully
+[2026-07-09T14:37:22.091Z]INFO-Selecting option: Beginner
+[2026-07-09T14:37:29.094Z]INFO-Option "Beginner" selected successfully
+[2026-07-09T14:37:29.099Z]INFO-Getting text from all matching elements
+[2026-07-09T14:37:29.148Z]INFO-All displayed courses belong to 'Beginner' level
+[2026-07-09T14:37:29.149Z]INFO-Scenario Passed: Verify filtering courses by level
+[2026-07-09T14:37:29.239Z]INFO-Starting scenario: Verify filtering courses by level
+[2026-07-09T14:37:29.508Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T14:37:29.981Z]INFO-Typing message
+[2026-07-09T14:37:30.401Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:37:30.401Z]INFO-Typing message
+[2026-07-09T14:37:30.447Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:37:30.448Z]INFO-Clicking element
+[2026-07-09T14:37:31.404Z]INFO-Element clicked successfully
+[2026-07-09T14:37:31.406Z]INFO-Navigating to Course Management page
+[2026-07-09T14:37:42.145Z]INFO-Clicking element
+[2026-07-09T14:37:42.209Z]INFO-Element clicked successfully
+[2026-07-09T14:37:42.209Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T14:37:42.209Z]INFO-Clicking Filter button
+[2026-07-09T14:37:42.209Z]INFO-Clicking element
+[2026-07-09T14:37:43.089Z]INFO-Element clicked successfully
+[2026-07-09T14:37:43.090Z]INFO-Filter panel opened successfully
+[2026-07-09T14:37:43.091Z]INFO-Selecting option: Intermediate
+[2026-07-09T14:37:51.857Z]INFO-Option "Intermediate" selected successfully
+[2026-07-09T14:37:51.858Z]INFO-Getting text from all matching elements
+[2026-07-09T14:37:51.910Z]INFO-All displayed courses belong to 'Intermediate' level
+[2026-07-09T14:37:51.910Z]INFO-Scenario Passed: Verify filtering courses by level
+[2026-07-09T14:37:52.018Z]INFO-Starting scenario: Verify filtering courses by level
+[2026-07-09T14:37:52.280Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T14:37:52.643Z]INFO-Typing message
+[2026-07-09T14:37:52.980Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:37:52.980Z]INFO-Typing message
+[2026-07-09T14:37:53.011Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:37:53.012Z]INFO-Clicking element
+[2026-07-09T14:37:53.967Z]INFO-Element clicked successfully
+[2026-07-09T14:37:53.970Z]INFO-Navigating to Course Management page
+[2026-07-09T14:38:04.682Z]INFO-Clicking element
+[2026-07-09T14:38:04.751Z]INFO-Element clicked successfully
+[2026-07-09T14:38:04.751Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T14:38:04.751Z]INFO-Clicking Filter button
+[2026-07-09T14:38:04.752Z]INFO-Clicking element
+[2026-07-09T14:38:05.636Z]INFO-Element clicked successfully
+[2026-07-09T14:38:05.636Z]INFO-Filter panel opened successfully
+[2026-07-09T14:38:05.637Z]INFO-Selecting option: Expert
+[2026-07-09T14:38:14.223Z]INFO-Option "Expert" selected successfully
+[2026-07-09T14:38:14.224Z]INFO-Getting text from all matching elements
+[2026-07-09T14:38:14.276Z]INFO-All displayed courses belong to 'Expert' level
+[2026-07-09T14:38:14.276Z]INFO-Scenario Passed: Verify filtering courses by level
+[2026-07-09T14:38:14.339Z]INFO-Closing browser
+[2026-07-09T14:48:37.832Z]INFO-Launching Browser
+[2026-07-09T14:48:38.790Z]INFO-Starting scenario: Verify filtering courses by category
+[2026-07-09T14:48:39.285Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T14:48:39.711Z]INFO-Typing message
+[2026-07-09T14:48:40.061Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:48:40.062Z]INFO-Typing message
+[2026-07-09T14:48:40.098Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:48:40.100Z]INFO-Clicking element
+[2026-07-09T14:48:40.674Z]INFO-Element clicked successfully
+[2026-07-09T14:48:40.677Z]INFO-Navigating to Course Management page
+[2026-07-09T14:48:51.874Z]INFO-Clicking element
+[2026-07-09T14:48:51.945Z]INFO-Element clicked successfully
+[2026-07-09T14:48:51.946Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T14:48:51.948Z]INFO-Clicking Filter button
+[2026-07-09T14:48:51.948Z]INFO-Clicking element
+[2026-07-09T14:48:52.898Z]INFO-Element clicked successfully
+[2026-07-09T14:48:52.898Z]INFO-Filter panel opened successfully
+[2026-07-09T14:48:52.903Z]INFO-Selecting category: Automation Project
+[2026-07-09T14:48:52.903Z]INFO-Selecting option: Automation Project
+[2026-07-09T14:48:59.390Z]INFO-Option "Automation Project" selected successfully
+[2026-07-09T14:48:59.390Z]INFO-Category 'Automation Project' selected successfully
+[2026-07-09T14:48:59.393Z]INFO-Validating filtered course list
+[2026-07-09T14:48:59.393Z]INFO-Getting text from all matching elements
+[2026-07-09T14:48:59.435Z]INFO-Getting text
+[2026-07-09T14:48:59.442Z]INFO-Displayed Course Count: 2
+[2026-07-09T14:48:59.442Z]INFO-Total Count from UI: 2 courses
+[2026-07-09T14:48:59.470Z]INFO-Verifying displayed category: Automation Project
+[2026-07-09T14:48:59.471Z]INFO-Verifying displayed category: Automation Project
+[2026-07-09T14:48:59.472Z]INFO-All displayed courses belong to the selected category
+[2026-07-09T14:48:59.473Z]INFO-Scenario Passed: Verify filtering courses by category
+[2026-07-09T14:48:59.580Z]INFO-Starting scenario: Verify filtering courses by level
+[2026-07-09T14:48:59.832Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T14:49:00.278Z]INFO-Typing message
+[2026-07-09T14:49:00.677Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:49:00.677Z]INFO-Typing message
+[2026-07-09T14:49:00.710Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:49:00.711Z]INFO-Clicking element
+[2026-07-09T14:49:01.689Z]INFO-Element clicked successfully
+[2026-07-09T14:49:01.690Z]INFO-Navigating to Course Management page
+[2026-07-09T14:49:10.928Z]INFO-Clicking element
+[2026-07-09T14:49:10.993Z]INFO-Element clicked successfully
+[2026-07-09T14:49:10.994Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T14:49:10.995Z]INFO-Clicking Filter button
+[2026-07-09T14:49:10.995Z]INFO-Clicking element
+[2026-07-09T14:49:11.976Z]INFO-Element clicked successfully
+[2026-07-09T14:49:11.976Z]INFO-Filter panel opened successfully
+[2026-07-09T14:49:11.984Z]INFO-Selecting option: Beginner
+[2026-07-09T14:49:19.737Z]INFO-Option "Beginner" selected successfully
+[2026-07-09T14:49:19.742Z]INFO-Getting text from all matching elements
+[2026-07-09T14:49:19.793Z]INFO-All displayed courses belong to 'Beginner' level
+[2026-07-09T14:49:19.794Z]INFO-Scenario Passed: Verify filtering courses by level
+[2026-07-09T14:49:19.892Z]INFO-Starting scenario: Verify filtering courses by level
+[2026-07-09T14:49:20.173Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T14:49:20.548Z]INFO-Typing message
+[2026-07-09T14:49:20.947Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:49:20.948Z]INFO-Typing message
+[2026-07-09T14:49:20.990Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:49:20.991Z]INFO-Clicking element
+[2026-07-09T14:49:21.938Z]INFO-Element clicked successfully
+[2026-07-09T14:49:21.939Z]INFO-Navigating to Course Management page
+[2026-07-09T14:49:33.182Z]INFO-Clicking element
+[2026-07-09T14:49:33.242Z]INFO-Element clicked successfully
+[2026-07-09T14:49:33.243Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T14:49:33.243Z]INFO-Clicking Filter button
+[2026-07-09T14:49:33.243Z]INFO-Clicking element
+[2026-07-09T14:49:34.274Z]INFO-Element clicked successfully
+[2026-07-09T14:49:34.274Z]INFO-Filter panel opened successfully
+[2026-07-09T14:49:34.275Z]INFO-Selecting option: Intermediate
+[2026-07-09T14:49:42.235Z]INFO-Option "Intermediate" selected successfully
+[2026-07-09T14:49:42.236Z]INFO-Getting text from all matching elements
+[2026-07-09T14:49:42.286Z]INFO-All displayed courses belong to 'Intermediate' level
+[2026-07-09T14:49:42.287Z]INFO-Scenario Passed: Verify filtering courses by level
+[2026-07-09T14:49:42.355Z]INFO-Starting scenario: Verify filtering courses by level
+[2026-07-09T14:49:42.573Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T14:49:42.965Z]INFO-Typing message
+[2026-07-09T14:49:43.364Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:49:43.364Z]INFO-Typing message
+[2026-07-09T14:49:43.389Z]INFO-Message typed on the locator successfully
+[2026-07-09T14:49:43.390Z]INFO-Clicking element
+[2026-07-09T14:49:44.356Z]INFO-Element clicked successfully
+[2026-07-09T14:49:44.357Z]INFO-Navigating to Course Management page
+[2026-07-09T14:49:59.632Z]INFO-Clicking element
+[2026-07-09T14:49:59.696Z]INFO-Element clicked successfully
+[2026-07-09T14:49:59.696Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T14:49:59.696Z]INFO-Clicking Filter button
+[2026-07-09T14:49:59.696Z]INFO-Clicking element
+[2026-07-09T14:50:00.669Z]INFO-Element clicked successfully
+[2026-07-09T14:50:00.669Z]INFO-Filter panel opened successfully
+[2026-07-09T14:50:00.670Z]INFO-Selecting option: Expert
+[2026-07-09T14:50:07.913Z]INFO-Option "Expert" selected successfully
+[2026-07-09T14:50:07.914Z]INFO-Getting text from all matching elements
+[2026-07-09T14:50:07.975Z]INFO-All displayed courses belong to 'Expert' level
+[2026-07-09T14:50:07.976Z]INFO-Scenario Passed: Verify filtering courses by level
+[2026-07-09T14:50:08.053Z]INFO-Closing browser

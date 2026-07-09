@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "tamilkumar-08-07-2026-add-course-structure;add-a-similar-course-structure-with-valid-inputs",
+        "id": "tamilkumar-07-07-2026-course-filter-functionality;verify-filtering-courses-by-category",
         "keyword": "Scenario",
-        "line": 24,
-        "name": "Add a similar course structure with valid inputs",
+        "line": 10,
+        "name": "Verify filtering courses by category",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1180352600
+              "duration": 476662299
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3668588299
+              "duration": 440791099
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2089994699
+              "duration": 389784900
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 719180499
+              "duration": 576347599
             }
           },
           {
@@ -66,115 +66,46 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14016653800
+              "duration": 11271146499
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 8,
-            "name": "search the course name",
+            "name": "I click the Filter button",
             "match": {
-              "location": "src\\test\\steps\\AddModule.ts:7"
+              "location": "src\\test\\steps\\filter.steps.ts:13"
             },
             "result": {
               "status": "passed",
-              "duration": 3511116200
+              "duration": 951765100
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 25,
-            "name": "the user clicks the Add Course Structure button on the Course Management page",
+            "line": 11,
+            "name": "I select Automation Project from the Category dropdown",
             "match": {
-              "location": "src\\test\\steps\\AddModule.ts:11"
+              "location": "src\\test\\steps\\filter.steps.ts:19"
             },
             "result": {
               "status": "passed",
-              "duration": 4802583899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 26,
-            "name": "the user clicks the Similar Course button",
-            "match": {
-              "location": "src\\test\\steps\\AddModule.ts:51"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2334429299
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "category",
-                      "Software Development"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "search_keyword",
-                      "defect_avengers"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "And ",
-            "line": 27,
-            "name": "the user selects the course category and the user searches for the course to duplicate",
-            "match": {
-              "location": "src\\test\\steps\\AddModule.ts:56"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 9319166300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 30,
-            "name": "the user selects all modules and clicks the Duplicate Structure button",
-            "match": {
-              "location": "src\\test\\steps\\AddModule.ts:64"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2818349899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 31,
-            "name": "the user accepts the duplicate confirmation alert",
-            "match": {
-              "location": "src\\test\\steps\\AddModule.ts:70"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1900070699
+              "duration": 6491997500
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 32,
-            "name": "the user should see the message Operation completed successfully",
+            "line": 12,
+            "name": "only courses belonging to the selected category should be displayed",
             "match": {
-              "location": "src\\test\\steps\\AddModule.ts:33"
+              "location": "src\\test\\steps\\filter.steps.ts:25"
             },
             "result": {
               "status": "passed",
-              "duration": 3696084199
+              "duration": 81836999
             }
           },
           {
@@ -182,7 +113,380 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2641213599
+              "duration": 93403400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Tamil",
+            "line": 1
+          },
+          {
+            "name": "@Tamil",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tamilkumar-07-07-2026-course-filter-functionality;verify-filtering-courses-by-level",
+        "keyword": "Scenario Outline",
+        "line": 20,
+        "name": "Verify filtering courses by level",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 249398200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 447954200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user enters valid credentials",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 432518100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "the user clicks on the login button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 979362300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I navigate to the Course Management page",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9304003199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click the Filter button",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 981886500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I select \"Beginner\" from the level dropdown",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7760834800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "only \"Beginner\" courses should be displayed",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 56184699
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 53171600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Tamil",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tamilkumar-07-07-2026-course-filter-functionality;verify-filtering-courses-by-level",
+        "keyword": "Scenario Outline",
+        "line": 21,
+        "name": "Verify filtering courses by level",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 278929599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 377094799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user enters valid credentials",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 442764999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "the user clicks on the login button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 947641100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I navigate to the Course Management page",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11303289300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click the Filter button",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1031467399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I select \"Intermediate\" from the level dropdown",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7961072100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "only \"Intermediate\" courses should be displayed",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 51093399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 58104200
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Tamil",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tamilkumar-07-07-2026-course-filter-functionality;verify-filtering-courses-by-level",
+        "keyword": "Scenario Outline",
+        "line": 22,
+        "name": "Verify filtering courses by level",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 216783299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 393165699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user enters valid credentials",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 424641399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "the user clicks on the login button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 966733600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I navigate to the Course Management page",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15339268400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click the Filter button",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 973422300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I select \"Expert\" from the level dropdown",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7243849799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "only \"Expert\" courses should be displayed",
+            "match": {
+              "location": "src\\test\\steps\\filter.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 61890299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 68674899
             }
           }
         ],
@@ -195,16 +499,16 @@
         "type": "scenario"
       }
     ],
-    "id": "tamilkumar-08-07-2026-add-course-structure",
+    "id": "tamilkumar-07-07-2026-course-filter-functionality",
     "line": 2,
     "keyword": "Feature",
-    "name": "TamilKumar 08-07-2026 Add course structure",
+    "name": "TamilKumar 07-07-2026 Course Filter Functionality",
     "tags": [
       {
         "name": "@Tamil",
         "line": 1
       }
     ],
-    "uri": "src\\test\\features\\Module.feature"
+    "uri": "src\\test\\features\\filter.feature"
   }
 ]
