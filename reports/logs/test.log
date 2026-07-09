@@ -4023,3 +4023,696 @@ Call log:
 [2026-07-09T07:33:32.413Z]INFO-Element clicked successfully
 [2026-07-09T07:33:32.421Z]INFO-Scenario Passed: verify the Excel download functionality of Pedagogy in course structure
 [2026-07-09T07:33:32.458Z]INFO-Closing browser
+[2026-07-09T07:37:30.361Z]INFO-Launching Browser
+[2026-07-09T07:37:31.440Z]INFO-Starting scenario: Add category by entering all the fields
+[2026-07-09T07:37:31.660Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T07:37:32.979Z]INFO-Typing message
+[2026-07-09T07:37:33.850Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:37:33.851Z]INFO-Typing message
+[2026-07-09T07:37:33.873Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:37:33.875Z]INFO-Clicking element
+[2026-07-09T07:37:33.980Z]INFO-Element clicked successfully
+[2026-07-09T07:37:33.983Z]INFO-Clicking element
+[2026-07-09T07:38:04.003Z]ERROR-Failed to click element: TimeoutError: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('//div[@class=\'pt-6\']/child::div/child::div[3]')[22m
+
+[2026-07-09T07:38:04.243Z]ERROR-Scenario Failed: Add category by entering all the fields
+[2026-07-09T07:38:04.286Z]INFO-Starting scenario: Edit category details with the help of search functionality
+[2026-07-09T07:38:04.431Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T07:38:05.925Z]INFO-Typing message
+[2026-07-09T07:38:06.345Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:38:06.345Z]INFO-Typing message
+[2026-07-09T07:38:06.361Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:38:06.362Z]INFO-Clicking element
+[2026-07-09T07:38:07.303Z]INFO-Element clicked successfully
+[2026-07-09T07:38:07.303Z]INFO-Clicking element
+[2026-07-09T07:38:18.480Z]INFO-Element clicked successfully
+[2026-07-09T07:38:18.483Z]INFO-Clicking element
+[2026-07-09T07:38:18.810Z]INFO-Element clicked successfully
+[2026-07-09T07:38:18.812Z]INFO-Clicking element
+[2026-07-09T07:38:19.814Z]INFO-Element clicked successfully
+[2026-07-09T07:38:19.816Z]INFO-Typing message
+[2026-07-09T07:38:19.832Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:38:19.832Z]INFO-Typing message
+[2026-07-09T07:38:19.845Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:38:19.845Z]INFO-Typing message
+[2026-07-09T07:38:19.860Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:38:19.862Z]INFO-Clicking element
+[2026-07-09T07:38:20.142Z]INFO-Element clicked successfully
+[2026-07-09T07:38:27.241Z]INFO-Typing message
+[2026-07-09T07:38:27.261Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:38:27.265Z]INFO-Clicking element
+[2026-07-09T07:38:27.304Z]ERROR-Failed to click element: Error: locator.click: Error: strict mode violation: locator('//tbody[@data-slot=\'table-body\']/descendant::button') resolved to 5 elements:
+    1) <button type="button" id="radix-«rc»" data-state="closed" aria-haspopup="menu" aria-expanded="false" data-slot="dropdown-menu-trigger" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium cursor-pointer disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid…>…</button> aka locator('[id="radix-«rc»"]')
+    2) <button type="button" id="radix-«re»" data-state="closed" aria-haspopup="menu" aria-expanded="false" data-slot="dropdown-menu-trigger" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium cursor-pointer disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid…>…</button> aka locator('[id="radix-«re»"]')
+    3) <button type="button" id="radix-«rg»" data-state="closed" aria-haspopup="menu" aria-expanded="false" data-slot="dropdown-menu-trigger" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium cursor-pointer disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid…>…</button> aka locator('[id="radix-«rg»"]')
+    4) <button type="button" id="radix-«ri»" data-state="closed" aria-haspopup="menu" aria-expanded="false" data-slot="dropdown-menu-trigger" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium cursor-pointer disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid…>…</button> aka locator('[id="radix-«ri»"]')
+    5) <button type="button" id="radix-«rk»" data-state="closed" aria-haspopup="menu" aria-expanded="false" data-slot="dropdown-menu-trigger" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium cursor-pointer disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid…>…</button> aka locator('[id="radix-«rk»"]')
+
+Call log:
+[2m  - waiting for locator('//tbody[@data-slot=\'table-body\']/descendant::button')[22m
+
+[2026-07-09T07:38:27.506Z]ERROR-Scenario Failed: Edit category details with the help of search functionality
+[2026-07-09T07:38:27.539Z]INFO-Starting scenario: Delete the category with the help of search functionality
+[2026-07-09T07:38:27.696Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T07:38:29.058Z]INFO-Typing message
+[2026-07-09T07:38:29.406Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:38:29.406Z]INFO-Typing message
+[2026-07-09T07:38:29.434Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:38:29.434Z]INFO-Clicking element
+[2026-07-09T07:38:30.412Z]INFO-Element clicked successfully
+[2026-07-09T07:38:30.412Z]INFO-Clicking element
+[2026-07-09T07:39:00.428Z]ERROR-Failed to click element: TimeoutError: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('//div[@class=\'pt-6\']/child::div/child::div[3]')[22m
+
+[2026-07-09T07:39:00.600Z]ERROR-Scenario Failed: Delete the category with the help of search functionality
+[2026-07-09T07:39:00.632Z]INFO-Starting scenario: verify the Excel download functionality of Pedagogy in course structure
+[2026-07-09T07:39:00.768Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T07:39:02.144Z]INFO-Typing message
+[2026-07-09T07:39:02.524Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:39:02.524Z]INFO-Typing message
+[2026-07-09T07:39:02.540Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:39:02.540Z]INFO-Clicking element
+[2026-07-09T07:39:03.482Z]INFO-Element clicked successfully
+[2026-07-09T07:39:17.197Z]INFO-Clicking element
+[2026-07-09T07:39:17.257Z]INFO-Element clicked successfully
+[2026-07-09T07:39:17.262Z]INFO-Scenario Passed: verify the Excel download functionality of Pedagogy in course structure
+[2026-07-09T07:39:17.298Z]INFO-Closing browser
+[2026-07-09T07:48:41.200Z]INFO-Launching Browser
+[2026-07-09T07:48:41.847Z]INFO-Starting scenario: Add category by entering all the fields
+[2026-07-09T07:48:42.285Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T07:48:43.848Z]INFO-Typing message
+[2026-07-09T07:48:45.180Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:48:45.181Z]INFO-Typing message
+[2026-07-09T07:48:45.233Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:48:45.236Z]INFO-Clicking element
+[2026-07-09T07:48:45.823Z]INFO-Element clicked successfully
+[2026-07-09T07:48:45.826Z]INFO-Clicking element
+[2026-07-09T07:49:15.857Z]ERROR-Failed to click element: TimeoutError: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('//div[@class=\'pt-6\']/child::div/child::div[3]')[22m
+
+[2026-07-09T07:49:16.085Z]ERROR-Scenario Failed: Add category by entering all the fields
+[2026-07-09T07:49:16.158Z]INFO-Starting scenario: Edit category details with the help of search functionality
+[2026-07-09T07:49:16.319Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T07:49:17.667Z]INFO-Typing message
+[2026-07-09T07:49:18.030Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:49:18.030Z]INFO-Typing message
+[2026-07-09T07:49:18.053Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:49:18.055Z]INFO-Clicking element
+[2026-07-09T07:49:19.009Z]INFO-Element clicked successfully
+[2026-07-09T07:49:19.009Z]INFO-Clicking element
+[2026-07-09T07:49:45.810Z]INFO-Element clicked successfully
+[2026-07-09T07:49:45.812Z]INFO-Clicking element
+[2026-07-09T07:49:46.238Z]INFO-Element clicked successfully
+[2026-07-09T07:49:46.239Z]INFO-Clicking element
+[2026-07-09T07:49:47.254Z]INFO-Element clicked successfully
+[2026-07-09T07:49:47.256Z]INFO-Typing message
+[2026-07-09T07:49:47.271Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:49:47.272Z]INFO-Typing message
+[2026-07-09T07:49:47.288Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:49:47.288Z]INFO-Typing message
+[2026-07-09T07:49:47.305Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:49:47.306Z]INFO-Clicking element
+[2026-07-09T07:49:47.719Z]INFO-Element clicked successfully
+[2026-07-09T07:49:58.024Z]ERROR-Scenario Failed: Edit category details with the help of search functionality
+[2026-07-09T07:49:58.074Z]INFO-Starting scenario: Delete the category with the help of search functionality
+[2026-07-09T07:49:58.199Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T07:49:59.581Z]INFO-Typing message
+[2026-07-09T07:49:59.861Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:49:59.862Z]INFO-Typing message
+[2026-07-09T07:49:59.881Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:49:59.882Z]INFO-Clicking element
+[2026-07-09T07:50:00.838Z]INFO-Element clicked successfully
+[2026-07-09T07:50:00.838Z]INFO-Clicking element
+[2026-07-09T07:50:30.844Z]ERROR-Failed to click element: TimeoutError: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('//div[@class=\'pt-6\']/child::div/child::div[3]')[22m
+
+[2026-07-09T07:50:30.998Z]ERROR-Scenario Failed: Delete the category with the help of search functionality
+[2026-07-09T07:50:31.039Z]INFO-Starting scenario: verify the Excel download functionality of Pedagogy in course structure
+[2026-07-09T07:50:31.178Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T07:50:32.587Z]INFO-Typing message
+[2026-07-09T07:50:32.852Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:50:32.852Z]INFO-Typing message
+[2026-07-09T07:50:32.866Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:50:32.866Z]INFO-Clicking element
+[2026-07-09T07:50:33.778Z]INFO-Element clicked successfully
+[2026-07-09T07:50:52.756Z]INFO-Clicking element
+[2026-07-09T07:50:52.807Z]INFO-Element clicked successfully
+[2026-07-09T07:50:52.812Z]INFO-Scenario Passed: verify the Excel download functionality of Pedagogy in course structure
+[2026-07-09T07:50:52.850Z]INFO-Closing browser
+[2026-07-09T07:53:15.996Z]INFO-Launching Browser
+[2026-07-09T07:53:16.893Z]INFO-Starting scenario: Add category by entering all the fields
+[2026-07-09T07:53:17.115Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T07:53:18.513Z]INFO-Typing message
+[2026-07-09T07:53:18.811Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:53:18.812Z]INFO-Typing message
+[2026-07-09T07:53:18.828Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:53:18.831Z]INFO-Clicking element
+[2026-07-09T07:53:19.794Z]INFO-Element clicked successfully
+[2026-07-09T07:53:19.797Z]INFO-Clicking element
+[2026-07-09T07:53:28.469Z]INFO-Element clicked successfully
+[2026-07-09T07:53:28.471Z]INFO-Clicking element
+[2026-07-09T07:53:28.781Z]INFO-Element clicked successfully
+[2026-07-09T07:53:28.783Z]INFO-Clicking element
+[2026-07-09T07:53:29.785Z]INFO-Element clicked successfully
+[2026-07-09T07:53:29.787Z]INFO-Typing message
+[2026-07-09T07:53:29.803Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:53:29.803Z]INFO-Typing message
+[2026-07-09T07:53:29.823Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:53:29.823Z]INFO-Typing message
+[2026-07-09T07:53:29.842Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:53:29.844Z]INFO-Clicking element
+[2026-07-09T07:53:30.131Z]INFO-Element clicked successfully
+[2026-07-09T07:53:40.386Z]ERROR-Scenario Failed: Add category by entering all the fields
+[2026-07-09T07:53:40.463Z]INFO-Starting scenario: Edit category details with the help of search functionality
+[2026-07-09T07:53:40.672Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T07:53:42.007Z]INFO-Typing message
+[2026-07-09T07:53:42.388Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:53:42.388Z]INFO-Typing message
+[2026-07-09T07:53:42.409Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:53:42.410Z]INFO-Clicking element
+[2026-07-09T07:53:43.360Z]INFO-Element clicked successfully
+[2026-07-09T07:53:43.360Z]INFO-Clicking element
+[2026-07-09T07:53:52.022Z]INFO-Element clicked successfully
+[2026-07-09T07:53:52.023Z]INFO-Clicking element
+[2026-07-09T07:53:52.330Z]INFO-Element clicked successfully
+[2026-07-09T07:53:52.330Z]INFO-Clicking element
+[2026-07-09T07:53:53.337Z]INFO-Element clicked successfully
+[2026-07-09T07:53:53.341Z]INFO-Typing message
+[2026-07-09T07:53:53.362Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:53:53.362Z]INFO-Typing message
+[2026-07-09T07:53:53.398Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:53:53.398Z]INFO-Typing message
+[2026-07-09T07:53:53.931Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:53:53.934Z]INFO-Clicking element
+[2026-07-09T07:53:54.259Z]INFO-Element clicked successfully
+[2026-07-09T07:53:58.261Z]INFO-Clicking element
+[2026-07-09T07:53:58.588Z]INFO-Element clicked successfully
+[2026-07-09T07:53:58.591Z]INFO-Typing message
+[2026-07-09T07:53:58.606Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:53:58.608Z]INFO-Clicking element
+[2026-07-09T07:53:58.635Z]ERROR-Failed to click element: Error: locator.click: Error: strict mode violation: locator('//tbody[@data-slot=\'table-body\']/descendant::button') resolved to 5 elements:
+    1) <button type="button" id="radix-«rc»" data-state="closed" aria-haspopup="menu" aria-expanded="false" data-slot="dropdown-menu-trigger" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium cursor-pointer disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid…>…</button> aka locator('[id="radix-«rc»"]')
+    2) <button type="button" id="radix-«re»" data-state="closed" aria-haspopup="menu" aria-expanded="false" data-slot="dropdown-menu-trigger" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium cursor-pointer disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid…>…</button> aka locator('[id="radix-«re»"]')
+    3) <button type="button" id="radix-«rg»" data-state="closed" aria-haspopup="menu" aria-expanded="false" data-slot="dropdown-menu-trigger" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium cursor-pointer disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid…>…</button> aka locator('[id="radix-«rg»"]')
+    4) <button type="button" id="radix-«ri»" data-state="closed" aria-haspopup="menu" aria-expanded="false" data-slot="dropdown-menu-trigger" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium cursor-pointer disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid…>…</button> aka locator('[id="radix-«ri»"]')
+    5) <button type="button" id="radix-«rk»" data-state="closed" aria-haspopup="menu" aria-expanded="false" data-slot="dropdown-menu-trigger" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium cursor-pointer disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid…>…</button> aka locator('[id="radix-«rk»"]')
+
+Call log:
+[2m  - waiting for locator('//tbody[@data-slot=\'table-body\']/descendant::button')[22m
+
+[2026-07-09T07:53:58.747Z]ERROR-Scenario Failed: Edit category details with the help of search functionality
+[2026-07-09T07:53:58.790Z]INFO-Starting scenario: Delete the category with the help of search functionality
+[2026-07-09T07:53:58.936Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T07:54:00.304Z]INFO-Typing message
+[2026-07-09T07:54:00.591Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:54:00.591Z]INFO-Typing message
+[2026-07-09T07:54:00.610Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:54:00.611Z]INFO-Clicking element
+[2026-07-09T07:54:01.551Z]INFO-Element clicked successfully
+[2026-07-09T07:54:01.552Z]INFO-Clicking element
+[2026-07-09T07:54:08.581Z]INFO-Element clicked successfully
+[2026-07-09T07:54:08.582Z]INFO-Clicking element
+[2026-07-09T07:54:08.902Z]INFO-Element clicked successfully
+[2026-07-09T07:54:08.907Z]INFO-Clicking element
+[2026-07-09T07:54:09.913Z]INFO-Element clicked successfully
+[2026-07-09T07:54:09.916Z]INFO-Typing message
+[2026-07-09T07:54:09.960Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:54:09.960Z]INFO-Typing message
+[2026-07-09T07:54:10.020Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:54:10.021Z]INFO-Typing message
+[2026-07-09T07:54:10.123Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:54:10.126Z]INFO-Clicking element
+[2026-07-09T07:54:10.304Z]INFO-Element clicked successfully
+[2026-07-09T07:54:20.462Z]ERROR-Scenario Failed: Delete the category with the help of search functionality
+[2026-07-09T07:54:20.507Z]INFO-Starting scenario: verify the Excel download functionality of Pedagogy in course structure
+[2026-07-09T07:54:20.763Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T07:54:22.105Z]INFO-Typing message
+[2026-07-09T07:54:22.356Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:54:22.357Z]INFO-Typing message
+[2026-07-09T07:54:22.377Z]INFO-Message typed on the locator successfully
+[2026-07-09T07:54:22.378Z]INFO-Clicking element
+[2026-07-09T07:54:23.366Z]INFO-Element clicked successfully
+[2026-07-09T07:54:48.933Z]INFO-Clicking element
+[2026-07-09T07:54:49.006Z]INFO-Element clicked successfully
+[2026-07-09T07:54:49.010Z]INFO-Scenario Passed: verify the Excel download functionality of Pedagogy in course structure
+[2026-07-09T07:54:49.041Z]INFO-Closing browser
+[2026-07-09T08:34:09.007Z]INFO-Launching Browser
+[2026-07-09T08:34:11.131Z]INFO-Starting scenario: Add category by entering all the fields
+[2026-07-09T08:34:11.585Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T08:34:12.948Z]INFO-Typing message
+[2026-07-09T08:34:13.245Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:34:13.246Z]INFO-Typing message
+[2026-07-09T08:34:13.269Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:34:13.271Z]INFO-Clicking element
+[2026-07-09T08:34:13.804Z]INFO-Element clicked successfully
+[2026-07-09T08:34:13.807Z]INFO-Clicking element
+[2026-07-09T08:34:30.251Z]INFO-Element clicked successfully
+[2026-07-09T08:34:30.253Z]INFO-Clicking element
+[2026-07-09T08:34:30.741Z]INFO-Element clicked successfully
+[2026-07-09T08:34:30.745Z]INFO-Clicking element
+[2026-07-09T08:34:31.922Z]INFO-Element clicked successfully
+[2026-07-09T08:34:31.923Z]INFO-Typing message
+[2026-07-09T08:34:31.947Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:34:31.947Z]INFO-Typing message
+[2026-07-09T08:34:31.963Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:34:31.963Z]INFO-Typing message
+[2026-07-09T08:34:31.997Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:34:31.999Z]INFO-Clicking element
+[2026-07-09T08:34:32.269Z]INFO-Element clicked successfully
+[2026-07-09T08:34:40.432Z]INFO-Scenario Passed: Add category by entering all the fields
+[2026-07-09T08:34:40.747Z]INFO-Starting scenario: Edit category details with the help of search functionality
+[2026-07-09T08:34:41.004Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T08:34:42.323Z]INFO-Typing message
+[2026-07-09T08:34:42.592Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:34:42.593Z]INFO-Typing message
+[2026-07-09T08:34:42.619Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:34:42.620Z]INFO-Clicking element
+[2026-07-09T08:34:43.544Z]INFO-Element clicked successfully
+[2026-07-09T08:34:43.544Z]INFO-Clicking element
+[2026-07-09T08:35:00.909Z]INFO-Element clicked successfully
+[2026-07-09T08:35:00.911Z]INFO-Clicking element
+[2026-07-09T08:35:01.361Z]INFO-Element clicked successfully
+[2026-07-09T08:35:01.362Z]INFO-Clicking element
+[2026-07-09T08:35:02.356Z]INFO-Element clicked successfully
+[2026-07-09T08:35:02.361Z]INFO-Typing message
+[2026-07-09T08:35:02.394Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:35:02.395Z]INFO-Typing message
+[2026-07-09T08:35:02.454Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:35:02.454Z]INFO-Typing message
+[2026-07-09T08:35:02.515Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:35:02.516Z]INFO-Clicking element
+[2026-07-09T08:35:02.707Z]INFO-Element clicked successfully
+[2026-07-09T08:35:13.446Z]ERROR-Scenario Failed: Edit category details with the help of search functionality
+[2026-07-09T08:35:13.542Z]INFO-Starting scenario: Delete the category with the help of search functionality
+[2026-07-09T08:35:13.840Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T08:35:15.254Z]INFO-Typing message
+[2026-07-09T08:35:15.688Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:35:15.689Z]INFO-Typing message
+[2026-07-09T08:35:15.778Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:35:15.779Z]INFO-Clicking element
+[2026-07-09T08:35:16.299Z]INFO-Element clicked successfully
+[2026-07-09T08:35:16.301Z]INFO-Clicking element
+[2026-07-09T08:35:39.259Z]INFO-Element clicked successfully
+[2026-07-09T08:35:39.260Z]INFO-Clicking element
+[2026-07-09T08:35:39.700Z]INFO-Element clicked successfully
+[2026-07-09T08:35:39.701Z]INFO-Clicking element
+[2026-07-09T08:35:40.782Z]INFO-Element clicked successfully
+[2026-07-09T08:35:40.792Z]INFO-Typing message
+[2026-07-09T08:35:40.857Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:35:40.858Z]INFO-Typing message
+[2026-07-09T08:35:40.959Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:35:40.959Z]INFO-Typing message
+[2026-07-09T08:35:41.033Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:35:41.034Z]INFO-Clicking element
+[2026-07-09T08:35:41.146Z]INFO-Element clicked successfully
+[2026-07-09T08:35:51.520Z]ERROR-Scenario Failed: Delete the category with the help of search functionality
+[2026-07-09T08:35:51.620Z]INFO-Starting scenario: verify the Excel download functionality of Pedagogy in course structure
+[2026-07-09T08:35:51.957Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T08:35:53.450Z]INFO-Typing message
+[2026-07-09T08:35:53.971Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:35:53.971Z]INFO-Typing message
+[2026-07-09T08:35:54.009Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:35:54.010Z]INFO-Clicking element
+[2026-07-09T08:35:55.076Z]INFO-Element clicked successfully
+[2026-07-09T08:36:07.199Z]INFO-Clicking element
+[2026-07-09T08:36:07.340Z]INFO-Element clicked successfully
+[2026-07-09T08:36:07.364Z]INFO-Scenario Passed: verify the Excel download functionality of Pedagogy in course structure
+[2026-07-09T08:36:07.471Z]INFO-Closing browser
+[2026-07-09T08:37:46.556Z]INFO-Launching Browser
+[2026-07-09T08:37:48.031Z]INFO-Starting scenario: Add category by entering all the fields
+[2026-07-09T08:37:49.116Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T08:37:50.531Z]INFO-Typing message
+[2026-07-09T08:37:51.057Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:37:51.058Z]INFO-Typing message
+[2026-07-09T08:37:51.097Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:37:51.102Z]INFO-Clicking element
+[2026-07-09T08:37:51.684Z]INFO-Element clicked successfully
+[2026-07-09T08:37:51.698Z]INFO-Clicking element
+[2026-07-09T08:38:05.494Z]INFO-Element clicked successfully
+[2026-07-09T08:38:05.499Z]INFO-Clicking element
+[2026-07-09T08:38:06.159Z]INFO-Element clicked successfully
+[2026-07-09T08:38:06.166Z]INFO-Clicking element
+[2026-07-09T08:38:06.885Z]INFO-Element clicked successfully
+[2026-07-09T08:38:06.895Z]INFO-Typing message
+[2026-07-09T08:38:06.956Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:38:06.957Z]INFO-Typing message
+[2026-07-09T08:38:07.023Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:38:07.024Z]INFO-Typing message
+[2026-07-09T08:38:07.065Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:38:07.069Z]INFO-Clicking element
+[2026-07-09T08:38:07.443Z]INFO-Element clicked successfully
+[2026-07-09T08:38:17.999Z]ERROR-Scenario Failed: Add category by entering all the fields
+[2026-07-09T08:38:18.168Z]INFO-Starting scenario: Edit category details with the help of search functionality
+[2026-07-09T08:38:18.488Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T08:38:19.928Z]INFO-Typing message
+[2026-07-09T08:38:20.378Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:38:20.379Z]INFO-Typing message
+[2026-07-09T08:38:20.435Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:38:20.443Z]INFO-Clicking element
+[2026-07-09T08:38:21.011Z]INFO-Element clicked successfully
+[2026-07-09T08:38:21.012Z]INFO-Clicking element
+[2026-07-09T08:38:44.337Z]INFO-Element clicked successfully
+[2026-07-09T08:38:44.338Z]INFO-Clicking element
+[2026-07-09T08:38:44.836Z]INFO-Element clicked successfully
+[2026-07-09T08:38:44.838Z]INFO-Clicking element
+[2026-07-09T08:38:45.879Z]INFO-Element clicked successfully
+[2026-07-09T08:38:45.884Z]INFO-Typing message
+[2026-07-09T08:38:45.918Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:38:45.918Z]INFO-Typing message
+[2026-07-09T08:38:45.963Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:38:45.964Z]INFO-Typing message
+[2026-07-09T08:38:46.027Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:38:46.029Z]INFO-Clicking element
+[2026-07-09T08:38:46.298Z]INFO-Element clicked successfully
+[2026-07-09T08:38:50.274Z]INFO-Clicking element
+[2026-07-09T08:38:50.652Z]INFO-Element clicked successfully
+[2026-07-09T08:38:50.657Z]INFO-Typing message
+[2026-07-09T08:38:50.714Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:38:50.722Z]INFO-Clicking element
+[2026-07-09T08:38:50.824Z]ERROR-Failed to click element: Error: locator.click: Error: strict mode violation: locator('//tbody[@data-slot=\'table-body\']/descendant::button') resolved to 5 elements:
+    1) <button type="button" id="radix-«rc»" data-state="closed" aria-haspopup="menu" aria-expanded="false" data-slot="dropdown-menu-trigger" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium cursor-pointer disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid…>…</button> aka locator('[id="radix-«rc»"]')
+    2) <button type="button" id="radix-«re»" data-state="closed" aria-haspopup="menu" aria-expanded="false" data-slot="dropdown-menu-trigger" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium cursor-pointer disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid…>…</button> aka locator('[id="radix-«re»"]')
+    3) <button type="button" id="radix-«rg»" data-state="closed" aria-haspopup="menu" aria-expanded="false" data-slot="dropdown-menu-trigger" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium cursor-pointer disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid…>…</button> aka locator('[id="radix-«rg»"]')
+    4) <button type="button" id="radix-«ri»" data-state="closed" aria-haspopup="menu" aria-expanded="false" data-slot="dropdown-menu-trigger" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium cursor-pointer disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid…>…</button> aka locator('[id="radix-«ri»"]')
+    5) <button type="button" id="radix-«rk»" data-state="closed" aria-haspopup="menu" aria-expanded="false" data-slot="dropdown-menu-trigger" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium cursor-pointer disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid…>…</button> aka locator('[id="radix-«rk»"]')
+
+Call log:
+[2m  - waiting for locator('//tbody[@data-slot=\'table-body\']/descendant::button')[22m
+
+[2026-07-09T08:38:51.424Z]ERROR-Scenario Failed: Edit category details with the help of search functionality
+[2026-07-09T08:38:51.522Z]INFO-Starting scenario: Delete the category with the help of search functionality
+[2026-07-09T08:38:51.764Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T08:38:53.181Z]INFO-Typing message
+[2026-07-09T08:38:53.638Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:38:53.639Z]INFO-Typing message
+[2026-07-09T08:38:53.681Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:38:53.682Z]INFO-Clicking element
+[2026-07-09T08:38:54.715Z]INFO-Element clicked successfully
+[2026-07-09T08:38:54.716Z]INFO-Clicking element
+[2026-07-09T08:39:10.461Z]INFO-Element clicked successfully
+[2026-07-09T08:39:10.462Z]INFO-Clicking element
+[2026-07-09T08:39:11.341Z]INFO-Element clicked successfully
+[2026-07-09T08:39:11.342Z]INFO-Clicking element
+[2026-07-09T08:39:12.516Z]INFO-Element clicked successfully
+[2026-07-09T08:39:12.523Z]INFO-Typing message
+[2026-07-09T08:39:12.577Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:39:12.577Z]INFO-Typing message
+[2026-07-09T08:39:12.623Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:39:12.624Z]INFO-Typing message
+[2026-07-09T08:39:12.691Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:39:12.692Z]INFO-Clicking element
+[2026-07-09T08:39:12.878Z]INFO-Element clicked successfully
+[2026-07-09T08:39:17.677Z]INFO-Clicking element
+[2026-07-09T08:39:17.729Z]INFO-Element clicked successfully
+[2026-07-09T08:39:17.733Z]INFO-Typing message
+[2026-07-09T08:39:17.770Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:39:17.773Z]INFO-Clicking element
+[2026-07-09T08:39:17.832Z]ERROR-Failed to click element: Error: locator.click: Error: strict mode violation: locator('//tbody[@data-slot=\'table-body\']/descendant::button') resolved to 5 elements:
+    1) <button type="button" id="radix-«rc»" data-state="closed" aria-haspopup="menu" aria-expanded="false" data-slot="dropdown-menu-trigger" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium cursor-pointer disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid…>…</button> aka locator('[id="radix-«rc»"]')
+    2) <button type="button" id="radix-«re»" data-state="closed" aria-haspopup="menu" aria-expanded="false" data-slot="dropdown-menu-trigger" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium cursor-pointer disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid…>…</button> aka locator('[id="radix-«re»"]')
+    3) <button type="button" id="radix-«rg»" data-state="closed" aria-haspopup="menu" aria-expanded="false" data-slot="dropdown-menu-trigger" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium cursor-pointer disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid…>…</button> aka locator('[id="radix-«rg»"]')
+    4) <button type="button" id="radix-«ri»" data-state="closed" aria-haspopup="menu" aria-expanded="false" data-slot="dropdown-menu-trigger" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium cursor-pointer disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid…>…</button> aka locator('[id="radix-«ri»"]')
+    5) <button type="button" id="radix-«rk»" data-state="closed" aria-haspopup="menu" aria-expanded="false" data-slot="dropdown-menu-trigger" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium cursor-pointer disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid…>…</button> aka locator('[id="radix-«rk»"]')
+
+Call log:
+[2m  - waiting for locator('//tbody[@data-slot=\'table-body\']/descendant::button')[22m
+
+[2026-07-09T08:39:18.039Z]ERROR-Scenario Failed: Delete the category with the help of search functionality
+[2026-07-09T08:39:18.100Z]INFO-Starting scenario: verify the Excel download functionality of Pedagogy in course structure
+[2026-07-09T08:39:18.341Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T08:39:19.858Z]INFO-Typing message
+[2026-07-09T08:39:20.647Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:39:20.647Z]INFO-Typing message
+[2026-07-09T08:39:20.678Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:39:20.678Z]INFO-Clicking element
+[2026-07-09T08:39:21.702Z]INFO-Element clicked successfully
+[2026-07-09T08:39:36.017Z]INFO-Clicking element
+[2026-07-09T08:39:36.114Z]INFO-Element clicked successfully
+[2026-07-09T08:39:36.128Z]INFO-Scenario Passed: verify the Excel download functionality of Pedagogy in course structure
+[2026-07-09T08:39:36.236Z]INFO-Closing browser
+[2026-07-09T08:42:03.883Z]INFO-Launching Browser
+[2026-07-09T08:42:04.612Z]INFO-Starting scenario: Add category by entering all the fields
+[2026-07-09T08:42:05.001Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T08:42:06.426Z]INFO-Typing message
+[2026-07-09T08:42:06.905Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:42:06.906Z]INFO-Typing message
+[2026-07-09T08:42:06.947Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:42:06.952Z]INFO-Clicking element
+[2026-07-09T08:42:07.592Z]INFO-Element clicked successfully
+[2026-07-09T08:42:07.605Z]INFO-Clicking element
+[2026-07-09T08:42:31.502Z]INFO-Element clicked successfully
+[2026-07-09T08:42:31.509Z]INFO-Clicking element
+[2026-07-09T08:42:32.245Z]INFO-Element clicked successfully
+[2026-07-09T08:42:32.251Z]INFO-Clicking element
+[2026-07-09T08:42:32.930Z]INFO-Element clicked successfully
+[2026-07-09T08:42:32.937Z]INFO-Typing message
+[2026-07-09T08:42:33.000Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:42:33.000Z]INFO-Typing message
+[2026-07-09T08:42:33.066Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:42:33.066Z]INFO-Typing message
+[2026-07-09T08:42:33.126Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:42:33.130Z]INFO-Clicking element
+[2026-07-09T08:42:33.447Z]INFO-Element clicked successfully
+[2026-07-09T08:42:44.259Z]ERROR-Scenario Failed: Add category by entering all the fields
+[2026-07-09T08:42:44.357Z]INFO-Starting scenario: Edit category details with the help of search functionality
+[2026-07-09T08:42:44.656Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T08:42:46.067Z]INFO-Typing message
+[2026-07-09T08:42:46.556Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:42:46.557Z]INFO-Typing message
+[2026-07-09T08:42:46.614Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:42:46.615Z]INFO-Clicking element
+[2026-07-09T08:42:47.685Z]INFO-Element clicked successfully
+[2026-07-09T08:42:47.686Z]INFO-Clicking element
+[2026-07-09T08:43:13.945Z]INFO-Element clicked successfully
+[2026-07-09T08:43:13.946Z]INFO-Clicking element
+[2026-07-09T08:43:14.548Z]INFO-Element clicked successfully
+[2026-07-09T08:43:14.549Z]INFO-Clicking element
+[2026-07-09T08:43:15.681Z]INFO-Element clicked successfully
+[2026-07-09T08:43:15.690Z]INFO-Typing message
+[2026-07-09T08:43:15.768Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:43:15.769Z]INFO-Typing message
+[2026-07-09T08:43:15.856Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:43:15.856Z]INFO-Typing message
+[2026-07-09T08:43:15.905Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:43:15.907Z]INFO-Clicking element
+[2026-07-09T08:43:16.034Z]INFO-Element clicked successfully
+[2026-07-09T08:43:26.409Z]ERROR-Scenario Failed: Edit category details with the help of search functionality
+[2026-07-09T08:43:26.484Z]INFO-Starting scenario: Delete the category with the help of search functionality
+[2026-07-09T08:43:26.734Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T08:43:28.181Z]INFO-Typing message
+[2026-07-09T08:43:28.630Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:43:28.631Z]INFO-Typing message
+[2026-07-09T08:43:28.749Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:43:28.750Z]INFO-Clicking element
+[2026-07-09T08:43:29.217Z]INFO-Element clicked successfully
+[2026-07-09T08:43:29.218Z]INFO-Clicking element
+[2026-07-09T08:43:47.521Z]INFO-Element clicked successfully
+[2026-07-09T08:43:47.522Z]INFO-Clicking element
+[2026-07-09T08:43:48.078Z]INFO-Element clicked successfully
+[2026-07-09T08:43:48.079Z]INFO-Clicking element
+[2026-07-09T08:43:49.146Z]INFO-Element clicked successfully
+[2026-07-09T08:43:49.153Z]INFO-Typing message
+[2026-07-09T08:43:49.213Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:43:49.213Z]INFO-Typing message
+[2026-07-09T08:43:49.293Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:43:49.293Z]INFO-Typing message
+[2026-07-09T08:43:49.373Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:43:49.375Z]INFO-Clicking element
+[2026-07-09T08:43:50.248Z]INFO-Element clicked successfully
+[2026-07-09T08:43:52.988Z]INFO-Clicking element
+[2026-07-09T08:43:53.282Z]INFO-Element clicked successfully
+[2026-07-09T08:43:53.286Z]INFO-Typing message
+[2026-07-09T08:43:53.319Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:43:53.324Z]INFO-Clicking element
+[2026-07-09T08:43:53.395Z]ERROR-Failed to click element: Error: locator.click: Error: strict mode violation: locator('//tbody[@data-slot=\'table-body\']/descendant::button') resolved to 5 elements:
+    1) <button type="button" id="radix-«rc»" data-state="closed" aria-haspopup="menu" aria-expanded="false" data-slot="dropdown-menu-trigger" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium cursor-pointer disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid…>…</button> aka locator('[id="radix-«rc»"]')
+    2) <button type="button" id="radix-«re»" data-state="closed" aria-haspopup="menu" aria-expanded="false" data-slot="dropdown-menu-trigger" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium cursor-pointer disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid…>…</button> aka locator('[id="radix-«re»"]')
+    3) <button type="button" id="radix-«rg»" data-state="closed" aria-haspopup="menu" aria-expanded="false" data-slot="dropdown-menu-trigger" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium cursor-pointer disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid…>…</button> aka locator('[id="radix-«rg»"]')
+    4) <button type="button" id="radix-«ri»" data-state="closed" aria-haspopup="menu" aria-expanded="false" data-slot="dropdown-menu-trigger" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium cursor-pointer disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid…>…</button> aka locator('[id="radix-«ri»"]')
+    5) <button type="button" id="radix-«rk»" data-state="closed" aria-haspopup="menu" aria-expanded="false" data-slot="dropdown-menu-trigger" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium cursor-pointer disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid…>…</button> aka locator('[id="radix-«rk»"]')
+
+Call log:
+[2m  - waiting for locator('//tbody[@data-slot=\'table-body\']/descendant::button')[22m
+
+[2026-07-09T08:43:53.605Z]ERROR-Scenario Failed: Delete the category with the help of search functionality
+[2026-07-09T08:43:53.658Z]INFO-Starting scenario: verify the Excel download functionality of Pedagogy in course structure
+[2026-07-09T08:43:53.938Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T08:43:55.341Z]INFO-Typing message
+[2026-07-09T08:43:55.791Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:43:55.791Z]INFO-Typing message
+[2026-07-09T08:43:55.830Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:43:55.831Z]INFO-Clicking element
+[2026-07-09T08:43:56.829Z]INFO-Element clicked successfully
+[2026-07-09T08:44:44.490Z]INFO-Launching Browser
+[2026-07-09T08:44:45.278Z]INFO-Starting scenario: Add category by entering all the fields
+[2026-07-09T08:44:48.473Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T08:44:54.671Z]INFO-Typing message
+[2026-07-09T08:44:57.396Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:44:57.399Z]INFO-Typing message
+[2026-07-09T08:44:59.008Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:44:59.021Z]INFO-Clicking element
+[2026-07-09T08:45:00.579Z]INFO-Element clicked successfully
+[2026-07-09T08:45:00.591Z]INFO-Clicking element
+[2026-07-09T08:45:19.174Z]INFO-Element clicked successfully
+[2026-07-09T08:45:19.185Z]INFO-Clicking element
+[2026-07-09T08:45:21.909Z]INFO-Element clicked successfully
+[2026-07-09T08:45:21.915Z]INFO-Clicking element
+[2026-07-09T08:45:24.743Z]INFO-Element clicked successfully
+[2026-07-09T08:45:24.748Z]INFO-Typing message
+[2026-07-09T08:45:27.651Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:45:27.651Z]INFO-Typing message
+[2026-07-09T08:45:29.517Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:45:29.518Z]INFO-Typing message
+[2026-07-09T08:45:31.215Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:45:31.223Z]INFO-Clicking element
+[2026-07-09T08:45:32.930Z]INFO-Element clicked successfully
+[2026-07-09T08:45:39.991Z]INFO-Scenario Passed: Add category by entering all the fields
+[2026-07-09T08:45:47.871Z]INFO-Closing browser
+[2026-07-09T08:48:06.900Z]INFO-Launching Browser
+[2026-07-09T08:48:08.356Z]INFO-Starting scenario: Add category by entering all the fields
+[2026-07-09T08:48:08.758Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T08:48:10.206Z]INFO-Typing message
+[2026-07-09T08:48:10.633Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:48:10.635Z]INFO-Typing message
+[2026-07-09T08:48:10.678Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:48:10.685Z]INFO-Clicking element
+[2026-07-09T08:48:11.338Z]INFO-Element clicked successfully
+[2026-07-09T08:48:11.350Z]INFO-Clicking element
+[2026-07-09T08:48:37.743Z]INFO-Element clicked successfully
+[2026-07-09T08:48:37.752Z]INFO-Clicking element
+[2026-07-09T08:48:38.426Z]INFO-Element clicked successfully
+[2026-07-09T08:48:38.430Z]INFO-Clicking element
+[2026-07-09T08:48:39.087Z]INFO-Element clicked successfully
+[2026-07-09T08:48:39.100Z]INFO-Typing message
+[2026-07-09T08:48:39.164Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:48:39.165Z]INFO-Typing message
+[2026-07-09T08:48:39.212Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:48:39.212Z]INFO-Typing message
+[2026-07-09T08:48:39.246Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:48:39.249Z]INFO-Clicking element
+[2026-07-09T08:48:40.416Z]INFO-Element clicked successfully
+[2026-07-09T08:49:11.507Z]ERROR-Scenario Failed: Add category by entering all the fields
+[2026-07-09T08:49:11.636Z]INFO-Starting scenario: Edit category details with the help of search functionality
+[2026-07-09T08:49:11.934Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T08:49:13.380Z]INFO-Typing message
+[2026-07-09T08:49:13.869Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:49:13.870Z]INFO-Typing message
+[2026-07-09T08:49:13.913Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:49:13.914Z]INFO-Clicking element
+[2026-07-09T08:49:14.935Z]INFO-Element clicked successfully
+[2026-07-09T08:49:14.938Z]INFO-Clicking element
+[2026-07-09T08:49:35.361Z]INFO-Element clicked successfully
+[2026-07-09T08:49:35.363Z]INFO-Clicking element
+[2026-07-09T08:49:36.054Z]INFO-Element clicked successfully
+[2026-07-09T08:49:36.055Z]INFO-Clicking element
+[2026-07-09T08:49:37.150Z]INFO-Element clicked successfully
+[2026-07-09T08:49:37.160Z]INFO-Typing message
+[2026-07-09T08:49:37.228Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:49:37.228Z]INFO-Typing message
+[2026-07-09T08:49:37.332Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:49:37.333Z]INFO-Typing message
+[2026-07-09T08:49:37.481Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:49:37.483Z]INFO-Clicking element
+[2026-07-09T08:49:37.631Z]INFO-Element clicked successfully
+[2026-07-09T08:50:07.976Z]ERROR-Scenario Failed: Edit category details with the help of search functionality
+[2026-07-09T08:50:08.174Z]INFO-Starting scenario: Delete the category with the help of search functionality
+[2026-07-09T08:50:08.639Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T08:50:10.147Z]INFO-Typing message
+[2026-07-09T08:50:10.817Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:50:10.819Z]INFO-Typing message
+[2026-07-09T08:50:10.990Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:50:10.992Z]INFO-Clicking element
+[2026-07-09T08:50:11.391Z]INFO-Element clicked successfully
+[2026-07-09T08:50:11.393Z]INFO-Clicking element
+[2026-07-09T08:50:41.404Z]ERROR-Failed to click element: TimeoutError: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('//div[@class=\'pt-6\']/child::div/child::div[3]')[22m
+
+[2026-07-09T08:50:42.030Z]ERROR-Scenario Failed: Delete the category with the help of search functionality
+[2026-07-09T08:50:42.109Z]INFO-Starting scenario: verify the Excel download functionality of Pedagogy in course structure
+[2026-07-09T08:50:42.408Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T08:50:43.869Z]INFO-Typing message
+[2026-07-09T08:50:44.414Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:50:44.415Z]INFO-Typing message
+[2026-07-09T08:50:44.466Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:50:44.467Z]INFO-Clicking element
+[2026-07-09T08:50:45.496Z]INFO-Element clicked successfully
+[2026-07-09T08:51:15.924Z]ERROR-Scenario Failed: verify the Excel download functionality of Pedagogy in course structure
+[2026-07-09T08:51:16.010Z]INFO-Closing browser
+[2026-07-09T08:53:13.593Z]INFO-Launching Browser
+[2026-07-09T08:53:14.485Z]INFO-Starting scenario: Edit category details with the help of search functionality
+[2026-07-09T08:53:16.284Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T08:53:45.143Z]INFO-Typing message
+[2026-07-09T08:53:45.737Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:53:45.739Z]INFO-Typing message
+[2026-07-09T08:53:45.817Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:53:45.822Z]INFO-Clicking element
+[2026-07-09T08:53:46.338Z]INFO-Element clicked successfully
+[2026-07-09T08:53:46.345Z]INFO-Clicking element
+[2026-07-09T08:54:04.495Z]INFO-Element clicked successfully
+[2026-07-09T08:54:04.504Z]INFO-Clicking element
+[2026-07-09T08:54:05.210Z]INFO-Element clicked successfully
+[2026-07-09T08:54:05.217Z]INFO-Clicking element
+[2026-07-09T08:54:05.989Z]INFO-Element clicked successfully
+[2026-07-09T08:54:05.998Z]INFO-Typing message
+[2026-07-09T08:54:06.110Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:54:06.110Z]INFO-Typing message
+[2026-07-09T08:54:06.162Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:54:06.162Z]INFO-Typing message
+[2026-07-09T08:54:06.203Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:54:06.206Z]INFO-Clicking element
+[2026-07-09T08:54:06.578Z]INFO-Element clicked successfully
+[2026-07-09T08:54:37.262Z]ERROR-Scenario Failed: Edit category details with the help of search functionality
+[2026-07-09T08:54:37.401Z]INFO-Closing browser
+[2026-07-09T08:55:43.438Z]INFO-Launching Browser
+[2026-07-09T08:55:44.409Z]INFO-Starting scenario: Edit category details with the help of search functionality
+[2026-07-09T08:55:46.271Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T08:55:53.178Z]INFO-Typing message
+[2026-07-09T08:55:54.169Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:55:54.170Z]INFO-Typing message
+[2026-07-09T08:55:54.260Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:55:54.265Z]INFO-Clicking element
+[2026-07-09T08:55:55.049Z]INFO-Element clicked successfully
+[2026-07-09T08:55:55.062Z]INFO-Clicking element
+[2026-07-09T08:57:16.129Z]INFO-Element clicked successfully
+[2026-07-09T08:57:16.136Z]INFO-Clicking element
+[2026-07-09T08:57:16.769Z]INFO-Element clicked successfully
+[2026-07-09T08:57:16.773Z]INFO-Clicking element
+[2026-07-09T08:57:17.453Z]INFO-Element clicked successfully
+[2026-07-09T08:57:17.461Z]INFO-Typing message
+[2026-07-09T08:57:17.530Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:57:17.531Z]INFO-Typing message
+[2026-07-09T08:57:17.582Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:57:17.583Z]INFO-Typing message
+[2026-07-09T08:57:17.634Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:57:17.638Z]INFO-Clicking element
+[2026-07-09T08:57:18.113Z]INFO-Element clicked successfully
+[2026-07-09T08:57:27.646Z]INFO-Clicking element
+[2026-07-09T08:57:27.777Z]INFO-Element clicked successfully
+[2026-07-09T08:57:27.783Z]INFO-Typing message
+[2026-07-09T08:57:27.845Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:57:27.851Z]INFO-Clicking element
+[2026-07-09T08:57:46.558Z]INFO-Element clicked successfully
+[2026-07-09T08:57:46.559Z]INFO-Clicking element
+[2026-07-09T08:57:46.851Z]INFO-Element clicked successfully
+[2026-07-09T08:57:46.858Z]INFO-Typing message
+[2026-07-09T08:57:46.957Z]INFO-Message cleared on the locator successfully
+[2026-07-09T08:57:46.957Z]INFO-Typing message
+[2026-07-09T08:57:47.037Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:57:47.037Z]INFO-Typing message
+[2026-07-09T08:57:47.146Z]INFO-Message cleared on the locator successfully
+[2026-07-09T08:57:47.146Z]INFO-Typing message
+[2026-07-09T08:57:47.204Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:57:47.205Z]INFO-Typing message
+[2026-07-09T08:57:47.270Z]INFO-Message cleared on the locator successfully
+[2026-07-09T08:57:47.271Z]INFO-Typing message
+[2026-07-09T08:57:47.311Z]INFO-Message typed on the locator successfully
+[2026-07-09T08:57:47.316Z]INFO-Clicking element
+[2026-07-09T08:57:47.436Z]INFO-Element clicked successfully
+[2026-07-09T08:58:18.194Z]ERROR-Scenario Failed: Edit category details with the help of search functionality
+[2026-07-09T08:58:18.326Z]INFO-Closing browser

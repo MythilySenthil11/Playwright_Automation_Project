@@ -6,8 +6,8 @@
     },
     "Update_details":{
         "category_name":"Developer",
-        "course_name":"Backend",
-        "category_description":"MongoDB,SQL"
+        "course_name":"Frontend",
+        "category_description":"HTML"
     },
     "Create_details_Delete" : {
         "category_name":"Core Programming",

@@ -47,7 +47,7 @@ When('the user clicks Create category button', async function (this: CustomWorld
 
 Then('the user should see a successful creation message', async function (this: CustomWorld) {
 
-    await expect(this.courseCategoryPage.successMessage).toBeVisible({timeout: TIMEOUTS.MEDIUM});
+    await expect(this.courseCategoryPage.successMessage).toBeVisible({timeout: TIMEOUTS.LONG});
 
 });
 
@@ -83,7 +83,7 @@ When("the user clicks the update category button", async function (this: CustomW
 
 Then("the user should see a successful updation message", async function (this: CustomWorld) {
 
-    await expect(this.courseCategoryPage.successMessage).toBeVisible({timeout: TIMEOUTS.MEDIUM});
+    await expect(this.courseCategoryPage.successMessage).toBeVisible({timeout: TIMEOUTS.LONG});
 
 });
 
@@ -113,7 +113,7 @@ When('the user searches the deleted category', async function (this: CustomWorld
 
 Then('the user should see a not found message', async function (this: CustomWorld) {
 
-    await expect(this.courseCategoryPage.noUsersMessage).toBeVisible({timeout: TIMEOUTS.MEDIUM});
+    await expect(this.courseCategoryPage.noUsersMessage).toBeVisible({timeout: TIMEOUTS.LONG});
 
 });
 
@@ -126,5 +126,11 @@ When('the user enters the category details for edit from JSON file',async functi
 When('the user enters the category details for delete from JSON file',async function(this:CustomWorld){
 
     await this.courseCategoryPage.EnterCategoryDetails(Create_details_Delete.category_name, Create_details_Delete.course_name, Create_details_Delete.category_description);
+
+});
+
+When('the user clicks the close button',async function(this:CustomWorld){
+
+    await this.courseCategoryPage.ClickCloseButton();
 
 });
