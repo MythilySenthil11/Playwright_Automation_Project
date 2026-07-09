@@ -8,6 +8,7 @@ export class loginpage extends BasePage{
     readonly password:Locator
     readonly loginbutton:Locator
     readonly getErrorMessage:Locator
+
     constructor(page:Page) {
         super(page);
         this.page = page
@@ -31,4 +32,5 @@ export class loginpage extends BasePage{
      getErrorMessagefun(){
       return this.getErrorMessage;
     }
+
 }
