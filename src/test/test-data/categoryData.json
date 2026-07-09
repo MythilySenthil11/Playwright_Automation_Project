@@ -1,10 +1,17 @@
 {
-    "ExistCategory" : {
-        "category_name":"devops"
+    "Create_details_Edit" : {
+        "category_name":"Database",
+        "course_name":"Backend",
+        "category_description":"MongoDB,SQL"
     },
     "Update_details":{
         "category_name":"Developer",
         "course_name":"Backend",
         "category_description":"MongoDB,SQL"
+    },
+    "Create_details_Delete" : {
+        "category_name":"Core Programming",
+        "course_name":"Java",
+        "category_description":"Logic build"
     }
 }
