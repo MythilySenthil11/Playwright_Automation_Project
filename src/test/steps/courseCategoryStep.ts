@@ -2,6 +2,7 @@ import { Given, When, Then, DataTable } from '@cucumber/cucumber';
 import { expect } from '@playwright/test';
 import { CustomWorld } from '../world/CustomWorld';
 import { ExistCategory, Update_details } from '../test-data/categoryData.json';
+import { TIMEOUTS } from '../constants/timeouts';
 
 Given('the user launches the application', async function (this: CustomWorld) {
 
@@ -46,7 +47,7 @@ When('the user clicks Create category button', async function (this: CustomWorld
 
 Then('the user should see a successful creation message', async function (this: CustomWorld) {
 
-    await expect(this.courseCategoryPage.successMessage).toBeVisible();
+    await expect(this.courseCategoryPage.successMessage).toBeVisible({timeout: TIMEOUTS.MEDIUM});
 
 });
 
@@ -82,7 +83,7 @@ When("the user clicks the update category button", async function (this: CustomW
 
 Then("the user should see a successful updation message", async function (this: CustomWorld) {
 
-    await expect(this.courseCategoryPage.successMessage).toBeVisible();
+    await expect(this.courseCategoryPage.successMessage).toBeVisible({timeout: TIMEOUTS.MEDIUM});
 
 });
 
@@ -112,6 +113,6 @@ When('the user searches the deleted category', async function (this: CustomWorld
 
 Then('the user should see a not found message', async function (this: CustomWorld) {
 
-    await expect(this.courseCategoryPage.noUsersMessage).toBeVisible();
+    await expect(this.courseCategoryPage.noUsersMessage).toBeVisible({timeout: TIMEOUTS.MEDIUM});
 
 });

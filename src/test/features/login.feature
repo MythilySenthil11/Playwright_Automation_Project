@@ -5,8 +5,8 @@ Feature: Krishnaprasath_07/07/2026_login_functionality
   Background: 
       Given the user is on the login page
 
-  @validlogin
-  Scenario: Verify that the user is able to login with valid credentials
+@validlogin
+Scenario: Verify that the user is able to login with valid credentials
     When the user enters valid credentials
     And the user clicks on the login button
     Then the user should be redirected to the dashboard page
@@ -21,3 +21,12 @@ Examples:
   | username           | password     | error message         |
   | testing@gmail.com  | invalidpass1 | Password is incorrect |
   | invalid2@gmail.com | invalidpass2 | Email is invalid      |
+
+@Signout
+Scenario: Verify the Signout functionality
+    When the user enters valid credentials
+    And the user clicks on the login button
+    And the user clicks the profile icon in the admindashboardpage
+    And the user clicks the Signout option
+    Then the user should see the login page
+  

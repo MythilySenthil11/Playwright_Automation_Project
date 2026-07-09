@@ -37,3 +37,21 @@ await expect(locator).toHaveText(errorMessage,{
 });
 
 });
+
+When("the user clicks the profile icon in the admindashboardpage",async function(this:CustomWorld){
+
+    await this.lp.ClickProfileIcon()
+
+});
+
+When("the user clicks the Signout option",async function(this:CustomWorld){
+
+    await this.lp.ClickSignOutButton()
+
+});
+
+Then("the user should see the login page",async function(this:CustomWorld){
+
+    await expect(this.lp.loginbutton).toBeVisible({timeout:TIMEOUTS.LONG});
+
+});

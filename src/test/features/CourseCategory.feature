@@ -31,3 +31,14 @@ Scenario: Delete the category with the help of search functionality
         And the user searches the deleted category 
         Then the user should see a not found message
 
+Scenario Outline: Search the Category name with valid and invalid inputs
+        When the user enters the "<category name>" in the search tab
+        Then the user should see the search result based on the input
+
+        Examples:
+            | category name | 
+            | java          | 
+            | jmeter        |
+
+
+
