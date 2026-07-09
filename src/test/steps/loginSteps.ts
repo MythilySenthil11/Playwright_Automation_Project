@@ -40,13 +40,13 @@ await expect(locator).toHaveText(errorMessage,{
 
 When("the user clicks the profile icon in the admindashboardpage",async function(this:CustomWorld){
 
-    await this.lp.ClickProfileIcon()
+    await this.adp.profileclick()
 
 });
 
 When("the user clicks the Signout option",async function(this:CustomWorld){
 
-    await this.lp.ClickSignOutButton()
+    await this.adp.ClickSignOutButton()
 
 });
 

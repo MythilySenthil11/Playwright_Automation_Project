@@ -6,7 +6,7 @@
         "description": "",
         "id": "subathra_07-07-2026_course_category_functionality;verify-the-signout-functionality",
         "keyword": "Scenario",
-        "line": 43,
+        "line": 44,
         "name": "Verify the Signout functionality",
         "steps": [
           {
@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 391523300
+              "duration": 524584899
             }
           },
           {
@@ -27,72 +27,72 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1397699000
+              "duration": 1479069499
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
+            "line": 45,
             "name": "the user enters valid credentials",
             "match": {
               "location": "src\\test\\steps\\loginSteps.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 677367399
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "the user clicks on the login button",
-            "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 573427200
+              "duration": 675119300
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 46,
-            "name": "the user clicks the profile icon in the admindashboardpage",
+            "name": "the user clicks on the login button",
             "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:41"
+              "location": "src\\test\\steps\\loginSteps.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 15506452600
+              "duration": 544604600
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 47,
+            "name": "the user clicks the profile icon in the admindashboardpage",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13345225399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
             "name": "the user clicks the Signout option",
             "match": {
               "location": "src\\test\\steps\\loginSteps.ts:47"
             },
             "result": {
               "status": "passed",
-              "duration": 766001000
+              "duration": 740940099
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 48,
+            "line": 49,
             "name": "the user should see the login page",
             "match": {
               "location": "src\\test\\steps\\loginSteps.ts:53"
             },
             "result": {
               "status": "passed",
-              "duration": 5750758699
+              "duration": 4571258200
             }
           },
           {
@@ -100,7 +100,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 187099200
+              "duration": 148793100
             }
           }
         ],
@@ -108,6 +108,10 @@
           {
             "name": "@Subathra",
             "line": 1
+          },
+          {
+            "name": "@Signout",
+            "line": 43
           }
         ],
         "type": "scenario"

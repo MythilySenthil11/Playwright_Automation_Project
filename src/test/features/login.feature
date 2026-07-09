@@ -29,4 +29,3 @@ Scenario: Verify the Signout functionality
     And the user clicks the profile icon in the admindashboardpage
     And the user clicks the Signout option
     Then the user should see the login page
-  

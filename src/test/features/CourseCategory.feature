@@ -39,6 +39,3 @@ Scenario Outline: Search the Category name with valid and invalid inputs
             | category name | 
             | java          | 
             | jmeter        |
-
-
-

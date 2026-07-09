@@ -3645,3 +3645,19 @@ Call log:
 [2026-07-08T18:29:06.427Z]INFO-Scenario Passed: Sorting
 [2026-07-08T18:29:06.520Z]INFO-Closing browser
 >>>>>>> 8422577473b3e40ab9bbd502aaf27cc0a04dee7e
+[2026-07-09T05:39:58.902Z]INFO-Launching Browser
+[2026-07-09T05:41:35.941Z]INFO-Launching Browser
+[2026-07-09T05:41:37.053Z]INFO-Starting scenario: Verify the Signout functionality
+[2026-07-09T05:41:37.608Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T05:41:39.068Z]INFO-Typing message
+[2026-07-09T05:41:39.695Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:41:39.696Z]INFO-Typing message
+[2026-07-09T05:41:39.735Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:41:39.740Z]INFO-Clicking element
+[2026-07-09T05:41:40.279Z]INFO-Element clicked successfully
+[2026-07-09T05:41:40.288Z]INFO-Clicking element
+[2026-07-09T05:41:53.626Z]INFO-Element clicked successfully
+[2026-07-09T05:41:53.635Z]INFO-Clicking element
+[2026-07-09T05:41:54.368Z]INFO-Element clicked successfully
+[2026-07-09T05:41:58.942Z]INFO-Scenario Passed: Verify the Signout functionality
+[2026-07-09T05:41:59.096Z]INFO-Closing browser
