@@ -3064,3 +3064,854 @@ Call log:
 [2026-07-08T18:29:06.371Z]INFO-Element clicked successfully
 [2026-07-08T18:29:06.427Z]INFO-Scenario Passed: Sorting
 [2026-07-08T18:29:06.520Z]INFO-Closing browser
+[2026-07-09T04:28:24.866Z]INFO-Launching Browser
+[2026-07-09T04:28:25.905Z]INFO-Starting scenario: Editing a course
+[2026-07-09T04:28:26.104Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T04:28:27.553Z]INFO-Typing message
+[2026-07-09T04:28:28.422Z]INFO-Message typed on the locator successfully
+[2026-07-09T04:28:28.423Z]INFO-Typing message
+[2026-07-09T04:28:28.447Z]INFO-Message typed on the locator successfully
+[2026-07-09T04:28:28.449Z]INFO-Clicking element
+[2026-07-09T04:28:28.560Z]INFO-Element clicked successfully
+[2026-07-09T04:28:28.562Z]INFO-Navigating to Course Management page
+[2026-07-09T04:28:35.080Z]INFO-Clicking element
+[2026-07-09T04:28:35.119Z]INFO-Element clicked successfully
+[2026-07-09T04:28:35.120Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T04:28:35.121Z]INFO-Clicking element
+[2026-07-09T04:28:42.117Z]INFO-Element clicked successfully
+[2026-07-09T04:28:42.117Z]INFO-Kebab Menu is Clicked
+[2026-07-09T04:28:42.119Z]INFO-Clicking element
+[2026-07-09T04:28:42.376Z]INFO-Element clicked successfully
+[2026-07-09T04:28:42.376Z]INFO-Edit Course Button is Clicked
+[2026-07-09T04:28:42.378Z]INFO-Filling The First Page
+[2026-07-09T04:28:42.378Z]INFO-Clicking element
+[2026-07-09T04:29:12.395Z]ERROR-Failed to click element: TimeoutError: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('//div[@id=\'radix-«r6»\']/child::div/child::*[2]/child::*/child::*/child::*[1]/child::*[1]/button')[22m
+
+[2026-07-09T04:29:12.599Z]ERROR-Scenario Failed: Editing a course
+[2026-07-09T04:29:12.658Z]INFO-Starting scenario: Sorting
+[2026-07-09T04:29:12.800Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T04:29:14.302Z]INFO-Typing message
+[2026-07-09T04:29:14.588Z]INFO-Message typed on the locator successfully
+[2026-07-09T04:29:14.588Z]INFO-Typing message
+[2026-07-09T04:29:14.616Z]INFO-Message typed on the locator successfully
+[2026-07-09T04:29:14.617Z]INFO-Clicking element
+[2026-07-09T04:29:15.478Z]INFO-Element clicked successfully
+[2026-07-09T04:29:15.479Z]INFO-Navigating to Course Management page
+[2026-07-09T04:29:21.431Z]INFO-Clicking element
+[2026-07-09T04:29:21.466Z]INFO-Element clicked successfully
+[2026-07-09T04:29:21.466Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T04:29:21.472Z]INFO-Clicking element
+[2026-07-09T04:29:22.058Z]INFO-Element clicked successfully
+[2026-07-09T04:29:22.094Z]INFO-Scenario Passed: Sorting
+[2026-07-09T04:29:22.136Z]INFO-Starting scenario: Sorting
+[2026-07-09T04:29:22.270Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T04:29:23.628Z]INFO-Typing message
+[2026-07-09T04:29:23.926Z]INFO-Message typed on the locator successfully
+[2026-07-09T04:29:23.927Z]INFO-Typing message
+[2026-07-09T04:29:23.951Z]INFO-Message typed on the locator successfully
+[2026-07-09T04:29:23.952Z]INFO-Clicking element
+[2026-07-09T04:29:24.835Z]INFO-Element clicked successfully
+[2026-07-09T04:29:24.835Z]INFO-Navigating to Course Management page
+[2026-07-09T04:29:31.407Z]INFO-Clicking element
+[2026-07-09T04:29:31.446Z]INFO-Element clicked successfully
+[2026-07-09T04:29:31.446Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T04:29:31.447Z]INFO-Clicking element
+[2026-07-09T04:29:32.066Z]INFO-Element clicked successfully
+[2026-07-09T04:29:32.099Z]INFO-Scenario Passed: Sorting
+[2026-07-09T04:29:32.146Z]INFO-Starting scenario: Sorting
+[2026-07-09T04:29:32.280Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T04:29:33.742Z]INFO-Typing message
+[2026-07-09T04:29:34.109Z]INFO-Message typed on the locator successfully
+[2026-07-09T04:29:34.109Z]INFO-Typing message
+[2026-07-09T04:29:34.122Z]INFO-Message typed on the locator successfully
+[2026-07-09T04:29:34.123Z]INFO-Clicking element
+[2026-07-09T04:29:34.980Z]INFO-Element clicked successfully
+[2026-07-09T04:29:34.980Z]INFO-Navigating to Course Management page
+[2026-07-09T04:29:43.499Z]INFO-Clicking element
+[2026-07-09T04:29:43.541Z]INFO-Element clicked successfully
+[2026-07-09T04:29:43.541Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T04:29:43.542Z]INFO-Clicking element
+[2026-07-09T04:29:44.240Z]INFO-Element clicked successfully
+[2026-07-09T04:29:44.268Z]INFO-Scenario Passed: Sorting
+[2026-07-09T04:29:44.312Z]INFO-Closing browser
+[2026-07-09T04:41:56.996Z]INFO-Launching Browser
+[2026-07-09T04:41:57.339Z]INFO-Starting scenario: Editing a course
+[2026-07-09T04:41:58.136Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T04:42:05.039Z]INFO-Typing message
+[2026-07-09T04:42:06.530Z]INFO-Message typed on the locator successfully
+[2026-07-09T04:42:06.531Z]INFO-Typing message
+[2026-07-09T04:42:07.292Z]INFO-Message typed on the locator successfully
+[2026-07-09T04:42:07.294Z]INFO-Clicking element
+[2026-07-09T04:42:09.011Z]INFO-Element clicked successfully
+[2026-07-09T04:42:09.012Z]INFO-Navigating to Course Management page
+[2026-07-09T04:42:17.534Z]INFO-Clicking element
+[2026-07-09T04:42:35.155Z]INFO-Element clicked successfully
+[2026-07-09T04:42:35.155Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T04:42:35.158Z]INFO-Clicking element
+[2026-07-09T04:42:44.393Z]INFO-Element clicked successfully
+[2026-07-09T04:42:44.394Z]INFO-Kebab Menu is Clicked
+[2026-07-09T04:42:44.395Z]INFO-Clicking element
+[2026-07-09T04:42:51.244Z]INFO-Element clicked successfully
+[2026-07-09T04:42:51.244Z]INFO-Edit Course Button is Clicked
+[2026-07-09T04:42:51.246Z]INFO-Filling The First Page
+[2026-07-09T04:42:51.246Z]INFO-Clicking element
+[2026-07-09T04:44:07.631Z]ERROR-Failed to click element: Error: locator.click: Target page, context or browser has been closed
+Call log:
+[2m  - waiting for locator('//div[@id=\'radix-«r6»\']/child::div/child::*[2]/child::*/child::*/child::*[1]/child::*[1]/button')[22m
+
+[2026-07-09T04:44:07.644Z]INFO-Starting scenario: Sorting
+[2026-07-09T04:44:08.546Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T04:44:13.099Z]INFO-Typing message
+[2026-07-09T04:44:15.162Z]INFO-Message typed on the locator successfully
+[2026-07-09T04:44:15.162Z]INFO-Typing message
+[2026-07-09T04:44:16.014Z]INFO-Message typed on the locator successfully
+[2026-07-09T04:44:16.015Z]INFO-Clicking element
+[2026-07-09T04:44:16.822Z]INFO-Element clicked successfully
+[2026-07-09T04:44:16.823Z]INFO-Navigating to Course Management page
+[2026-07-09T04:44:27.932Z]INFO-Clicking element
+[2026-07-09T04:44:39.623Z]INFO-Element clicked successfully
+[2026-07-09T04:44:39.623Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T04:44:39.627Z]INFO-Clicking element
+[2026-07-09T04:44:50.314Z]INFO-Element clicked successfully
+[2026-07-09T04:44:52.977Z]INFO-Scenario Passed: Sorting
+[2026-07-09T04:44:57.524Z]INFO-Starting scenario: Sorting
+[2026-07-09T04:44:58.499Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T04:45:00.182Z]INFO-Typing message
+[2026-07-09T04:45:02.419Z]INFO-Message typed on the locator successfully
+[2026-07-09T04:45:02.420Z]INFO-Typing message
+[2026-07-09T04:45:02.492Z]INFO-Message typed on the locator successfully
+[2026-07-09T04:45:02.493Z]INFO-Clicking element
+[2026-07-09T04:45:02.596Z]INFO-Element clicked successfully
+[2026-07-09T04:45:02.597Z]INFO-Navigating to Course Management page
+[2026-07-09T04:45:17.738Z]INFO-Launching Browser
+[2026-07-09T04:45:18.060Z]INFO-Starting scenario: Editing a course
+[2026-07-09T04:45:18.801Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T04:45:23.403Z]INFO-Typing message
+[2026-07-09T04:45:25.690Z]INFO-Message typed on the locator successfully
+[2026-07-09T04:45:25.690Z]INFO-Typing message
+[2026-07-09T04:45:27.550Z]INFO-Message typed on the locator successfully
+[2026-07-09T04:45:27.553Z]INFO-Clicking element
+[2026-07-09T04:45:29.385Z]INFO-Element clicked successfully
+[2026-07-09T04:45:29.387Z]INFO-Navigating to Course Management page
+[2026-07-09T04:45:51.250Z]INFO-Clicking element
+[2026-07-09T04:46:03.290Z]INFO-Element clicked successfully
+[2026-07-09T04:46:03.290Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T04:46:03.292Z]INFO-Clicking element
+[2026-07-09T04:46:17.739Z]INFO-Element clicked successfully
+[2026-07-09T04:46:17.739Z]INFO-Kebab Menu is Clicked
+[2026-07-09T04:46:17.740Z]INFO-Clicking element
+[2026-07-09T04:46:19.566Z]INFO-Element clicked successfully
+[2026-07-09T04:46:19.567Z]INFO-Edit Course Button is Clicked
+[2026-07-09T04:46:19.569Z]INFO-Filling The First Page
+[2026-07-09T04:46:19.569Z]INFO-Clicking element
+[2026-07-09T04:46:53.025Z]ERROR-Failed to click element: Error: locator.click: Target page, context or browser has been closed
+Call log:
+[2m  - waiting for locator('//div[@id=\'radix-«r6»\']/child::div/child::*[2]/child::*/child::*/child::*[1]/child::*[1]/button')[22m
+
+[2026-07-09T04:46:53.040Z]INFO-Starting scenario: Sorting
+[2026-07-09T04:46:53.889Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T04:58:55.919Z]INFO-Launching Browser
+[2026-07-09T04:58:56.300Z]INFO-Starting scenario: Editing a course
+[2026-07-09T04:58:56.489Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T04:58:57.766Z]INFO-Typing message
+[2026-07-09T04:58:58.028Z]INFO-Message typed on the locator successfully
+[2026-07-09T04:58:58.029Z]INFO-Typing message
+[2026-07-09T04:58:58.061Z]INFO-Message typed on the locator successfully
+[2026-07-09T04:58:58.063Z]INFO-Clicking element
+[2026-07-09T04:58:58.991Z]INFO-Element clicked successfully
+[2026-07-09T04:58:58.992Z]INFO-Navigating to Course Management page
+[2026-07-09T04:59:12.630Z]INFO-Clicking element
+[2026-07-09T04:59:12.658Z]INFO-Element clicked successfully
+[2026-07-09T04:59:12.658Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T04:59:12.659Z]INFO-Clicking element
+[2026-07-09T04:59:12.663Z]INFO-Clicking element
+[2026-07-09T04:59:13.302Z]INFO-Element clicked successfully
+[2026-07-09T04:59:22.248Z]INFO-Element clicked successfully
+[2026-07-09T04:59:22.248Z]INFO-Kebab Menu is Clicked
+[2026-07-09T04:59:22.249Z]INFO-Clicking element
+[2026-07-09T04:59:22.514Z]INFO-Element clicked successfully
+[2026-07-09T04:59:22.514Z]INFO-Edit Course Button is Clicked
+[2026-07-09T04:59:22.515Z]INFO-Filling The First Page
+[2026-07-09T04:59:22.515Z]INFO-Clicking element
+[2026-07-09T04:59:25.006Z]INFO-Element clicked successfully
+[2026-07-09T04:59:54.387Z]INFO-Clicking element
+[2026-07-09T04:59:54.434Z]INFO-Element clicked successfully
+[2026-07-09T04:59:54.515Z]INFO-Clicking element
+[2026-07-09T04:59:59.470Z]INFO-Element clicked successfully
+[2026-07-09T04:59:59.516Z]INFO-Clicking element
+[2026-07-09T05:00:08.150Z]INFO-Element clicked successfully
+[2026-07-09T05:00:08.671Z]ERROR-Scenario Failed: Editing a course
+[2026-07-09T05:00:08.732Z]INFO-Starting scenario: Sorting
+[2026-07-09T05:00:08.902Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T05:00:10.238Z]INFO-Typing message
+[2026-07-09T05:00:10.459Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:00:10.460Z]INFO-Typing message
+[2026-07-09T05:00:10.485Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:00:10.486Z]INFO-Clicking element
+[2026-07-09T05:00:11.346Z]INFO-Element clicked successfully
+[2026-07-09T05:00:11.347Z]INFO-Navigating to Course Management page
+[2026-07-09T05:00:18.847Z]INFO-Clicking element
+[2026-07-09T05:00:18.896Z]INFO-Element clicked successfully
+[2026-07-09T05:00:18.896Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T05:00:18.902Z]INFO-Clicking element
+[2026-07-09T05:00:19.556Z]INFO-Element clicked successfully
+[2026-07-09T05:00:19.598Z]INFO-Scenario Passed: Sorting
+[2026-07-09T05:00:19.650Z]INFO-Starting scenario: Sorting
+[2026-07-09T05:00:19.829Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T05:00:21.171Z]INFO-Typing message
+[2026-07-09T05:00:21.510Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:00:21.510Z]INFO-Typing message
+[2026-07-09T05:00:21.568Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:00:21.570Z]INFO-Clicking element
+[2026-07-09T05:00:22.428Z]INFO-Element clicked successfully
+[2026-07-09T05:00:22.429Z]INFO-Navigating to Course Management page
+[2026-07-09T05:00:32.631Z]INFO-Clicking element
+[2026-07-09T05:00:32.675Z]INFO-Element clicked successfully
+[2026-07-09T05:00:32.676Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T05:00:32.676Z]INFO-Clicking element
+[2026-07-09T05:00:33.561Z]INFO-Element clicked successfully
+[2026-07-09T05:00:33.614Z]INFO-Scenario Passed: Sorting
+[2026-07-09T05:00:33.688Z]INFO-Starting scenario: Sorting
+[2026-07-09T05:00:33.878Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T05:00:35.224Z]INFO-Typing message
+[2026-07-09T05:00:35.520Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:00:35.520Z]INFO-Typing message
+[2026-07-09T05:00:35.550Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:00:35.552Z]INFO-Clicking element
+[2026-07-09T05:00:36.442Z]INFO-Element clicked successfully
+[2026-07-09T05:00:36.443Z]INFO-Navigating to Course Management page
+[2026-07-09T05:00:46.582Z]INFO-Clicking element
+[2026-07-09T05:00:46.620Z]INFO-Element clicked successfully
+[2026-07-09T05:00:46.620Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T05:00:46.620Z]INFO-Clicking element
+[2026-07-09T05:00:47.348Z]INFO-Element clicked successfully
+[2026-07-09T05:00:47.374Z]INFO-Scenario Passed: Sorting
+[2026-07-09T05:00:47.407Z]INFO-Closing browser
+[2026-07-09T05:03:34.162Z]INFO-Launching Browser
+[2026-07-09T05:03:34.484Z]INFO-Starting scenario: Editing a course
+[2026-07-09T05:03:34.685Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T05:03:36.042Z]INFO-Typing message
+[2026-07-09T05:03:36.397Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:03:36.398Z]INFO-Typing message
+[2026-07-09T05:03:36.424Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:03:36.427Z]INFO-Clicking element
+[2026-07-09T05:03:37.381Z]INFO-Element clicked successfully
+[2026-07-09T05:03:37.384Z]INFO-Navigating to Course Management page
+[2026-07-09T05:04:07.483Z]ERROR-Scenario Failed: Editing a course
+[2026-07-09T05:04:07.541Z]INFO-Starting scenario: Sorting
+[2026-07-09T05:04:07.709Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T05:04:09.370Z]INFO-Typing message
+[2026-07-09T05:04:09.699Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:04:09.699Z]INFO-Typing message
+[2026-07-09T05:04:09.724Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:04:09.724Z]INFO-Clicking element
+[2026-07-09T05:04:10.582Z]INFO-Element clicked successfully
+[2026-07-09T05:04:10.582Z]INFO-Navigating to Course Management page
+[2026-07-09T05:04:28.858Z]INFO-Clicking element
+[2026-07-09T05:04:28.885Z]INFO-Element clicked successfully
+[2026-07-09T05:04:28.886Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T05:04:28.890Z]INFO-Clicking element
+[2026-07-09T05:04:29.640Z]INFO-Element clicked successfully
+[2026-07-09T05:04:29.670Z]INFO-Scenario Passed: Sorting
+[2026-07-09T05:04:29.722Z]INFO-Starting scenario: Sorting
+[2026-07-09T05:04:29.910Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T05:04:31.360Z]INFO-Typing message
+[2026-07-09T05:04:31.622Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:04:31.622Z]INFO-Typing message
+[2026-07-09T05:04:31.657Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:04:31.658Z]INFO-Clicking element
+[2026-07-09T05:04:32.532Z]INFO-Element clicked successfully
+[2026-07-09T05:04:32.533Z]INFO-Navigating to Course Management page
+[2026-07-09T05:04:56.978Z]INFO-Clicking element
+[2026-07-09T05:04:57.008Z]INFO-Element clicked successfully
+[2026-07-09T05:04:57.008Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T05:04:57.008Z]INFO-Clicking element
+[2026-07-09T05:04:57.891Z]INFO-Element clicked successfully
+[2026-07-09T05:04:57.927Z]INFO-Scenario Passed: Sorting
+[2026-07-09T05:04:57.972Z]INFO-Starting scenario: Sorting
+[2026-07-09T05:04:58.166Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T05:04:59.489Z]INFO-Typing message
+[2026-07-09T05:04:59.741Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:04:59.741Z]INFO-Typing message
+[2026-07-09T05:04:59.772Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:04:59.773Z]INFO-Clicking element
+[2026-07-09T05:05:00.644Z]INFO-Element clicked successfully
+[2026-07-09T05:05:00.645Z]INFO-Navigating to Course Management page
+[2026-07-09T05:05:30.812Z]ERROR-Scenario Failed: Sorting
+[2026-07-09T05:05:30.857Z]INFO-Closing browser
+[2026-07-09T05:06:36.966Z]INFO-Launching Browser
+[2026-07-09T05:06:37.335Z]INFO-Starting scenario: Editing a course
+[2026-07-09T05:06:38.163Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T05:06:52.232Z]INFO-Typing message
+[2026-07-09T05:06:54.314Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:06:54.314Z]INFO-Typing message
+[2026-07-09T05:06:55.095Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:06:55.097Z]INFO-Clicking element
+[2026-07-09T05:06:56.188Z]INFO-Element clicked successfully
+[2026-07-09T05:06:56.190Z]INFO-Navigating to Course Management page
+[2026-07-09T05:07:06.785Z]INFO-Clicking element
+[2026-07-09T05:07:23.710Z]INFO-Element clicked successfully
+[2026-07-09T05:07:23.710Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T05:07:23.712Z]INFO-Clicking element
+[2026-07-09T05:07:23.715Z]INFO-Clicking element
+[2026-07-09T05:07:30.835Z]INFO-Element clicked successfully
+[2026-07-09T05:07:30.835Z]INFO-Kebab Menu is Clicked
+[2026-07-09T05:07:30.836Z]INFO-Clicking element
+[2026-07-09T05:07:31.109Z]INFO-Element clicked successfully
+[2026-07-09T05:07:31.109Z]INFO-Edit Course Button is Clicked
+[2026-07-09T05:07:31.111Z]INFO-Filling The First Page
+[2026-07-09T05:07:31.111Z]INFO-Clicking element
+[2026-07-09T05:07:33.603Z]INFO-Element clicked successfully
+[2026-07-09T05:07:33.603Z]INFO-Clicking element
+[2026-07-09T05:08:02.325Z]ERROR-Failed to click element: Error: locator.click: Target page, context or browser has been closed
+Call log:
+[2m  - waiting for getByText('PSG Tech', { exact: true })[22m
+
+[2026-07-09T05:08:02.330Z]ERROR-Failed to click element: Error: locator.click: Target page, context or browser has been closed
+Call log:
+[2m  - waiting for locator('//th[1]/span')[22m
+[2m    - locator resolved to <span class="text-xs font-semibold text-gray-1300 dark:text-gray-300 tracking-wide font-inter">…</span>[22m
+[2m  - attempting click action[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is not stable[22m
+[2m    - retrying click action[22m
+[2m    - waiting 20ms[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is not stable[22m
+[2m    - retrying click action[22m
+[2m      - waiting 100ms[22m
+[2m    3 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <button dir="ltr" type="button" role="combobox" data-state="closed" data-size="default" aria-expanded="false" aria-autocomplete="none" data-slot="select-trigger" aria-controls="radix-«r12»" class="group flex items-center justify-between gap-2 cursor-pointer text-gray-500 border py-2 sm:text-xs select-none outline-none transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 w-full h-9 px-3 text-sm font-medium font-sans bg-white dark:bg-gray-800 …>…</button> from <div role="dialog" tabindex="-1" id="radix-«re»" data-state="open" aria-hidden="true" data-aria-hidden="true" data-slot="dialog-content" aria-labelledby="radix-«rf»" aria-describedby="radix-«rg»" class="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 translate-x-[-50%] translate-y-[-50%] gap-4 shadow-lg duration-200 w-[98%] max-w-7xl h-…>…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m      - waiting 500ms[22m
+[2m    3 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <span class="text-red-500 dark:text-red-400">*</span> from <div role="dialog" tabindex="-1" id="radix-«re»" data-state="open" aria-hidden="true" data-aria-hidden="true" data-slot="dialog-content" aria-labelledby="radix-«rf»" aria-describedby="radix-«rg»" class="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 translate-x-[-50%] translate-y-[-50%] gap-4 shadow-lg duration-200 w-[98%] max-w-7xl h-…>…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m      - waiting 500ms[22m
+[2m      - waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <span class="text-red-500 dark:text-red-400">*</span> from <div role="dialog" tabindex="-1" id="radix-«re»" data-state="open" aria-hidden="true" data-aria-hidden="true" data-slot="dialog-content" aria-labelledby="radix-«rf»" aria-describedby="radix-«rg»" class="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 translate-x-[-50%] translate-y-[-50%] gap-4 shadow-lg duration-200 w-[98%] max-w-7xl h-…>…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m      - waiting 500ms[22m
+[2m      - waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <button dir="ltr" type="button" role="combobox" data-state="closed" data-size="default" aria-expanded="false" aria-autocomplete="none" data-slot="select-trigger" aria-controls="radix-«r12»" class="group flex items-center justify-between gap-2 cursor-pointer text-gray-500 border py-2 sm:text-xs select-none outline-none transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 w-full h-9 px-3 text-sm font-medium font-sans bg-white dark:bg-gray-800 …>…</button> from <div role="dialog" tabindex="-1" id="radix-«re»" data-state="open" aria-hidden="true" data-aria-hidden="true" data-slot="dialog-content" aria-labelledby="radix-«rf»" aria-describedby="radix-«rg»" class="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 translate-x-[-50%] translate-y-[-50%] gap-4 shadow-lg duration-200 w-[98%] max-w-7xl h-…>…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m      - waiting 500ms[22m
+[2m      - waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <button dir="ltr" type="button" role="combobox" data-state="closed" data-size="default" aria-expanded="false" aria-autocomplete="none" data-slot="select-trigger" aria-controls="radix-«r12»" class="group flex items-center justify-between gap-2 cursor-pointer text-gray-500 border py-2 sm:text-xs select-none outline-none transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 w-full h-9 px-3 text-sm font-medium font-sans bg-white dark:bg-gray-800 …>…</button> from <div role="dialog" tabindex="-1" id="radix-«re»" data-state="open" aria-hidden="true" data-aria-hidden="true" data-slot="dialog-content" aria-labelledby="radix-«rf»" aria-describedby="radix-«rg»" class="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 translate-x-[-50%] translate-y-[-50%] gap-4 shadow-lg duration-200 w-[98%] max-w-7xl h-…>…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m      - waiting 500ms[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <span class="text-red-500 dark:text-red-400">*</span> from <div role="dialog" tabindex="-1" id="radix-«re»" data-state="open" aria-hidden="true" data-aria-hidden="true" data-slot="dialog-content" aria-labelledby="radix-«rf»" aria-describedby="radix-«rg»" class="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 translate-x-[-50%] translate-y-[-50%] gap-4 shadow-lg duration-200 w-[98%] max-w-7xl h-…>…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m      - waiting 500ms[22m
+
+[2026-07-09T05:08:02.353Z]INFO-Starting scenario: Sorting
+[2026-07-09T05:08:03.550Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T05:25:24.090Z]INFO-Launching Browser
+[2026-07-09T05:25:24.539Z]INFO-Starting scenario: Editing a course
+[2026-07-09T05:25:25.533Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T05:25:29.171Z]INFO-Typing message
+[2026-07-09T05:25:31.628Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:25:31.629Z]INFO-Typing message
+[2026-07-09T05:25:34.151Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:25:34.157Z]INFO-Clicking element
+[2026-07-09T05:25:35.395Z]INFO-Element clicked successfully
+[2026-07-09T05:25:35.397Z]INFO-Navigating to Course Management page
+[2026-07-09T05:25:50.351Z]INFO-Clicking element
+[2026-07-09T05:25:54.577Z]INFO-Element clicked successfully
+[2026-07-09T05:25:54.578Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T05:25:54.580Z]INFO-Clicking element
+[2026-07-09T05:25:54.582Z]INFO-Clicking element
+[2026-07-09T05:26:17.392Z]INFO-Element clicked successfully
+[2026-07-09T05:26:17.393Z]INFO-Kebab Menu is Clicked
+[2026-07-09T05:26:17.395Z]INFO-Clicking element
+[2026-07-09T05:26:17.624Z]INFO-Element clicked successfully
+[2026-07-09T05:26:17.624Z]INFO-Edit Course Button is Clicked
+[2026-07-09T05:26:17.627Z]INFO-Filling The First Page
+[2026-07-09T05:26:17.627Z]INFO-Clicking element
+[2026-07-09T05:26:19.727Z]INFO-Element clicked successfully
+[2026-07-09T05:26:19.727Z]INFO-Clicking element
+[2026-07-09T05:26:20.235Z]INFO-Element clicked successfully
+[2026-07-09T05:26:20.235Z]INFO-Clicking element
+[2026-07-09T05:27:47.787Z]ERROR-Scenario Failed: Editing a course
+[2026-07-09T05:27:47.817Z]ERROR-Failed to click element: Error: locator.click: Target page, context or browser has been closed
+Call log:
+[2m  - waiting for getByRole('combobox').filter({ hasText: 'Select service type' })[22m
+
+[2026-07-09T05:27:47.876Z]ERROR-Failed to click element: Error: locator.click: Target page, context or browser has been closed
+Call log:
+[2m  - waiting for locator('//th[1]/span')[22m
+[2m    - locator resolved to <span class="text-xs font-semibold text-gray-1300 dark:text-gray-300 tracking-wide font-inter">…</span>[22m
+[2m  - attempting click action[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <button dir="ltr" type="button" role="combobox" data-state="closed" data-size="default" aria-expanded="false" aria-autocomplete="none" aria-controls="radix-«ru»" data-slot="select-trigger" class="group flex items-center justify-between gap-2 cursor-pointer text-gray-500 border py-2 sm:text-xs select-none outline-none transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 w-full h-9 px-3 text-sm font-medium font-sans bg-white dark:bg-gray-800 r…>…</button> from <div role="dialog" tabindex="-1" id="radix-«ra»" data-state="open" data-slot="dialog-content" aria-labelledby="radix-«rb»" aria-describedby="radix-«rc»" class="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 translate-x-[-50%] translate-y-[-50%] gap-4 shadow-lg duration-200 w-[98%] max-w-7xl h-[95vh] rounded-xl bg-white dark:bg-gray-900…>…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m    - waiting 20ms[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+[2m    - element is visible, enabled and stable[22m
+[2m    - scrolling into view if needed[22m
+[2m    - done scrolling[22m
+[2m    - <button dir="ltr" type="button" role="combobox" data-state="closed" data-size="default" aria-expanded="false" aria-autocomplete="none" aria-controls="radix-«ru»" data-slot="select-trigger" class="group flex items-center justify-between gap-2 cursor-pointer text-gray-500 border py-2 sm:text-xs select-none outline-none transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 w-full h-9 px-3 text-sm font-medium font-sans bg-white dark:bg-gray-800 r…>…</button> from <div role="dialog" tabindex="-1" id="radix-«ra»" data-state="open" data-slot="dialog-content" aria-labelledby="radix-«rb»" aria-describedby="radix-«rc»" class="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 translate-x-[-50%] translate-y-[-50%] gap-4 shadow-lg duration-200 w-[98%] max-w-7xl h-[95vh] rounded-xl bg-white dark:bg-gray-900…>…</div> subtree intercepts pointer events[22m
+[2m  2 × retrying click action[22m
+[2m      - waiting 100ms[22m
+[2m      - waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <span class="text-red-500 dark:text-red-400">*</span> from <div role="dialog" tabindex="-1" id="radix-«ra»" data-state="open" data-slot="dialog-content" aria-labelledby="radix-«rb»" aria-describedby="radix-«rc»" class="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 translate-x-[-50%] translate-y-[-50%] gap-4 shadow-lg duration-200 w-[98%] max-w-7xl h-[95vh] rounded-xl bg-white dark:bg-gray-900…>…</div> subtree intercepts pointer events[22m
+[2m  6 × retrying click action[22m
+[2m      - waiting 500ms[22m
+[2m      - waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <button dir="ltr" type="button" role="combobox" data-state="closed" data-size="default" aria-expanded="false" aria-autocomplete="none" aria-controls="radix-«ru»" data-slot="select-trigger" class="group flex items-center justify-between gap-2 cursor-pointer text-gray-500 border py-2 sm:text-xs select-none outline-none transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 w-full h-9 px-3 text-sm font-medium font-sans bg-white dark:bg-gray-800 r…>…</button> from <div role="dialog" tabindex="-1" id="radix-«ra»" data-state="open" data-slot="dialog-content" aria-labelledby="radix-«rb»" aria-describedby="radix-«rc»" class="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 translate-x-[-50%] translate-y-[-50%] gap-4 shadow-lg duration-200 w-[98%] max-w-7xl h-[95vh] rounded-xl bg-white dark:bg-gray-900…>…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m      - waiting 500ms[22m
+[2m      - waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <button dir="ltr" type="button" role="combobox" data-state="closed" data-size="default" aria-expanded="false" aria-autocomplete="none" aria-controls="radix-«ru»" data-slot="select-trigger" class="group flex items-center justify-between gap-2 cursor-pointer text-gray-500 border py-2 sm:text-xs select-none outline-none transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 w-full h-9 px-3 text-sm font-medium font-sans bg-white dark:bg-gray-800 r…>…</button> from <div role="dialog" tabindex="-1" id="radix-«ra»" data-state="open" data-slot="dialog-content" aria-labelledby="radix-«rb»" aria-describedby="radix-«rc»" class="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 translate-x-[-50%] translate-y-[-50%] gap-4 shadow-lg duration-200 w-[98%] max-w-7xl h-[95vh] rounded-xl bg-white dark:bg-gray-900…>…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m      - waiting 500ms[22m
+[2m      - waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <span class="text-red-500 dark:text-red-400">*</span> from <div role="dialog" tabindex="-1" id="radix-«ra»" data-state="open" data-slot="dialog-content" aria-labelledby="radix-«rb»" aria-describedby="radix-«rc»" class="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 translate-x-[-50%] translate-y-[-50%] gap-4 shadow-lg duration-200 w-[98%] max-w-7xl h-[95vh] rounded-xl bg-white dark:bg-gray-900…>…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m      - waiting 500ms[22m
+[2m      - waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <span class="text-red-500 dark:text-red-400">*</span> from <div role="dialog" tabindex="-1" id="radix-«ra»" data-state="open" data-slot="dialog-content" aria-labelledby="radix-«rb»" aria-describedby="radix-«rc»" class="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 translate-x-[-50%] translate-y-[-50%] gap-4 shadow-lg duration-200 w-[98%] max-w-7xl h-[95vh] rounded-xl bg-white dark:bg-gray-900…>…</div> subtree intercepts pointer events[22m
+[2m  - retrying click action[22m
+[2m    - waiting 500ms[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+[2m    - element is visible, enabled and stable[22m
+[2m    - scrolling into view if needed[22m
+[2m    - done scrolling[22m
+[2m    - <button dir="ltr" type="button" role="combobox" data-state="closed" data-size="default" aria-expanded="false" aria-autocomplete="none" aria-controls="radix-«ru»" data-slot="select-trigger" class="group flex items-center justify-between gap-2 cursor-pointer text-gray-500 border py-2 sm:text-xs select-none outline-none transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 w-full h-9 px-3 text-sm font-medium font-sans bg-white dark:bg-gray-800 r…>…</button> from <div role="dialog" tabindex="-1" id="radix-«ra»" data-state="open" data-slot="dialog-content" aria-labelledby="radix-«rb»" aria-describedby="radix-«rc»" class="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 translate-x-[-50%] translate-y-[-50%] gap-4 shadow-lg duration-200 w-[98%] max-w-7xl h-[95vh] rounded-xl bg-white dark:bg-gray-900…>…</div> subtree intercepts pointer events[22m
+[2m  - retrying click action[22m
+[2m    - waiting 500ms[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+[2m    - element is visible, enabled and stable[22m
+[2m    - scrolling into view if needed[22m
+[2m    - done scrolling[22m
+
+[2026-07-09T05:34:20.158Z]INFO-Launching Browser
+[2026-07-09T05:34:20.520Z]INFO-Starting scenario: Editing a course
+[2026-07-09T05:34:21.389Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T05:34:33.234Z]INFO-Typing message
+[2026-07-09T05:34:34.604Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:34:34.605Z]INFO-Typing message
+[2026-07-09T05:34:36.086Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:34:36.089Z]INFO-Clicking element
+[2026-07-09T05:34:37.085Z]INFO-Element clicked successfully
+[2026-07-09T05:34:37.087Z]INFO-Navigating to Course Management page
+[2026-07-09T05:35:03.956Z]INFO-Clicking element
+[2026-07-09T05:35:15.237Z]INFO-Element clicked successfully
+[2026-07-09T05:35:15.238Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T05:35:15.243Z]INFO-Clicking element
+[2026-07-09T05:35:15.248Z]INFO-Clicking element
+[2026-07-09T05:35:24.912Z]INFO-Element clicked successfully
+[2026-07-09T05:35:24.912Z]INFO-Kebab Menu is Clicked
+[2026-07-09T05:35:24.914Z]INFO-Clicking element
+[2026-07-09T05:35:25.213Z]INFO-Element clicked successfully
+[2026-07-09T05:35:25.213Z]INFO-Edit Course Button is Clicked
+[2026-07-09T05:35:25.216Z]INFO-Filling The First Page
+[2026-07-09T05:35:25.217Z]INFO-Clicking element
+[2026-07-09T05:35:31.317Z]INFO-Element clicked successfully
+[2026-07-09T05:35:31.318Z]INFO-Clicking element
+[2026-07-09T05:36:55.399Z]ERROR-Scenario Failed: Editing a course
+[2026-07-09T05:36:55.481Z]ERROR-Failed to click element: Error: locator.click: Target page, context or browser has been closed
+Call log:
+[2m  - waiting for getByRole('option', { name: 'jamocha' })[22m
+
+[2026-07-09T05:36:55.630Z]ERROR-Failed to click element: Error: locator.click: Target page, context or browser has been closed
+Call log:
+[2m  - waiting for locator('//th[1]/span')[22m
+[2m    - locator resolved to <span class="text-xs font-semibold text-gray-1300 dark:text-gray-300 tracking-wide font-inter">…</span>[22m
+[2m  - attempting click action[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <button dir="ltr" type="button" role="combobox" data-state="closed" data-size="default" aria-expanded="false" aria-autocomplete="none" aria-controls="radix-«ru»" data-slot="select-trigger" class="group flex items-center justify-between gap-2 cursor-pointer text-gray-500 border py-2 sm:text-xs select-none outline-none transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 w-full h-9 px-3 text-sm font-medium font-sans bg-white dark:bg-gray-800 r…>…</button> from <div role="dialog" tabindex="-1" id="radix-«ra»" data-state="open" aria-hidden="true" data-aria-hidden="true" data-slot="dialog-content" aria-labelledby="radix-«rb»" aria-describedby="radix-«rc»" class="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 translate-x-[-50%] translate-y-[-50%] gap-4 shadow-lg duration-200 w-[98%] max-w-7xl h-…>…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m    - waiting 20ms[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+[2m    - element is visible, enabled and stable[22m
+[2m    - scrolling into view if needed[22m
+[2m    - done scrolling[22m
+[2m    - <button dir="ltr" type="button" role="combobox" data-state="closed" data-size="default" aria-expanded="false" aria-autocomplete="none" aria-controls="radix-«ru»" data-slot="select-trigger" class="group flex items-center justify-between gap-2 cursor-pointer text-gray-500 border py-2 sm:text-xs select-none outline-none transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 w-full h-9 px-3 text-sm font-medium font-sans bg-white dark:bg-gray-800 r…>…</button> from <div role="dialog" tabindex="-1" id="radix-«ra»" data-state="open" aria-hidden="true" data-aria-hidden="true" data-slot="dialog-content" aria-labelledby="radix-«rb»" aria-describedby="radix-«rc»" class="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 translate-x-[-50%] translate-y-[-50%] gap-4 shadow-lg duration-200 w-[98%] max-w-7xl h-…>…</div> subtree intercepts pointer events[22m
+[2m  2 × retrying click action[22m
+[2m      - waiting 100ms[22m
+[2m      - waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <span class="text-red-500 dark:text-red-400">*</span> from <div role="dialog" tabindex="-1" id="radix-«ra»" data-state="open" aria-hidden="true" data-aria-hidden="true" data-slot="dialog-content" aria-labelledby="radix-«rb»" aria-describedby="radix-«rc»" class="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 translate-x-[-50%] translate-y-[-50%] gap-4 shadow-lg duration-200 w-[98%] max-w-7xl h-…>…</div> subtree intercepts pointer events[22m
+[2m  2 × retrying click action[22m
+[2m      - waiting 500ms[22m
+[2m      - waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <button dir="ltr" type="button" role="combobox" data-state="closed" data-size="default" aria-expanded="false" aria-autocomplete="none" aria-controls="radix-«ru»" data-slot="select-trigger" class="group flex items-center justify-between gap-2 cursor-pointer text-gray-500 border py-2 sm:text-xs select-none outline-none transition-colors focus-visible:ring-2 focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 w-full h-9 px-3 text-sm font-medium font-sans bg-white dark:bg-gray-800 r…>…</button> from <div role="dialog" tabindex="-1" id="radix-«ra»" data-state="open" aria-hidden="true" data-aria-hidden="true" data-slot="dialog-content" aria-labelledby="radix-«rb»" aria-describedby="radix-«rc»" class="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 translate-x-[-50%] translate-y-[-50%] gap-4 shadow-lg duration-200 w-[98%] max-w-7xl h-…>…</div> subtree intercepts pointer events[22m
+[2m  - retrying click action[22m
+[2m    - waiting 500ms[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+[2m    - element is visible, enabled and stable[22m
+[2m    - scrolling into view if needed[22m
+[2m    - done scrolling[22m
+[2m    - <span class="text-red-500 dark:text-red-400">*</span> from <div role="dialog" tabindex="-1" id="radix-«ra»" data-state="open" aria-hidden="true" data-aria-hidden="true" data-slot="dialog-content" aria-labelledby="radix-«rb»" aria-describedby="radix-«rc»" class="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 translate-x-[-50%] translate-y-[-50%] gap-4 shadow-lg duration-200 w-[98%] max-w-7xl h-…>…</div> subtree intercepts pointer events[22m
+[2m  - retrying click action[22m
+[2m    - waiting 500ms[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+[2m    - element is visible, enabled and stable[22m
+[2m    - scrolling into view if needed[22m
+[2m    - done scrolling[22m
+
+[2026-07-09T05:42:11.655Z]INFO-Launching Browser
+[2026-07-09T05:42:12.099Z]INFO-Starting scenario: Editing a course
+[2026-07-09T05:42:12.361Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T05:42:14.483Z]INFO-Typing message
+[2026-07-09T05:42:14.778Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:42:14.778Z]INFO-Typing message
+[2026-07-09T05:42:14.801Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:42:14.804Z]INFO-Clicking element
+[2026-07-09T05:42:15.777Z]INFO-Element clicked successfully
+[2026-07-09T05:42:15.779Z]INFO-Navigating to Course Management page
+[2026-07-09T05:42:41.089Z]INFO-Clicking element
+[2026-07-09T05:42:41.129Z]INFO-Element clicked successfully
+[2026-07-09T05:42:41.130Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T05:42:41.131Z]INFO-Clicking element
+[2026-07-09T05:42:41.133Z]INFO-Clicking element
+[2026-07-09T05:42:41.876Z]INFO-Element clicked successfully
+[2026-07-09T05:42:49.172Z]INFO-Element clicked successfully
+[2026-07-09T05:42:49.172Z]INFO-Kebab Menu is Clicked
+[2026-07-09T05:42:49.174Z]INFO-Clicking element
+[2026-07-09T05:42:49.452Z]INFO-Element clicked successfully
+[2026-07-09T05:42:49.452Z]INFO-Edit Course Button is Clicked
+[2026-07-09T05:42:49.454Z]INFO-Filling The First Page
+[2026-07-09T05:42:49.455Z]INFO-Selecting custom dropdown option: jamocha
+[2026-07-09T05:43:03.618Z]ERROR-Failed to select custom dropdown option "jamocha": TimeoutError: locator.click: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('option', { name: 'jamocha' })[22m
+
+[2026-07-09T05:43:03.768Z]ERROR-Scenario Failed: Editing a course
+[2026-07-09T05:43:03.829Z]INFO-Starting scenario: Sorting
+[2026-07-09T05:43:03.986Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T05:43:05.326Z]INFO-Typing message
+[2026-07-09T05:43:05.568Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:43:05.568Z]INFO-Typing message
+[2026-07-09T05:43:05.602Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:43:05.603Z]INFO-Clicking element
+[2026-07-09T05:43:06.475Z]INFO-Element clicked successfully
+[2026-07-09T05:43:06.476Z]INFO-Navigating to Course Management page
+[2026-07-09T05:43:23.606Z]INFO-Clicking element
+[2026-07-09T05:43:23.651Z]INFO-Element clicked successfully
+[2026-07-09T05:43:23.651Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T05:43:23.657Z]INFO-Clicking element
+[2026-07-09T05:43:24.846Z]INFO-Element clicked successfully
+[2026-07-09T05:43:24.889Z]INFO-Scenario Passed: Sorting
+[2026-07-09T05:43:24.942Z]INFO-Starting scenario: Sorting
+[2026-07-09T05:43:25.134Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T05:43:27.491Z]INFO-Typing message
+[2026-07-09T05:43:28.348Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:43:28.349Z]INFO-Typing message
+[2026-07-09T05:43:28.376Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:43:28.376Z]INFO-Clicking element
+[2026-07-09T05:43:29.228Z]INFO-Element clicked successfully
+[2026-07-09T05:43:29.229Z]INFO-Navigating to Course Management page
+[2026-07-09T05:43:42.313Z]INFO-Clicking element
+[2026-07-09T05:43:42.348Z]INFO-Element clicked successfully
+[2026-07-09T05:43:42.349Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T05:43:42.349Z]INFO-Clicking element
+[2026-07-09T05:43:43.251Z]INFO-Element clicked successfully
+[2026-07-09T05:43:43.278Z]INFO-Scenario Passed: Sorting
+[2026-07-09T05:43:43.327Z]INFO-Starting scenario: Sorting
+[2026-07-09T05:43:43.502Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T05:43:44.870Z]INFO-Typing message
+[2026-07-09T05:43:45.124Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:43:45.124Z]INFO-Typing message
+[2026-07-09T05:43:45.150Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:43:45.150Z]INFO-Clicking element
+[2026-07-09T05:43:46.020Z]INFO-Element clicked successfully
+[2026-07-09T05:43:46.020Z]INFO-Navigating to Course Management page
+[2026-07-09T05:43:56.611Z]INFO-Clicking element
+[2026-07-09T05:43:56.660Z]INFO-Element clicked successfully
+[2026-07-09T05:43:56.660Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T05:43:56.660Z]INFO-Clicking element
+[2026-07-09T05:43:57.228Z]INFO-Element clicked successfully
+[2026-07-09T05:43:57.254Z]INFO-Scenario Passed: Sorting
+[2026-07-09T05:43:57.298Z]INFO-Closing browser
+[2026-07-09T05:57:29.101Z]INFO-Launching Browser
+[2026-07-09T05:57:29.513Z]INFO-Starting scenario: Editing a course
+[2026-07-09T05:57:29.694Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T05:57:31.634Z]INFO-Typing message
+[2026-07-09T05:57:33.020Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:57:33.020Z]INFO-Typing message
+[2026-07-09T05:57:33.046Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:57:33.048Z]INFO-Clicking element
+[2026-07-09T05:57:33.161Z]INFO-Element clicked successfully
+[2026-07-09T05:57:33.163Z]INFO-Navigating to Course Management page
+[2026-07-09T05:57:43.294Z]INFO-Clicking element
+[2026-07-09T05:57:43.337Z]INFO-Element clicked successfully
+[2026-07-09T05:57:43.337Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T05:57:43.340Z]INFO-Clicking element
+[2026-07-09T05:57:43.341Z]INFO-Clicking element
+[2026-07-09T05:57:44.248Z]INFO-Element clicked successfully
+[2026-07-09T05:57:48.852Z]INFO-Element clicked successfully
+[2026-07-09T05:57:48.852Z]INFO-Kebab Menu is Clicked
+[2026-07-09T05:57:48.854Z]INFO-Clicking element
+[2026-07-09T05:57:49.159Z]INFO-Element clicked successfully
+[2026-07-09T05:57:49.159Z]INFO-Edit Course Button is Clicked
+[2026-07-09T05:57:49.161Z]INFO-Filling The First Page
+[2026-07-09T05:57:49.161Z]INFO-Selecting custom dropdown option: jamocha
+[2026-07-09T05:57:52.549Z]INFO-Option "jamocha" selected successfully
+[2026-07-09T05:57:52.549Z]INFO-Selecting custom dropdown option: Business to institution
+[2026-07-09T05:57:53.507Z]INFO-Option "Business to institution" selected successfully
+[2026-07-09T05:57:53.507Z]INFO-Selecting custom dropdown option: HTD
+[2026-07-09T05:57:54.444Z]INFO-Option "HTD" selected successfully
+[2026-07-09T05:57:54.444Z]INFO-Selecting custom dropdown option: Software Development
+[2026-07-09T05:57:55.374Z]INFO-Option "Software Development" selected successfully
+[2026-07-09T05:57:55.374Z]INFO-Selecting custom dropdown option: Frontend
+[2026-07-09T05:57:56.292Z]INFO-Option "Frontend" selected successfully
+[2026-07-09T05:57:56.292Z]INFO-Clicking element
+[2026-07-09T05:57:56.429Z]INFO-Element clicked successfully
+[2026-07-09T05:57:56.429Z]INFO-clicked next Button
+[2026-07-09T05:57:56.432Z]INFO-Filling the second Page
+[2026-07-09T05:57:56.432Z]INFO-Selecting custom dropdown option: Beginner
+[2026-07-09T05:57:57.451Z]INFO-Option "Beginner" selected successfully
+[2026-07-09T05:57:57.452Z]INFO-Clicking element
+[2026-07-09T05:57:57.532Z]INFO-Element clicked successfully
+[2026-07-09T05:57:57.532Z]INFO-clicked preview & update button
+[2026-07-09T05:57:57.534Z]INFO-Clicking element
+[2026-07-09T05:57:57.897Z]INFO-Element clicked successfully
+[2026-07-09T05:58:03.037Z]ERROR-Scenario Failed: Editing a course
+[2026-07-09T05:58:03.090Z]INFO-Starting scenario: Sorting
+[2026-07-09T05:58:03.303Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T05:58:04.862Z]INFO-Typing message
+[2026-07-09T05:58:05.109Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:58:05.109Z]INFO-Typing message
+[2026-07-09T05:58:05.138Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:58:05.139Z]INFO-Clicking element
+[2026-07-09T05:58:05.995Z]INFO-Element clicked successfully
+[2026-07-09T05:58:05.996Z]INFO-Navigating to Course Management page
+[2026-07-09T05:58:14.523Z]INFO-Clicking element
+[2026-07-09T05:58:14.562Z]INFO-Element clicked successfully
+[2026-07-09T05:58:14.562Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T05:58:14.567Z]INFO-Clicking element
+[2026-07-09T05:58:15.437Z]INFO-Element clicked successfully
+[2026-07-09T05:58:15.473Z]INFO-Scenario Passed: Sorting
+[2026-07-09T05:58:15.519Z]INFO-Starting scenario: Sorting
+[2026-07-09T05:58:15.703Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T05:58:17.061Z]INFO-Typing message
+[2026-07-09T05:58:17.342Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:58:17.342Z]INFO-Typing message
+[2026-07-09T05:58:17.372Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:58:17.373Z]INFO-Clicking element
+[2026-07-09T05:58:18.236Z]INFO-Element clicked successfully
+[2026-07-09T05:58:18.237Z]INFO-Navigating to Course Management page
+[2026-07-09T05:58:27.348Z]INFO-Clicking element
+[2026-07-09T05:58:27.391Z]INFO-Element clicked successfully
+[2026-07-09T05:58:27.392Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T05:58:27.393Z]INFO-Clicking element
+[2026-07-09T05:58:28.076Z]INFO-Element clicked successfully
+[2026-07-09T05:58:28.100Z]INFO-Scenario Passed: Sorting
+[2026-07-09T05:58:28.140Z]INFO-Starting scenario: Sorting
+[2026-07-09T05:58:28.327Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T05:58:29.680Z]INFO-Typing message
+[2026-07-09T05:58:29.938Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:58:29.938Z]INFO-Typing message
+[2026-07-09T05:58:29.961Z]INFO-Message typed on the locator successfully
+[2026-07-09T05:58:29.962Z]INFO-Clicking element
+[2026-07-09T05:58:30.824Z]INFO-Element clicked successfully
+[2026-07-09T05:58:30.824Z]INFO-Navigating to Course Management page
+[2026-07-09T05:58:43.872Z]INFO-Clicking element
+[2026-07-09T05:58:43.912Z]INFO-Element clicked successfully
+[2026-07-09T05:58:43.912Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T05:58:43.913Z]INFO-Clicking element
+[2026-07-09T05:58:44.770Z]INFO-Element clicked successfully
+[2026-07-09T05:58:44.793Z]INFO-Scenario Passed: Sorting
+[2026-07-09T05:58:44.836Z]INFO-Closing browser
+[2026-07-09T06:04:42.442Z]INFO-Launching Browser
+[2026-07-09T06:04:42.826Z]INFO-Starting scenario: Editing a course
+[2026-07-09T06:04:42.988Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T06:04:44.861Z]INFO-Typing message
+[2026-07-09T06:04:45.237Z]INFO-Message typed on the locator successfully
+[2026-07-09T06:04:45.237Z]INFO-Typing message
+[2026-07-09T06:04:45.268Z]INFO-Message typed on the locator successfully
+[2026-07-09T06:04:45.271Z]INFO-Clicking element
+[2026-07-09T06:04:46.187Z]INFO-Element clicked successfully
+[2026-07-09T06:04:46.189Z]INFO-Navigating to Course Management page
+[2026-07-09T06:05:16.473Z]ERROR-Scenario Failed: Editing a course
+[2026-07-09T06:05:16.517Z]INFO-Starting scenario: Sorting
+[2026-07-09T06:05:16.700Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T06:05:18.649Z]INFO-Typing message
+[2026-07-09T06:05:18.914Z]INFO-Message typed on the locator successfully
+[2026-07-09T06:05:18.914Z]INFO-Typing message
+[2026-07-09T06:05:18.955Z]INFO-Message typed on the locator successfully
+[2026-07-09T06:05:18.957Z]INFO-Clicking element
+[2026-07-09T06:05:19.824Z]INFO-Element clicked successfully
+[2026-07-09T06:05:19.824Z]INFO-Navigating to Course Management page
+[2026-07-09T06:05:42.350Z]INFO-Clicking element
+[2026-07-09T06:05:42.395Z]INFO-Element clicked successfully
+[2026-07-09T06:05:42.395Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T06:05:42.404Z]INFO-Clicking element
+[2026-07-09T06:05:43.339Z]INFO-Element clicked successfully
+[2026-07-09T06:05:43.387Z]INFO-Scenario Passed: Sorting
+[2026-07-09T06:05:43.435Z]INFO-Starting scenario: Sorting
+[2026-07-09T06:05:43.633Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T06:05:44.959Z]INFO-Typing message
+[2026-07-09T06:05:45.225Z]INFO-Message typed on the locator successfully
+[2026-07-09T06:05:45.226Z]INFO-Typing message
+[2026-07-09T06:05:45.254Z]INFO-Message typed on the locator successfully
+[2026-07-09T06:05:45.254Z]INFO-Clicking element
+[2026-07-09T06:05:46.121Z]INFO-Element clicked successfully
+[2026-07-09T06:05:46.122Z]INFO-Navigating to Course Management page
+[2026-07-09T06:06:12.183Z]INFO-Clicking element
+[2026-07-09T06:06:12.290Z]INFO-Element clicked successfully
+[2026-07-09T06:06:12.293Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T06:06:12.294Z]INFO-Clicking element
+[2026-07-09T06:06:13.212Z]INFO-Element clicked successfully
+[2026-07-09T06:06:13.292Z]INFO-Scenario Passed: Sorting
+[2026-07-09T06:06:13.385Z]INFO-Starting scenario: Sorting
+[2026-07-09T06:06:13.629Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T06:06:15.142Z]INFO-Typing message
+[2026-07-09T06:06:15.582Z]INFO-Message typed on the locator successfully
+[2026-07-09T06:06:15.582Z]INFO-Typing message
+[2026-07-09T06:06:15.693Z]INFO-Message typed on the locator successfully
+[2026-07-09T06:06:15.698Z]INFO-Clicking element
+[2026-07-09T06:06:16.636Z]INFO-Element clicked successfully
+[2026-07-09T06:06:16.636Z]INFO-Navigating to Course Management page
+[2026-07-09T06:06:28.970Z]INFO-Clicking element
+[2026-07-09T06:06:29.080Z]INFO-Element clicked successfully
+[2026-07-09T06:06:29.080Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T06:06:29.081Z]INFO-Clicking element
+[2026-07-09T06:06:30.213Z]INFO-Element clicked successfully
+[2026-07-09T06:06:30.305Z]INFO-Scenario Passed: Sorting
+[2026-07-09T06:06:30.392Z]INFO-Closing browser
+[2026-07-09T06:07:06.229Z]INFO-Launching Browser
+[2026-07-09T06:07:06.881Z]INFO-Starting scenario: Editing a course
+[2026-07-09T06:07:08.146Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T06:07:45.575Z]INFO-Typing message
+[2026-07-09T06:07:46.940Z]INFO-Message typed on the locator successfully
+[2026-07-09T06:07:46.941Z]INFO-Typing message
+[2026-07-09T06:07:47.581Z]INFO-Message typed on the locator successfully
+[2026-07-09T06:07:47.584Z]INFO-Clicking element
+[2026-07-09T06:07:48.149Z]INFO-Element clicked successfully
+[2026-07-09T06:07:48.151Z]INFO-Navigating to Course Management page
+[2026-07-09T06:08:11.015Z]INFO-Clicking element
+[2026-07-09T06:08:13.043Z]INFO-Element clicked successfully
+[2026-07-09T06:08:13.043Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T06:08:13.047Z]INFO-Clicking element
+[2026-07-09T06:08:13.048Z]INFO-Clicking element
+[2026-07-09T06:08:16.206Z]INFO-Element clicked successfully
+[2026-07-09T06:09:20.760Z]INFO-Launching Browser
+[2026-07-09T06:09:21.281Z]INFO-Starting scenario: Editing a course
+[2026-07-09T06:09:22.347Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T06:09:25.767Z]INFO-Typing message
+[2026-07-09T06:09:26.959Z]INFO-Message typed on the locator successfully
+[2026-07-09T06:09:26.960Z]INFO-Typing message
+[2026-07-09T06:09:27.771Z]INFO-Message typed on the locator successfully
+[2026-07-09T06:09:27.779Z]INFO-Clicking element
+[2026-07-09T06:09:28.538Z]INFO-Element clicked successfully
+[2026-07-09T06:09:28.542Z]INFO-Navigating to Course Management page
+[2026-07-09T06:10:17.000Z]ERROR-Scenario Failed: Editing a course
+[2026-07-09T06:10:22.675Z]INFO-Starting scenario: Sorting
+[2026-07-09T06:10:24.155Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T06:10:38.669Z]INFO-Launching Browser
+[2026-07-09T06:10:39.068Z]INFO-Starting scenario: Editing a course
+[2026-07-09T06:10:39.279Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T06:10:40.694Z]INFO-Typing message
+[2026-07-09T06:10:40.989Z]INFO-Message typed on the locator successfully
+[2026-07-09T06:10:40.989Z]INFO-Typing message
+[2026-07-09T06:10:41.013Z]INFO-Message typed on the locator successfully
+[2026-07-09T06:10:41.015Z]INFO-Clicking element
+[2026-07-09T06:10:41.907Z]INFO-Element clicked successfully
+[2026-07-09T06:10:41.909Z]INFO-Navigating to Course Management page
+[2026-07-09T06:11:07.994Z]INFO-Clicking element
+[2026-07-09T06:11:08.064Z]INFO-Element clicked successfully
+[2026-07-09T06:11:08.064Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T06:11:08.067Z]INFO-Clicking element
+[2026-07-09T06:11:08.069Z]INFO-Clicking element
+[2026-07-09T06:11:08.946Z]INFO-Element clicked successfully
+[2026-07-09T06:11:38.084Z]ERROR-Failed to click element: TimeoutError: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('//tbody/tr[1]/td[7]/span/div/div/child::*')[22m
+
+[2026-07-09T06:11:38.228Z]ERROR-Scenario Failed: Editing a course
+[2026-07-09T06:11:38.304Z]INFO-Starting scenario: Sorting
+[2026-07-09T06:11:38.492Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T06:11:41.014Z]INFO-Typing message
+[2026-07-09T06:11:41.267Z]INFO-Message typed on the locator successfully
+[2026-07-09T06:11:41.267Z]INFO-Typing message
+[2026-07-09T06:11:41.293Z]INFO-Message typed on the locator successfully
+[2026-07-09T06:11:41.294Z]INFO-Clicking element
+[2026-07-09T06:11:42.168Z]INFO-Element clicked successfully
+[2026-07-09T06:11:42.169Z]INFO-Navigating to Course Management page
+[2026-07-09T06:11:56.079Z]INFO-Clicking element
+[2026-07-09T06:11:56.157Z]INFO-Element clicked successfully
+[2026-07-09T06:11:56.158Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T06:11:56.171Z]INFO-Clicking element
+[2026-07-09T06:11:57.293Z]INFO-Element clicked successfully
+[2026-07-09T06:11:57.444Z]INFO-Scenario Passed: Sorting
+[2026-07-09T06:11:57.534Z]INFO-Starting scenario: Sorting
+[2026-07-09T06:11:57.765Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T06:11:59.169Z]INFO-Typing message
+[2026-07-09T06:12:00.582Z]INFO-Message typed on the locator successfully
+[2026-07-09T06:12:00.582Z]INFO-Typing message
+[2026-07-09T06:12:00.605Z]INFO-Message typed on the locator successfully
+[2026-07-09T06:12:00.606Z]INFO-Clicking element
+[2026-07-09T06:12:01.513Z]INFO-Element clicked successfully
+[2026-07-09T06:12:01.513Z]INFO-Navigating to Course Management page
+[2026-07-09T06:12:25.871Z]INFO-Clicking element
+[2026-07-09T06:12:25.948Z]INFO-Element clicked successfully
+[2026-07-09T06:12:25.948Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T06:12:25.949Z]INFO-Clicking element
+[2026-07-09T06:12:26.931Z]INFO-Element clicked successfully
+[2026-07-09T06:12:26.999Z]INFO-Scenario Passed: Sorting
+[2026-07-09T06:12:27.051Z]INFO-Starting scenario: Sorting
+[2026-07-09T06:12:27.197Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-09T06:12:28.589Z]INFO-Typing message
+[2026-07-09T06:12:28.842Z]INFO-Message typed on the locator successfully
+[2026-07-09T06:12:28.842Z]INFO-Typing message
+[2026-07-09T06:12:28.868Z]INFO-Message typed on the locator successfully
+[2026-07-09T06:12:28.869Z]INFO-Clicking element
+[2026-07-09T06:12:29.742Z]INFO-Element clicked successfully
+[2026-07-09T06:12:29.743Z]INFO-Navigating to Course Management page
+[2026-07-09T06:12:45.126Z]INFO-Clicking element
+[2026-07-09T06:12:45.197Z]INFO-Element clicked successfully
+[2026-07-09T06:12:45.198Z]INFO-Successfully navigated to Course Management page
+[2026-07-09T06:12:45.199Z]INFO-Clicking element
+[2026-07-09T06:12:46.165Z]INFO-Element clicked successfully
+[2026-07-09T06:12:46.227Z]INFO-Scenario Passed: Sorting
+[2026-07-09T06:12:46.283Z]INFO-Closing browser
