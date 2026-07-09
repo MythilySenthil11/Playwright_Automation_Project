@@ -16,7 +16,7 @@ When("the user clicks on the login button", async function (this: CustomWorld) {
 });
 Then("the user should be redirected to the dashboard page", async function (this: CustomWorld) {
     await this.adp.profileclick();
-await expect(this.adp.getuseremail()).toHaveText(validdata.email, {
+await expect(this.adp.getuseremail()).toHaveText("Testing course", {
     timeout: TIMEOUTS.MEDIUM
 });
 });
@@ -35,5 +35,23 @@ Then("an {string} should be displayed", async function (this: CustomWorld, error
 await expect(locator).toHaveText(errorMessage,{
     timeout: TIMEOUTS.LONG
 });
+
+});
+
+When("the user clicks the profile icon in the admindashboardpage",async function(this:CustomWorld){
+
+    await this.adp.profileclick()
+
+});
+
+When("the user clicks the Signout option",async function(this:CustomWorld){
+
+    await this.adp.ClickSignOutButton()
+
+});
+
+Then("the user should see the login page",async function(this:CustomWorld){
+
+    await expect(this.lp.loginbutton).toBeVisible({timeout:TIMEOUTS.LONG});
 
 });

@@ -30,4 +30,3 @@ Scenario: Delete the category with the help of search functionality
         And the user clicks the delete button in the confirmation pop up
         And the user searches the deleted category 
         Then the user should see a not found message
-

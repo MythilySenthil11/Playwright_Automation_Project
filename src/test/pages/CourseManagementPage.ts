@@ -19,6 +19,27 @@ export class CourseManagementPage extends BasePage{
     readonly nxtbtn:Locator;
     readonly previousbtn:Locator;
     pageno!:Locator;
+
+    readonly kebabButton:Locator
+    readonly editCourseButton:Locator
+    readonly courseClientDropDown:Locator
+    readonly serviceTypeDropDown:Locator
+    readonly serviceModelDropDown:Locator
+    readonly courseCategoryDropDown:Locator
+    readonly courseNameDropDown:Locator
+    readonly courseLevelDropDown:Locator
+    readonly uploadphotoButton:Locator
+    readonly nextButton:Locator
+    readonly saveLayoutButton:Locator
+    readonly tostMsg:Locator
+    readonly previewButton:Locator
+    readonly dateSort:Locator
+    readonly clientSort:Locator
+    readonly courseSort:Locator
+    readonly dateList:Locator
+    readonly clientList:Locator
+    readonly courseSortList:Locator
+
     constructor(page:Page){
         super(page);
         this.page=page;
@@ -37,6 +58,26 @@ export class CourseManagementPage extends BasePage{
         this.nxtbtn =page.getByRole('button', {name:'Next'});
         this.current = page.locator("//button[contains(@class,'bg-blue-600')]");
         this.previousbtn = page.getByRole('button', {name:'Previous'});
+
+        this.kebabButton = this.page.locator("//tbody/tr[1]/td[7]/span/div/div/child::*")
+        this.editCourseButton = this.page.locator("//tbody/tr[1]/td[7]/span/div/div/div/child::button[2]")
+        this.courseClientDropDown = this.page.getByRole('combobox').nth(0)
+        this.serviceTypeDropDown = this.page.getByRole('combobox').nth(1)
+        this.serviceModelDropDown = this.page.getByRole('combobox').nth(2)
+        this.courseCategoryDropDown = this.page.getByRole('combobox').nth(3)
+        this.courseNameDropDown = this.page.getByRole('combobox').nth(4)
+        this.courseLevelDropDown = this.page.getByRole('combobox').nth(0)
+        this.uploadphotoButton = this.page.locator('div').filter({ hasText: /^Choose Image$/ })
+        this.nextButton = this.page.getByRole('button', { name: 'Next' })
+        this.saveLayoutButton = this.page.getByRole('button', { name: 'Save Course Layout' })
+        this.tostMsg = this.page.getByText("Course updated successfully!")
+        this.previewButton =this.page.getByRole('button', { name: 'Preview & Update' })
+        this.dateSort = this.page.locator("//th[1]/span")
+        this.clientSort = this.page.locator("//th[2]/span")
+        this.courseSort = this.page.locator("//th[3]/span")
+        this.dateList = this.page.locator("//td[1]/span/div")
+        this.clientList = this.page.locator("//td[2]/span/div")
+        this.courseSortList = this.page.locator("//td[3]/span/div")
     }
     async clickFilterButton(){
         await this.Click(this.filterButton)
@@ -86,4 +127,58 @@ export class CourseManagementPage extends BasePage{
         this.pageno = this.page.locator(`//button[text()='${pageNo}']`);
         await this.Click(this.pageno);
     }
+
+
+    //actions for editCourse Feature
+    async clickKebabButton(){
+        this.clickDateSort()
+        await this.Click(this.kebabButton)
+    }
+
+    async clickEditCourse(){
+        await this.Click(this.editCourseButton)
+    }
+    
+    async clickNext(){
+        await this.Click(this.nextButton)
+    }
+
+    async clickSaveLayout(){
+        await this.Click(this.saveLayoutButton)
+    }
+    async clickPreview(){
+        await this.Click(this.previewButton)
+    }
+
+    async fillFirstPage(){
+        await this.SelectCustomDropdown(this.courseClientDropDown, 'jamocha');
+        await this.SelectCustomDropdown(this.serviceTypeDropDown, 'Automation Testing');
+        await this.SelectCustomDropdown(this.serviceModelDropDown, 'Automation');
+        await this.SelectCustomDropdown(this.courseCategoryDropDown, 'Software Development');
+        await this.SelectCustomDropdown(this.courseNameDropDown, 'Frontend');
+    }
+
+    async fillSecondPage(){
+        await this.SelectCustomDropdown(this.courseLevelDropDown,'Beginner')
+        await this.UploadFile(this.uploadphotoButton,'Playwright_Automation_Project\\src\\test\\test-data\\logo.png')
+    }
+
+    // sort course actions
+    async clickDateSort(){
+        await this.Click(this.dateSort)
+    }
+
+    async clickClientSort(){
+        await this.Click(this.clientSort)
+    }
+
+    async clickCourseSort(){
+        await this.Click(this.courseSort)
+    }
+
+    async sortedlist(locator:Locator){
+        const list = locator.allTextContents() 
+        return list
+    }
+    
 }

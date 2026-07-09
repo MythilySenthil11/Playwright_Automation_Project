@@ -6,7 +6,7 @@ module.exports = {
             "src/test/steps/**/*.ts",
             "src/test/hooks/**/*.ts"
         ],
-
+        order:"defined",
         paths: [
             "src/test/features/**/*.feature"
         ],
@@ -18,12 +18,12 @@ module.exports = {
         publishQuiet: true,
         dryRun: false,
         format: [
-      "progress",
     "allure-cucumberjs/reporter",
     "json:reports/cucumber-report.json",
     "html:reports/cucumber-report.html",
     "message:reports/messages.ndjson",
-    "rerun:rerun/@rerun.txt"
+    "rerun:rerun/@rerun.txt",
+    "progress"
     ],
         parallel: 1
     },
@@ -42,7 +42,7 @@ module.exports = {
         publishQuiet: true,
         dryRun: false,
         format: [
-      "progress",
+    "progress",
     "allure-cucumberjs/reporter",
     "json:reports/cucumber-report.json",
     "html:reports/cucumber-report.html",
