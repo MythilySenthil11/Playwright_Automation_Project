@@ -180,4 +180,16 @@ export class BasePage {
             throw error;
         }
     }
+
+    async UploadFile(locator: Locator, filePath: string): Promise<void> {
+    try {
+        logger.info(`Uploading file: ${filePath}`);
+        await locator.setInputFiles(filePath);
+        logger.info('File uploaded successfully');
+    }
+    catch (error) {
+        logger.error(`Failed to upload file: ${error}`);
+        throw error;
+    }
+}
 }
