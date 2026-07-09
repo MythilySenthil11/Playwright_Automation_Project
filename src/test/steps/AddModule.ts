@@ -71,3 +71,26 @@ When('the user accepts the duplicate confirmation alert', async function (this:C
   // Write code here that turns the phrase above into concrete actions
   await this.acsp.clickConfirm();
 });
+When('the user clicks the more dropdown on the Course Structure page', async function (this:CustomWorld) {
+  // Write code here that turns the phrase above into concrete actions
+  await this.acsp.clickMoreButton();
+});
+
+When('select the Hierarchy Actions and select the more button', async function (this:CustomWorld) {
+  // Write code here that turns the phrase above into concrete actions
+  await this.acsp.clickHierarchyActions();
+  await this.acsp.clickMoreButton();
+});
+
+When('click the three dots on the module and select the edit option', async function (this:CustomWorld) {
+  // Write code here that turns the phrase above into concrete actions
+  await this.acsp.clickThreeDots();
+  await this.acsp.clickEditOption();
+});
+
+When('the user updates the module details and clicks the save button', async function (this:CustomWorld) {
+  // Write code here that turns the phrase above into concrete actions
+  await this.acsp.setTitle("Updated Module Title");
+  await this.acsp.setDescription("Updated Module Description");
+  await this.acsp.clicksaveButton();
+});

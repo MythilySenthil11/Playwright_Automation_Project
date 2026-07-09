@@ -16,6 +16,10 @@ export class AddCourseStructurePage extends BasePage{
     readonly levels:Locator
     readonly duplicateStructureButton:Locator
     readonly confirmationPage:Locator;
+    readonly moreButton:Locator
+    readonly hierarchyActions:Locator
+    readonly threeDots:Locator
+    readonly editOption:Locator
     constructor(page:Page){
         super(page)
         this.page=page
@@ -32,6 +36,11 @@ export class AddCourseStructurePage extends BasePage{
         this.levels=page.locator("//button[@id='select-all-hierarchy']")
         this.duplicateStructureButton=page.getByRole('button', {name: 'Duplicate Structure'});
         this.confirmationPage=page.getByRole('button', {name: 'Confirm Duplicate'});
+        this.moreButton=page.locator("//span[@class='hidden sm:inline tracking-tight']");
+
+        this.hierarchyActions=page.locator("//span[normalize-space()='Hierarchy Actions']");
+        this.threeDots=page.locator("//td[@title='Enable actions to edit, delete, or change the position of \"Selenium\"']//button[@class='p-1 rounded-full cursor-pointer hover:bg-blue-100 hover:shadow-md transition-all duration-200 ease-in-out transform hover:scale-110']");
+        this.editOption=page.locator("//span[text()='Edit']/parent::button");
     }
     async clickModuleButton(){
         await this.Click(this.moduleButton)
@@ -71,5 +80,17 @@ export class AddCourseStructurePage extends BasePage{
 }
     async clickConfirm(){
         await this.Click(this.confirmationPage)
+    }
+    async clickMoreButton(){
+        await this.Click(this.moreButton)
+    }
+    async clickHierarchyActions(){
+        await this.Click(this.hierarchyActions)
+    }
+    async clickThreeDots(){
+        await this.Click(this.threeDots)
+    }
+    async clickEditOption(){
+        await this.Click(this.editOption)
     }
 }
