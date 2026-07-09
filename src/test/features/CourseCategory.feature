@@ -17,9 +17,17 @@ Scenario: Add category by entering all the fields
         Then the user should see a successful creation message
 
 Scenario: Edit category details with the help of search functionality
-         When the user enters the category name in the search tab 
-         And the user clicks the dropdown button and clicks the edit option
-         And the user updates the details of the category
-         And the user clicks the update category button
-         Then the user should see a successful updation message
+        When the user enters the category name in the search tab 
+        And the user clicks the dropdown button and clicks the edit option
+        And the user updates the details of the category
+        And the user clicks the update category button
+        Then the user should see a successful updation message
+
+Scenario: Delete the category with the help of search functionality
+        When the user enters the updated category name in the search tab 
+        And the user clicks the dropdown button
+        And the user clicks the delete option
+        And the user clicks the delete button in the confirmation pop up
+        And the user searches the deleted category 
+        Then the user should see a not found message
 

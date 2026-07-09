@@ -10,6 +10,7 @@ import { admindashboardpage } from '../pages/admindashboardpage';
 import { CourseManagementPage } from '../pages/CourseManagementPage';
 import { pedagogy_dynamic_page } from '../pages/pedagogy_dynamic_page';
 import { SearchPage } from '../pages/SearchPage';
+import { Pagination } from '../pages/PaginationPage';
 import { AddCourseStructurePage } from '../pages/AddCourseStructurePage';
 
 export class CustomWorld extends World{
@@ -27,6 +28,7 @@ export class CustomWorld extends World{
     cmp!:CourseManagementPage;
     pdp!:pedagogy_dynamic_page;
     searchPage!:SearchPage;
+    Pp!:Pagination;
     acsp!:AddCourseStructurePage
 }
 

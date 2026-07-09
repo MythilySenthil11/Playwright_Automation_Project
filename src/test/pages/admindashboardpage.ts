@@ -1,5 +1,6 @@
 import{Page,Locator} from "@playwright/test"
 import { BasePage } from "./BasePage"
+import { TIMEOUTS } from "../constants/timeouts";
 
 export class admindashboardpage extends BasePage{
     readonly page:Page
@@ -29,7 +30,10 @@ export class admindashboardpage extends BasePage{
     }
     
     async clickcoursemanagementlink(){
-        await this.page.waitForLoadState('networkidle');
-        await this.Click(this.coursemanagementlink)
+        await this.coursemanagementlink.waitFor({
+        state: "visible",
+        timeout: TIMEOUTS.LONG
+    });
+    await this.Click(this.coursemanagementlink);
     }
 }

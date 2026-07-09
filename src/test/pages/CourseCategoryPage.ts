@@ -9,10 +9,13 @@ export class CourseCategoryPage extends BasePage{
     readonly courseNames:Locator;
     readonly categoryDescription:Locator;
     readonly CategoryButton:Locator;
-    readonly successMessage;
-    readonly searchTab;
-    readonly dropdown;
-    readonly editOption;
+    readonly successMessage:Locator;
+    readonly searchTab:Locator;
+    readonly dropdown:Locator;
+    readonly editOption:Locator;
+    readonly deleteOption:Locator;
+    readonly noUsersMessage:Locator;
+    readonly confirmDelete:Locator;
 
     constructor(page:Page){
         super(page);
@@ -26,6 +29,9 @@ export class CourseCategoryPage extends BasePage{
         this.searchTab=this.page.locator("//div[@class='relative flex-grow w-full sm:w-auto']/child::input");
         this.dropdown=this.page.locator("//tbody[@data-slot='table-body']/descendant::button");
         this.editOption=this.page.locator("//div[@role='menuitem'][1]");
+        this.deleteOption=this.page.locator("//div[@role='menuitem'][2]");
+        this.confirmDelete=this.page.locator("//div[@class='mt-6 grid grid-cols-2 gap-3']/child::button[2]");
+        this.noUsersMessage=this.page.locator("//p[text()='No users found']");
     }
 
     async ClickAddCategory(){
@@ -61,6 +67,14 @@ export class CourseCategoryPage extends BasePage{
 
     async ClickEditOption(){
         await this.Click(this.editOption);
+    }
+
+    async ClickDeleteOption(){
+        await this.Click(this.deleteOption);
+    }
+
+    async ConfirmDelete(){
+        await this.Click(this.confirmDelete);
     }
 
 }
