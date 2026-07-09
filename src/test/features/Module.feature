@@ -30,5 +30,22 @@ Feature: TamilKumar 08-07-2026 Add course structure
         And the user selects all modules and clicks the Duplicate Structure button
         And the user accepts the duplicate confirmation alert
         Then the user should see the message Operation completed successfully
+    Scenario: Edit the module in course structure
+        When the user clicks the Add Course Structure button on the Course Management page
+        And the user clicks the more dropdown on the Course Structure page
+        And select the Hierarchy Actions and select the more button
+        And click the three dots on the module and select the edit option
+        And the user updates the module details and clicks the save button
+        Then the user should see the message Operation completed successfully
+    Scenario Outline: Verify the Teaching Elements filter displays the correct details
+        When the user clicks the Add Course Structure button on the Course Management page
+        And the user selects "<Teaching_Elements>" from the Teaching Elements dropdown
+        Then only "<Teaching_Elements>" details should be displayed
 
+        Examples:
+            | Teaching_Elements     |
+            | All Teaching Elements |
+            | I Do Activities       |
+            | We Do Activities      |
+            | You Do Activities     |
 

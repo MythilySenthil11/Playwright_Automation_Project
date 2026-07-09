@@ -4,122 +4,177 @@
     "elements": [
       {
         "description": "",
-        "id": "mythily_08/07/2026_recent_activities;verify-the-recent-activities-list",
+        "id": "tamilkumar-08-07-2026-add-course-structure;add-a-similar-course-structure-with-valid-inputs",
         "keyword": "Scenario",
-        "line": 11,
-        "name": "Verify the recent activities list",
+        "line": 24,
+        "name": "Add a similar course structure with valid inputs",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 315136800
+              "duration": 1180352600
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 4,
             "name": "the user is on the login page",
             "match": {
               "location": "src\\test\\steps\\loginSteps.ts:6"
             },
             "result": {
               "status": "passed",
-              "duration": 1341170799
+              "duration": 3668588299
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
+            "line": 5,
             "name": "the user enters valid credentials",
             "match": {
               "location": "src\\test\\steps\\loginSteps.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 404849700
+              "duration": 2089994699
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 7,
+            "line": 6,
             "name": "the user clicks on the login button",
             "match": {
               "location": "src\\test\\steps\\loginSteps.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 578166999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "the user should be redirected to the Admin Dashboard page",
-            "match": {
-              "location": "src\\test\\steps\\RecentActivitySteps.ts:5"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 22591199
+              "duration": 719180499
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 12,
-            "name": "the user opens the Dynamic Field Settings page",
+            "line": 7,
+            "name": "I navigate to the Course Management page",
             "match": {
-              "location": "src\\test\\steps\\RecentActivitySteps.ts:9"
+              "location": "src\\test\\steps\\filter.steps.ts:7"
             },
             "result": {
-              "status": "failed",
-              "duration": 30017113100,
-              "error_message": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'pt-6\\']/child::div/child::div[3]')\u001b[22m\n\n    at admindashboardpage.Click (D:\\Playwright-Project\\src\\test\\pages\\BasePage.ts:12:27)\n    at admindashboardpage.dynamicFieldManagementClick (D:\\Playwright-Project\\src\\test\\pages\\admindashboardpage.ts:39:20)\n    at World.<anonymous> (D:\\Playwright-Project\\src\\test\\steps\\RecentActivitySteps.ts:10:20)"
+              "status": "passed",
+              "duration": 14016653800
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 13,
-            "name": "the user clicks the left arrow button",
+            "line": 8,
+            "name": "search the course name",
             "match": {
-              "location": "src\\test\\steps\\RecentActivitySteps.ts:13"
+              "location": "src\\test\\steps\\AddModule.ts:7"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 3511116200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "the user clicks the Add Course Structure button on the Course Management page",
+            "match": {
+              "location": "src\\test\\steps\\AddModule.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4802583899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "the user clicks the Similar Course button",
+            "match": {
+              "location": "src\\test\\steps\\AddModule.ts:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2334429299
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "category",
+                      "Software Development"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "search_keyword",
+                      "defect_avengers"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 27,
+            "name": "the user selects the course category and the user searches for the course to duplicate",
+            "match": {
+              "location": "src\\test\\steps\\AddModule.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9319166300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "the user selects all modules and clicks the Duplicate Structure button",
+            "match": {
+              "location": "src\\test\\steps\\AddModule.ts:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2818349899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "the user accepts the duplicate confirmation alert",
+            "match": {
+              "location": "src\\test\\steps\\AddModule.ts:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1900070699
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 14,
-            "name": "the Recent Activities section should be displayed",
+            "line": 32,
+            "name": "the user should see the message Operation completed successfully",
             "match": {
-              "location": "src\\test\\steps\\RecentActivitySteps.ts:17"
+              "location": "src\\test\\steps\\AddModule.ts:33"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "the previously visited pages should be listed",
-            "match": {
-              "location": "src\\test\\steps\\RecentActivitySteps.ts:21"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 3696084199
             }
           },
           {
@@ -127,33 +182,29 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 195414299
+              "duration": 2641213599
             }
           }
         ],
         "tags": [
           {
-            "name": "@Mythily",
+            "name": "@Tamil",
             "line": 1
-          },
-          {
-            "name": "@RecentActivities",
-            "line": 10
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "mythily_08/07/2026_recent_activities",
+    "id": "tamilkumar-08-07-2026-add-course-structure",
     "line": 2,
     "keyword": "Feature",
-    "name": "Mythily_08/07/2026_Recent_Activities",
+    "name": "TamilKumar 08-07-2026 Add course structure",
     "tags": [
       {
-        "name": "@Mythily",
+        "name": "@Tamil",
         "line": 1
       }
     ],
-    "uri": "src\\test\\features\\RecentActivity.feature"
+    "uri": "src\\test\\features\\Module.feature"
   }
 ]
