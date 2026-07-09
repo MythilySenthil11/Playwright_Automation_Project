@@ -10,11 +10,11 @@ Feature: Mythily_07/07/2026_Add_Course_Tests
 
     Scenario: Add a course with valid details
         When User enters the required details
-            | client  | type                  | model | category             | name     |
-            | PSG Tech | Business to Institute | HTD   | Software Development | Frontend |
+            | client   | type                    | model | category             | name     |
+            | PSG Tech | Business to institution | HTD   | Software Development | Frontend |
         And User clicks on the Next button
-            | level     |
-            | Beginner  |
+            | level    |
+            | Beginner |
         And User verifies the course hierarchy
         And User selects the pedagogy
         And User enables the resource type

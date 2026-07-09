@@ -1,2 +1,2 @@
-Title,Description,SuccessMessage
-Defect Avengers,This an automation framework,Operation completed successfully
+Title,Description,SuccessMessage,TitleRequiredMessage
+Defect Avengers,This an automation framework,Operation completed successfully,Title is required for module

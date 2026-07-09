@@ -19,6 +19,7 @@ export class CourseManagementPage extends BasePage{
     readonly courseCategoryDropDown:Locator
     readonly courseNameDropDown:Locator
     readonly courseLevelDropDown:Locator
+    readonly uploadphotoButton:Locator
     readonly nextButton:Locator
     readonly saveLayoutButton:Locator
     readonly tostMsg:Locator
@@ -49,6 +50,7 @@ export class CourseManagementPage extends BasePage{
         this.courseCategoryDropDown = this.page.getByRole('combobox').nth(3)
         this.courseNameDropDown = this.page.getByRole('combobox').nth(4)
         this.courseLevelDropDown = this.page.getByRole('combobox').nth(0)
+        this.uploadphotoButton = this.page.locator('div').filter({ hasText: /^Choose Image$/ })
         this.nextButton = this.page.getByRole('button', { name: 'Next' })
         this.saveLayoutButton = this.page.getByRole('button', { name: 'Save Course Layout' })
         this.tostMsg = this.page.getByText("Course updated successfully!")
@@ -106,14 +108,15 @@ export class CourseManagementPage extends BasePage{
 
     async fillFirstPage(){
         await this.SelectCustomDropdown(this.courseClientDropDown, 'jamocha');
-        await this.SelectCustomDropdown(this.serviceTypeDropDown, 'Business to institution');
-        await this.SelectCustomDropdown(this.serviceModelDropDown, 'HTD');
+        await this.SelectCustomDropdown(this.serviceTypeDropDown, 'Automation Testing');
+        await this.SelectCustomDropdown(this.serviceModelDropDown, 'Automation');
         await this.SelectCustomDropdown(this.courseCategoryDropDown, 'Software Development');
         await this.SelectCustomDropdown(this.courseNameDropDown, 'Frontend');
     }
 
     async fillSecondPage(){
         await this.SelectCustomDropdown(this.courseLevelDropDown,'Beginner')
+        await this.UploadFile(this.uploadphotoButton,'Playwright_Automation_Project\\src\\test\\test-data\\logo.png')
     }
 
     // sort course actions
