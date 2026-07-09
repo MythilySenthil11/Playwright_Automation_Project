@@ -12,6 +12,8 @@ export class pedagogy_dynamic_page extends BasePage{
     readonly updatebutton : Locator
     readonly deleteconfirmationbutton:Locator
     readonly deletedelement:Locator
+    readonly searchbar:Locator
+    readonly searchResult:Locator
 
     constructor(page:Page){
         super(page);
@@ -25,6 +27,8 @@ export class pedagogy_dynamic_page extends BasePage{
         this.updatebutton=this.page.locator("//div[@class='flex justify-end space-x-3 pt-4']//button[text()='Update Element']")
         this.deleteconfirmationbutton=this.page.locator("//button[text()='Delete']")
         this.deletedelement=this.page.locator("//tbody[@class='bg-white divide-y divide-gray-200']/descendant::div[1]")
+        this.searchbar=this.page.getByPlaceholder("Search activities...")
+        this.searchResult = this.page.locator("//div[@class='text-xs text-gray-400']/preceding-sibling::div[@class='font-medium text-gray-900 text-xs']")
 
     }
 
@@ -77,5 +81,12 @@ async clickDeletesvgButton(index: number) {
     }
     async getDeletedElementFromPage() {
         return await this.GetText(this.deletedelement);
+    }
+
+    async searchPedagogyActivity(data:string){
+        await this.Fill(this.searchbar,data)
+    }
+    async getSearchResult(){
+        return await this.GetText(this.searchResult)
     }
     }
