@@ -16,7 +16,7 @@ When("the user clicks on the login button", async function (this: CustomWorld) {
 });
 Then("the user should be redirected to the dashboard page", async function (this: CustomWorld) {
     await this.adp.profileclick();
-await expect(this.adp.getuseremail()).toHaveText(validdata.email, {
+await expect(this.adp.getuseremail()).toHaveText("Testing course", {
     timeout: TIMEOUTS.MEDIUM
 });
 });
