@@ -159,8 +159,8 @@ export class BasePage {
             throw error;
         }
     }
-    
-async ClickUntilDisabled(nextButtonLocator: Locator): Promise<void> {
+
+    async ClickUntilDisabled(nextButtonLocator: Locator): Promise<void> {
         try {
             logger.info('Starting pagination click loop...');
             let pageCount = 1;
@@ -180,5 +180,15 @@ async ClickUntilDisabled(nextButtonLocator: Locator): Promise<void> {
             throw error;
         }
     }
-
+    async Enter(){
+    try {
+        logger.info('Pressing Enter key');
+        await this.page.keyboard.press('Enter');
+        logger.info('Enter key pressed successfully');
+    }
+    catch (error) {
+        logger.error(`Failed to press Enter: ${error}`);
+        throw error;
+    }
+}
 }

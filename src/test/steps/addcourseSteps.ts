@@ -19,7 +19,7 @@ When('User clicks on the Add Course tab', async function (this: CustomWorld) {
   await this.addPage.clickAddBtn();
 });
 
-When('User enters the required details', async function (dataTable) {
+When('User enters the required details', async function (this:CustomWorld,dataTable) {
   const user = dataTable.hashes()[0] as AddCourse;
     await this.addPage.FillCourseDetails(
         user.client,
@@ -30,7 +30,7 @@ When('User enters the required details', async function (dataTable) {
     );
 });
 
-When('User clicks on the Next button',async function (dataTable) {
+When('User clicks on the Next button',async function (this:CustomWorld,dataTable) {
   const data = dataTable.hashes()[0];
   await this.addPage.clickNxtBtn();
   await this.addPage.FillLevel(data.level);

@@ -1,9 +1,13 @@
-import { When, Then } from "@cucumber/cucumber";
+import { When, Then, DataTable } from "@cucumber/cucumber";
 import { expect } from "@playwright/test";
 import { CustomWorld } from "../world/CustomWorld";
 import { CsvReader } from "../utilities/csvReader";
 import { CourseStructureData } from "../types/courseStructure.types";
 const courseData = CsvReader.read<CourseStructureData>("moduleData.csv");
+When('search the course name', async function (this:CustomWorld) {
+  // Write code here that turns the phrase above into concrete actions
+  await this.searchPage.EnterSearch("Defect")
+});
 When('the user clicks the Add Course Structure button on the Course Management page', async function (this:CustomWorld) {
   // Write code here that turns the phrase above into concrete actions
     await this.cmp.clickAddcourseStrcutureButton();
@@ -42,3 +46,28 @@ Then("the user should see the validation message Title is required for module",a
     expect(actualMessage).toBe(data?.TitleRequiredMessage!);
   }
 );
+
+
+When('the user clicks the Similar Course button', async function (this:CustomWorld) {
+  // Write code here that turns the phrase above into concrete actions
+  await this.acsp.clickSimilarCourse();
+});
+
+When('the user selects the course category and the user searches for the course to duplicate', async function (this:CustomWorld,dataTable:DataTable) {
+  // Write code here that turns the phrase above into concrete actions
+  const data=dataTable.rowsHash();
+  await this.acsp.clickAllCourses();
+  await this.acsp.selectFilterCategory(data.category!);
+  await this.acsp.setCourseName(data.search_keyword!)
+});
+
+When('the user selects all modules and clicks the Duplicate Structure button', async function (this:CustomWorld) {
+  // Write code here that turns the phrase above into concrete actions
+  await this.acsp.clcikLevels();
+  await this.acsp.clickDuplicateStructure();
+});
+
+When('the user accepts the duplicate confirmation alert', async function (this:CustomWorld) {
+  // Write code here that turns the phrase above into concrete actions
+  await this.acsp.clickConfirm();
+});
