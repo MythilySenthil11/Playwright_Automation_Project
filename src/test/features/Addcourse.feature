@@ -6,12 +6,12 @@ Feature: Mythily_07/07/2026_Add_Course_Tests
         When the user enters valid credentials
         And the user clicks on the login button
         When User clicks on the Course Structure
-        And User clicks on the Add Course tab
 
     Scenario: Add a course with valid details
+        And User clicks on the Add Course tab
         When User enters the required details
             | client  | type                  | model | category             | name     |
-            | PSG Tech | Business to Institute | HTD   | Software Development | Frontend |
+            | jamocha | Business to Institution | HTD   | Software Development | defect_avengers |
         And User clicks on the Next button
             | level     |
             | Beginner  |
@@ -21,3 +21,7 @@ Feature: Mythily_07/07/2026_Add_Course_Tests
         And User verifies the skill selection
         And User clicks the Preview & Create button
         Then User verifies the course is added successfully
+    
+    Scenario: Delete a course
+        When User clicks on the delete 
+       
