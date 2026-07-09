@@ -1,5 +1,7 @@
+import { logger } from './../utilities/logger';
 import { Locator, Page } from "@playwright/test";
 import { BasePage } from "./BasePage";
+import { TIMEOUTS } from '../constants/timeouts';
 
 export class CourseManagementPage extends BasePage{
     readonly page:Page;
@@ -10,6 +12,13 @@ export class CourseManagementPage extends BasePage{
     readonly levelDropdown:Locator;
     readonly levelList:Locator;
     readonly addCourseStructureButton:Locator
+    readonly searchbar:Locator;
+    readonly table:Locator;
+    readonly noUser:Locator;
+    readonly current:Locator;
+    readonly nxtbtn:Locator;
+    readonly previousbtn:Locator;
+    pageno!:Locator;
 
     readonly kebabButton:Locator
     readonly editCourseButton:Locator
@@ -41,6 +50,14 @@ export class CourseManagementPage extends BasePage{
         this.levelDropdown=this.page.locator("//option[text()='All Levels']/parent::select")
         this.levelList=this.page.locator("//td/span/div/span/following-sibling::span")
         this.addCourseStructureButton=page.locator("(//span[text()='Add Course Structure'])[2]")
+        //search
+        this.searchbar = page.locator("//input[@data-slot='input']");
+        this.table = page.locator("//tbody/tr[1]/td[3]");
+        this.noUser = page.getByText('No users found');
+        //pagination
+        this.nxtbtn =page.getByRole('button', {name:'Next'});
+        this.current = page.locator("//button[contains(@class,'bg-blue-600')]");
+        this.previousbtn = page.getByRole('button', {name:'Previous'});
 
         this.kebabButton = this.page.locator("//tbody/tr[1]/td[7]/span/div/div/child::*")
         this.editCourseButton = this.page.locator("//tbody/tr[1]/td[7]/span/div/div/div/child::button[2]")
@@ -82,6 +99,33 @@ export class CourseManagementPage extends BasePage{
     }
     async clickAddcourseStrcutureButton(){
         await this.Click(this.addCourseStructureButton)
+    }
+    //search
+    async EnterSearch(searchbar: string) {
+           await this.Fill(this.searchbar, searchbar);
+           await this.page.waitForTimeout(1000);
+        }
+    async GetSearchResult() {
+        const text = await this.GetText(this.table);
+        console.log("Row Text:", text);
+        return text.trim();
+    }
+    async NoUserTxt(){
+            return await this.GetText(this.noUser);
+    }
+    //pagination
+    async clickNxtbtn(){
+        await this.Click(this.nxtbtn);
+    }
+    async clickPrebtn(){
+        await this.Click(this.previousbtn);
+    }
+    async CurrentPage(){
+        return await this.GetText(this.current);
+    }
+    async clickPage(pageNo:string){
+        this.pageno = this.page.locator(`//button[text()='${pageNo}']`);
+        await this.Click(this.pageno);
     }
 
 

@@ -5,7 +5,7 @@ Background:
         Given the user is on the login page
         When the user enters valid credentials
         And the user clicks on the login button
-        When the user navigate to the Course Management page
+        And User clicks on the Course Structure
 
 Scenario: verify the Excel download functionality of Pedagogy in course structure
         When the user enter course name on the search tab 

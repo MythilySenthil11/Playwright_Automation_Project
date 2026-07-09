@@ -16,6 +16,9 @@ export class AddCourseStructurePage extends BasePage{
     readonly levels:Locator
     readonly duplicateStructureButton:Locator
     readonly confirmationPage:Locator;
+    readonly printButton : Locator;
+    readonly excelOption : Locator;
+
     constructor(page:Page){
         super(page)
         this.page=page
@@ -32,6 +35,8 @@ export class AddCourseStructurePage extends BasePage{
         this.levels=page.locator("//button[@id='select-all-hierarchy']")
         this.duplicateStructureButton=page.getByRole('button', {name: 'Duplicate Structure'});
         this.confirmationPage=page.getByRole('button', {name: 'Confirm Duplicate'});
+        this.printButton = page.locator("//div[@class='flex items-center gap-1 sm:gap-2 flex-wrap'][2]/child::button");
+        this.excelOption = page.locator("//div[@class='flex gap-2']/child::button[2]");
     }
     async clickModuleButton(){
         await this.Click(this.moduleButton)
@@ -71,5 +76,13 @@ export class AddCourseStructurePage extends BasePage{
 }
     async clickConfirm(){
         await this.Click(this.confirmationPage)
+    }
+
+    async ClickPrintButton(){
+        await this.Click(this.printButton);
+    }
+
+    async ClickExcelOption(){
+        await this.Click(this.excelOption);
     }
 }

@@ -1,3 +1,4 @@
+import { TIMEOUTS } from './../constants/timeouts';
 import { BasePage } from "./BasePage";
 import {Page,Locator} from '@playwright/test';
 
@@ -61,6 +62,7 @@ export class CourseCategoryPage extends BasePage{
 
     async SearchCategory(searchItem:string){
         await this.Fill(this.searchTab,searchItem);
+        await this.WaitForVisible(this.dropdown,1000);
     }
 
     async ClickDropDown(){
