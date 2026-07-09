@@ -42,7 +42,14 @@ Then('the user should be able to see the created element in the list of pedagogy
 
 When('the user Clicks on the edit button', async function (this: CustomWorld) {
   
-    await this.pdp.clickEditButton();
+        await this.pdp.clickNextPageButton();
+
+    await this.page.waitForTimeout(TIMEOUTS.SHORT);
+
+    const elementsList = await this.pdp.getElementNamesFromPage();
+ const index = elementsList.length - 1;
+  await this.pdp.clickEditButton(index)
+
 });
 
 When('the user edits the content of element name', async function (this: CustomWorld) {
@@ -59,8 +66,7 @@ When('the user clicks on the Update Element button', async function (this: Custo
 
 Then('the user should be able to see the updated element', async function (this: CustomWorld) {
     const expectedUpdatedName = data.editdata;
-    
-
+    await this.pdp.clickNextPageButton();
     const elementsList = await this.pdp.getElementNamesFromPage();
     let isElementFound = false;
 
@@ -75,18 +81,35 @@ Then('the user should be able to see the updated element', async function (this:
         throw new Error(`Scenario Failed: Updated element text '${expectedUpdatedName}' was missing from the registry view.`);
     }
 });
-let deletedElement=""
+
 When("the user Clicks on the delete button", async function (this: CustomWorld) {
-     deletedElement = await this.pdp.getDeletedElementFromPage();
-    await this.pdp.clickDeletesvgButton();
+    await this.pdp.clickNextPageButton();
+
+    await this.page.waitForTimeout(TIMEOUTS.SHORT);
+
+    const elementsList = await this.pdp.getElementNamesFromPage();
+
+
+ const index = elementsList.length - 1;
+
+await this.pdp.clickDeletesvgButton(index);
+
+
 });
 
 When("the user clicks on the delete confirmation button", async function (this: CustomWorld) {
-    await this.pdp.clickDeleteConfirmationButton();
+     await this.pdp.clickDeleteConfirmationButton()
 });
 
-Then( "the user should be able to see the deleted element is not present in the list of pedagogy elements",async function (this: CustomWorld) {
-    const afterdelete = await this.pdp.getDeletedElementFromPage();
-    await expect(deletedElement).not.toEqual(afterdelete)
-}
+Then(
+    "the user should be able to see the deleted element is not present in the list of pedagogy elements",
+    async function (this: CustomWorld) {
+        const elementsList = await this.pdp.getElementNamesFromPage();
+
+        await expect(elementsList, 
+            `Deleted element '${data.editdata}' should not be present in the pedagogy elements list`
+        ).not.toContain(data.editdata);
+
+        console.log(`Success: Element '${data.editdata}' was deleted successfully`);
+    }
 );
