@@ -95,7 +95,7 @@ When('the user updates the module details and clicks the save button', async fun
   await this.acsp.clicksaveButton();
 });
 When('the user selects {string} from the Teaching Elements dropdown', async function (this:CustomWorld,string: string) {
-  Write code here that turns the phrase above into concrete actions
+  //Write code here that turns the phrase above into concrete actions
   await this.acsp.clickTeachingElementsDropdown();
   await this.acsp.selectTeachingElement(string);
 });
