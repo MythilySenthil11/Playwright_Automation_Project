@@ -184,7 +184,7 @@ export class BasePage {
         throw error;
     }
 }
-    async Enter(): Promise<void> {
+    async Enter() {
         try {
             logger.info('Pressing Enter key');
             await this.page.keyboard.press('Enter');
