@@ -1,3 +1,4 @@
+import { TIMEOUTS } from './../constants/timeouts';
 import { BasePage } from "./BasePage";
 import {Page,Locator} from '@playwright/test';
 
@@ -16,6 +17,7 @@ export class CourseCategoryPage extends BasePage{
     readonly deleteOption:Locator;
     readonly noUsersMessage:Locator;
     readonly confirmDelete:Locator;
+    readonly closeButton:Locator;
 
     constructor(page:Page){
         super(page);
@@ -27,11 +29,12 @@ export class CourseCategoryPage extends BasePage{
         this.CategoryButton = this.page.locator("//div[@class='flex justify-end gap-2 pt-2']/child::button[2]");
         this.successMessage = this.page.locator("//h2[@data-slot='dialog-title']");
         this.searchTab=this.page.locator("//div[@class='relative flex-grow w-full sm:w-auto']/child::input");
-        this.dropdown=this.page.locator("//tbody[@data-slot='table-body']/descendant::button");
+        this.dropdown = this.page.locator("//tbody[@data-slot='table-body']/descendant::button").first();
         this.editOption=this.page.locator("//div[@role='menuitem'][1]");
         this.deleteOption=this.page.locator("//div[@role='menuitem'][2]");
         this.confirmDelete=this.page.locator("//div[@class='mt-6 grid grid-cols-2 gap-3']/child::button[2]");
         this.noUsersMessage=this.page.locator("//p[text()='No users found']");
+        this.closeButton = this.page.locator("//div[@data-slot='dialog-footer']/child::button");
     }
 
     async ClickAddCategory(){
@@ -75,6 +78,10 @@ export class CourseCategoryPage extends BasePage{
 
     async ConfirmDelete(){
         await this.Click(this.confirmDelete);
+    }
+
+    async ClickCloseButton(){
+        await this.Click(this.closeButton);
     }
 
 }

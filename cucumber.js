@@ -7,15 +7,18 @@ module.exports = {
             "src/test/hooks/**/*.ts"
         ],
 
-        order: "defined",
+
+        order:"defined",
 
         paths: [
             "src/test/features/**/*.feature"
         ],
 
+        order: "defined",
+
         formatOptions: {
             snippetInterface: "async-await",
-            resultsDir: "allure-results"
+            resultsDir: "allure-results" 
         },
 
         publishQuiet: true,
@@ -41,6 +44,8 @@ module.exports = {
         paths: [
             "@rerun.txt"
         ],
+
+        order: "defined",
 
         formatOptions: {
             snippetInterface: "async-await",
