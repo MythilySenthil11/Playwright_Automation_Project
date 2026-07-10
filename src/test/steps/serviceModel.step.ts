@@ -25,3 +25,19 @@ Then(`the user searches and viewes the service`, async function (this:CustomWorl
     await this.smp.searchService(model.serviceName)
     await expect(this.smp.resultText()).toContain(model.serviceName)
 });
+
+When(`the users searches for the service`, async function (this:CustomWorld) {
+    await this.smp.searchService(model.serviceName)
+});
+
+When(`clicks the delete button`, async function (this:CustomWorld) {
+    await this.smp.clickDelete()
+});
+
+When(`clicks delete on the confirmation`, async function (this:CustomWorld){
+    await this.smp.clickInnerDelete()
+});
+
+Then(`the service is deleted`, async function (this:CustomWorld) {
+    await expect(this.smp.msg()).toContain("No services found matching")
+});
