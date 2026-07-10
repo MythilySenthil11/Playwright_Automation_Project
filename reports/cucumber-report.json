@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "mythily_08/07/2026_recent_activities;verify-the-recent-activities-list",
+        "id": "mythily_07/07/2026_add_course_tests;verify-validation-messages-when-mandatory-fields-are-left-empty",
         "keyword": "Scenario",
-        "line": 11,
-        "name": "Verify the recent activities list",
+        "line": 25,
+        "name": "Verify validation messages when mandatory fields are left empty",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 315136800
+              "duration": 337362499
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1341170799
+              "duration": 3313021299
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 404849700
+              "duration": 4144097799
             }
           },
           {
@@ -53,43 +53,56 @@
             },
             "result": {
               "status": "passed",
-              "duration": 578166999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "the user should be redirected to the Admin Dashboard page",
-            "match": {
-              "location": "src\\test\\steps\\RecentActivitySteps.ts:5"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 22591199
+              "duration": 2100428100
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 12,
-            "name": "the user opens the Dynamic Field Settings page",
+            "line": 8,
+            "name": "User clicks on the Course Structure",
             "match": {
-              "location": "src\\test\\steps\\RecentActivitySteps.ts:9"
+              "location": "src\\test\\steps\\addcourseSteps.ts:14"
             },
             "result": {
               "status": "failed",
-              "duration": 30017113100,
-              "error_message": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'pt-6\\']/child::div/child::div[3]')\u001b[22m\n\n    at admindashboardpage.Click (D:\\Playwright-Project\\src\\test\\pages\\BasePage.ts:12:27)\n    at admindashboardpage.dynamicFieldManagementClick (D:\\Playwright-Project\\src\\test\\pages\\admindashboardpage.ts:39:20)\n    at World.<anonymous> (D:\\Playwright-Project\\src\\test\\steps\\RecentActivitySteps.ts:10:20)"
+              "duration": 30020000299,
+              "error_message": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@title=\\'Course Management\\']') to be visible\u001b[22m\n\n    at admindashboardpage.clickcoursemanagementlink (D:\\Playwright-Project\\src\\test\\pages\\admindashboardpage.ts:43:41)\n    at World.<anonymous> (D:\\Playwright-Project\\src\\test\\steps\\addcourseSteps.ts:15:18)"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 13,
-            "name": "the user clicks the left arrow button",
+            "line": 9,
+            "name": "User clicks on the Add Course tab",
             "match": {
-              "location": "src\\test\\steps\\RecentActivitySteps.ts:13"
+              "location": "src\\test\\steps\\addcourseSteps.ts:18"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "User leaves all mandatory fields empty",
+            "match": {
+              "location": "src\\test\\steps\\addcourseSteps.ts:63"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "User clicks the Next button",
+            "match": {
+              "location": "src\\test\\steps\\addcourseSteps.ts:67"
             },
             "result": {
               "status": "skipped",
@@ -99,23 +112,10 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 14,
-            "name": "the Recent Activities section should be displayed",
+            "line": 28,
+            "name": "User should see validation messages for the mandatory fields",
             "match": {
-              "location": "src\\test\\steps\\RecentActivitySteps.ts:17"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "the previously visited pages should be listed",
-            "match": {
-              "location": "src\\test\\steps\\RecentActivitySteps.ts:21"
+              "location": "src\\test\\steps\\addcourseSteps.ts:71"
             },
             "result": {
               "status": "skipped",
@@ -127,33 +127,29 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 195414299
+              "duration": 1642927799
             }
           }
         ],
         "tags": [
           {
-            "name": "@Mythily",
+            "name": "@Mythily_UnderDevelopment",
             "line": 1
-          },
-          {
-            "name": "@RecentActivities",
-            "line": 10
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "mythily_08/07/2026_recent_activities",
+    "id": "mythily_07/07/2026_add_course_tests",
     "line": 2,
     "keyword": "Feature",
-    "name": "Mythily_08/07/2026_Recent_Activities",
+    "name": "Mythily_07/07/2026_Add_Course_Tests",
     "tags": [
       {
-        "name": "@Mythily",
+        "name": "@Mythily_UnderDevelopment",
         "line": 1
       }
     ],
-    "uri": "src\\test\\features\\RecentActivity.feature"
+    "uri": "src\\test\\features\\Addcourse.feature"
   }
 ]

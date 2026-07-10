@@ -4114,3 +4114,112 @@ Call log:
 
 [2026-07-09T11:11:00.891Z]ERROR-Scenario Failed: Verify the recent activities list
 [2026-07-09T11:11:00.988Z]INFO-Closing browser
+[2026-07-10T05:58:43.474Z]INFO-Launching Browser
+[2026-07-10T05:58:44.943Z]INFO-Starting scenario: Search course using the search box
+[2026-07-10T05:58:45.649Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-10T05:58:49.005Z]INFO-Typing message
+[2026-07-10T05:58:51.123Z]INFO-Message typed on the locator successfully
+[2026-07-10T05:58:51.124Z]INFO-Typing message
+[2026-07-10T05:58:53.158Z]INFO-Message typed on the locator successfully
+[2026-07-10T05:58:53.163Z]INFO-Clicking element
+[2026-07-10T05:58:55.258Z]INFO-Element clicked successfully
+[2026-07-10T05:59:25.748Z]ERROR-Scenario Failed: Search course using the search box
+[2026-07-10T05:59:25.861Z]INFO-Starting scenario: Search course using the search box
+[2026-07-10T05:59:26.150Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-10T05:59:29.476Z]INFO-Typing message
+[2026-07-10T05:59:31.550Z]INFO-Message typed on the locator successfully
+[2026-07-10T05:59:31.550Z]INFO-Typing message
+[2026-07-10T05:59:33.589Z]INFO-Message typed on the locator successfully
+[2026-07-10T05:59:33.591Z]INFO-Clicking element
+[2026-07-10T05:59:35.654Z]INFO-Element clicked successfully
+[2026-07-10T06:00:00.607Z]INFO-Clicking element
+[2026-07-10T06:00:02.685Z]INFO-Element clicked successfully
+[2026-07-10T06:00:02.698Z]INFO-Typing message
+[2026-07-10T06:00:04.756Z]INFO-Message typed on the locator successfully
+[2026-07-10T06:00:05.771Z]INFO-Getting text
+[2026-07-10T06:00:34.338Z]INFO-Scenario Passed: Search course using the search box
+[2026-07-10T06:00:34.455Z]INFO-Closing browser
+[2026-07-10T06:01:13.138Z]INFO-Launching Browser
+[2026-07-10T06:01:13.846Z]INFO-Starting scenario: Search course using the search box
+[2026-07-10T06:01:14.170Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-10T06:01:17.457Z]INFO-Typing message
+[2026-07-10T06:01:19.543Z]INFO-Message typed on the locator successfully
+[2026-07-10T06:01:19.544Z]INFO-Typing message
+[2026-07-10T06:01:21.593Z]INFO-Message typed on the locator successfully
+[2026-07-10T06:01:21.598Z]INFO-Clicking element
+[2026-07-10T06:01:23.693Z]INFO-Element clicked successfully
+[2026-07-10T06:01:53.819Z]ERROR-Scenario Failed: Search course using the search box
+[2026-07-10T06:01:53.900Z]INFO-Closing browser
+[2026-07-10T06:03:07.538Z]INFO-Launching Browser
+[2026-07-10T06:03:08.274Z]INFO-Starting scenario: Search course using the search box
+[2026-07-10T06:03:08.594Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-10T06:03:11.987Z]INFO-Typing message
+[2026-07-10T06:03:14.074Z]INFO-Message typed on the locator successfully
+[2026-07-10T06:03:14.076Z]INFO-Typing message
+[2026-07-10T06:03:16.113Z]INFO-Message typed on the locator successfully
+[2026-07-10T06:03:16.117Z]INFO-Clicking element
+[2026-07-10T06:03:18.207Z]INFO-Element clicked successfully
+[2026-07-10T06:03:48.332Z]ERROR-Scenario Failed: Search course using the search box
+[2026-07-10T06:03:48.416Z]INFO-Closing browser
+[2026-07-10T06:20:37.752Z]INFO-Launching Browser
+[2026-07-10T06:20:38.813Z]INFO-Starting scenario: Search course using the search box
+[2026-07-10T06:20:39.165Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-10T06:20:42.504Z]INFO-Typing message
+[2026-07-10T06:20:44.614Z]INFO-Message typed on the locator successfully
+[2026-07-10T06:20:44.616Z]INFO-Typing message
+[2026-07-10T06:20:46.654Z]INFO-Message typed on the locator successfully
+[2026-07-10T06:20:46.657Z]INFO-Clicking element
+[2026-07-10T06:20:48.747Z]INFO-Element clicked successfully
+[2026-07-10T06:21:18.894Z]ERROR-Scenario Failed: Search course using the search box
+[2026-07-10T06:21:18.999Z]INFO-Starting scenario: Search course using the search box
+[2026-07-10T06:21:19.275Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-10T06:21:22.610Z]INFO-Typing message
+[2026-07-10T06:21:24.682Z]INFO-Message typed on the locator successfully
+[2026-07-10T06:21:24.682Z]INFO-Typing message
+[2026-07-10T06:21:26.717Z]INFO-Message typed on the locator successfully
+[2026-07-10T06:21:26.719Z]INFO-Clicking element
+[2026-07-10T06:21:28.806Z]INFO-Element clicked successfully
+[2026-07-10T06:21:59.245Z]ERROR-Scenario Failed: Search course using the search box
+[2026-07-10T06:21:59.319Z]INFO-Closing browser
+[2026-07-10T06:25:27.405Z]INFO-Launching Browser
+[2026-07-10T06:25:28.015Z]INFO-Starting scenario: Search course using the search box
+[2026-07-10T06:25:28.336Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-10T06:25:31.849Z]INFO-Typing message
+[2026-07-10T06:25:33.949Z]INFO-Message typed on the locator successfully
+[2026-07-10T06:25:33.950Z]INFO-Typing message
+[2026-07-10T06:25:36.000Z]INFO-Message typed on the locator successfully
+[2026-07-10T06:25:36.004Z]INFO-Clicking element
+[2026-07-10T06:25:38.084Z]INFO-Element clicked successfully
+[2026-07-10T06:26:08.557Z]ERROR-Scenario Failed: Search course using the search box
+[2026-07-10T06:26:08.671Z]INFO-Starting scenario: Search course using the search box
+[2026-07-10T06:26:08.973Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-10T06:26:12.322Z]INFO-Typing message
+[2026-07-10T06:26:14.402Z]INFO-Message typed on the locator successfully
+[2026-07-10T06:26:14.402Z]INFO-Typing message
+[2026-07-10T06:26:16.444Z]INFO-Message typed on the locator successfully
+[2026-07-10T06:26:16.449Z]INFO-Clicking element
+[2026-07-10T06:26:18.531Z]INFO-Element clicked successfully
+[2026-07-10T06:26:48.640Z]ERROR-Scenario Failed: Search course using the search box
+[2026-07-10T06:26:48.696Z]INFO-Closing browser
+[2026-07-10T06:42:08.096Z]INFO-Launching Browser
+[2026-07-10T06:42:09.141Z]INFO-Starting scenario: Verify validation messages when mandatory fields are left empty
+[2026-07-10T06:42:09.667Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-10T06:42:12.985Z]INFO-Typing message
+[2026-07-10T06:42:15.075Z]INFO-Message typed on the locator successfully
+[2026-07-10T06:42:15.077Z]INFO-Typing message
+[2026-07-10T06:42:17.116Z]INFO-Message typed on the locator successfully
+[2026-07-10T06:42:17.120Z]INFO-Clicking element
+[2026-07-10T06:42:19.206Z]INFO-Element clicked successfully
+[2026-07-10T06:42:49.673Z]ERROR-Scenario Failed: Verify validation messages when mandatory fields are left empty
+[2026-07-10T06:42:49.787Z]INFO-Closing browser
+[2026-07-10T06:45:02.506Z]INFO-Launching Browser
+[2026-07-10T06:45:03.119Z]INFO-Starting scenario: Verify validation messages when mandatory fields are left empty
+[2026-07-10T06:45:03.474Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-10T06:45:06.774Z]INFO-Typing message
+[2026-07-10T06:45:08.871Z]INFO-Message typed on the locator successfully
+[2026-07-10T06:45:08.872Z]INFO-Typing message
+[2026-07-10T06:45:10.914Z]INFO-Message typed on the locator successfully
+[2026-07-10T06:45:10.918Z]INFO-Clicking element
+[2026-07-10T06:45:13.009Z]INFO-Element clicked successfully
+[2026-07-10T06:45:44.619Z]ERROR-Scenario Failed: Verify validation messages when mandatory fields are left empty
+[2026-07-10T06:45:44.686Z]INFO-Closing browser

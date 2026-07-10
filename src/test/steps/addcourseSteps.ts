@@ -1,4 +1,4 @@
-import { Given, When, Then } from "@cucumber/cucumber";
+import { When, Then } from "@cucumber/cucumber";
 import { expect } from "@playwright/test";
 import { CustomWorld } from "../world/CustomWorld";
 import { TIMEOUTS } from "../constants/timeouts";
@@ -58,4 +58,16 @@ When('User clicks the Preview & Create button',  async function (this: CustomWor
 
 Then('User verifies the course is added successfully',  async function (this: CustomWorld) {
   await this.addPage.VerifyCourseCreated();
+});
+
+When('User leaves all mandatory fields empty', async function (this: CustomWorld) {
+    // Intentionally leave all mandatory fields blank
+});
+
+When('User clicks the Next button', async function (this: CustomWorld) {
+    await this.addPage.clickNxtBtn();
+});
+
+Then('User should see validation messages for the mandatory fields', async function (this: CustomWorld) {
+    await this.addPage.VerifyMandatoryFieldValidation();
 });

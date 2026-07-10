@@ -6,9 +6,9 @@ Feature: Mythily_07/07/2026_Add_Course_Tests
         When the user enters valid credentials
         And the user clicks on the login button
         When User clicks on the Course Structure
+        And User clicks on the Add Course tab
 
     Scenario: Add a course with valid details
-        And User clicks on the Add Course tab
         When User enters the required details
             | client  | type                  | model | category             | name     |
             | jamocha | Business to Institution | HTD   | Software Development | defect_avengers |
@@ -21,3 +21,8 @@ Feature: Mythily_07/07/2026_Add_Course_Tests
         And User verifies the skill selection
         And User clicks the Preview & Create button
         Then User verifies the course is added successfully
+
+    Scenario: Verify validation messages when mandatory fields are left empty
+        When User leaves all mandatory fields empty
+        And User clicks the Next button
+        Then User should see validation messages for the mandatory fields    
