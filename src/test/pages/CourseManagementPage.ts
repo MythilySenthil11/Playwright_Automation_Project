@@ -4,7 +4,6 @@ import { BasePage } from "./BasePage";
 import { TIMEOUTS } from '../constants/timeouts';
 import { CourseData } from "../types/editCourse.types";
 
-
 export class CourseManagementPage extends BasePage{
     readonly page:Page;
     readonly filterButton:Locator;      
@@ -41,7 +40,7 @@ export class CourseManagementPage extends BasePage{
     readonly dateList:Locator
     readonly clientList:Locator
     readonly courseSortList:Locator
-    readonly addCourseStructure:Locator
+    
 
     constructor(page:Page){
         super(page);
@@ -81,8 +80,8 @@ export class CourseManagementPage extends BasePage{
         this.dateList = this.page.locator("//td[1]/span/div")
         this.clientList = this.page.locator("//td[2]/span/div")
         this.courseSortList = this.page.locator("//td[3]/span/div")
-        this.addCourseStructure = this.page.locator("//span[text()='Add Course Structure']")
 
+        
     }
     async clickFilterButton(){
         await this.Click(this.filterButton)
@@ -108,8 +107,8 @@ export class CourseManagementPage extends BasePage{
     //search
     async EnterSearch(searchbar: string) {
            await this.Fill(this.searchbar, searchbar);
-           await this.page.waitForTimeout(1000);
-        }
+           await this.page.waitForTimeout(TIMEOUTS.MEDIUM);
+    }
     async GetSearchResult() {
         const text = await this.GetText(this.table);
         console.log("Row Text:", text);
@@ -187,8 +186,6 @@ export class CourseManagementPage extends BasePage{
         return list
     }
 
-    async ClickAddCourseStructure(){
-        await this.Click(this.addCourseStructure);
-    }
+    
     
 }
