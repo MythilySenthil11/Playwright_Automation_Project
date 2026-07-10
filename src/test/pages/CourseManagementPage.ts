@@ -106,8 +106,8 @@ export class CourseManagementPage extends BasePage{
     //search
     async EnterSearch(searchbar: string) {
            await this.Fill(this.searchbar, searchbar);
-           await this.page.waitForTimeout(1000);
-        }
+           await this.page.waitForTimeout(TIMEOUTS.MEDIUM);
+    }
     async GetSearchResult() {
         const text = await this.GetText(this.table);
         console.log("Row Text:", text);
