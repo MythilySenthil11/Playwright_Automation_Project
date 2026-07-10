@@ -1,4 +1,5 @@
-Feature: service Model
+@Jerishwin
+Feature: Jerishwin 09/07/2026 service Model
 
     Background:
         Given the user is on the login page
@@ -7,6 +8,7 @@ Feature: service Model
         And the user is on Dynamic Field Management page
         And the user clicks the service model button
 
+    @Jerishwin
     Scenario:Adding Service
         And the user clicks on the add service button
         And the user enter the service Name and description

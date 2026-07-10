@@ -7,6 +7,9 @@ module.exports = {
             "src/test/hooks/**/*.ts"
         ],
 
+
+        order:"defined",
+
         paths: [
             "src/test/features/**/*.feature"
         ],
@@ -15,21 +18,18 @@ module.exports = {
 
         formatOptions: {
             snippetInterface: "async-await",
-            resultsDir: "allure-results"
+            resultsDir: "allure-results" 
         },
 
         publishQuiet: true,
         dryRun: false,
 
         format: [
-            "progress",
-            "allure-cucumberjs/reporter",
-            "json:reports/cucumber-report.json",
-            "html:reports/cucumber-report.html",
-            "message:reports/messages.ndjson",
-            "rerun:rerun/@rerun.txt"
-        ],
-
+    "allure-cucumberjs/reporter",
+    "json:reports/cucumber-report.json",
+    "html:reports/cucumber-report.html",
+    "rerun:rerun/@rerun.txt"
+    ],
         parallel: 1
     },
 
@@ -56,14 +56,11 @@ module.exports = {
         dryRun: false,
 
         format: [
-            "progress",
-            "allure-cucumberjs/reporter",
-            "json:reports/cucumber-report.json",
-            "html:reports/cucumber-report.html",
-            "message:reports/messages.ndjson",
-            "rerun:rerun/@rerun.txt"
-        ],
-
+    "allure-cucumberjs/reporter",
+    "json:reports/cucumber-report.json",
+    "html:reports/cucumber-report.html",
+    "rerun:rerun/@rerun.txt"
+    ],
         parallel: 1
     }
 };
