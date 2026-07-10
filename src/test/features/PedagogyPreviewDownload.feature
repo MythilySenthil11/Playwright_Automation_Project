@@ -11,6 +11,5 @@ Scenario: verify the Excel download functionality of Pedagogy in course structur
         When the user enter course name on the search tab 
         And the user clicks the Add Course Structure button
         And the user clicks the print button
-        And the user chooses the excel in export options
         Then the user able to see the downloaded excel file
 
