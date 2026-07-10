@@ -30,9 +30,14 @@ export class AddCourseStructurePage extends BasePage{
     readonly SelectweDoActivities:Locator
     readonly SelectyouDoActivities:Locator
     readonly normalizeSpace:Locator
+<<<<<<< HEAD
     readonly printButton : Locator; 
     readonly excelOption : Locator;
 
+=======
+    readonly printButton: Locator;
+    readonly excelOption: Locator;
+>>>>>>> 0836fb6b8a96c3b80c46e4bd759d29c5ee6b741a
     constructor(page:Page){
         super(page)
         this.page=page
@@ -63,7 +68,7 @@ export class AddCourseStructurePage extends BasePage{
         this.SelectweDoActivities=page.getByText('We Do Activities');
         this.SelectyouDoActivities=page.getByText('You Do Activities');
         this.normalizeSpace=page.locator("//div[@class='fixed inset-0 z-20']");
-        this.printButton = page.locator("//div[@class='flex items-center gap-1 sm:gap-2 flex-wrap'][2]/child::button"); 
+        this.printButton = page.locator("//div[@class='flex items-center gap-1 sm:gap-2 flex-wrap'][2]/child::button");
         this.excelOption = page.locator("//div[@class='flex gap-2']/child::button[2]");
         
     }
@@ -140,17 +145,19 @@ export class AddCourseStructurePage extends BasePage{
     async normalClick(){
         await this.Click(this.normalizeSpace)
     }
+    async clickPrintButton() {
+        await this.Click(this.printButton);
+    }
 
-    async ClickPrintButton(){ 
-        await this.Click(this.printButton); 
-    } 
-    async ClickExcelOption(){ 
-        await this.Click(this.excelOption); 
-    } 
-    async isDownloaded(){ 
-        const downloadPromise = this.page.waitForEvent('download'); 
-        await this.ClickExcelOption(); 
-        const download = await downloadPromise; 
-        expect(download).toBeTruthy(); 
-    } 
+    async clickExcelOption() {
+        await this.Click(this.excelOption);
+    }
+
+    async isDownloaded() {
+        const downloadPromise = this.page.waitForEvent('download');
+        await this.clickExcelOption();
+        const download = await downloadPromise;
+        expect(download).toBeTruthy();
+    }
+    
 }
