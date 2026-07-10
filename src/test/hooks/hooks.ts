@@ -10,14 +10,14 @@ import { CourseCategoryPage } from '../pages/CourseCategoryPage'
 import { dynamicFieldManagementPage } from '../pages/dynamicFieldManagementPage'
 import { CourseManagementPage } from '../pages/CourseManagementPage'
 import { pedagogy_dynamic_page } from '../pages/pedagogy_dynamic_page'
-import { AddCourseStructurePage } from '../pages/AddCourseStructurePage'
 import { serviceModelPage } from '../pages/serviceModelPage'
+import { AddCourseStructurePage } from '../pages/AddCourseStructurePage'
 
 let browser : Browser
 setDefaultTimeout(90 * 1000);
 BeforeAll(async()=>{
     logger.info("Launching Browser")
-    browser = await chromium.launch({headless:false})
+    browser = await chromium.launch({headless:true})
 
 })
 
@@ -37,7 +37,7 @@ Before(async function(this:CustomWorld,scenario){
     this.adp= new admindashboardpage(this.page);
     this.addPage = new AddcoursePage(this.page);
     this.cmp= new CourseManagementPage(this.page);
-    this.acsp=new AddCourseStructurePage(this.page);
+    this.acsp=new AddCourseStructurePage (this.page);
     this.smp = new serviceModelPage(this.page)
 })
 

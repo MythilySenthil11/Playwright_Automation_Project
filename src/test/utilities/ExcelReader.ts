@@ -7,7 +7,7 @@ export class ExcelReader {
     public static read<T>(fileName: string,sheetName: string): T[] {
 
         const filePath = path.resolve(
-            process.cwd(),"src","test","testdata",fileName);
+            process.cwd(),"src","test","test-data",fileName);
 
         const workbook = XLSX.readFile(filePath);
 
