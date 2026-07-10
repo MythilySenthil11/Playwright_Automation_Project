@@ -1,4 +1,4 @@
-@Mythily_UnderDevelopment
+@Mythily
 Feature: Mythily_07/07/2026_Add_Course_Tests
 
     Background:
