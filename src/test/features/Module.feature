@@ -4,7 +4,7 @@ Feature: TamilKumar 08-07-2026 Add course structure
         Given the user is on the login page
         When the user enters valid credentials
         And the user clicks on the login button
-        When the user navigate to the Course Management page
+        When I navigate to the Course Management page
 
     @Tamil
     Scenario: Create a course structure with valid data
