@@ -11,6 +11,7 @@ import { dynamicFieldManagementPage } from '../pages/dynamicFieldManagementPage'
 import { CourseManagementPage } from '../pages/CourseManagementPage'
 import { pedagogy_dynamic_page } from '../pages/pedagogy_dynamic_page'
 import { serviceModelPage } from '../pages/serviceModelPage'
+import { AddCourseStructurePage } from '../pages/AddCourseStructurePage'
 
 let browser : Browser
 setDefaultTimeout(90 * 1000);
