@@ -22,7 +22,7 @@ Examples:
   | testing@gmail.com  | invalidpass1 | Password is incorrect |
   | invalid2@gmail.com | invalidpass2 | Email is invalid      |
 
-@Signout
+@Signout @Subathra
 Scenario: Verify the Signout functionality
     When the user enters valid credentials
     And the user clicks on the login button
