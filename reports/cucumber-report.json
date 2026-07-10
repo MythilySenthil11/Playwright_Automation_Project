@@ -4,715 +4,6 @@
     "elements": [
       {
         "description": "",
-        "id": "subathra_07-07-2026_course_category_functionality;add-category-by-entering-all-the-fields",
-        "keyword": "Scenario",
-        "line": 11,
-        "name": "Add category by entering all the fields",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 197760700
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "the user launches the application",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 651102099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "the user enters valid credentials",
-            "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1442624400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 6,
-            "name": "the user clicks on the login button",
-            "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 146665799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "the user is on Dynamic Field Management page",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:13"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 30033326999,
-              "error_message": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'pt-6\\']/child::div/child::div[3]')\u001b[22m\n\n    at admindashboardpage.Click (D:\\LMS_Playwright_Cucumber\\Playwright_Automation_Project\\src\\test\\pages\\BasePage.ts:12:27)\n    at admindashboardpage.dynamicFieldManagementClick (D:\\LMS_Playwright_Cucumber\\Playwright_Automation_Project\\src\\test\\pages\\admindashboardpage.ts:39:20)\n    at World.<anonymous> (D:\\LMS_Playwright_Cucumber\\Playwright_Automation_Project\\src\\test\\steps\\courseCategoryStep.ts:15:20)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "the user clicks on the Course category button",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:19"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 12,
-            "name": "the user clicks the Add Category button",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:25"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "Category_name",
-                      "Course_names",
-                      "Category_description"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "sample",
-                      "Frontend",
-                      "Html,CSS"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "And ",
-            "line": 13,
-            "name": "the user enters the category details",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:31"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 16,
-            "name": "the user clicks Create category button",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:42"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3511116200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 25,
-            "name": "the user clicks the Add Course Structure button on the Course Management page",
-            "match": {
-              "location": "src\\test\\steps\\AddModule.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4802583899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 26,
-            "name": "the user clicks the Similar Course button",
-            "match": {
-              "location": "src\\test\\steps\\AddModule.ts:51"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2334429299
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "category",
-                      "Software Development"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "search_keyword",
-                      "defect_avengers"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "And ",
-            "line": 27,
-            "name": "the user selects the course category and the user searches for the course to duplicate",
-            "match": {
-              "location": "src\\test\\steps\\AddModule.ts:56"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 9319166300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 30,
-            "name": "the user selects all modules and clicks the Duplicate Structure button",
-            "match": {
-              "location": "src\\test\\steps\\AddModule.ts:64"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2818349899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 31,
-            "name": "the user accepts the duplicate confirmation alert",
-            "match": {
-              "location": "src\\test\\steps\\AddModule.ts:70"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1900070699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 17,
-            "name": "the user should see a successful creation message",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:48"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 264911299
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Subathra",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "subathra_07-07-2026_course_category_functionality;edit-category-details-with-the-help-of-search-functionality",
-        "keyword": "Scenario",
-        "line": 19,
-        "name": "Edit category details with the help of search functionality",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 194516999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "the user launches the application",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 474393000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "the user enters valid credentials",
-            "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 446434699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "the user clicks on the login button",
-            "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 943623600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "the user is on Dynamic Field Management page",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:13"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 30017423799,
-              "error_message": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'pt-6\\']/child::div/child::div[3]')\u001b[22m\n\n    at admindashboardpage.Click (D:\\LMS_Playwright_Cucumber\\Playwright_Automation_Project\\src\\test\\pages\\BasePage.ts:12:27)\n    at admindashboardpage.dynamicFieldManagementClick (D:\\LMS_Playwright_Cucumber\\Playwright_Automation_Project\\src\\test\\pages\\admindashboardpage.ts:39:20)\n    at World.<anonymous> (D:\\LMS_Playwright_Cucumber\\Playwright_Automation_Project\\src\\test\\steps\\courseCategoryStep.ts:15:20)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "the user clicks on the Course category button",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:19"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 20,
-            "name": "the user clicks the Add Category button",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:25"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 21,
-            "name": "the user enters the category details for edit from JSON file",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:54"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 22,
-            "name": "the user clicks Create category button",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:42"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 24,
-            "name": "the user clicks the close button",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:132"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 25,
-            "name": "the user enters the category name in the search tab",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:61"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 26,
-            "name": "the user clicks the dropdown button and clicks the edit option",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:68"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 27,
-            "name": "the user updates the details of the category",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:78"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 28,
-            "name": "the user clicks the update category button",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:84"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 29,
-            "name": "the user should see a successful updation message",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:90"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 239728300
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Subathra",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "subathra_07-07-2026_course_category_functionality;delete-the-category-with-the-help-of-search-functionality",
-        "keyword": "Scenario",
-        "line": 31,
-        "name": "Delete the category with the help of search functionality",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 171599299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "the user launches the application",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 470331300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "the user enters valid credentials",
-            "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 897149000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "the user clicks on the login button",
-            "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 138845200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "the user is on Dynamic Field Management page",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:13"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 10849005600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "the user clicks on the Course category button",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:19"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 926966000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 32,
-            "name": "the user clicks the Add Category button",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 994501300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 33,
-            "name": "the user enters the category details for delete from JSON file",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:126"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 48815100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 34,
-            "name": "the user clicks Create category button",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:42"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 454155400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 36,
-            "name": "the user clicks the close button",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:132"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2023710500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 37,
-            "name": "the user enters the created category name in the search tab",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:96"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 15615600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 38,
-            "name": "the user clicks the dropdown button",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:74"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 295629200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 39,
-            "name": "the user clicks the delete option",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:102"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4788994600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 40,
-            "name": "the user clicks the delete button in the confirmation pop up",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:108"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 435550499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 41,
-            "name": "the user searches the deleted category",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:114"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 30575400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 42,
-            "name": "the user should see a not found message",
-            "match": {
-              "location": "src\\test\\steps\\courseCategoryStep.ts:120"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5574634200
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 34109599
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Subathra",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "subathra_07-07-2026_course_category_functionality",
-    "line": 2,
-    "keyword": "Feature",
-    "name": "Subathra_07-07-2026_Course_Category_Functionality",
-    "tags": [
-      {
-        "name": "@Subathra",
-        "line": 1
-      }
-    ],
-    "uri": "src\\test\\features\\CourseCategory.feature"
-  },
-  {
-    "description": "",
-    "elements": [
-      {
-        "description": "",
         "id": "subathra_09-07-2026_pedagogy_preview_exceldownload_functionality;verify-the-excel-download-functionality-of-pedagogy-in-course-structure",
         "keyword": "Scenario",
         "line": 10,
@@ -723,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 217020699
+              "duration": 4159371500
             }
           },
           {
@@ -736,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 397176100
+              "duration": 16400512600
             }
           },
           {
@@ -749,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 382350399
+              "duration": 731336900
             }
           },
           {
@@ -762,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 938744000
+              "duration": 608735500
             }
           },
           {
@@ -775,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7913317299
+              "duration": 10484125799
             }
           },
           {
@@ -788,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1856640399
+              "duration": 2329676999
             }
           },
           {
@@ -801,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7177405599
+              "duration": 4890570799
             }
           },
           {
@@ -814,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5046435100
+              "duration": 9098384600
             }
           },
           {
@@ -827,7 +118,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 474934999
+              "duration": 675440700
             }
           },
           {
@@ -840,16 +131,17 @@
             },
             "result": {
               "status": "failed",
-              "duration": 30017430999,
-              "error_message": "page.waitForEvent: Timeout 30000ms exceeded while waiting for event \"download\"\n=========================== logs ===========================\nwaiting for event \"download\"\n============================================================\n    at AddCourseStructurePage.isDownloaded (D:\\LMS_Playwright_Cucumber\\Playwright_Automation_Project\\src\\test\\pages\\AddCourseStructurePage.ts:91:43)\n    at World.<anonymous> (D:\\LMS_Playwright_Cucumber\\Playwright_Automation_Project\\src\\test\\steps\\PedagogyPreviewDownloadStep.ts:35:28)"
+              "duration": 90054049500,
+              "error_message": "Error: function timed out, ensure the promise resolves within 90000 milliseconds\n    at Timeout.<anonymous> (D:\\LMS_Playwright_Cucumber\\Playwright_Automation_Project\\node_modules\\@cucumber\\cucumber\\src\\time.ts:50:14)\n    at listOnTimeout (node:internal/timers:588:17)\n    at processTimers (node:internal/timers:523:7)"
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "result": {
-              "status": "passed",
-              "duration": 190393600
+              "status": "failed",
+              "duration": 1668304300,
+              "error_message": "page.waitForEvent: Target page, context or browser has been closed\n=========================== logs ===========================\nwaiting for event \"download\"\n============================================================\n    at AddCourseStructurePage.isDownloaded (D:\\LMS_Playwright_Cucumber\\Playwright_Automation_Project\\src\\test\\pages\\AddCourseStructurePage.ts:91:43)\n    at World.<anonymous> (D:\\LMS_Playwright_Cucumber\\Playwright_Automation_Project\\src\\test\\steps\\PedagogyPreviewDownloadStep.ts:35:28)"
             }
           }
         ],

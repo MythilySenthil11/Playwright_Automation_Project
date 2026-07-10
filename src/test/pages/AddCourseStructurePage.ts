@@ -91,6 +91,6 @@ export class AddCourseStructurePage extends BasePage{
         const downloadPromise = this.page.waitForEvent('download');
         await this.ClickExcelOption();
         const download = await downloadPromise;
-        return download;
+        expect(download).toBeTruthy();
     }
 }

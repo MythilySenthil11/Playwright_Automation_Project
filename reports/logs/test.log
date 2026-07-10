@@ -8041,3 +8041,66 @@ Call log:
 [2026-07-09T13:48:10.159Z]INFO-Scenario Passed: Add a similar course structure with valid inputs
 [2026-07-09T13:48:12.850Z]INFO-Closing browser
 >>>>>>> 5f1ddf6640f68a02f72e9760c59e923ac7d3e5dd
+[2026-07-10T02:25:44.975Z]INFO-Launching Browser
+[2026-07-10T02:25:49.716Z]INFO-Starting scenario: verify the Excel download functionality of Pedagogy in course structure
+[2026-07-10T02:25:52.032Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-10T02:27:00.722Z]INFO-Typing message
+[2026-07-10T02:27:02.206Z]INFO-Message typed on the locator successfully
+[2026-07-10T02:27:02.210Z]INFO-Typing message
+[2026-07-10T02:27:02.357Z]INFO-Message typed on the locator successfully
+[2026-07-10T02:27:02.363Z]INFO-Clicking element
+[2026-07-10T02:27:02.676Z]INFO-Element clicked successfully
+[2026-07-10T02:27:10.292Z]INFO-Clicking element
+[2026-07-10T02:27:10.565Z]INFO-Element clicked successfully
+[2026-07-10T02:27:10.570Z]INFO-Typing message
+[2026-07-10T02:27:11.584Z]INFO-Message typed on the locator successfully
+[2026-07-10T02:27:12.629Z]INFO-Clicking element
+[2026-07-10T02:27:42.187Z]INFO-Element clicked successfully
+[2026-07-10T02:27:42.196Z]INFO-Clicking element
+[2026-07-10T02:27:51.076Z]INFO-Element clicked successfully
+[2026-07-10T02:27:51.081Z]INFO-Clicking element
+[2026-07-10T02:27:51.841Z]INFO-Element clicked successfully
+[2026-07-10T02:27:51.888Z]INFO-Clicking element
+[2026-07-10T02:29:23.331Z]ERROR-Scenario Failed: verify the Excel download functionality of Pedagogy in course structure
+[2026-07-10T02:29:23.467Z]ERROR-Failed to click element: Error: locator.click: Target page, context or browser has been closed
+Call log:
+[2m  - waiting for locator('//div[@class=\'flex gap-2\']/child::button[2]')[22m
+[2m    - locator resolved to <button data-slot="button" class="inline-flex items-center justify-center whitespace-nowrap font-medium cursor-pointer transition-all disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive shadow-xs rounded-m…>…</button>[22m
+[2m  - attempting click action[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+[2m    - element is not stable[22m
+[2m  - retrying click action[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+[2m  - element was detached from the DOM, retrying[22m
+
+[2026-07-10T02:29:23.471Z]INFO-Closing browser
+[2026-07-10T02:37:53.689Z]INFO-Launching Browser
+[2026-07-10T02:37:57.743Z]INFO-Starting scenario: verify the Excel download functionality of Pedagogy in course structure
+[2026-07-10T02:38:01.933Z]INFO-Application Launching: https://lms-smartcliff.vercel.app/login
+[2026-07-10T02:38:18.306Z]INFO-Typing message
+[2026-07-10T02:38:18.933Z]INFO-Message typed on the locator successfully
+[2026-07-10T02:38:18.934Z]INFO-Typing message
+[2026-07-10T02:38:19.031Z]INFO-Message typed on the locator successfully
+[2026-07-10T02:38:19.038Z]INFO-Clicking element
+[2026-07-10T02:38:19.639Z]INFO-Element clicked successfully
+[2026-07-10T02:38:29.969Z]INFO-Clicking element
+[2026-07-10T02:38:30.125Z]INFO-Element clicked successfully
+[2026-07-10T02:38:30.139Z]INFO-Typing message
+[2026-07-10T02:38:31.416Z]INFO-Message typed on the locator successfully
+[2026-07-10T02:38:32.462Z]INFO-Clicking element
+[2026-07-10T02:38:37.347Z]INFO-Element clicked successfully
+[2026-07-10T02:38:37.363Z]INFO-Clicking element
+[2026-07-10T02:38:46.448Z]INFO-Element clicked successfully
+[2026-07-10T02:38:46.454Z]INFO-Clicking element
+[2026-07-10T02:38:47.125Z]INFO-Element clicked successfully
+[2026-07-10T02:38:47.159Z]INFO-Clicking element
+[2026-07-10T02:40:18.761Z]ERROR-Scenario Failed: verify the Excel download functionality of Pedagogy in course structure
+[2026-07-10T02:40:18.920Z]ERROR-Failed to click element: Error: locator.click: Target page, context or browser has been closed
+Call log:
+[2m  - waiting for locator('//div[@class=\'flex gap-2\']/child::button[2]')[22m
+[2m    - locator resolved to <button data-slot="button" class="inline-flex items-center justify-center whitespace-nowrap font-medium cursor-pointer transition-all disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive shadow-xs rounded-m…>…</button>[22m
+[2m  - attempting click action[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+[2m  - element was detached from the DOM, retrying[22m
+
+[2026-07-10T02:40:18.923Z]INFO-Closing browser
