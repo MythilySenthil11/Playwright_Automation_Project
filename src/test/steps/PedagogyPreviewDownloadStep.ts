@@ -14,24 +14,16 @@ When('the user enter course name on the search tab', async function (this:Custom
 
 When('the user clicks the Add Course Structure button',async function(this:CustomWorld){
 
-    await this.cmp.ClickAddCourseStructure();
+    await this.cmp.clickAddcourseStrcutureButton();
 
 });
 
-When('the user clicks the print button', async function (this:CustomWorld) {
 
-    await this.acsp.ClickPrintButton()
- 
+
+When('the user clicks the print button', async function (this: CustomWorld) {
+    await this.acsp.clickPrintButton();
 });
 
-When('the user chooses the excel in export options', async function (this:CustomWorld) {
-
-    await this.acsp.ClickExcelOption();
-  
-});
-
-Then('the user able to see the downloaded excel file', async function (this:CustomWorld) {
-
-    expect(await this.acsp.isDownloaded()).toBeTruthy();
-  
+Then('the user able to see the downloaded excel file', async function (this: CustomWorld) {
+    expect(await this.acsp.downloadExcel()).toBeTruthy();
 });

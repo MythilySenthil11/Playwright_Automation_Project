@@ -3,15 +3,20 @@ import { expect } from "@playwright/test";
 import { CustomWorld } from "../world/CustomWorld";
 import { CsvReader } from "../utilities/csvReader";
 import { CourseStructureData } from "../types/courseStructure.types";
+import { ExcelReader } from "../utilities/ExcelReader";
+import { EditModuleData } from "../types/editModule.types";
+const editModuleData=ExcelReader.read<EditModuleData>("editModule.xlsx","edit");
 const courseData = CsvReader.read<CourseStructureData>("moduleData.csv");
 When('search the course name', async function (this:CustomWorld) {
   // Write code here that turns the phrase above into concrete actions
-  await this.cmp.EnterSearch("defect")
+  const data=editModuleData[0];
+  await this.cmp.EnterSearch(data?.search!);
 });
 When('the user clicks the Add Course Structure button on the Course Management page', async function (this:CustomWorld) {
   // Write code here that turns the phrase above into concrete actions
-    await this.cmp.clickAddcourseStrcutureButton();
+  await this.cmp.clickAddcourseStrcutureButton();
 });
+
 
 When('the user clicks the Module button on the Course Structure page', async function (this:CustomWorld) {
   // Write code here that turns the phrase above into concrete actions
@@ -90,8 +95,9 @@ When('click the three dots on the module and select the edit option', async func
 
 When('the user updates the module details and clicks the save button', async function (this:CustomWorld) {
   // Write code here that turns the phrase above into concrete actions
-  await this.acsp.setTitle("Updated Module Title");
-  await this.acsp.setDescription("Updated Module Description");
+  const data=editModuleData[0];
+  await this.acsp.setTitle(data?.updateTitle!);
+  await this.acsp.setDescription(data?.description!);
   await this.acsp.clicksaveButton();
 });
 When('the user selects {string} from the Teaching Elements dropdown', async function (this:CustomWorld,string: string) {
