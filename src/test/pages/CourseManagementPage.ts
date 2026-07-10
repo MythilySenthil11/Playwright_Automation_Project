@@ -160,7 +160,7 @@ export class CourseManagementPage extends BasePage{
 
     async fillSecondPage(){
         await this.SelectCustomDropdown(this.courseLevelDropDown,'Beginner')
-        await this.UploadFile(this.uploadphotoButton,'Playwright_Automation_Project\\src\\test\\test-data\\logo.png')
+        // await this.UploadFile(this.uploadphotoButton,'Playwright_Automation_Project\\src\\test\\test-data\\logo.png')
     }
 
     // sort course actions
