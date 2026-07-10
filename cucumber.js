@@ -22,14 +22,11 @@ module.exports = {
         dryRun: false,
 
         format: [
-            "allure-cucumberjs/reporter",
-            "json:reports/cucumber-report.json",
-            "html:reports/cucumber-report.html",
-            "message:reports/messages.ndjson",
-            "rerun:rerun/@rerun.txt",
-            "progress"
-        ],
-
+    "allure-cucumberjs/reporter",
+    "json:reports/cucumber-report.json",
+    "html:reports/cucumber-report.html",
+    "rerun:rerun/@rerun.txt"
+    ],
         parallel: 1
     },
 
@@ -54,14 +51,11 @@ module.exports = {
         dryRun: false,
 
         format: [
-            "allure-cucumberjs/reporter",
-            "json:reports/cucumber-report.json",
-            "html:reports/cucumber-report.html",
-            "message:reports/messages.ndjson",
-            "rerun:rerun/@rerun.txt",
-            "progress"
-        ],
-
+    "allure-cucumberjs/reporter",
+    "json:reports/cucumber-report.json",
+    "html:reports/cucumber-report.html",
+    "rerun:rerun/@rerun.txt"
+    ],
         parallel: 1
     }
 };

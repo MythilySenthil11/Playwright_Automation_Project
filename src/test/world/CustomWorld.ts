@@ -10,6 +10,7 @@ import { admindashboardpage } from '../pages/admindashboardpage';
 import { CourseManagementPage } from '../pages/CourseManagementPage';
 import { pedagogy_dynamic_page } from '../pages/pedagogy_dynamic_page';
 import { AddCourseStructurePage } from '../pages/AddCourseStructurePage';
+import { serviceModelPage } from '../pages/serviceModelPage';
 
 export class CustomWorld extends World{
     browser!:Browser;
@@ -25,6 +26,7 @@ export class CustomWorld extends World{
     cmp!:CourseManagementPage;
     pdp!:pedagogy_dynamic_page;
     acsp!:AddCourseStructurePage
+    smp!: serviceModelPage
 }
 
 setWorldConstructor(CustomWorld);
