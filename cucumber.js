@@ -7,7 +7,9 @@ module.exports = {
             "src/test/hooks/**/*.ts"
         ],
 
+
         order:"defined",
+
         paths: [
             "src/test/features/**/*.feature"
         ],
@@ -42,6 +44,8 @@ module.exports = {
         paths: [
             "@rerun.txt"
         ],
+
+        order: "defined",
 
         formatOptions: {
             snippetInterface: "async-await",
