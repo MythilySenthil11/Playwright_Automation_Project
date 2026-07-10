@@ -7,6 +7,9 @@ module.exports = {
             "src/test/hooks/**/*.ts"
         ],
 
+
+        order:"defined",
+
         paths: [
             "src/test/features/**/*.feature"
         ],
@@ -15,7 +18,7 @@ module.exports = {
 
         formatOptions: {
             snippetInterface: "async-await",
-            resultsDir: "allure-results"
+            resultsDir: "allure-results" 
         },
 
         publishQuiet: true,
