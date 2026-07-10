@@ -16,14 +16,14 @@ module.exports = {
 
         formatOptions: {
             snippetInterface: "async-await",
-            resultsDir: "allure-results" // 1. Explicitly point to the target folder
+            resultsDir: "allure-results" 
         },
 
         publishQuiet: true,
         dryRun: false,
 
         format: [
-            "allure-cucumberjs/reporter:./reports/allure-dummy.txt", // 2. Redirect stdout to avoid conflicts with 'progress'
+            "allure-cucumberjs/reporter:./reports/allure-dummy.txt", 
             "json:reports/cucumber-report.json",
             "html:reports/cucumber-report.html",
             "message:reports/messages.ndjson",
