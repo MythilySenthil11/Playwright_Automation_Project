@@ -1,4 +1,4 @@
-@Tamil @Filter
+@Tamil
 Feature: TamilKumar 07-07-2026 Course Filter Functionality
     Background:
         Given the user is on the login page
@@ -10,7 +10,7 @@ Feature: TamilKumar 07-07-2026 Course Filter Functionality
     Scenario: Verify filtering courses by category
         When I select Automation Project from the Category dropdown
         Then only courses belonging to the selected category should be displayed
-    @Tamil
+ 
     Scenario Outline: Verify filtering courses by level
         When I select "<Level>" from the level dropdown
         Then only "<Level>" courses should be displayed

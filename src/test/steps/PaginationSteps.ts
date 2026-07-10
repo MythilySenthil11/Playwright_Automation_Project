@@ -4,25 +4,25 @@ import { CustomWorld } from "../world/CustomWorld";
 import { paginationData } from "../test-data/pagination.json";
 
 When(`User clicks the Next page button`, async function (this: CustomWorld){
-    await this.Pp.clickNxtbtn();
+    await this.cmp.clickNxtbtn();
 });
 
 Then(`User should be navigated to the next page`, async function (this: CustomWorld){
-    expect(await this.Pp.CurrentPage()).toBe("2");
+    expect(await this.cmp.CurrentPage()).toBe("2");
 });
 
 When(`User clicks the Previous page button`, async function (this: CustomWorld){
-    await this.Pp.clickPrebtn();
+    await this.cmp.clickPrebtn();
 });
 
 Then(`User should be navigated to the previous page`, async function (this: CustomWorld){
-    expect(await this.Pp.CurrentPage()).toBe("1");
+    expect(await this.cmp.CurrentPage()).toBe("1");
 });
 
 When(`User clicks the page number from pagination data`, async function (this: CustomWorld){
-    await this.Pp.clickPage(paginationData.pageNumber);
+    await this.cmp.clickPage(paginationData.pageNumber);
 });
 
 Then(`User should be navigated to the selected page`, async function (this: CustomWorld){
-    expect(await this.Pp.CurrentPage()).toBe(paginationData.pageNumber);
+    expect(await this.cmp.CurrentPage()).toBe(paginationData.pageNumber);
 });

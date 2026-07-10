@@ -1,5 +1,7 @@
+import { logger } from './../utilities/logger';
 import { Locator, Page } from "@playwright/test";
 import { BasePage } from "./BasePage";
+import { TIMEOUTS } from '../constants/timeouts';
 
 export class CourseManagementPage extends BasePage{
     readonly page:Page;
@@ -10,6 +12,13 @@ export class CourseManagementPage extends BasePage{
     readonly levelDropdown:Locator;
     readonly levelList:Locator;
     readonly addCourseStructureButton:Locator
+    readonly searchbar:Locator;
+    readonly table:Locator;
+    readonly noUser:Locator;
+    readonly current:Locator;
+    readonly nxtbtn:Locator;
+    readonly previousbtn:Locator;
+    pageno!:Locator;
 
     readonly kebabButton:Locator
     readonly editCourseButton:Locator
@@ -19,6 +28,7 @@ export class CourseManagementPage extends BasePage{
     readonly courseCategoryDropDown:Locator
     readonly courseNameDropDown:Locator
     readonly courseLevelDropDown:Locator
+    readonly uploadphotoButton:Locator
     readonly nextButton:Locator
     readonly saveLayoutButton:Locator
     readonly tostMsg:Locator
@@ -39,7 +49,15 @@ export class CourseManagementPage extends BasePage{
         this.courseList=this.page.locator("//div/span[@class='text-xs font-medium text-gray-700 dark:text-gray-300 font-sans']")
         this.levelDropdown=this.page.locator("//option[text()='All Levels']/parent::select")
         this.levelList=this.page.locator("//td/span/div/span/following-sibling::span")
-        this.addCourseStructureButton=page.locator("(//span[text()='Add Course Structure'])[2]")
+        this.addCourseStructureButton=page.locator("(//span[text()='Add Course Structure'])[1]")
+        //search
+        this.searchbar = page.locator("//input[@data-slot='input']");
+        this.table = page.locator("//tbody/tr[1]/td[3]");
+        this.noUser = page.getByText('No users found');
+        //pagination
+        this.nxtbtn =page.getByRole('button', {name:'Next'});
+        this.current = page.locator("//button[contains(@class,'bg-blue-600')]");
+        this.previousbtn = page.getByRole('button', {name:'Previous'});
 
         this.kebabButton = this.page.locator("//tbody/tr[1]/td[7]/span/div/div/child::*")
         this.editCourseButton = this.page.locator("//tbody/tr[1]/td[7]/span/div/div/div/child::button[2]")
@@ -49,6 +67,7 @@ export class CourseManagementPage extends BasePage{
         this.courseCategoryDropDown = this.page.getByRole('combobox').nth(3)
         this.courseNameDropDown = this.page.getByRole('combobox').nth(4)
         this.courseLevelDropDown = this.page.getByRole('combobox').nth(0)
+        this.uploadphotoButton = this.page.locator('div').filter({ hasText: /^Choose Image$/ })
         this.nextButton = this.page.getByRole('button', { name: 'Next' })
         this.saveLayoutButton = this.page.getByRole('button', { name: 'Save Course Layout' })
         this.tostMsg = this.page.getByText("Course updated successfully!")
@@ -81,6 +100,33 @@ export class CourseManagementPage extends BasePage{
     async clickAddcourseStrcutureButton(){
         await this.Click(this.addCourseStructureButton)
     }
+    //search
+    async EnterSearch(searchbar: string) {
+           await this.Fill(this.searchbar, searchbar);
+           await this.page.waitForTimeout(1000);
+        }
+    async GetSearchResult() {
+        const text = await this.GetText(this.table);
+        console.log("Row Text:", text);
+        return text.trim();
+    }
+    async NoUserTxt(){
+            return await this.GetText(this.noUser);
+    }
+    //pagination
+    async clickNxtbtn(){
+        await this.Click(this.nxtbtn);
+    }
+    async clickPrebtn(){
+        await this.Click(this.previousbtn);
+    }
+    async CurrentPage(){
+        return await this.GetText(this.current);
+    }
+    async clickPage(pageNo:string){
+        this.pageno = this.page.locator(`//button[text()='${pageNo}']`);
+        await this.Click(this.pageno);
+    }
 
 
     //actions for editCourse Feature
@@ -106,14 +152,15 @@ export class CourseManagementPage extends BasePage{
 
     async fillFirstPage(){
         await this.SelectCustomDropdown(this.courseClientDropDown, 'jamocha');
-        await this.SelectCustomDropdown(this.serviceTypeDropDown, 'Business to institution');
-        await this.SelectCustomDropdown(this.serviceModelDropDown, 'HTD');
+        await this.SelectCustomDropdown(this.serviceTypeDropDown, 'Automation Testing');
+        await this.SelectCustomDropdown(this.serviceModelDropDown, 'Automation');
         await this.SelectCustomDropdown(this.courseCategoryDropDown, 'Software Development');
         await this.SelectCustomDropdown(this.courseNameDropDown, 'Frontend');
     }
 
     async fillSecondPage(){
         await this.SelectCustomDropdown(this.courseLevelDropDown,'Beginner')
+        await this.UploadFile(this.uploadphotoButton,'Playwright_Automation_Project\\src\\test\\test-data\\logo.png')
     }
 
     // sort course actions
