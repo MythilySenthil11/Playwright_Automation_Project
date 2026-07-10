@@ -6,7 +6,7 @@ import { CourseStructureData } from "../types/courseStructure.types";
 const courseData = CsvReader.read<CourseStructureData>("moduleData.csv");
 When('search the course name', async function (this:CustomWorld) {
   // Write code here that turns the phrase above into concrete actions
-  await this.cmp.EnterSearch("Defect")
+  await this.cmp.EnterSearch("defect")
 });
 When('the user clicks the Add Course Structure button on the Course Management page', async function (this:CustomWorld) {
   // Write code here that turns the phrase above into concrete actions
@@ -70,4 +70,52 @@ When('the user selects all modules and clicks the Duplicate Structure button', a
 When('the user accepts the duplicate confirmation alert', async function (this:CustomWorld) {
   // Write code here that turns the phrase above into concrete actions
   await this.acsp.clickConfirm();
+});
+When('the user clicks the more dropdown on the Course Structure page', async function (this:CustomWorld) {
+  // Write code here that turns the phrase above into concrete actions
+  await this.acsp.clickMoreButton();
+});
+
+When('select the Hierarchy Actions and select the more button', async function (this:CustomWorld) {
+  // Write code here that turns the phrase above into concrete actions
+  await this.acsp.clickHierarchyActions();
+  await this.acsp.normalClick();
+});
+
+When('click the three dots on the module and select the edit option', async function (this:CustomWorld) {
+  // Write code here that turns the phrase above into concrete actions
+  await this.acsp.clickThreeDots();
+  await this.acsp.clickEditOption();
+});
+
+When('the user updates the module details and clicks the save button', async function (this:CustomWorld) {
+  // Write code here that turns the phrase above into concrete actions
+  await this.acsp.setTitle("Updated Module Title");
+  await this.acsp.setDescription("Updated Module Description");
+  await this.acsp.clicksaveButton();
+});
+When('the user selects {string} from the Teaching Elements dropdown', async function (this:CustomWorld,string: string) {
+  //Write code here that turns the phrase above into concrete actions
+  await this.acsp.clickTeachingElementsDropdown();
+  await this.acsp.selectTeachingElement(string);
+});
+
+Then('only {string} details should be displayed', async function (this:CustomWorld,string: string) {
+  // Write code here that turns the phrase above into concrete actions
+  if(string === "All Teaching Elements") {
+    const actualText = await this.acsp.GetText(this.acsp.allTeachingElements);
+    expect(actualText).toBe(string);
+  }
+  else if(string === "I Do Activities") {
+    const actualText = await this.acsp.GetText(this.acsp.iDoActivities);
+    expect(actualText).toBe(string);
+  }
+  else if(string === "We Do Activities") {
+    const actualText = await this.acsp.GetText(this.acsp.weDoActivities);
+    expect(actualText).toBe(string);
+  }
+  else if(string === "You Do Activities") {
+    const actualText = await this.acsp.GetText(this.acsp.youDoActivities);
+    expect(actualText).toBe(string);
+  }
 });

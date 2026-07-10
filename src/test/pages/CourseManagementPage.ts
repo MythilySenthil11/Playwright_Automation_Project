@@ -39,6 +39,7 @@ export class CourseManagementPage extends BasePage{
     readonly dateList:Locator
     readonly clientList:Locator
     readonly courseSortList:Locator
+    readonly addCourseStructure:Locator
 
     constructor(page:Page){
         super(page);
@@ -49,7 +50,7 @@ export class CourseManagementPage extends BasePage{
         this.courseList=this.page.locator("//div/span[@class='text-xs font-medium text-gray-700 dark:text-gray-300 font-sans']")
         this.levelDropdown=this.page.locator("//option[text()='All Levels']/parent::select")
         this.levelList=this.page.locator("//td/span/div/span/following-sibling::span")
-        this.addCourseStructureButton=page.locator("(//span[text()='Add Course Structure'])[2]")
+        this.addCourseStructureButton=page.locator("(//span[text()='Add Course Structure'])[1]")
         //search
         this.searchbar = page.locator("//input[@data-slot='input']");
         this.table = page.locator("//tbody/tr[1]/td[3]");
@@ -78,6 +79,8 @@ export class CourseManagementPage extends BasePage{
         this.dateList = this.page.locator("//td[1]/span/div")
         this.clientList = this.page.locator("//td[2]/span/div")
         this.courseSortList = this.page.locator("//td[3]/span/div")
+        this.addCourseStructure = this.page.locator("//span[text()='Add Course Structure']")
+
     }
     async clickFilterButton(){
         await this.Click(this.filterButton)
@@ -179,6 +182,10 @@ export class CourseManagementPage extends BasePage{
     async sortedlist(locator:Locator){
         const list = locator.allTextContents() 
         return list
+    }
+
+    async ClickAddCourseStructure(){
+        await this.Click(this.addCourseStructure);
     }
     
 }
