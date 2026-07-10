@@ -30,14 +30,8 @@ export class AddCourseStructurePage extends BasePage{
     readonly SelectweDoActivities:Locator
     readonly SelectyouDoActivities:Locator
     readonly normalizeSpace:Locator
-<<<<<<< HEAD
-    readonly printButton : Locator; 
-    readonly excelOption : Locator;
-
-=======
     readonly printButton: Locator;
     readonly excelOption: Locator;
->>>>>>> 0836fb6b8a96c3b80c46e4bd759d29c5ee6b741a
     constructor(page:Page){
         super(page)
         this.page=page
