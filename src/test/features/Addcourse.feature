@@ -11,12 +11,14 @@ Feature: Mythily_07/07/2026_Add_Course_Tests
     Scenario: Add a course with valid details
         When User enters the required details
             | client  | type                  | model | category             | name     |
-            | jamocha | Business to Institution | HTD   | Software Development | defect_avengers |
+            | jamocha | business to institution | skilling  | Software Development | defect_avengers |
         And User clicks on the Next button
             | level    |
             | Beginner |
         And User verifies the course hierarchy
         And User selects the pedagogy
+            | ido          | wedo    | youdo      |
+            | Live Classes | cypress | Assessment |
         And User enables the resource type
         And User verifies the skill selection
         And User clicks the Preview & Create button

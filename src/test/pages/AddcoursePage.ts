@@ -46,21 +46,21 @@ export class AddcoursePage extends BasePage{
         this.sub = page.locator("#submodule-checkbox");
         this.topic = page.locator("#topic-checkbox");
         this.subtopic = page.locator("#subtopic-checkbox");
-        this.ido = page.locator("(//button[@role='combobox'])[2]").first();
-        this.wedo = page.locator("(//button[@role='combobox'])[3]").first();
-        this.youdo = page.locator("(//button[@role='combobox'])[4]").first();
+        this.ido = page.locator("(//button[@role='combobox'])[2]");
+        this.wedo = page.locator("(//button[@role='combobox'])[3]");
+        this.youdo = page.locator("(//button[@role='combobox'])[4]");
         this.res = page.locator("(//button[@role='switch'])[1]");
         this.core = page.locator("(//input[@type='checkbox'])[6]");
         this.frontend =page.locator("(//input[@type='checkbox'])[11]");
         this.database =page.locator("(//input[@type='checkbox'])[17]");
         this.createBtn =page.getByRole('button', {name:'Preview & Create'});
-        this.savecourse = page.getByText("Preview & Create");
+        this.savecourse = page.getByRole('button', {name: 'Save Course Layout'});
         this.notif = page.getByText("Course created successfully");
-        this.clientError = page.getByText("Course Client is required");
-        this.typeError = page.getByText("Course Type is required");
-        this.modelError = page.getByText("Course Model is required");
-        this.categoryError = page.getByText("Category is required");
-        this.nameError = page.getByText("Course Name is required");
+        this.clientError = page.getByText("Please select a client");
+        this.typeError = page.getByText("Please select a service type");
+        this.modelError = page.getByText("Please select a service model");
+        this.categoryError = page.getByText("Please select a course category");
+        this.nameError = page.getByText("Please enter a course name");
     }
     async clickAddBtn(){
         await this.Click(this.addbtn);
@@ -74,6 +74,7 @@ export class AddcoursePage extends BasePage{
         await this.Fill(this.name, name);
     }
     async clickNxtBtn(){
+        await this.Wait(TIMEOUTS.SHORT);
         await this.Click(this.nxtBtn);
     }
     async FillLevel(level:string){
@@ -85,10 +86,15 @@ export class AddcoursePage extends BasePage{
         await this.Check(this.topic);
         await this.Check(this.subtopic);
     }
-    async pedagogy(){
-        await this.First(this.ido);
-        await this.First(this.wedo);
-        await this.First(this.youdo);
+    async pedagogy(ido:string, wedo:string, youdo:string) {
+        await this.ido.click();
+        await this.page.getByText(ido, { exact: true }).click();
+
+        await this.wedo.click();
+        await this.page.getByText(wedo, { exact: true }).click();
+
+        await this.youdo.click();
+        await this.page.getByText(youdo, { exact: true }).click();
     }
     async ClickRes(){
         await this.Click(this.res);
@@ -100,7 +106,10 @@ export class AddcoursePage extends BasePage{
     }
     async ClickCreateBtn(){
         await this.Click(this.createBtn);
+        console.log("Clicking Save Course Layout");
         await this.Click(this.savecourse);
+
+        console.log("Save clicked");
     }
     async VerifyCourseCreated() {
        await this.WaitForVisible(this.notif, TIMEOUTS.MEDIUM);
