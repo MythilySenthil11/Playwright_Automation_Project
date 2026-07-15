@@ -2,6 +2,7 @@ import { logger } from './../utilities/logger';
 import { Locator, Page } from "@playwright/test";
 import { BasePage } from "./BasePage";
 import { TIMEOUTS } from '../constants/timeouts';
+import { CourseData } from "../types/editCourse.types";
 
 export class CourseManagementPage extends BasePage{
     readonly page:Page;
@@ -39,6 +40,7 @@ export class CourseManagementPage extends BasePage{
     readonly dateList:Locator
     readonly clientList:Locator
     readonly courseSortList:Locator
+    
 
     constructor(page:Page){
         super(page);
@@ -49,7 +51,7 @@ export class CourseManagementPage extends BasePage{
         this.courseList=this.page.locator("//div/span[@class='text-xs font-medium text-gray-700 dark:text-gray-300 font-sans']")
         this.levelDropdown=this.page.locator("//option[text()='All Levels']/parent::select")
         this.levelList=this.page.locator("//td/span/div/span/following-sibling::span")
-        this.addCourseStructureButton=page.locator("(//span[text()='Add Course Structure'])[2]")
+        this.addCourseStructureButton=page.locator("(//span[text()='Add Course Structure'])[1]")
         //search
         this.searchbar = page.locator("//input[@data-slot='input']");
         this.table = page.locator("//tbody/tr[1]/td[3]");
@@ -78,6 +80,8 @@ export class CourseManagementPage extends BasePage{
         this.dateList = this.page.locator("//td[1]/span/div")
         this.clientList = this.page.locator("//td[2]/span/div")
         this.courseSortList = this.page.locator("//td[3]/span/div")
+
+        
     }
     async clickFilterButton(){
         await this.Click(this.filterButton)
@@ -103,8 +107,8 @@ export class CourseManagementPage extends BasePage{
     //search
     async EnterSearch(searchbar: string) {
            await this.Fill(this.searchbar, searchbar);
-           await this.page.waitForTimeout(1000);
-        }
+           await this.page.waitForTimeout(TIMEOUTS.MEDIUM);
+    }
     async GetSearchResult() {
         const text = await this.GetText(this.table);
         console.log("Row Text:", text);
@@ -150,17 +154,18 @@ export class CourseManagementPage extends BasePage{
         await this.Click(this.previewButton)
     }
 
-    async fillFirstPage(){
-        await this.SelectCustomDropdown(this.courseClientDropDown, 'jamocha');
-        await this.SelectCustomDropdown(this.serviceTypeDropDown, 'Automation Testing');
-        await this.SelectCustomDropdown(this.serviceModelDropDown, 'Automation');
-        await this.SelectCustomDropdown(this.courseCategoryDropDown, 'Software Development');
-        await this.SelectCustomDropdown(this.courseNameDropDown, 'Frontend');
+    async fillFirstPage(data: CourseData) {
+
+        await this.SelectCustomDropdown(this.courseClientDropDown,data.courseClient);
+        await this.SelectCustomDropdown(this.serviceTypeDropDown,data.serviceType);
+        await this.SelectCustomDropdown(this.serviceModelDropDown,data.serviceModel);
+        await this.SelectCustomDropdown(this.courseCategoryDropDown,data.courseCategory);
+        await this.SelectCustomDropdown(this.courseNameDropDown,data.courseName);
     }
 
-    async fillSecondPage(){
-        await this.SelectCustomDropdown(this.courseLevelDropDown,'Beginner')
-        await this.UploadFile(this.uploadphotoButton,'Playwright_Automation_Project\\src\\test\\test-data\\logo.png')
+    async fillSecondPage(data: CourseData){
+        await this.SelectCustomDropdown(this.courseLevelDropDown,data.courseLevel);
+        // await this.UploadFile(this.uploadphotoButton,'Playwright_Automation_Project\\src\\test\\test-data\\logo.png')
     }
 
     // sort course actions
@@ -180,5 +185,7 @@ export class CourseManagementPage extends BasePage{
         const list = locator.allTextContents() 
         return list
     }
+
+    
     
 }

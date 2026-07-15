@@ -1,5 +1,6 @@
 import {Page, Locator } from '@playwright/test';
 import { BasePage } from "./BasePage";
+import { TIMEOUTS } from '../constants/timeouts';
 
 export class AddcoursePage extends BasePage{
     readonly addbtn:Locator;
@@ -25,6 +26,11 @@ export class AddcoursePage extends BasePage{
     readonly createBtn:Locator;
     readonly savecourse:Locator;
     readonly notif:Locator;
+    readonly clientError: Locator;
+    readonly typeError: Locator;
+    readonly modelError: Locator;
+    readonly categoryError: Locator;
+    readonly nameError: Locator;
     constructor(page:Page){
         super(page);
         this.addbtn = page.getByRole('button', {name:'Add Course'});
@@ -50,6 +56,11 @@ export class AddcoursePage extends BasePage{
         this.createBtn =page.getByRole('button', {name:'Preview & Create'});
         this.savecourse = page.getByText("Preview & Create");
         this.notif = page.getByText("Course created successfully");
+        this.clientError = page.getByText("Course Client is required");
+        this.typeError = page.getByText("Course Type is required");
+        this.modelError = page.getByText("Course Model is required");
+        this.categoryError = page.getByText("Category is required");
+        this.nameError = page.getByText("Course Name is required");
     }
     async clickAddBtn(){
         await this.Click(this.addbtn);
@@ -92,6 +103,17 @@ export class AddcoursePage extends BasePage{
         await this.Click(this.savecourse);
     }
     async VerifyCourseCreated() {
-       await this.WaitForVisible(this.notif, 10000);
+       await this.WaitForVisible(this.notif, TIMEOUTS.MEDIUM);
+    }
+    async ClickNextWithoutData() {
+       await this.Click(this.nxtBtn);
+    }
+
+    async VerifyMandatoryFieldValidation() {
+        await this.WaitForVisible(this.clientError, TIMEOUTS.SHORT);
+        await this.WaitForVisible(this.typeError, TIMEOUTS.SHORT);
+        await this.WaitForVisible(this.modelError, TIMEOUTS.SHORT);
+        await this.WaitForVisible(this.categoryError, TIMEOUTS.SHORT);
+        await this.WaitForVisible(this.nameError, TIMEOUTS.SHORT);
     }
 }

@@ -55,4 +55,10 @@ export class serviceModelPage extends BasePage{
     async msg(){
         return await this.GetText(this.confirmMsg)
     }
+
+    async searchService(string:string){
+        await this.Fill(this.search,string)
+    }
+
+    
 }

@@ -1,5 +1,5 @@
 @Jerishwin
-Feature: Sorting Courses
+Feature: Jerishwin 08/07/2026 Sorting Courses
 
     Background: 
         Given the user is on the login page

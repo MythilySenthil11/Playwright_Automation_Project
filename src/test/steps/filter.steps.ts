@@ -5,9 +5,8 @@ import filterData from "../test-data/filterData.json";
 import { logger } from "../utilities/logger";
 
 When('I navigate to the Course Management page', async function (this: CustomWorld) {
-  logger.info("Navigating to Course Management page");
+  // Write code here that turns the phrase above into concrete actions
   await this.adp.clickcoursemanagementlink();
-  logger.info("Successfully navigated to Course Management page");
 });
 
 When('I click the Filter button', async function (this: CustomWorld) {
