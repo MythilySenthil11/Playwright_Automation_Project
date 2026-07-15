@@ -13,6 +13,7 @@ export class admindashboardpage extends BasePage{
     readonly leftArrow:Locator
     readonly dynRec: Locator
     readonly AdmRec: Locator
+    readonly questionBank:Locator
     
     constructor(page:Page){
         super(page)
@@ -26,6 +27,7 @@ export class admindashboardpage extends BasePage{
         this.leftArrow = this.page.locator("(//button[@data-slot='button'])[6]");
         this.dynRec = this.page.locator("//div[@class='mt-2']/div[1]/child::*[1]/child::*[2]");
         this.AdmRec = this.page.locator("//div[@class='mb-4']/div[2]/div[2]/div/span");
+        this.questionBank = this.page.locator("(//div[@class='p-1.5'])[3]");
     }
     async profileclick(){
         await this.Click(this.profileavatar)
@@ -66,5 +68,8 @@ export class admindashboardpage extends BasePage{
 
     async PreviousActivity(){
         return await this.GetText(this.AdmRec);
+    }
+    async ClickQuestionBank(){
+        await this.Click(this.questionBank);
     }
 }
