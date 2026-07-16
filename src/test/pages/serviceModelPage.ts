@@ -12,6 +12,7 @@ export class serviceModelPage extends BasePage{
     readonly deleteButton:Locator
     readonly innerDeleteButton:Locator
     readonly confirmMsg:Locator
+    readonly successMessage:Locator
 
     constructor(page:Page){
         super(page)
@@ -20,6 +21,7 @@ export class serviceModelPage extends BasePage{
         this.serviceName = this.page.getByRole('textbox', { name: 'e.g., \'Software Development\'' })
         this.description = this.page.getByRole('textbox', { name: 'Describe the service...' })
         this.createServiceButton = this.page.getByRole('button', { name: 'Create Service' })
+        this.successMessage = this.page.getByRole("alert").filter({ hasText: "Service created successfully" });
         this.search = this.page.getByRole('textbox', { name: 'Search services...' })
         this.searchResult = this.page.locator("//tr[1]/td[2]/child::*/child::*[2]/child::*[1]")
         this.deleteButton = this.page.getByRole('button', { name: 'Delete Service' }).first()
