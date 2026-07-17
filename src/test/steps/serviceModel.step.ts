@@ -38,5 +38,5 @@ When(`clicks delete on the confirmation`, async function (this:CustomWorld){
 });
 
 Then(`the service is deleted`, async function (this:CustomWorld) {
-    await expect(this.smp.msg()).toContain("Service deleted successfully")
+    await expect(this.smp.confirmMsg).toContainText("Service deleted successfully")
 });
