@@ -26,7 +26,7 @@ export class serviceModelPage extends BasePage{
         this.searchResult = this.page.locator("//tr[1]/td[2]/child::*/child::*[2]/child::*[1]")
         this.deleteButton = this.page.getByRole('button', { name: 'Delete Service' }).first()
         this.innerDeleteButton = this.page.getByRole('button', { name: 'Delete', exact: true })
-        this.confirmMsg = this.page.getByRole('cell', { name: 'No services found matching' })
+        this.confirmMsg = this.page.getByRole("alert").filter({ hasText: "Service deleted successfully" });
     }
 
     async clickAddService(){
