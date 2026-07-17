@@ -54,7 +54,7 @@ export class CourseManagementPage extends BasePage{
         this.addCourseStructureButton=page.locator("(//span[text()='Add Course Structure'])[1]")
         //search
         this.searchbar = page.locator("//input[@data-slot='input']");
-        this.table = page.locator("//tbody/tr[1]/td[3]");
+        this.table = page.locator("//tbody/tr[2]/td[3]/span/button/span[1]");
         this.noUser = page.getByText('No users found');
         //pagination
         this.nxtbtn =page.getByRole('button', {name:'Next'});
