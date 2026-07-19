@@ -1,5 +1,6 @@
 import { Given, When, Then } from '@cucumber/cucumber';
 import { CustomWorld } from '../world/CustomWorld';
+import { expect } from '@playwright/test';
 
 
 When('the user clicks on the Question Bank option from the Admin Dashboard page', async function (this: CustomWorld) {
@@ -76,4 +77,34 @@ When('the user enters the category Data Structures', async function (this: Custo
 Then('the question required validation message should be displayed', async function (this: CustomWorld) {
   // Write code here that turns the phrase above into concrete actions
   await this.qbp.questionRequiredError.waitFor({state:"visible",timeout:30000});
+});
+
+When('the user selects the Programming Question option', async function (this:CustomWorld) {
+  // Write code here that turns the phrase above into concrete actions
+  await this.qbp.clickProgrammingQuestion();
+});
+
+When('the user enters the program title', async function (this:CustomWorld) {
+  // Write code here that turns the phrase above into concrete actions
+  await this.qbp.setQuestionBankTile("Java")
+});
+
+When('the user enters the question description', async function (this:CustomWorld) {
+  // Write code here that turns the phrase above into concrete actions
+  await this.qbp.setDescription("Odd or even Program")
+});
+
+When('the user enters the test case and expected outcome', async function (this:CustomWorld) {
+  // Write code here that turns the phrase above into concrete actions
+  await this.qbp.setInput("3");
+  await this.qbp.setOutput("Odd")
+});
+
+When('the user clicks the Save Question Button', async function (this:CustomWorld) {
+  // Write code here that turns the phrase above into concrete actions
+  await this.qbp.clickCreateQuestion();
+});
+
+Then('the question should be created successfully', async function (this: CustomWorld) {
+  await expect(this.qbp.questionCreatedSuccessfully).toBeVisible();
 });

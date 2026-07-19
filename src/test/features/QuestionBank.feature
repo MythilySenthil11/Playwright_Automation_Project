@@ -1,4 +1,4 @@
-Feature: Question Bank Management
+Feature: TamilKumar12-07-2026 Question Bank Management updated 19=07=2026
 
     Background:
         Given the user is on the login page
@@ -35,3 +35,12 @@ Feature: Question Bank Management
         And the user clicks the Done button
         And the user clicks the Save Question button
         Then the question required validation message should be displayed
+    @Tamil @questionbank
+    Scenario: Verify user can create a Programming question
+        When the user clicks the Create Question Bank dropdown
+        And the user selects the Programming Question option
+        And the user enters the program title
+        And the user enters the question description
+        And the user enters the test case and expected outcome
+        And the user clicks the Save Question Button
+        Then the question should be created successfully
