@@ -1,6 +1,7 @@
 import { Locator, Page } from '@playwright/test';
 import { logger } from '../utilities/logger';
 import { getEnv } from '../utilities/envReader';
+import { TIMEOUTS } from "../constants/timeouts";
 
 export class BasePage {
 
@@ -194,6 +195,10 @@ export class BasePage {
             logger.error(`Failed to press Enter: ${error}`);
             throw error;
         }
+    }
+
+    async Wait(timeout: number = TIMEOUTS.SHORT) {
+        await this.page.waitForTimeout(timeout);
     }
 
 }

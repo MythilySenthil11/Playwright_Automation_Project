@@ -54,7 +54,7 @@ export class CourseManagementPage extends BasePage{
         this.addCourseStructureButton=page.locator("(//span[text()='Add Course Structure'])[1]")
         //search
         this.searchbar = page.locator("//input[@data-slot='input']");
-        this.table = page.locator("//tbody/tr[1]/td[3]");
+        this.table = page.locator("//tbody/tr[2]/td[3]/span/button/span[1]");
         this.noUser = page.getByText('No users found');
         //pagination
         this.nxtbtn =page.getByRole('button', {name:'Next'});
@@ -72,7 +72,7 @@ export class CourseManagementPage extends BasePage{
         this.uploadphotoButton = this.page.locator('div').filter({ hasText: /^Choose Image$/ })
         this.nextButton = this.page.getByRole('button', { name: 'Next' })
         this.saveLayoutButton = this.page.getByRole('button', { name: 'Save Course Layout' })
-        this.tostMsg = this.page.getByText("Course updated successfully!")
+        this.tostMsg = this.page.getByRole("alert").filter({ hasText: "Course updated successfully!" });
         this.previewButton =this.page.getByRole('button', { name: 'Preview & Update' })
         this.dateSort = this.page.locator("//th[1]/span")
         this.clientSort = this.page.locator("//th[2]/span")

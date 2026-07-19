@@ -2,6 +2,7 @@ import { When, Then } from "@cucumber/cucumber";
 import { expect } from "@playwright/test";
 import { CustomWorld } from "../world/CustomWorld";
 import { TIMEOUTS } from "../constants/timeouts";
+import { da } from "@faker-js/faker";
 
 interface AddCourse {
     client:string;
@@ -40,8 +41,13 @@ When('User verifies the course hierarchy',  async function (this: CustomWorld) {
   await this.addPage.SelectHierarchy();
 });
 
-When('User selects the pedagogy',  async function (this: CustomWorld) {
-  await this.addPage.pedagogy();
+When('User selects the pedagogy',  async function (this: CustomWorld,dataTable) {
+  const data = dataTable.hashes()[0];
+  await this.addPage.pedagogy(
+    data.ido,
+    data.wedo,
+    data.youdo
+  );
 });
 
 When('User enables the resource type',  async function (this: CustomWorld) {

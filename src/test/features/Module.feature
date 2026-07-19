@@ -29,8 +29,8 @@ Feature: TamilKumar 08-07-2026 Add course structure
     When the user clicks the Add Course Structure button on the Course Management page
     And the user clicks the Similar Course button
     And the user selects the course category and the user searches for the course to duplicate
-      | category       | testing |
-      | search_keyword | C       |
+      | category       | JAVA |
+      | search_keyword | JavaScript      |
     And the user selects all modules and clicks the Duplicate Structure button
     And the user accepts the duplicate confirmation alert
     Then the user should see the message Operation completed successfully
