@@ -17,6 +17,13 @@ export class QuestionBankPage extends BasePage {
     readonly questionSaved:Locator;
     readonly mcqQuestion:Locator
     readonly questionRequiredError:Locator;
+    readonly questionBankTitle:Locator
+    readonly questionDescription:Locator
+    readonly input:Locator
+    readonly output:Locator
+    readonly createQuestionButton:Locator
+    readonly programmingQuestion:Locator
+    readonly questionCreatedSuccessfully:Locator
     constructor(page: Page) {
         super(page)
         this.page = page
@@ -34,6 +41,13 @@ export class QuestionBankPage extends BasePage {
         this.questionSaved=this.page.locator("//div[@class='px-3 py-2 rounded-lg text-sm font-medium bg-green-100 text-green-800 dark:bg-green-900/50 dark:text-green-300']")
         this.mcqQuestion=this.page.locator("//div[@contenteditable='true']")
         this.questionRequiredError=this.page.locator("//div[@class='mt-2 text-red-600 dark:text-red-400 text-xs flex items-center gap-1.5 bg-red-50 dark:bg-red-900/20 px-3 py-1.5 rounded-xl']")
+        this.questionBankTitle=this.page.locator("//input[@placeholder='Type your problem title here...']")
+        this.questionDescription=this.page.locator("//textarea[@placeholder='Describe the problem clearly. Include input/output format and examples.']")
+        this.input=this.page.locator("//textarea[@placeholder='stdin...']")
+        this.output=this.page.locator("//textarea[@placeholder='expected stdout...']")
+        this.createQuestionButton=this.page.locator("//button[contains(text(),'✓ Create Question')]")
+        this.programmingQuestion=this.page.locator("//button[normalize-space()='Programming Question']")
+        this.questionCreatedSuccessfully=this.page.locator("//div[@class='px-3 py-2 rounded-lg text-sm font-medium bg-green-100 text-green-800 dark:bg-green-900/50 dark:text-green-300']")
     }
     async clickCreateQuestionBankDropdown() {
         await this.Click(this.createQuestionBankDropdown);
@@ -73,5 +87,23 @@ export class QuestionBankPage extends BasePage {
     }
     async fillMCQQuestion(question: string) {
         await this.Fill(this.mcqQuestion, question);
+    }
+    async setQuestionBankTile(title:string){
+        await this.Fill(this.questionBankTitle,title)
+    }
+    async setDescription(description:string){
+        await this.Fill(this.questionDescription,description)
+    }
+    async setInput(input:string){
+        await this.Fill(this.input,input)
+    }
+    async setOutput(op:string){
+        await this.Fill(this.output,op)
+    }
+    async clickCreateQuestion(){
+        await this.Click(this.createQuestionButton)
+    }
+    async clickProgrammingQuestion(){
+        await this.Click(this.programmingQuestion)
     }
 }
