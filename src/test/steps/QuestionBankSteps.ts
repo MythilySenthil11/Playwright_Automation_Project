@@ -108,3 +108,14 @@ When('the user clicks the Save Question Button', async function (this:CustomWorl
 Then('the question should be created successfully', async function (this: CustomWorld) {
   await expect(this.qbp.questionCreatedSuccessfully).toBeVisible();
 });
+When('the user enters the {string} in the search bar', async function (this: CustomWorld, questionTitle: string) {
+  // Write code here that turns the phrase above into concrete actions
+  await this.qbp.fillSearchBar(questionTitle);
+});
+
+
+
+Then('the question should be displayed in the search results {string}', async function (this: CustomWorld, questionTitle: string) {
+  // Write code here that turns the phrase above into concrete actions
+  await expect(this.qbp.searchResult).toHaveText(questionTitle);
+});

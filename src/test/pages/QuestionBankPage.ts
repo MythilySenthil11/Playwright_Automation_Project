@@ -24,6 +24,8 @@ export class QuestionBankPage extends BasePage {
     readonly createQuestionButton:Locator
     readonly programmingQuestion:Locator
     readonly questionCreatedSuccessfully:Locator
+    readonly searchBar:Locator
+    readonly searchResult:Locator
     constructor(page: Page) {
         super(page)
         this.page = page
@@ -48,6 +50,8 @@ export class QuestionBankPage extends BasePage {
         this.createQuestionButton=this.page.locator("//button[contains(text(),'✓ Create Question')]")
         this.programmingQuestion=this.page.locator("//button[normalize-space()='Programming Question']")
         this.questionCreatedSuccessfully=this.page.locator("//div[@class='px-3 py-2 rounded-lg text-sm font-medium bg-green-100 text-green-800 dark:bg-green-900/50 dark:text-green-300']")
+        this.searchBar=this.page.locator("//input[@placeholder='Search questions...']")
+        this.searchResult=this.page.locator("//h4")
     }
     async clickCreateQuestionBankDropdown() {
         await this.Click(this.createQuestionBankDropdown);
@@ -105,5 +109,14 @@ export class QuestionBankPage extends BasePage {
     }
     async clickProgrammingQuestion(){
         await this.Click(this.programmingQuestion)
+    }
+    async getQuestionCreatedSuccessfullyText() {
+        return await this.GetText(this.questionCreatedSuccessfully);
+    }
+    async fillSearchBar(searchText: string) {
+        await this.Fill(this.searchBar, searchText);
+    }
+    async getSearchResultText() {
+        return await this.GetText(this.searchResult);
     }
 }

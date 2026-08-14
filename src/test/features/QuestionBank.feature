@@ -44,3 +44,11 @@ Feature: TamilKumar12-07-2026 Question Bank Management updated 19=07=2026
         And the user enters the test case and expected outcome
         And the user clicks the Save Question Button
         Then the question should be created successfully
+    @Tamil @SearchQuestion @questionbank
+    Scenario Outline: Verify user can search a question by question title
+        When the user enters the "<question title>" in the search bar
+        Then the question should be displayed in the search results "<question title>"
+        Examples:
+            | question title |
+            | Java |
+            | Debounce Function |
