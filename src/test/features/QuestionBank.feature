@@ -52,3 +52,4 @@ Feature: TamilKumar12-07-2026 Question Bank Management updated 19=07=2026
             | question title |
             | Java |
             | Debounce Function |
+            | Climbing Stairs |
