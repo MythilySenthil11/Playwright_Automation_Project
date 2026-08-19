@@ -16,26 +16,20 @@ module.exports = {
 
         order: "defined",
 
-        order: "defined",
-
         formatOptions: {
             snippetInterface: "async-await",
-            resultsDir: "allure-results"
+            resultsDir: "allure-results" 
         },
 
         publishQuiet: true,
         dryRun: false,
 
-
         format: [
-            "progress",
-            "allure-cucumberjs/reporter",
-            "json:reports/cucumber-report.json",
-            "html:reports/cucumber-report.html",
-            "message:reports/messages.ndjson",
-            "rerun:rerun/@rerun.txt"
-        ],
-
+    "allure-cucumberjs/reporter",
+    "json:reports/cucumber-report.json",
+    "html:reports/cucumber-report.html",
+    "rerun:rerun/@rerun.txt"
+    ],
         parallel: 1
     },
 
@@ -53,15 +47,7 @@ module.exports = {
 
         order: "defined",
 
-        paths: [
-            "@rerun.txt"
-        ],
-
-        order: "defined",
-
         formatOptions: {
-            snippetInterface: "async-await",
-            resultsDir: "allure-results"
             snippetInterface: "async-await",
             resultsDir: "allure-results"
         },
@@ -70,14 +56,11 @@ module.exports = {
         dryRun: false,
 
         format: [
-            "progress",
-            "allure-cucumberjs/reporter",
-            "json:reports/cucumber-report.json",
-            "html:reports/cucumber-report.html",
-            "message:reports/messages.ndjson",
-            "rerun:rerun/@rerun.txt"
-        ],
-
+    "allure-cucumberjs/reporter",
+    "json:reports/cucumber-report.json",
+    "html:reports/cucumber-report.html",
+    "rerun:rerun/@rerun.txt"
+    ],
         parallel: 1
     }
 };
