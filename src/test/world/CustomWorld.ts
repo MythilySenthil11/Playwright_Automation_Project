@@ -25,6 +25,7 @@ export class CustomWorld extends World{
     courseCategoryPage!:CourseCategoryPage;
     cmp!:CourseManagementPage;
     pdp!:pedagogy_dynamic_page;
+    selectedPedagogyElementName?: string;
     acsp!:AddCourseStructurePage
     smp!: serviceModelPage
 }
