@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  
   "scripts": {
     "test": "cross-env ENV=qa cucumber-js",
     "test:tamil": "cross-env ENV=qa cucumber-js --tags \"@Tamil\"",
@@ -23,7 +22,7 @@
   "type": "commonjs",
   "devDependencies": {
     "@cucumber/cucumber": "^13.0.0",
-    "@playwright/test": "^1.61.1",
+    "@playwright/test": "^1.62.1",
     "@types/node": "^26.1.0",
     "allure-commandline": "^2.43.0",
     "allure-cucumberjs": "^3.10.2",

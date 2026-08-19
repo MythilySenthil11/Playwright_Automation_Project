@@ -17,8 +17,8 @@ Feature: Mythily_07/07/2026_Add_Course_Tests
             | Beginner |
         And User verifies the course hierarchy
         And User selects the pedagogy
-            | ido          | wedo    | youdo      |
-            | Live Classes | cypress | Assessment |
+            | ido          | wedo       | youdo      |
+            | Live Classes | Assignment | Assesment  |
         And User enables the resource type
         And User verifies the skill selection
         And User clicks the Preview & Create button
