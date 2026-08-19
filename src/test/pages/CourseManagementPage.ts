@@ -2,7 +2,8 @@ import { logger } from './../utilities/logger';
 import { Locator, Page } from "@playwright/test";
 import { BasePage } from "./BasePage";
 import { TIMEOUTS } from '../constants/timeouts';
-import {expect} from '@playwright/test'
+import { CourseData } from "../types/editCourse.types";
+
 export class CourseManagementPage extends BasePage{
     readonly page:Page;
     readonly filterButton:Locator;      
@@ -106,8 +107,8 @@ export class CourseManagementPage extends BasePage{
     //search
     async EnterSearch(searchbar: string) {
            await this.Fill(this.searchbar, searchbar);
-           await this.page.waitForTimeout(1000);
-        }
+           await this.page.waitForTimeout(TIMEOUTS.MEDIUM);
+    }
     async GetSearchResult() {
         const text = await this.GetText(this.table);
         console.log("Row Text:", text);
@@ -153,17 +154,18 @@ export class CourseManagementPage extends BasePage{
         await this.Click(this.previewButton)
     }
 
-    async fillFirstPage(){
-        await this.SelectCustomDropdown(this.courseClientDropDown, 'jamocha');
-        await this.SelectCustomDropdown(this.serviceTypeDropDown, 'Automation Testing');
-        await this.SelectCustomDropdown(this.serviceModelDropDown, 'Automation');
-        await this.SelectCustomDropdown(this.courseCategoryDropDown, 'Software Development');
-        await this.SelectCustomDropdown(this.courseNameDropDown, 'Frontend');
+    async fillFirstPage(data: CourseData) {
+
+        await this.SelectCustomDropdown(this.courseClientDropDown,data.courseClient);
+        await this.SelectCustomDropdown(this.serviceTypeDropDown,data.serviceType);
+        await this.SelectCustomDropdown(this.serviceModelDropDown,data.serviceModel);
+        await this.SelectCustomDropdown(this.courseCategoryDropDown,data.courseCategory);
+        await this.SelectCustomDropdown(this.courseNameDropDown,data.courseName);
     }
 
-    async fillSecondPage(){
-        await this.SelectCustomDropdown(this.courseLevelDropDown,'Beginner')
-        await this.UploadFile(this.uploadphotoButton,'Playwright_Automation_Project\\src\\test\\test-data\\logo.png')
+    async fillSecondPage(data: CourseData){
+        await this.SelectCustomDropdown(this.courseLevelDropDown,data.courseLevel);
+        // await this.UploadFile(this.uploadphotoButton,'Playwright_Automation_Project\\src\\test\\test-data\\logo.png')
     }
 
     // sort course actions

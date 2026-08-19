@@ -15,3 +15,10 @@ Feature: Jerishwin 09/07/2026 service Model
         And clicks the create service button
         Then the user searches and viewes the service
 
+    @Jerishwin
+    Scenario: Deleting Service
+        And the users searches for the service
+        And clicks the delete button 
+        And clicks delete on the confirmation
+        Then the service is deleted
+
