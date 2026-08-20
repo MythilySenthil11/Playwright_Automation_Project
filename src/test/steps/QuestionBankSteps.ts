@@ -119,3 +119,24 @@ Then('the question should be displayed in the search results {string}', async fu
   // Write code here that turns the phrase above into concrete actions
   await expect(this.qbp.searchResult).toHaveText(questionTitle);
 });
+
+When('the user clicks the edit button', async function (this: CustomWorld) {
+  // Write code here that turns the phrase above into concrete actions
+  await this.qbp.clickEditButton();
+});
+When('the user clicks the Update Question button', async function (this: CustomWorld) {
+  // Write code here that turns the phrase above into concrete actions
+  await this.qbp.clickUpdateQuestionButton();
+});
+
+
+
+When('the user updates the {string}', async function (this: CustomWorld, updatedTitle: string) {
+  // Write code here that turns the phrase above into concrete actions
+  await this.qbp.setQuestionTitle(updatedTitle);
+});
+
+Then('the question should be updated successfully', async function (this: CustomWorld) {
+  // Write code here that turns the phrase above into concrete actions
+  await expect(this.qbp.updatedSuccessfully).toBeVisible();
+});

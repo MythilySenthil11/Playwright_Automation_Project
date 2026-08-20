@@ -49,6 +49,17 @@ Feature: TamilKumar12-07-2026 Question Bank Management updated 19=07=2026
         When the user enters the "<question title>" in the search bar
         Then the question should be displayed in the search results "<question title>"
         Examples:
-            | question title |
-            | Java |
+            | question title    |
+            | Java              |
             | Debounce Function |
+    @Tamil
+    Scenario Outline: Verify user can edit a question
+        When the user enters the "<question title>" in the search bar
+        And the user clicks the edit button
+        And the user updates the "<updated title>"
+        And the user clicks the Update Question button
+        Then the question should be updated successfully
+        Examples:
+            | question title | updated title |
+            | Java           | Python        |
+            | Python         | Java          |
