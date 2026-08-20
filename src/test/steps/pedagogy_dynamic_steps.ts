@@ -23,6 +23,10 @@ When('the user enters the element details', async function (this: CustomWorld)  
     await this.pdp.enterElementName(data.newelement);
 });
 
+When('the user enters an existing element name', async function (this: CustomWorld) {
+    await this.pdp.enterElementName(data.newelement);
+});
+
 When('the user clicks on the Create Element button', async function (this: CustomWorld)  {
     await this.pdp.clickCreateElementButton();
 });
@@ -41,6 +45,17 @@ Then('the user should be able to see the created element in the list of pedagogy
     }
     if (!isElementFound) {
         throw new Error(`Scenario Failed: Element 'kps' was not found anywhere in the list.`);
+    }
+});
+
+Then('the user should see a duplicate element validation message', async function (this: CustomWorld) {
+    const validationMessage = this.pdp.getDuplicateElementValidationMessage();
+
+    if (!(await validationMessage.isVisible().catch(() => false))) {
+        throw new Error(
+            `Duplicate element validation message was not displayed for '${data.newelement}'. ` +
+            'The application allowed the duplicate element to be created.'
+        );
     }
 });
 
@@ -93,16 +108,24 @@ When("the user Clicks on the delete button", async function (this: CustomWorld) 
 
     const elementsList = await this.pdp.getElementNamesFromPage();
 
+    const index = elementsList.length - 1;
+    this.selectedPedagogyElementName = elementsList[index]?.trim();
 
- const index = elementsList.length - 1;
+    if (!this.selectedPedagogyElementName) {
+        throw new Error('No pedagogy element was found before clicking the delete button.');
+    }
 
-await this.pdp.clickDeletesvgButton(index);
+    await this.pdp.clickDeletesvgButton(index);
 
 
 });
 
 When("the user clicks on the delete confirmation button", async function (this: CustomWorld) {
      await this.pdp.clickDeleteConfirmationButton()
+});
+
+When("the user clicks on the cancel confirmation button", async function (this: CustomWorld) {
+    await this.pdp.clickCancelDeleteConfirmationButton();
 });
 
 Then(
@@ -117,6 +140,20 @@ Then(
         console.log(`Success: Element '${data.editdata}' was deleted successfully`);
     }
 );
+
+Then("the user should be able to see the element in the list of pedagogy elements", async function (this: CustomWorld) {
+    const elementsList = await this.pdp.getElementNamesFromPage();
+    const expectedElementName = this.selectedPedagogyElementName;
+
+    if (!expectedElementName) {
+        throw new Error('The deleted element name was not captured before the cancel action.');
+    }
+
+    await expect(
+        elementsList,
+        `Element '${expectedElementName}' should remain in the pedagogy elements list after deletion is cancelled`
+    ).toContain(expectedElementName);
+});
 let expectedResult = "";
 
 When("the user enters the {string} in pedagogy activities search bar", async function (this: CustomWorld, dataType: string) {
