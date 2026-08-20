@@ -38,3 +38,8 @@ Feature: Subathra_07-07-2026_Course_Category_Functionality
                 And the user clicks the delete button in the confirmation pop up
                 And the user searches the deleted category
                 Then the user should see a not found message
+
+        Scenario: Create category without entering mandatory fields
+                When the user clicks the Add Category button
+                And the user clicks Create category button
+                Then the user should see validation messages for the mandatory fields
