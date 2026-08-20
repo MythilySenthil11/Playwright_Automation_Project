@@ -24,6 +24,12 @@ export class QuestionBankPage extends BasePage {
     readonly createQuestionButton:Locator
     readonly programmingQuestion:Locator
     readonly questionCreatedSuccessfully:Locator
+    readonly searchBar:Locator
+    readonly searchResult:Locator
+    readonly editButton:Locator
+    readonly questionTitle:Locator
+    readonly updateQuestionButton:Locator
+    readonly updatedSuccessfully:Locator
     constructor(page: Page) {
         super(page)
         this.page = page
@@ -48,6 +54,12 @@ export class QuestionBankPage extends BasePage {
         this.createQuestionButton=this.page.locator("//button[contains(text(),'✓ Create Question')]")
         this.programmingQuestion=this.page.locator("//button[normalize-space()='Programming Question']")
         this.questionCreatedSuccessfully=this.page.locator("//div[@class='px-3 py-2 rounded-lg text-sm font-medium bg-green-100 text-green-800 dark:bg-green-900/50 dark:text-green-300']")
+        this.searchBar=this.page.locator("//input[@placeholder='Search questions...']")
+        this.searchResult=this.page.locator("//h4")
+        this.editButton=this.page.locator("//button[contains(@class,'p-1 text-gray-400 hover:text-blue-600 dark:text-gray-500 dark:hover:text-blue-400 rounded')]").first();
+        this.questionTitle=this.page.locator("//input[@placeholder='Type your problem title here...']")
+        this.updateQuestionButton=this.page.locator("//button[contains(text(),'✓ Update Question')]")
+        this.updatedSuccessfully=this.page.locator("//div[@class='px-3 py-2 rounded-lg text-sm font-medium bg-green-100 text-green-800 dark:bg-green-900/50 dark:text-green-300']")
     }
     async clickCreateQuestionBankDropdown() {
         await this.Click(this.createQuestionBankDropdown);
@@ -105,5 +117,27 @@ export class QuestionBankPage extends BasePage {
     }
     async clickProgrammingQuestion(){
         await this.Click(this.programmingQuestion)
+    }
+    async getQuestionCreatedSuccessfullyText() {
+        return await this.GetText(this.questionCreatedSuccessfully);
+    }
+    async fillSearchBar(searchText: string) {
+        await this.Fill(this.searchBar, searchText);
+    }
+    async getSearchResultText() {
+        return await this.GetText(this.searchResult);
+    }
+    async clickEditButton() {
+        await this.Click(this.editButton);
+    }
+    async setQuestionTitle(title: string) {
+        await this.Clear(this.questionTitle);
+        await this.Fill(this.questionTitle, title);
+    }
+    async clickUpdateQuestionButton() {
+        await this.Click(this.updateQuestionButton);
+    }
+    async getUpdatedSuccessfullyText() {
+        return await this.GetText(this.updatedSuccessfully);
     }
 }

@@ -1,4 +1,4 @@
-Feature: TamilKumar12-07-2026 Question Bank Management updated 19=07=2026
+Feature: TamilKumar12-07-2026 Question Bank Management updated 20=07=2026
 
     Background:
         Given the user is on the login page
@@ -44,3 +44,22 @@ Feature: TamilKumar12-07-2026 Question Bank Management updated 19=07=2026
         And the user enters the test case and expected outcome
         And the user clicks the Save Question Button
         Then the question should be created successfully
+    @Tamil @SearchQuestion @questionbank
+    Scenario Outline: Verify user can search a question by question title
+        When the user enters the "<question title>" in the search bar
+        Then the question should be displayed in the search results "<question title>"
+        Examples:
+            | question title    |
+            | Java              |
+            | Debounce Function |
+    @Tamil
+    Scenario Outline: Verify user can edit a question
+        When the user enters the "<question title>" in the search bar
+        And the user clicks the edit button
+        And the user updates the "<updated title>"
+        And the user clicks the Update Question button
+        Then the question should be updated successfully
+        Examples:
+            | question title | updated title |
+            | Java           | Python        |
+            | Python         | Java          |
