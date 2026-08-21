@@ -1,8 +1,15 @@
+import { CourseCategoryPage } from './../pages/CourseCategoryPage';
 import { Given, When, Then, DataTable } from '@cucumber/cucumber';
 import { expect } from '@playwright/test';
 import { CustomWorld } from '../world/CustomWorld';
 import { Create_details_Edit, Update_details,Create_details_Delete } from '../test-data/categoryData.json';
 import { TIMEOUTS } from '../constants/timeouts';
+import { ExcelReader } from '../utilities/ExcelReader';
+import { CategorySearchData } from '../types/courseCategorySearchData.type';
+
+const searchData = ExcelReader.read<CategorySearchData>('categorySearchData.xlsx','Sheet1');
+
+const validcategoryName = searchData[0]!.CategoryName;
 
 Given('the user launches the application', async function (this: CustomWorld) {
 
@@ -140,5 +147,27 @@ Then('the user should see validation messages for the mandatory fields', async f
     const message = await this.courseCategoryPage.pleaseFill.evaluate(element => (element as any).validationMessage);
     console.log('Validation message:', message);
     expect(message).toBe('Please fill out this field.');
+
+});
+
+When('the user enters an existing category name in the search tab', async function (this: CustomWorld) {
+
+    await this.courseCategoryPage.SearchCategory(validcategoryName);
+
+});
+
+Then('the user should see the searched category', async function (this: CustomWorld) {
+   
+    await this.courseCategoryPage.validSearch(validcategoryName);
+
+});
+
+When('the user enters a non-existing category name in the search tab', async function (this: CustomWorld) {
+
+    const searchData = ExcelReader.read<CategorySearchData>('categorySearchData.xlsx','Sheet1');
+
+    const categoryName = searchData[1]!.CategoryName;
+
+    await this.courseCategoryPage.SearchCategory(categoryName);
 
 });
