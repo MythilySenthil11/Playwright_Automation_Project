@@ -18,6 +18,7 @@ export class CourseCategoryPage extends BasePage{
     readonly noUsersMessage:Locator;
     readonly confirmDelete:Locator;
     readonly closeButton:Locator;
+    readonly pleaseFill:Locator;
 
     constructor(page:Page){
         super(page);
@@ -35,6 +36,7 @@ export class CourseCategoryPage extends BasePage{
         this.confirmDelete=this.page.locator("//div[@class='mt-6 grid grid-cols-2 gap-3']/child::button[2]");
         this.noUsersMessage=this.page.locator("//p[text()='No users found']");
         this.closeButton = this.page.locator("//div[@data-slot='dialog-footer']/child::button");
+        this.pleaseFill=this.page.getByPlaceholder('Enter category name');
     }
 
     async ClickAddCategory(){
