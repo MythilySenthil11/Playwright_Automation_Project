@@ -134,12 +134,11 @@ When('the user clicks the close button',async function(this:CustomWorld){
     await this.courseCategoryPage.ClickCloseButton();
 
 });
+
 Then('the user should see validation messages for the mandatory fields', async function (this: CustomWorld) {
-  // Write code here that turns the phrase above into concrete actions
-const message = await this.courseCategoryPage.pleaseFill.evaluate(
-    element => (element as any).validationMessage
-);
-console.log('Validation message:', message);
-expect(message).toBe('Please fill out this field.');
+  
+    const message = await this.courseCategoryPage.pleaseFill.evaluate(element => (element as any).validationMessage);
+    console.log('Validation message:', message);
+    expect(message).toBe('Please fill out this field.');
 
 });

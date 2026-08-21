@@ -1,8 +1,5 @@
-import { logger } from './../utilities/logger';
-import { Locator, Page } from "@playwright/test";
+import { Locator, Page,expect } from "@playwright/test";
 import { BasePage } from "./BasePage";
-import { TIMEOUTS } from '../constants/timeouts';
-import {expect} from '@playwright/test'
 
 export class AddCourseStructurePage extends BasePage{
     readonly page:Page
@@ -67,6 +64,7 @@ export class AddCourseStructurePage extends BasePage{
         this.normalizeSpace=page.locator("//div[@class='fixed inset-0 z-20']");
         this.printButton = page.locator("//div[@class='flex items-center gap-1 sm:gap-2 flex-wrap'][2]/child::button");
         this.excelOption = page.locator("//div[@class='flex gap-2']/child::button[2]");
+        
     }
     async clickModuleButton(){
         await this.Click(this.moduleButton)

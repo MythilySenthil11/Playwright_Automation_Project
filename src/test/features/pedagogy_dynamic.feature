@@ -42,3 +42,18 @@ Description: This feature file is used to verify the Pedagogy Dynamic Field Mana
             |I DO     |
             |We DO    |
             |You DO   |
+    
+  @pedagogy1_negative
+  Scenario: Verify user cannot create a duplicate pedagogy element
+    And the user clicks on the Pedagogy view elements button
+    And the user clicks on the Add Element button
+    And the user enters an existing element name
+    And the user clicks on the Create Element button
+    Then the user should see a duplicate element validation message  
+
+  @pedagogy3_negative
+  Scenario: Verify user can cancel the deletion of a pedagogy element
+    And the user clicks on the Pedagogy view elements button
+    And the user Clicks on the delete button
+    And the user clicks on the cancel confirmation button
+    Then the user should be able to see the element in the list of pedagogy elements
