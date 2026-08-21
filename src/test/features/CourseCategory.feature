@@ -1,5 +1,5 @@
 @Subathra
-Feature: Subathra_07-07-2026_Course_Category_Functionality
+Feature: Subathra_07-07-2026_Course_Category_Functionality Updated_21/08/2026
 
         Background:
                 Given the user launches the application
