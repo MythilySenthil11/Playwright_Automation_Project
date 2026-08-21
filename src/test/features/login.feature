@@ -22,10 +22,10 @@ Examples:
   | testing@gmail.com  | invalidpass1 | Password is incorrect |
   | invalid2@gmail.com | invalidpass2 | Email is invalid      |
 
-# @Signout @Subathra
-# Scenario: Verify the Signout functionality
-#     When the user enters valid credentials
-#     And the user clicks on the login button
-#     And the user clicks the profile icon in the admindashboardpage
-#     And the user clicks the Signout option
-#     Then the user should see the login page
+@Signout @Subathra
+Scenario: Verify the Signout functionality
+    When the user enters valid credentials
+    And the user clicks on the login button
+    And the user clicks the profile icon in the admindashboardpage
+    And the user clicks the Signout option
+    Then the user should see the login page
