@@ -154,18 +154,34 @@ export class CourseManagementPage extends BasePage{
         await this.Click(this.previewButton)
     }
 
+    async selectEditCourseDropdown(
+    dropdown: Locator,
+    option: string
+    ): Promise<void> {
+
+    await dropdown.click();
+
+    const optionLocator = this.page.getByRole('option', {
+        name: option,
+        exact: true
+    });
+
+    await optionLocator.click();
+}
+
     async fillFirstPage(data: CourseData) {
 
-        await this.SelectCustomDropdown(this.courseClientDropDown,data.courseClient);
-        await this.SelectCustomDropdown(this.serviceTypeDropDown,data.serviceType);
-        await this.SelectCustomDropdown(this.serviceModelDropDown,data.serviceModel);
-        await this.SelectCustomDropdown(this.courseCategoryDropDown,data.courseCategory);
-        await this.SelectCustomDropdown(this.courseNameDropDown,data.courseName);
-    }
+    await this.selectEditCourseDropdown(this.courseClientDropDown,data.courseClient);
+    await this.selectEditCourseDropdown(this.serviceTypeDropDown,data.serviceType);
+    await this.selectEditCourseDropdown(this.serviceModelDropDown,data.serviceModel);
+    await this.selectEditCourseDropdown(this.courseCategoryDropDown,data.courseCategory);
+    await this.selectEditCourseDropdown(this.courseNameDropDown,data.courseName);
+}
 
-    async fillSecondPage(data: CourseData){
-        await this.SelectCustomDropdown(this.courseLevelDropDown,data.courseLevel);
-    }
+    async fillSecondPage(data: CourseData) {
+
+    await this.selectEditCourseDropdown(this.courseLevelDropDown,data.courseLevel);
+}
 
     // sort course actions
     async clickDateSort(){
