@@ -1,4 +1,4 @@
-@Subathra @coursemanagement
+@Subathra
 Feature: Subathra_21-08-2026_Course_Management_Functionality
 
     Background:
