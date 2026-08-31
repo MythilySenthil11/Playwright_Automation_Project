@@ -144,6 +144,7 @@ Then(
 Then("the user should be able to see the element in the list of pedagogy elements", async function (this: CustomWorld) {
     const elementsList = await this.pdp.getElementNamesFromPage();
     const expectedElementName = this.selectedPedagogyElementName;
+    
 
     if (!expectedElementName) {
         throw new Error('The deleted element name was not captured before the cancel action.');

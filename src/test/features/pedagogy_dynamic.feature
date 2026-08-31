@@ -26,6 +26,7 @@ Description: This feature file is used to verify the Pedagogy Dynamic Field Mana
        And the user clicks on the Update Element button
        And the user should be able to see the updated element 
 
+
    @pedagogy3
   Scenario: verify the User can delete element in Existing Pedagogy activites
        And the user clicks on the Pedagogy view elements button

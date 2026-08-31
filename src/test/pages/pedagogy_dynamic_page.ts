@@ -33,6 +33,7 @@ export class pedagogy_dynamic_page extends BasePage{
         this.deletedelement=this.page.locator("//tbody[@class='bg-white divide-y divide-gray-200']/descendant::div[1]")
         this.searchbar=this.page.getByPlaceholder("Search activities...")
         this.searchResult = this.page.locator("//div[@class='text-xs text-gray-400']/preceding-sibling::div[@class='font-medium text-gray-900 text-xs']")
+        
         this.duplicateElementValidation = this.page.getByText(/already exists|duplicate/i).first()
 
     }
