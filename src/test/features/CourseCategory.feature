@@ -1,5 +1,5 @@
 @Subathra
-Feature: Subathra_07-07-2026_Course_Category_Functionality
+Feature: Subathra_07-07-2026_Course_Category_Functionality Updated_21/08/2026
 
         Background:
                 Given the user launches the application
@@ -43,3 +43,12 @@ Feature: Subathra_07-07-2026_Course_Category_Functionality
                 When the user clicks the Add Category button
                 And the user clicks Create category button
                 Then the user should see validation messages for the mandatory fields
+
+
+        Scenario: Search category with valid category name
+                When the user enters an existing category name in the search tab
+                Then the user should see the searched category
+
+        Scenario: Search category with invalid category name
+                When the user enters a non-existing category name in the search tab
+                Then the user should see a not found message

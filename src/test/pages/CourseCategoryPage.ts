@@ -19,6 +19,7 @@ export class CourseCategoryPage extends BasePage{
     readonly confirmDelete:Locator;
     readonly closeButton:Locator;
     readonly pleaseFill:Locator;
+    readonly courseNameTable:Locator;
 
     constructor(page:Page){
         super(page);
@@ -37,6 +38,7 @@ export class CourseCategoryPage extends BasePage{
         this.noUsersMessage=this.page.locator("//p[text()='No users found']");
         this.closeButton = this.page.locator("//div[@data-slot='dialog-footer']/child::button");
         this.pleaseFill=this.page.getByPlaceholder('Enter category name');
+        this.courseNameTable=this.page.locator("//tbody//tr//td[1]");
     }
 
     async ClickAddCategory(){
@@ -85,5 +87,16 @@ export class CourseCategoryPage extends BasePage{
     async ClickCloseButton(){
         await this.Click(this.closeButton);
     }
+
+    async validSearch(validcategoryName: string): Promise<boolean> {
+    const categories = await this.courseNameTable.allTextContents();
+
+    for (const category of categories) {
+        if (category !== validcategoryName) {
+            return false;
+        }
+    }
+    return true;
+}
 
 }
