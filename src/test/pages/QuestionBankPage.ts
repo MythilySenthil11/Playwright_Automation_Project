@@ -1,143 +1,238 @@
-import { Locator, Page } from "@playwright/test"
-import { BasePage } from "./BasePage"
+import { Locator, Page } from "@playwright/test";
+import { BasePage } from "./BasePage";
 
 export class QuestionBankPage extends BasePage {
-    readonly page: Page
-    readonly createQuestionBankDropdown: Locator
-    readonly mcqOption: Locator
-    readonly categorySearchBox: Locator
-    readonly option1: Locator
-    readonly option2: Locator
-    readonly addOptionButton: Locator;
-    readonly option3: Locator;
-    readonly doneButton:Locator;
-    readonly saveQuestionButton:Locator;
-    readonly answerRadioButton: Locator;
-    readonly answerKey: Locator;
-    readonly questionSaved:Locator;
-    readonly mcqQuestion:Locator
-    readonly questionRequiredError:Locator;
-    readonly questionBankTitle:Locator
-    readonly questionDescription:Locator
-    readonly input:Locator
-    readonly output:Locator
-    readonly createQuestionButton:Locator
-    readonly programmingQuestion:Locator
-    readonly questionCreatedSuccessfully:Locator
-    readonly searchBar:Locator
-    readonly searchResult:Locator
-    readonly editButton:Locator
-    readonly questionTitle:Locator
-    readonly updateQuestionButton:Locator
-    readonly updatedSuccessfully:Locator
-    constructor(page: Page) {
-        super(page)
-        this.page = page
-        this.createQuestionBankDropdown = this.page.locator("//button[@class='inline-flex items-center px-3 py-1.5 text-sm bg-blue-600 text-white rounded hover:bg-blue-700']")
-        this.mcqOption = this.page.locator("//button[normalize-space()='MCQ Question']")
-        this.categorySearchBox = this.page.locator("//input[@placeholder='e.g., Data Structures']")
-        this.option1 = this.page.locator("(//input[@placeholder='Click to edit option'])[1]")
-        this.option2 = this.page.locator("(//input[@placeholder='Click to edit option'])[2]")
-        this.addOptionButton = this.page.locator("//button[@class='text-xs text-indigo-600 hover:text-indigo-800 font-semibold flex items-center gap-1']")
-        this.option3 = this.page.locator("(//input[@placeholder='Click to edit option'])[3]")
-        this.doneButton=this.page.locator("//button[@class='px-4 py-2 bg-green-600 text-white rounded-lg text-sm font-semibold hover:bg-green-700']")
-        this.saveQuestionButton=this.page.locator("//button[@class='px-6 py-2 text-white rounded-xl text-xs font-bold disabled:opacity-50 flex items-center gap-1.5 transition-all bg-gradient-to-r from-emerald-600 to-emerald-500 dark:from-emerald-700 dark:to-emerald-600 hover:opacity-90']")
-        this.answerRadioButton=this.page.locator("(//span[@class='flex-1 text-left '])[1]")
-        this.answerKey=this.page.locator("//button[normalize-space()='Answer key']")
-        this.questionSaved=this.page.locator("//div[@class='px-3 py-2 rounded-lg text-sm font-medium bg-green-100 text-green-800 dark:bg-green-900/50 dark:text-green-300']")
-        this.mcqQuestion=this.page.locator("//div[@contenteditable='true']")
-        this.questionRequiredError=this.page.locator("//div[@class='mt-2 text-red-600 dark:text-red-400 text-xs flex items-center gap-1.5 bg-red-50 dark:bg-red-900/20 px-3 py-1.5 rounded-xl']")
-        this.questionBankTitle=this.page.locator("//input[@placeholder='Type your problem title here...']")
-        this.questionDescription=this.page.locator("//textarea[@placeholder='Describe the problem clearly. Include input/output format and examples.']")
-        this.input=this.page.locator("//textarea[@placeholder='stdin...']")
-        this.output=this.page.locator("//textarea[@placeholder='expected stdout...']")
-        this.createQuestionButton=this.page.locator("//button[contains(text(),'✓ Create Question')]")
-        this.programmingQuestion=this.page.locator("//button[normalize-space()='Programming Question']")
-        this.questionCreatedSuccessfully=this.page.locator("//div[@class='px-3 py-2 rounded-lg text-sm font-medium bg-green-100 text-green-800 dark:bg-green-900/50 dark:text-green-300']")
-        this.searchBar=this.page.locator("//input[@placeholder='Search questions...']")
-        this.searchResult=this.page.locator("//h4")
-        this.editButton=this.page.locator("//button[contains(@class,'p-1 text-gray-400 hover:text-blue-600 dark:text-gray-500 dark:hover:text-blue-400 rounded')]").first();
-        this.questionTitle=this.page.locator("//input[@placeholder='Type your problem title here...']")
-        this.updateQuestionButton=this.page.locator("//button[contains(text(),'✓ Update Question')]")
-        this.updatedSuccessfully=this.page.locator("//div[@class='px-3 py-2 rounded-lg text-sm font-medium bg-green-100 text-green-800 dark:bg-green-900/50 dark:text-green-300']")
-    }
-    async clickCreateQuestionBankDropdown() {
-        await this.Click(this.createQuestionBankDropdown);
-    }
-    async clickMCQOption() {
-        await this.Click(this.mcqOption);
-    }
-    async fillCategorySearchBox(category: string) {
-        await this.Fill(this.categorySearchBox, category);
-    }
-    async fillOption1(option: string) {
-        await this.Fill(this.option1, option);
-    }
-    async fillOption2(option: string) {
-        await this.Fill(this.option2, option);
-    }
-    async clickAddOptionButton() {
-        await this.Click(this.addOptionButton);
-    }
-    async fillOption3(option: string) {
-        await this.Fill(this.option3, option);
-    }   
-    async clickDoneButton() {
-        await this.Click(this.doneButton);
-    }
-    async clickSaveQuestionButton() {
-        await this.Click(this.saveQuestionButton);
-    }
-    async clickAnswerRadioButton() {
-        await this.Click(this.answerRadioButton);
-    }
-    async clickAnswerKey() {
-        await this.Click(this.answerKey);
-    }
-    async getQuestionSavedText() {
-        return await this.GetText(this.questionSaved);
-    }
-    async fillMCQQuestion(question: string) {
-        await this.Fill(this.mcqQuestion, question);
-    }
-    async setQuestionBankTile(title:string){
-        await this.Fill(this.questionBankTitle,title)
-    }
-    async setDescription(description:string){
-        await this.Fill(this.questionDescription,description)
-    }
-    async setInput(input:string){
-        await this.Fill(this.input,input)
-    }
-    async setOutput(op:string){
-        await this.Fill(this.output,op)
-    }
-    async clickCreateQuestion(){
-        await this.Click(this.createQuestionButton)
-    }
-    async clickProgrammingQuestion(){
-        await this.Click(this.programmingQuestion)
-    }
-    async getQuestionCreatedSuccessfullyText() {
-        return await this.GetText(this.questionCreatedSuccessfully);
-    }
-    async fillSearchBar(searchText: string) {
-        await this.Fill(this.searchBar, searchText);
-    }
-    async getSearchResultText() {
-        return await this.GetText(this.searchResult);
-    }
-    async clickEditButton() {
-        await this.Click(this.editButton);
-    }
-    async setQuestionTitle(title: string) {
-        await this.Clear(this.questionTitle);
-        await this.Fill(this.questionTitle, title);
-    }
-    async clickUpdateQuestionButton() {
-        await this.Click(this.updateQuestionButton);
-    }
-    async getUpdatedSuccessfullyText() {
-        return await this.GetText(this.updatedSuccessfully);
-    }
+  readonly page: Page;
+  readonly createQuestionBankDropdown: Locator;
+  readonly mcqOption: Locator;
+  readonly categorySearchBox: Locator;
+  readonly option1: Locator;
+  readonly option2: Locator;
+  readonly addOptionButton: Locator;
+  readonly option3: Locator;
+  readonly doneButton: Locator;
+  readonly saveQuestionButton: Locator;
+  readonly answerRadioButton: Locator;
+  readonly answerKey: Locator;
+  readonly questionSaved: Locator;
+  readonly mcqQuestion: Locator;
+  readonly questionRequiredError: Locator;
+  readonly questionBankTitle: Locator;
+  readonly questionDescription: Locator;
+  readonly input: Locator;
+  readonly output: Locator;
+  readonly createQuestionButton: Locator;
+  readonly programmingQuestion: Locator;
+  readonly questionCreatedSuccessfully: Locator;
+  readonly searchBar: Locator;
+  readonly searchResult: Locator;
+  readonly editButton: Locator;
+  readonly questionTitle: Locator;
+  readonly updateQuestionButton: Locator;
+  readonly updatedSuccessfully: Locator;
+  readonly filterDropDown: Locator;
+  readonly statusDropDown: Locator;
+  readonly activeCount: Locator;
+  readonly totalCount: Locator;
+  readonly courseStatus: Locator;
+  readonly typeDropDown: Locator;
+  readonly mcqCount: Locator;
+  readonly programmingCount: Locator;
+  readonly noCourseFound:Locator
+  constructor(page: Page) {
+    super(page); this.page = page;
+    this.noCourseFound=this.page.locator("//p[@class='text-xs text-gray-500 dark:text-gray-400']")
+   
+    this.mcqCount = this.page.locator(
+      "//div[normalize-space()='MCQ']/following-sibling::div[1]",
+    );
+
+    this.programmingCount = this.page.locator(
+      "//div[normalize-space()='Programming']/following-sibling::div[1]",
+    );
+    this.typeDropDown = this.page
+      .locator("//label[text()='Type']/following::select")
+      .first();
+    this.courseStatus = this.page.locator("//span/span");
+    this.totalCount = this.page.locator(
+      "//div[text()='Total']/following-sibling::div",
+    );
+    this.activeCount = this.page.locator(
+      "//div[text()='Active']/following-sibling::div",
+    );
+    this.statusDropDown = this.page
+      .locator("//label[text()='Status']/following::select")
+      .first();
+    this.filterDropDown = this.page.locator(
+      "//button[@class='inline-flex items-center px-3 py-1.5 text-sm rounded transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-300']",
+    );
+    this.createQuestionBankDropdown = this.page.locator(
+      "//button[@class='inline-flex items-center px-3 py-1.5 text-sm bg-blue-600 text-white rounded hover:bg-blue-700']",
+    );
+    this.mcqOption = this.page.locator(
+      "//button[normalize-space()='MCQ Question']",
+    );
+    this.categorySearchBox = this.page.locator(
+      "//input[@placeholder='e.g., Data Structures']",
+    );
+    this.option1 = this.page.locator(
+      "(//input[@placeholder='Click to edit option'])[1]",
+    );
+    this.option2 = this.page.locator(
+      "(//input[@placeholder='Click to edit option'])[2]",
+    );
+    this.addOptionButton = this.page.locator(
+      "//button[@class='text-xs text-indigo-600 hover:text-indigo-800 font-semibold flex items-center gap-1']",
+    );
+    this.option3 = this.page.locator(
+      "(//input[@placeholder='Click to edit option'])[3]",
+    );
+    this.doneButton = this.page.locator(
+      "//button[@class='px-4 py-2 bg-green-600 text-white rounded-lg text-sm font-semibold hover:bg-green-700']",
+    );
+    this.saveQuestionButton = this.page.locator(
+      "//button[@class='px-6 py-2 text-white rounded-xl text-xs font-bold disabled:opacity-50 flex items-center gap-1.5 transition-all bg-gradient-to-r from-emerald-600 to-emerald-500 dark:from-emerald-700 dark:to-emerald-600 hover:opacity-90']",
+    );
+    this.answerRadioButton = this.page.locator(
+      "(//span[@class='flex-1 text-left '])[1]",
+    );
+    this.answerKey = this.page.locator(
+      "//button[normalize-space()='Answer key']",
+    );
+    this.questionSaved = this.page.locator(
+      "//div[@class='px-3 py-2 rounded-lg text-sm font-medium bg-green-100 text-green-800 dark:bg-green-900/50 dark:text-green-300']",
+    );
+    this.mcqQuestion = this.page.locator("//div[@contenteditable='true']");
+    this.questionRequiredError = this.page.locator(
+      "//div[@class='mt-2 text-red-600 dark:text-red-400 text-xs flex items-center gap-1.5 bg-red-50 dark:bg-red-900/20 px-3 py-1.5 rounded-xl']",
+    );
+    this.questionBankTitle = this.page.locator(
+      "//input[@placeholder='Type your problem title here...']",
+    );
+    this.questionDescription = this.page.locator(
+      "//textarea[@placeholder='Describe the problem clearly. Include input/output format and examples.']",
+    );
+    this.input = this.page.locator("//textarea[@placeholder='stdin...']");
+    this.output = this.page.locator(
+      "//textarea[@placeholder='expected stdout...']",
+    );
+    this.createQuestionButton = this.page.locator(
+      "//button[contains(text(),'✓ Create Question')]",
+    );
+    this.programmingQuestion = this.page.locator(
+      "//button[normalize-space()='Programming Question']",
+    );
+    this.questionCreatedSuccessfully = this.page.locator(
+      "//div[@class='px-3 py-2 rounded-lg text-sm font-medium bg-green-100 text-green-800 dark:bg-green-900/50 dark:text-green-300']",
+    );
+    this.searchBar = this.page.locator(
+      "//input[@placeholder='Search questions...']",
+    );
+    this.searchResult = this.page.locator("//h4");
+    this.editButton = this.page
+      .locator(
+        "//button[contains(@class,'p-1 text-gray-400 hover:text-blue-600 dark:text-gray-500 dark:hover:text-blue-400 rounded')]",
+      )
+      .first();
+    this.questionTitle = this.page.locator(
+      "//input[@placeholder='Type your problem title here...']",
+    );
+    this.updateQuestionButton = this.page.locator(
+      "//button[contains(text(),'✓ Update Question')]",
+    );
+    this.updatedSuccessfully = this.page.locator(
+      "//div[@class='px-3 py-2 rounded-lg text-sm font-medium bg-green-100 text-green-800 dark:bg-green-900/50 dark:text-green-300']",
+    );
+  }
+  async selectType(type: string) {
+    await this.SelectOption(this.typeDropDown, type);
+  }
+  async clickCreateQuestionBankDropdown() {
+    await this.Click(this.createQuestionBankDropdown);
+  }
+  async clickMCQOption() {
+    await this.Click(this.mcqOption);
+  }
+  async fillCategorySearchBox(category: string) {
+    await this.Fill(this.categorySearchBox, category);
+  }
+  async fillOption1(option: string) {
+    await this.Fill(this.option1, option);
+  }
+  async fillOption2(option: string) {
+    await this.Fill(this.option2, option);
+  }
+  async clickAddOptionButton() {
+    await this.Click(this.addOptionButton);
+  }
+  async fillOption3(option: string) {
+    await this.Fill(this.option3, option);
+  }
+  async clickDoneButton() {
+    await this.Click(this.doneButton);
+  }
+  async clickSaveQuestionButton() {
+    await this.Click(this.saveQuestionButton);
+  }
+  async clickAnswerRadioButton() {
+    await this.Click(this.answerRadioButton);
+  }
+  async clickAnswerKey() {
+    await this.Click(this.answerKey);
+  }
+  async getQuestionSavedText() {
+    return await this.GetText(this.questionSaved);
+  }
+  async fillMCQQuestion(question: string) {
+    await this.Fill(this.mcqQuestion, question);
+  }
+  async setQuestionBankTile(title: string) {
+    await this.Fill(this.questionBankTitle, title);
+  }
+  async setDescription(description: string) {
+    await this.Fill(this.questionDescription, description);
+  }
+  async setInput(input: string) {
+    await this.Fill(this.input, input);
+  }
+  async setOutput(op: string) {
+    await this.Fill(this.output, op);
+  }
+  async clickCreateQuestion() {
+    await this.Click(this.createQuestionButton);
+  }
+  async clickProgrammingQuestion() {
+    await this.Click(this.programmingQuestion);
+  }
+  async getQuestionCreatedSuccessfullyText() {
+    return await this.GetText(this.questionCreatedSuccessfully);
+  }
+  async fillSearchBar(searchText: string) {
+    await this.Fill(this.searchBar, searchText);
+  }
+  async getSearchResultText() {
+    return await this.GetText(this.searchResult);
+  }
+  async clickEditButton() {
+    await this.Click(this.editButton);
+  }
+  async setQuestionTitle(title: string) {
+    await this.Clear(this.questionTitle);
+    await this.Fill(this.questionTitle, title);
+  }
+  async clickUpdateQuestionButton() {
+    await this.Click(this.updateQuestionButton);
+  }
+  async getUpdatedSuccessfullyText() {
+    return await this.GetText(this.updatedSuccessfully);
+  }
+  async clickFilter() {
+    await this.Click(this.filterDropDown);
+  }
+  async selectStatus(status: string) {
+    await this.SelectOption(this.statusDropDown, status);
+    await this.searchResult
+      .first()
+      .waitFor({ state: "visible", timeout: 30000 });
+  }
 }

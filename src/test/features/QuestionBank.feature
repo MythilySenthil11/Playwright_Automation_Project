@@ -52,6 +52,20 @@ Feature: TamilKumar12-07-2026 Question Bank Management updated 20=07=2026
             | question title    |
             | Java              |
             | Debounce Function |
+
+    @Tamil @SearchQuestion @questionbank
+
+    Scenario Outline: Verify user cannot find a question with an invalid question title
+        When the user enters the "<question title>" in the search bar
+        Then the question should not be displayed in the search results
+
+        Examples:
+            | question title       |
+            | Invalid Question 123 |
+            | XYZ12345             |
+          
+
+
     @Tamil
     Scenario Outline: Verify user can edit a question
         When the user enters the "<question title>" in the search bar
@@ -63,3 +77,27 @@ Feature: TamilKumar12-07-2026 Question Bank Management updated 20=07=2026
             | question title | updated title |
             | Java           | Python        |
             | Python         | Java          |
+
+    @Tamil @questionbank
+
+    Scenario Outline: Verify user can filter questions by status
+        When the user clicks the question status filter
+        And the user selects "<Status>" status
+        Then the user should see only "<Status>" questions and the question count should be "<Total>"
+
+        Examples:
+            | Status   | Total |
+            | Active   | 207   |
+            | Inactive | 4     |
+
+    @Tamil @questionbank
+
+    Scenario Outline: Verify user can filter questions by type
+        When the user clicks the question type filter
+        And the user selects "<Type>" type
+        Then the user should see only type questions and the question count should be "<Total>"
+
+        Examples:
+            | Type        | Total |
+            | MCQ         | 100   |
+            | Programming | 111   |

@@ -40,8 +40,13 @@ export class CourseManagementPage extends BasePage{
     readonly dateList:Locator
     readonly clientList:Locator
     readonly courseSortList:Locator
-    
-
+    readonly ThreeDots:Locator
+    readonly viewDetailsButton:Locator
+    readonly courseNameDetail:Locator
+    readonly courseStructureViewButton:Locator
+    readonly courseStructureDetail:Locator
+    readonly coursePedagogyViewButton:Locator
+    readonly coursePedagogyDetail:Locator
     constructor(page:Page){
         super(page);
         this.page=page;
@@ -80,8 +85,13 @@ export class CourseManagementPage extends BasePage{
         this.dateList = this.page.locator("//td[1]/span/div")
         this.clientList = this.page.locator("//td[2]/span/div")
         this.courseSortList = this.page.locator("//td[3]/span/div")
-
-        
+        this.ThreeDots = this.page.locator("//div/button[@class='flex items-center gap-1 px-2 py-1 rounded bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700 transition-all duration-200 group']").first()
+        this.viewDetailsButton = this.page.locator("//button[@class='flex items-center gap-2 px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 w-full text-left transition-colors']").first()
+        this.courseNameDetail = this.page.locator("//h2")
+        this.courseStructureViewButton = this.page.locator("//button[@class='flex items-center justify-center gap-1 px-2 py-1 rounded bg-indigo-50 dark:bg-indigo-900/30 hover:bg-indigo-100 dark:hover:bg-indigo-800/40 border border-indigo-200 dark:border-indigo-800 transition-all duration-200 group w-full']").first()
+        this.courseStructureDetail = this.page.locator("//h2")
+        this.coursePedagogyViewButton = this.page.locator("//button[@class='flex items-center justify-center gap-1 px-2 py-1 rounded bg-purple-50 dark:bg-purple-900/30 hover:bg-purple-100 dark:hover:bg-purple-800/40 border border-purple-200 dark:border-purple-800 transition-all duration-200 group w-full']").first()
+        this.coursePedagogyDetail = this.page.locator("//h2")
     }
     async clickFilterButton(){
         await this.Click(this.filterButton)
@@ -106,8 +116,10 @@ export class CourseManagementPage extends BasePage{
     }
     //search
     async EnterSearch(searchbar: string) {
+
            await this.Fill(this.searchbar, searchbar);
-           await this.page.waitForTimeout(TIMEOUTS.MEDIUM);
+           await this.page.reload();
+           await this.Fill(this.searchbar, searchbar);
     }
     async GetSearchResult() {
         const text = await this.GetText(this.table);
@@ -184,7 +196,26 @@ export class CourseManagementPage extends BasePage{
         const list = locator.allTextContents() 
         return list
     }
+    async clickThreeDots(){
+        await this.Click(this.ThreeDots)
+    }
+    async clickViewDetails(){
+        await this.Click(this.viewDetailsButton)
+    }
+    async getCourseNameDetails(){
+        return await this.GetText(this.courseNameDetail)
+    }
+    async clickCourseStructureViewButton(){
+        await this.Click(this.courseStructureViewButton)
+    }
+    async getCourseStructureDetails(){
+        return await this.GetText(this.courseStructureDetail)
+    }
+    async clickCoursePedagogyViewButton(){
+        await this.Click(this.coursePedagogyViewButton)
+    }
+    async getCoursePedagogyDetails(){
+        return await this.GetText(this.coursePedagogyDetail)
+    }
 
-    
-    
 }

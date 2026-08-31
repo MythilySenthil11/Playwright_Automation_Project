@@ -140,3 +140,62 @@ Then('the question should be updated successfully', async function (this: Custom
   // Write code here that turns the phrase above into concrete actions
   await expect(this.qbp.updatedSuccessfully).toBeVisible();
 });
+When('the user clicks the question status filter', async function (this: CustomWorld) {
+    await this.qbp.clickFilter();
+});
+
+When('the user selects {string} status', async function (this: CustomWorld, status: string) {
+    await this.qbp.selectStatus(status);
+});
+
+Then(
+    'the user should see only {string} questions and the question count should be {string}',
+    async function (this: CustomWorld, status: string, expectedCount: string) {
+
+        const totalText = await this.qbp.totalCount.innerText();
+        const activeText = await this.qbp.activeCount.innerText();
+
+        const total = Number(totalText.trim());
+        const active = Number(activeText.trim());
+
+        let expectedResultCount: number;
+
+        if (status === 'Active') {
+            expectedResultCount = active;
+        } else {
+            expectedResultCount = total - active;
+        }
+
+        await expect(this.qbp.courseStatus).toHaveCount(expectedResultCount);
+    }
+);
+When('the user clicks the question type filter', async function (this: CustomWorld) {
+    await this.qbp.clickFilter();
+});
+
+When('the user selects {string} type', async function (this: CustomWorld, type: string) {
+    await this.qbp.selectType(type);
+});
+
+Then(
+    'the user should see only {string} questions and the question count should be {string}',
+    async function (this: CustomWorld, type: string, expectedCount: string) {
+
+        let actualCount: number;
+
+        if (type === 'MCQ') {
+            actualCount = Number(await this.qbp.mcqCount.innerText());
+        } else if (type === 'Programming') {
+            actualCount = Number(await this.qbp.programmingCount.innerText());
+        } else {
+            throw new Error(`Invalid type: ${type}`);
+        }
+
+        expect(actualCount).toBe(Number(expectedCount));
+    }
+);
+
+Then('the question should not be displayed in the search results', async function (this:CustomWorld) {
+  // Write code here that turns the phrase above into concrete actions
+  await expect(this.qbp.noCourseFound).toContainText("No questions found")
+});
