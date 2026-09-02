@@ -1,5 +1,6 @@
 import {Page,Locator} from '@playwright/test'
 import { BasePage } from './BasePage';
+import { TIMEOUTS } from '../constants/timeouts';
 
 export class pedagogy_dynamic_page extends BasePage{
     readonly page:Page
@@ -54,7 +55,7 @@ export class pedagogy_dynamic_page extends BasePage{
      }
      async clickCreateElementButton(){
         await this.Click(this.createElementButton);
-        await this.page.waitForLoadState('networkidle');
+          await this.page.waitForLoadState('networkidle', { timeout: TIMEOUTS.LONG });
      }
       getDuplicateElementValidationMessage(): Locator {
           return this.duplicateElementValidation;
